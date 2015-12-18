@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>My Project: D:/Project/Game/Lib/Worker/Worker.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="namespaces.html"><span>名前空間</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8f3de2ae926fecfe6abd5379fd2b6eb1.html">Lib</a></li><li class="navelem"><a class="el" href="dir_f3c8c440de75c97ba52470780f611b08.html">Worker</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Worker.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_worker_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef INCLUDE_LIB_WORKER_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define INCLUDE_LIB_WORKER_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_singleton_8h.html">Lib/Utility/Singleton.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_worker_manager.html">CWorkerManager</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_job.html">CJob</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * @class CWorker</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * @brief ワーカースレッド。</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_c_worker.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_worker.html">CWorker</a> : <span class="keyword">public</span> <a class="code" href="class_c_singleton.html">CSingleton</a>&lt;CWorker&gt;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_c_worker.html#aecbc638ed646f882a08fe4b6d6c4653c">   22</a></span>&#160;    <span class="keyword">friend</span> <a class="code" href="class_c_singleton.html">CSingleton&lt;CWorker&gt;</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_c_worker.html#ab70f18344c40b5492db3836891d53990">CWorker</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="struct_c_worker_1_1_st_init_param.html">   28</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_c_worker_1_1_st_init_param.html">StInitParam</a></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="struct_c_worker_1_1_st_init_param.html#a12eae4f2ebb11c75f35a7d79811312cd">   30</a></span>&#160;        U32 <a class="code" href="struct_c_worker_1_1_st_init_param.html#a12eae4f2ebb11c75f35a7d79811312cd">m_uWorkerSyncNum</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="struct_c_worker_1_1_st_init_param.html#a41be25673705539bf09d8f287d7d19f3">   31</a></span>&#160;        U32 <a class="code" href="struct_c_worker_1_1_st_init_param.html#a41be25673705539bf09d8f287d7d19f3">m_uWorkerUnSyncNum</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="struct_c_worker_1_1_st_init_param.html#ac581e8da704092d007f40e73afc38b47">   33</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="struct_c_worker_1_1_st_init_param.html#ac581e8da704092d007f40e73afc38b47">Init</a>()</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            m_uWorkerSyncNum = 0;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            m_uWorkerUnSyncNum = 0;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    };</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_worker.html#ad7463ab6b440816bc9b8c1b2da167407">~CWorker</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_worker.html#ad5d23dd82cbc33909e00146dfc5b039b">Init</a>( <span class="keyword">const</span> StInitParam&amp; _rstInit );</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_worker.html#ad8d0e6b957ab9d84b6fe6290b564f23d">RequestJob</a>( <a class="code" href="class_c_job.html">CJob</a>* _pcJob, <span class="keywordtype">bool</span> _bSync );</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_worker.html#a0cf70f37ffdadae5afb4606bd989ba6b">Sync</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_c_worker.html#ae982e4473bdc5cee56f351c9888007f5">   53</a></span>&#160;    <a class="code" href="class_c_worker_manager.html">CWorkerManager</a>* <a class="code" href="class_c_worker.html#ae982e4473bdc5cee56f351c9888007f5">m_pcWorkerManagerSync</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_c_worker.html#ab96d974805f466c392897f55cd13e000">   54</a></span>&#160;    <a class="code" href="class_c_worker_manager.html">CWorkerManager</a>* <a class="code" href="class_c_worker.html#ab96d974805f466c392897f55cd13e000">m_pcWorkerManagerUnSync</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif // #ifndef INCLUDE_LIB_WORKER_H</span></div>
+<div class="ttc" id="struct_c_worker_1_1_st_init_param_html"><div class="ttname"><a href="struct_c_worker_1_1_st_init_param.html">CWorker::StInitParam</a></div><div class="ttdoc">初期化用パラメータ。 </div><div class="ttdef"><b>Definition:</b> Worker.h:28</div></div>
+<div class="ttc" id="struct_c_worker_1_1_st_init_param_html_ac581e8da704092d007f40e73afc38b47"><div class="ttname"><a href="struct_c_worker_1_1_st_init_param.html#ac581e8da704092d007f40e73afc38b47">CWorker::StInitParam::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdef"><b>Definition:</b> Worker.h:33</div></div>
+<div class="ttc" id="class_c_singleton_html"><div class="ttname"><a href="class_c_singleton.html">CSingleton</a></div><div class="ttdef"><b>Definition:</b> Singleton.h:12</div></div>
+<div class="ttc" id="class_c_job_html"><div class="ttname"><a href="class_c_job.html">CJob</a></div><div class="ttdef"><b>Definition:</b> Job.h:14</div></div>
+<div class="ttc" id="class_c_worker_html_ab70f18344c40b5492db3836891d53990"><div class="ttname"><a href="class_c_worker.html#ab70f18344c40b5492db3836891d53990">CWorker::CWorker</a></div><div class="ttdeci">CWorker()</div><div class="ttdoc">コンストラクタ。 </div><div class="ttdef"><b>Definition:</b> Worker.cpp:16</div></div>
+<div class="ttc" id="class_c_worker_html_a0cf70f37ffdadae5afb4606bd989ba6b"><div class="ttname"><a href="class_c_worker.html#a0cf70f37ffdadae5afb4606bd989ba6b">CWorker::Sync</a></div><div class="ttdeci">static void Sync()</div><div class="ttdoc">同期。 </div><div class="ttdef"><b>Definition:</b> Worker.cpp:87</div></div>
+<div class="ttc" id="class_c_worker_html"><div class="ttname"><a href="class_c_worker.html">CWorker</a></div><div class="ttdef"><b>Definition:</b> Worker.h:19</div></div>
+<div class="ttc" id="class_c_worker_html_ad8d0e6b957ab9d84b6fe6290b564f23d"><div class="ttname"><a href="class_c_worker.html#ad8d0e6b957ab9d84b6fe6290b564f23d">CWorker::RequestJob</a></div><div class="ttdeci">static void RequestJob(CJob *_pcJob, bool _bSync)</div><div class="ttdoc">リクエスト。 </div><div class="ttdef"><b>Definition:</b> Worker.cpp:52</div></div>
+<div class="ttc" id="class_c_worker_html_ab96d974805f466c392897f55cd13e000"><div class="ttname"><a href="class_c_worker.html#ab96d974805f466c392897f55cd13e000">CWorker::m_pcWorkerManagerUnSync</a></div><div class="ttdeci">CWorkerManager * m_pcWorkerManagerUnSync</div><div class="ttdef"><b>Definition:</b> Worker.h:54</div></div>
+<div class="ttc" id="struct_c_worker_1_1_st_init_param_html_a12eae4f2ebb11c75f35a7d79811312cd"><div class="ttname"><a href="struct_c_worker_1_1_st_init_param.html#a12eae4f2ebb11c75f35a7d79811312cd">CWorker::StInitParam::m_uWorkerSyncNum</a></div><div class="ttdeci">U32 m_uWorkerSyncNum</div><div class="ttdef"><b>Definition:</b> Worker.h:30</div></div>
+<div class="ttc" id="_singleton_8h_html"><div class="ttname"><a href="_singleton_8h.html">Singleton.h</a></div></div>
+<div class="ttc" id="class_c_worker_html_ad7463ab6b440816bc9b8c1b2da167407"><div class="ttname"><a href="class_c_worker.html#ad7463ab6b440816bc9b8c1b2da167407">CWorker::~CWorker</a></div><div class="ttdeci">virtual ~CWorker()</div><div class="ttdoc">デストラクタ。 </div><div class="ttdef"><b>Definition:</b> Worker.cpp:26</div></div>
+<div class="ttc" id="class_c_worker_manager_html"><div class="ttname"><a href="class_c_worker_manager.html">CWorkerManager</a></div><div class="ttdef"><b>Definition:</b> WorkerManager.h:19</div></div>
+<div class="ttc" id="class_c_worker_html_ad5d23dd82cbc33909e00146dfc5b039b"><div class="ttname"><a href="class_c_worker.html#ad5d23dd82cbc33909e00146dfc5b039b">CWorker::Init</a></div><div class="ttdeci">void Init(const StInitParam &amp;_rstInit)</div><div class="ttdoc">初期化。 </div><div class="ttdef"><b>Definition:</b> Worker.cpp:36</div></div>
+<div class="ttc" id="class_c_worker_html_ae982e4473bdc5cee56f351c9888007f5"><div class="ttname"><a href="class_c_worker.html#ae982e4473bdc5cee56f351c9888007f5">CWorker::m_pcWorkerManagerSync</a></div><div class="ttdeci">CWorkerManager * m_pcWorkerManagerSync</div><div class="ttdef"><b>Definition:</b> Worker.h:53</div></div>
+<div class="ttc" id="struct_c_worker_1_1_st_init_param_html_a41be25673705539bf09d8f287d7d19f3"><div class="ttname"><a href="struct_c_worker_1_1_st_init_param.html#a41be25673705539bf09d8f287d7d19f3">CWorker::StInitParam::m_uWorkerUnSyncNum</a></div><div class="ttdeci">U32 m_uWorkerUnSyncNum</div><div class="ttdef"><b>Definition:</b> Worker.h:31</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

@@ -1,0 +1,130 @@
+\hypertarget{class_c_object_list}{}\section{C\+Object\+List$<$ T $>$ クラステンプレート}
+\label{class_c_object_list}\index{C\+Object\+List$<$ T $>$@{C\+Object\+List$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Object\+List.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_object_list_a577198dc90a4a0a6b6a5b0f15001542d}{C\+Object\+List} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ。 \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_object_list_af6d97cee4b4f55a4bf680c79e6e50fe2}{$\sim$\+C\+Object\+List} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_object_list_a327f2ed43bab6e49fe6fc8e4b76642d6}{Loop\+End\+Act} ()
+\begin{DoxyCompactList}\small\item\em ループ終了時の処理。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_object_list_a103a863daa1977b9cb2b3aca699194b4}{Register} (T $\ast$\+\_\+p\+Obj)
+\begin{DoxyCompactList}\small\item\em オブジェクトを登録。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_object_list_a15d44299ea86606b641b937041b40bbe}{Un\+Register} (T $\ast$\+\_\+p\+Obj)
+\begin{DoxyCompactList}\small\item\em オブジェクトの登録を解除する。 \end{DoxyCompactList}\item 
+\hyperlink{_list_8h_af54c38acd8944230f18792ac38211526}{C\+Vector}$<$ T $\ast$ $>$ \& \hyperlink{class_c_object_list_a9e035ac0cb23b5f208374550bca1c705}{Get\+List} ()
+\end{DoxyCompactItemize}
+\subsection*{限定公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_list_8h_a96ec65f32bb6befb4ba0144831455dee}{C\+Deque}$<$ T $\ast$ $>$ \hyperlink{class_c_object_list_af1fd49458d78701c70b0e34aa5a3b4e7}{m\+\_\+c\+Obj\+Wait\+Regist\+Array}
+\begin{DoxyCompactList}\small\item\em 登録待ちリスト。 \end{DoxyCompactList}\item 
+\hyperlink{_list_8h_af54c38acd8944230f18792ac38211526}{C\+Vector}$<$ T $\ast$ $>$ \hyperlink{class_c_object_list_a38b7ceb7e93f096b55c708a76afaf389}{m\+\_\+c\+Obj\+Array}
+\item 
+\hyperlink{class_c_critical_section}{C\+Critical\+Section} \hyperlink{class_c_object_list_a532f2759732f2dda80595e699fcab8f4}{m\+\_\+c\+Critical\+Section}
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\hypertarget{class_c_object_list_a577198dc90a4a0a6b6a5b0f15001542d}{}\index{C\+Object\+List@{C\+Object\+List}!C\+Object\+List@{C\+Object\+List}}
+\index{C\+Object\+List@{C\+Object\+List}!C\+Object\+List@{C\+Object\+List}}
+\subsubsection[{C\+Object\+List()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf C\+Object\+List}$<$ T $>$\+::{\bf C\+Object\+List} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_object_list_a577198dc90a4a0a6b6a5b0f15001542d}
+
+
+コンストラクタ。 
+
+\hypertarget{class_c_object_list_af6d97cee4b4f55a4bf680c79e6e50fe2}{}\index{C\+Object\+List@{C\+Object\+List}!````~C\+Object\+List@{$\sim$\+C\+Object\+List}}
+\index{````~C\+Object\+List@{$\sim$\+C\+Object\+List}!C\+Object\+List@{C\+Object\+List}}
+\subsubsection[{$\sim$\+C\+Object\+List()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ virtual {\bf C\+Object\+List}$<$ T $>$\+::$\sim${\bf C\+Object\+List} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_object_list_af6d97cee4b4f55a4bf680c79e6e50fe2}
+
+
+デストラクタ。 
+
+
+
+\subsection{関数詳解}
+\hypertarget{class_c_object_list_a9e035ac0cb23b5f208374550bca1c705}{}\index{C\+Object\+List@{C\+Object\+List}!Get\+List@{Get\+List}}
+\index{Get\+List@{Get\+List}!C\+Object\+List@{C\+Object\+List}}
+\subsubsection[{Get\+List()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf C\+Vector}$<$T$\ast$$>$\& {\bf C\+Object\+List}$<$ T $>$\+::Get\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_object_list_a9e035ac0cb23b5f208374550bca1c705}
+\hypertarget{class_c_object_list_a327f2ed43bab6e49fe6fc8e4b76642d6}{}\index{C\+Object\+List@{C\+Object\+List}!Loop\+End\+Act@{Loop\+End\+Act}}
+\index{Loop\+End\+Act@{Loop\+End\+Act}!C\+Object\+List@{C\+Object\+List}}
+\subsubsection[{Loop\+End\+Act()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf C\+Object\+List}$<$ T $>$\+::Loop\+End\+Act (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_object_list_a327f2ed43bab6e49fe6fc8e4b76642d6}
+
+
+ループ終了時の処理。 
+
+\hypertarget{class_c_object_list_a103a863daa1977b9cb2b3aca699194b4}{}\index{C\+Object\+List@{C\+Object\+List}!Register@{Register}}
+\index{Register@{Register}!C\+Object\+List@{C\+Object\+List}}
+\subsubsection[{Register(\+T $\ast$\+\_\+p\+Obj)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf C\+Object\+List}$<$ T $>$\+::Register (
+\begin{DoxyParamCaption}
+\item[{T $\ast$}]{\+\_\+p\+Obj}
+\end{DoxyParamCaption}
+)}\label{class_c_object_list_a103a863daa1977b9cb2b3aca699194b4}
+
+
+オブジェクトを登録。 
+
+
+\begin{DoxyParams}{引数}
+{\em \+\_\+p\+Obj} & \+: 登録するオブジェクト。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_object_list_a15d44299ea86606b641b937041b40bbe}{}\index{C\+Object\+List@{C\+Object\+List}!Un\+Register@{Un\+Register}}
+\index{Un\+Register@{Un\+Register}!C\+Object\+List@{C\+Object\+List}}
+\subsubsection[{Un\+Register(\+T $\ast$\+\_\+p\+Obj)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf C\+Object\+List}$<$ T $>$\+::Un\+Register (
+\begin{DoxyParamCaption}
+\item[{T $\ast$}]{\+\_\+p\+Obj}
+\end{DoxyParamCaption}
+)}\label{class_c_object_list_a15d44299ea86606b641b937041b40bbe}
+
+
+オブジェクトの登録を解除する。 
+
+
+\begin{DoxyParams}{引数}
+{\em \+\_\+p\+Obj} & \+: 解除するオブジェクト。 \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{メンバ詳解}
+\hypertarget{class_c_object_list_a532f2759732f2dda80595e699fcab8f4}{}\index{C\+Object\+List@{C\+Object\+List}!m\+\_\+c\+Critical\+Section@{m\+\_\+c\+Critical\+Section}}
+\index{m\+\_\+c\+Critical\+Section@{m\+\_\+c\+Critical\+Section}!C\+Object\+List@{C\+Object\+List}}
+\subsubsection[{m\+\_\+c\+Critical\+Section}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf C\+Critical\+Section} {\bf C\+Object\+List}$<$ T $>$\+::m\+\_\+c\+Critical\+Section\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_object_list_a532f2759732f2dda80595e699fcab8f4}
+\hypertarget{class_c_object_list_a38b7ceb7e93f096b55c708a76afaf389}{}\index{C\+Object\+List@{C\+Object\+List}!m\+\_\+c\+Obj\+Array@{m\+\_\+c\+Obj\+Array}}
+\index{m\+\_\+c\+Obj\+Array@{m\+\_\+c\+Obj\+Array}!C\+Object\+List@{C\+Object\+List}}
+\subsubsection[{m\+\_\+c\+Obj\+Array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf C\+Vector}$<$T$\ast$$>$ {\bf C\+Object\+List}$<$ T $>$\+::m\+\_\+c\+Obj\+Array\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_object_list_a38b7ceb7e93f096b55c708a76afaf389}
+\hypertarget{class_c_object_list_af1fd49458d78701c70b0e34aa5a3b4e7}{}\index{C\+Object\+List@{C\+Object\+List}!m\+\_\+c\+Obj\+Wait\+Regist\+Array@{m\+\_\+c\+Obj\+Wait\+Regist\+Array}}
+\index{m\+\_\+c\+Obj\+Wait\+Regist\+Array@{m\+\_\+c\+Obj\+Wait\+Regist\+Array}!C\+Object\+List@{C\+Object\+List}}
+\subsubsection[{m\+\_\+c\+Obj\+Wait\+Regist\+Array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf C\+Deque}$<$T$\ast$$>$ {\bf C\+Object\+List}$<$ T $>$\+::m\+\_\+c\+Obj\+Wait\+Regist\+Array\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_object_list_af1fd49458d78701c70b0e34aa5a3b4e7}
+
+
+登録待ちリスト。 
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Project/\+Game/\+Lib/\+Object/\hyperlink{_object_list_8h}{Object\+List.\+h}\item 
+D\+:/\+Project/\+Game/\+Lib/\+Object/\hyperlink{_object_list_detail_8h}{Object\+List\+Detail.\+h}\end{DoxyCompactItemize}

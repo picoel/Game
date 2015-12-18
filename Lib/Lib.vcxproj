@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{65D95786-364C-4929-B1E7-1361731376F8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Lib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <SourcePath>$(SolutionDir);$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <SourcePath>$(SolutionDir);$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>LibPrecompile.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>Lib/LibPrecompile.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <FxCompile>
+      <ObjectFileOutput>$(SolutionDir)Data\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>LibPrecompile.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>Lib/LibPrecompile.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <FxCompile>
+      <ObjectFileOutput>$(SolutionDir)Data\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Debug\Assert.cpp" />
+    <ClCompile Include="Debug\DebugProcessTime.cpp" />
+    <ClCompile Include="Debug\FPSCounter.cpp" />
+    <ClCompile Include="Debug\FPSViewer.cpp" />
+    <ClCompile Include="DirectX\ConstantBuffer.cpp" />
+    <ClCompile Include="DirectX\DirectX.cpp" />
+    <ClCompile Include="DirectX\DirectXDeviceFactoryDX11.cpp" />
+    <ClCompile Include="DirectX\DirectXTexture.cpp" />
+    <ClCompile Include="DirectX\DirectXShaderManager.cpp" />
+    <ClCompile Include="DirectX\DirectXUtility.cpp" />
+    <ClCompile Include="DirectX\PixelShader.cpp" />
+    <ClCompile Include="DirectX\RenderContextDX11.cpp" />
+    <ClCompile Include="DirectX\VertexShader.cpp" />
+    <ClCompile Include="File\FileReader.cpp" />
+    <ClCompile Include="File\FileReadManager.cpp" />
+    <ClCompile Include="File\FileReadThread.cpp" />
+    <ClCompile Include="File\JobFileRead.cpp" />
+    <ClCompile Include="Lib.cpp" />
+    <ClCompile Include="LibPrecompile.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="MainLoop\MainLoopThread.cpp" />
+    <ClCompile Include="Memory\MemAllocator.cpp" />
+    <ClCompile Include="Memory\MemBlock.cpp" />
+    <ClCompile Include="Memory\MemDefinition.cpp" />
+    <ClCompile Include="Memory\MemManager.cpp" />
+    <ClCompile Include="Mesh\MeshDrawer.cpp" />
+    <ClCompile Include="Object\Action.cpp" />
+    <ClCompile Include="Object\ActionList.cpp" />
+    <ClCompile Include="Object\Draw.cpp" />
+    <ClCompile Include="Object\DrawList.cpp" />
+    <ClCompile Include="PMD\PMDMesh.cpp" />
+    <ClCompile Include="PMD\PMDReader.cpp" />
+    <ClCompile Include="Rect\Rect.cpp" />
+    <ClCompile Include="Render\ConstantBufferDataForFrame.cpp" />
+    <ClCompile Include="Render\ConstantBufferDataForLevel.cpp" />
+    <ClCompile Include="Render\ConstantBufferDataForObject.cpp" />
+    <ClCompile Include="Render\ConstantBufferDataForMaterial.cpp" />
+    <ClCompile Include="Render\RenderThread.cpp" />
+    <ClCompile Include="Sequence\SequenceControl.cpp" />
+    <ClCompile Include="Thread\CriticalSection.cpp" />
+    <ClCompile Include="Thread\Thread.cpp" />
+    <ClCompile Include="Worker\WorkerManager.cpp" />
+    <ClCompile Include="Worker\Worker.cpp" />
+    <ClCompile Include="Worker\WorkerThread.cpp" />
+    <ClCompile Include="Worker\WorkerChannel.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Debug\Assert.h" />
+    <ClInclude Include="Debug\DebugProcessTime.h" />
+    <ClInclude Include="Debug\FPSCounter.h" />
+    <ClInclude Include="Debug\FPSViewer.h" />
+    <ClInclude Include="Debug\Log.h" />
+    <ClInclude Include="DirectX\ConstantBuffer.h" />
+    <ClInclude Include="DirectX\DirectX.h" />
+    <ClInclude Include="DirectX\DirectXConstantBufferDefinition.h" />
+    <ClInclude Include="DirectX\DirectXDefinition.h" />
+    <ClInclude Include="DirectX\DirectXDeviceFactory.h" />
+    <ClInclude Include="DirectX\DirectXDeviceFactoryDX11.h" />
+    <ClInclude Include="DirectX\DirectXShaderDefinition.h" />
+    <ClInclude Include="DirectX\DirectXShaderManager.h" />
+    <ClInclude Include="DirectX\DirectXTexture.h" />
+    <ClInclude Include="DirectX\DirectXUtility.h" />
+    <ClInclude Include="DirectX\PixelShader.h" />
+    <ClInclude Include="DirectX\RenderContextDX11.h" />
+    <ClInclude Include="DirectX\RenderContextFactoryDX11.h" />
+    <ClInclude Include="DirectX\VertexShader.h" />
+    <ClInclude Include="File\JobFileRead.h" />
+    <ClInclude Include="File\FileReader.h" />
+    <ClInclude Include="File\FileReadManager.h" />
+    <ClInclude Include="File\FileReadThread.h" />
+    <ClInclude Include="Lib.h" />
+    <ClInclude Include="LibDefine.h" />
+    <ClInclude Include="LibPrecompile.h" />
+    <ClInclude Include="LibWindows.h" />
+    <ClInclude Include="MainLoop\MainLoopThread.h" />
+    <ClInclude Include="Math\Bit.h" />
+    <ClInclude Include="Math\Matrix.h" />
+    <ClInclude Include="Math\Vector.h" />
+    <ClInclude Include="Memory\Allocator\Allocator.h" />
+    <ClInclude Include="Memory\MemAllocator.h" />
+    <ClInclude Include="Memory\MemBlock.h" />
+    <ClInclude Include="Memory\MemDefinition.h" />
+    <ClInclude Include="Memory\MemManager.h" />
+    <ClInclude Include="Mesh\Mesh.h" />
+    <ClInclude Include="Mesh\MeshDrawer.h" />
+    <ClInclude Include="Object\Action.h" />
+    <ClInclude Include="Object\ActionList.h" />
+    <ClInclude Include="Object\Draw.h" />
+    <ClInclude Include="Object\DrawList.h" />
+    <ClInclude Include="Object\ObjectList.h" />
+    <ClInclude Include="Object\ObjectListDetail.h" />
+    <ClInclude Include="PMD\PMDMesh.h" />
+    <ClInclude Include="PMD\PMDReader.h" />
+    <ClInclude Include="Random\Random.h" />
+    <ClInclude Include="Random\RandomInt.h" />
+    <ClInclude Include="Random\RandomReal.h" />
+    <ClInclude Include="Rect\Rect.h" />
+    <ClInclude Include="Render\ConstantBufferData.h" />
+    <ClInclude Include="Render\ConstantBufferDataForFrame.h" />
+    <ClInclude Include="Render\ConstantBufferDataForLevel.h" />
+    <ClInclude Include="Render\ConstantBufferDataForObject.h" />
+    <ClInclude Include="Render\ConstantBufferDataForMaterial.h" />
+    <ClInclude Include="Render\Render.h" />
+    <ClInclude Include="Render\RenderContext.h" />
+    <ClInclude Include="Render\RenderContextFactory.h" />
+    <ClInclude Include="Render\RenderThread.h" />
+    <ClInclude Include="Render\ShaderDefinition.h" />
+    <ClInclude Include="Sequence\Sequence.h" />
+    <ClInclude Include="Sequence\SequenceControl.h" />
+    <ClInclude Include="Sequence\SequenceFactory.h" />
+    <ClInclude Include="String\String.h" />
+    <ClInclude Include="Thread\CriticalSection.h" />
+    <ClInclude Include="Thread\Thread.h" />
+    <ClInclude Include="Type\Type.h" />
+    <ClInclude Include="Type\TypeWin.h" />
+    <ClInclude Include="Utility\LibUtility.h" />
+    <ClInclude Include="Utility\List.h" />
+    <ClInclude Include="Utility\Range.h" />
+    <ClInclude Include="Utility\Singleton.h" />
+    <ClInclude Include="Worker\Worker.h" />
+    <ClInclude Include="Worker\Job.h" />
+    <ClInclude Include="Worker\WorkerChannel.h" />
+    <ClInclude Include="Worker\WorkerThread.h" />
+    <ClInclude Include="Worker\WorkerManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="HLSL\3DPixelShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="HLSL\3DVertexShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="HLSL\SpritePixelShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="HLSL\SpriteVertexShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HLSL\3DShader.hlsli" />
+    <None Include="HLSL\ConstantBuffer.hlsli" />
+    <None Include="HLSL\SpriteShader.hlsli" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

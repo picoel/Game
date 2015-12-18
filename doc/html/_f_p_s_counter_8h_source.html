@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>My Project: D:/Project/Game/Lib/Debug/FPSCounter.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="namespaces.html"><span>名前空間</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8f3de2ae926fecfe6abd5379fd2b6eb1.html">Lib</a></li><li class="navelem"><a class="el" href="dir_7540bf0de8e9423acf01b0af8614edb7.html">Debug</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">FPSCounter.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_f_p_s_counter_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef INCLUDE_FPSCOUNTER_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define INCLUDE_FPSCOUNTER_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_action_8h.html">lib/Object/Action.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_list_8h.html">Lib/Utility/List.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * @class CFPSCounter</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * @brief FPS計測クラス。</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_c_f_p_s_counter.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_f_p_s_counter.html">CFPSCounter</a> : <span class="keyword">public</span> <a class="code" href="class_c_action.html">CAction</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_c_f_p_s_counter.html#a2529e1d7efc77fe1c24f9161bae4eab4">CFPSCounter</a>( U32 _uActLv, U32 _uSampleNum );</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_c_f_p_s_counter.html#a58e43daf84e7df4964508f43d55038f3">   23</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_f_p_s_counter.html#a58e43daf84e7df4964508f43d55038f3">~CFPSCounter</a>(){}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_f_p_s_counter.html#acc82281b59837fb8378cbd5ef8941072">Action</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_c_f_p_s_counter.html#a2ac0a4c5774a5208b6af18f31c7dcddf">   29</a></span>&#160;    F32 <a class="code" href="class_c_f_p_s_counter.html#a2ac0a4c5774a5208b6af18f31c7dcddf">GetFPS</a>()<span class="keyword"> const</span>{ <span class="keywordflow">return</span> <a class="code" href="class_c_f_p_s_counter.html#a0bc4d470c3de0b1aff04acc6f08b1284">m_fFPS</a>; }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_c_f_p_s_counter.html#a345278d70add89b57165f4c11b28410a">   32</a></span>&#160;    U32                                     <a class="code" href="class_c_f_p_s_counter.html#a345278d70add89b57165f4c11b28410a">m_uSampleNum</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_c_f_p_s_counter.html#a3bc8b67ee009e6480edbbdddabbbdc71">   33</a></span>&#160;    <a class="code" href="_list_8h.html#a13611c3f3705beb7fa6457d5254bb35f">CList&lt;U32&gt;</a>                              <a class="code" href="class_c_f_p_s_counter.html#a3bc8b67ee009e6480edbbdddabbbdc71">m_cTimeFrameList</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_c_f_p_s_counter.html#a0f8e3c1f1555dc826e73d39fd8d6539a">   34</a></span>&#160;    U32                                     <a class="code" href="class_c_f_p_s_counter.html#a0f8e3c1f1555dc826e73d39fd8d6539a">m_uTimeTotal</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_c_f_p_s_counter.html#a1c5d70cbc932c76ba74d5706ffb015f9">   35</a></span>&#160;    U32                                     <a class="code" href="class_c_f_p_s_counter.html#a1c5d70cbc932c76ba74d5706ffb015f9">m_uTimePrev</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_c_f_p_s_counter.html#a0bc4d470c3de0b1aff04acc6f08b1284">   37</a></span>&#160;    F32                                     <a class="code" href="class_c_f_p_s_counter.html#a0bc4d470c3de0b1aff04acc6f08b1284">m_fFPS</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif // #ifndef INCLUDE_FPSCOUNTER_H</span></div>
+<div class="ttc" id="class_c_f_p_s_counter_html_a2529e1d7efc77fe1c24f9161bae4eab4"><div class="ttname"><a href="class_c_f_p_s_counter.html#a2529e1d7efc77fe1c24f9161bae4eab4">CFPSCounter::CFPSCounter</a></div><div class="ttdeci">CFPSCounter(U32 _uActLv, U32 _uSampleNum)</div><div class="ttdoc">コンストラクタ。 </div><div class="ttdef"><b>Definition:</b> FPSCounter.cpp:15</div></div>
+<div class="ttc" id="class_c_f_p_s_counter_html_a3bc8b67ee009e6480edbbdddabbbdc71"><div class="ttname"><a href="class_c_f_p_s_counter.html#a3bc8b67ee009e6480edbbdddabbbdc71">CFPSCounter::m_cTimeFrameList</a></div><div class="ttdeci">CList&lt; U32 &gt; m_cTimeFrameList</div><div class="ttdef"><b>Definition:</b> FPSCounter.h:33</div></div>
+<div class="ttc" id="_list_8h_html_a13611c3f3705beb7fa6457d5254bb35f"><div class="ttname"><a href="_list_8h.html#a13611c3f3705beb7fa6457d5254bb35f">CList</a></div><div class="ttdeci">std::list&lt; C, CAllocator&lt; C &gt; &gt; CList</div><div class="ttdef"><b>Definition:</b> List.h:20</div></div>
+<div class="ttc" id="_action_8h_html"><div class="ttname"><a href="_action_8h.html">Action.h</a></div><div class="ttdoc">Actionを行う基底クラス。 </div></div>
+<div class="ttc" id="class_c_f_p_s_counter_html"><div class="ttname"><a href="class_c_f_p_s_counter.html">CFPSCounter</a></div><div class="ttdef"><b>Definition:</b> FPSCounter.h:17</div></div>
+<div class="ttc" id="class_c_f_p_s_counter_html_a0bc4d470c3de0b1aff04acc6f08b1284"><div class="ttname"><a href="class_c_f_p_s_counter.html#a0bc4d470c3de0b1aff04acc6f08b1284">CFPSCounter::m_fFPS</a></div><div class="ttdeci">F32 m_fFPS</div><div class="ttdef"><b>Definition:</b> FPSCounter.h:37</div></div>
+<div class="ttc" id="class_c_f_p_s_counter_html_a58e43daf84e7df4964508f43d55038f3"><div class="ttname"><a href="class_c_f_p_s_counter.html#a58e43daf84e7df4964508f43d55038f3">CFPSCounter::~CFPSCounter</a></div><div class="ttdeci">virtual ~CFPSCounter()</div><div class="ttdoc">デストラクタ。 </div><div class="ttdef"><b>Definition:</b> FPSCounter.h:23</div></div>
+<div class="ttc" id="class_c_f_p_s_counter_html_a2ac0a4c5774a5208b6af18f31c7dcddf"><div class="ttname"><a href="class_c_f_p_s_counter.html#a2ac0a4c5774a5208b6af18f31c7dcddf">CFPSCounter::GetFPS</a></div><div class="ttdeci">F32 GetFPS() const </div><div class="ttdoc">FPSを取得。 </div><div class="ttdef"><b>Definition:</b> FPSCounter.h:29</div></div>
+<div class="ttc" id="class_c_f_p_s_counter_html_a1c5d70cbc932c76ba74d5706ffb015f9"><div class="ttname"><a href="class_c_f_p_s_counter.html#a1c5d70cbc932c76ba74d5706ffb015f9">CFPSCounter::m_uTimePrev</a></div><div class="ttdeci">U32 m_uTimePrev</div><div class="ttdef"><b>Definition:</b> FPSCounter.h:35</div></div>
+<div class="ttc" id="class_c_action_html"><div class="ttname"><a href="class_c_action.html">CAction</a></div><div class="ttdoc">Actionを行う基底クラス。 </div><div class="ttdef"><b>Definition:</b> Action.h:14</div></div>
+<div class="ttc" id="class_c_f_p_s_counter_html_a345278d70add89b57165f4c11b28410a"><div class="ttname"><a href="class_c_f_p_s_counter.html#a345278d70add89b57165f4c11b28410a">CFPSCounter::m_uSampleNum</a></div><div class="ttdeci">U32 m_uSampleNum</div><div class="ttdef"><b>Definition:</b> FPSCounter.h:32</div></div>
+<div class="ttc" id="class_c_f_p_s_counter_html_acc82281b59837fb8378cbd5ef8941072"><div class="ttname"><a href="class_c_f_p_s_counter.html#acc82281b59837fb8378cbd5ef8941072">CFPSCounter::Action</a></div><div class="ttdeci">void Action()</div><div class="ttdoc">更新処理。 </div><div class="ttdef"><b>Definition:</b> FPSCounter.cpp:31</div></div>
+<div class="ttc" id="class_c_f_p_s_counter_html_a0f8e3c1f1555dc826e73d39fd8d6539a"><div class="ttname"><a href="class_c_f_p_s_counter.html#a0f8e3c1f1555dc826e73d39fd8d6539a">CFPSCounter::m_uTimeTotal</a></div><div class="ttdeci">U32 m_uTimeTotal</div><div class="ttdef"><b>Definition:</b> FPSCounter.h:34</div></div>
+<div class="ttc" id="_list_8h_html"><div class="ttname"><a href="_list_8h.html">List.h</a></div><div class="ttdoc">動的配列定義。 </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

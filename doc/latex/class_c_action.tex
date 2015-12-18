@@ -1,0 +1,141 @@
+\hypertarget{class_c_action}{}\section{C\+Action クラス}
+\label{class_c_action}\index{C\+Action@{C\+Action}}
+
+
+Actionを行う基底クラス。  
+
+
+
+
+{\ttfamily \#include $<$Action.\+h$>$}
+
+C\+Action の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_action}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_c_action_a3fcc5cc0fde844c5cb6e50f7eec9da3c}{Action} ()
+\begin{DoxyCompactList}\small\item\em 更新処理。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_action_a247d74af92f6899f99091520ece6489e}{Set\+Action\+Active} (bool \+\_\+b\+Active)
+\begin{DoxyCompactList}\small\item\em アクティブフラグの設定。 \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_action_ac8373c1407c0078a9e755063c37d0146}{Is\+Action\+Active} () const 
+\begin{DoxyCompactList}\small\item\em アクティブフラグの取得。 \end{DoxyCompactList}\item 
+U32 \hyperlink{class_c_action_a601d1cdd424423b35f653cfc23120ca1}{Get\+Action\+Lv} () const 
+\begin{DoxyCompactList}\small\item\em アクションレベルの取得。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_action_aab25a0c59496bb5eb465d0307d7aa45a}{C\+Action} (U32 \+\_\+u\+Action\+Lv)
+\begin{DoxyCompactList}\small\item\em コンストラクタ。 \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_action_a45a8868d504060d8c1e8dd1f299b5854}{$\sim$\+C\+Action} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+U32 \hyperlink{class_c_action_abb2dc369fffedd3074d99820f57c2090}{m\+\_\+u\+Action\+Lv}
+\item 
+bool \hyperlink{class_c_action_a55d4d949e48db21e1e1b752e8eb5c2e6}{m\+\_\+b\+Active}
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+Actionを行う基底クラス。 
+
+\subsection{構築子と解体子}
+\hypertarget{class_c_action_aab25a0c59496bb5eb465d0307d7aa45a}{}\index{C\+Action@{C\+Action}!C\+Action@{C\+Action}}
+\index{C\+Action@{C\+Action}!C\+Action@{C\+Action}}
+\subsubsection[{C\+Action(\+U32 \+\_\+u\+Action\+Lv)}]{\setlength{\rightskip}{0pt plus 5cm}C\+Action\+::\+C\+Action (
+\begin{DoxyParamCaption}
+\item[{U32}]{\+\_\+u\+Action\+Lv}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_action_aab25a0c59496bb5eb465d0307d7aa45a}
+
+
+コンストラクタ。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+e\+Action\+Lv} & \+: アクションレベル。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_action_a45a8868d504060d8c1e8dd1f299b5854}{}\index{C\+Action@{C\+Action}!````~C\+Action@{$\sim$\+C\+Action}}
+\index{````~C\+Action@{$\sim$\+C\+Action}!C\+Action@{C\+Action}}
+\subsubsection[{$\sim$\+C\+Action()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Action\+::$\sim$\+C\+Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{class_c_action_a45a8868d504060d8c1e8dd1f299b5854}
+
+
+デストラクタ。 
+
+
+
+\subsection{関数詳解}
+\hypertarget{class_c_action_a3fcc5cc0fde844c5cb6e50f7eec9da3c}{}\index{C\+Action@{C\+Action}!Action@{Action}}
+\index{Action@{Action}!C\+Action@{C\+Action}}
+\subsubsection[{Action()}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\+Action\+::\+Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_action_a3fcc5cc0fde844c5cb6e50f7eec9da3c}
+
+
+更新処理。 
+
+
+
+\hyperlink{class_c_file_read_manager_a1c0c420814fed21f257b71740c56a365}{C\+File\+Read\+Manager}, \hyperlink{class_c_f_p_s_viewer_abde661517b45dbe7cd19a86ef8a0b2af}{C\+F\+P\+S\+Viewer}, \hyperlink{class_c_f_p_s_counter_acc82281b59837fb8378cbd5ef8941072}{C\+F\+P\+S\+Counter}で再実装されています。
+
+\hypertarget{class_c_action_a601d1cdd424423b35f653cfc23120ca1}{}\index{C\+Action@{C\+Action}!Get\+Action\+Lv@{Get\+Action\+Lv}}
+\index{Get\+Action\+Lv@{Get\+Action\+Lv}!C\+Action@{C\+Action}}
+\subsubsection[{Get\+Action\+Lv() const }]{\setlength{\rightskip}{0pt plus 5cm}U32 C\+Action\+::\+Get\+Action\+Lv (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_action_a601d1cdd424423b35f653cfc23120ca1}
+
+
+アクションレベルの取得。 
+
+\hypertarget{class_c_action_ac8373c1407c0078a9e755063c37d0146}{}\index{C\+Action@{C\+Action}!Is\+Action\+Active@{Is\+Action\+Active}}
+\index{Is\+Action\+Active@{Is\+Action\+Active}!C\+Action@{C\+Action}}
+\subsubsection[{Is\+Action\+Active() const }]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Action\+::\+Is\+Action\+Active (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_action_ac8373c1407c0078a9e755063c37d0146}
+
+
+アクティブフラグの取得。 
+
+\hypertarget{class_c_action_a247d74af92f6899f99091520ece6489e}{}\index{C\+Action@{C\+Action}!Set\+Action\+Active@{Set\+Action\+Active}}
+\index{Set\+Action\+Active@{Set\+Action\+Active}!C\+Action@{C\+Action}}
+\subsubsection[{Set\+Action\+Active(bool \+\_\+b\+Active)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Action\+::\+Set\+Action\+Active (
+\begin{DoxyParamCaption}
+\item[{bool}]{\+\_\+b\+Active}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_action_a247d74af92f6899f99091520ece6489e}
+
+
+アクティブフラグの設定。 
+
+
+
+\subsection{メンバ詳解}
+\hypertarget{class_c_action_a55d4d949e48db21e1e1b752e8eb5c2e6}{}\index{C\+Action@{C\+Action}!m\+\_\+b\+Active@{m\+\_\+b\+Active}}
+\index{m\+\_\+b\+Active@{m\+\_\+b\+Active}!C\+Action@{C\+Action}}
+\subsubsection[{m\+\_\+b\+Active}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Action\+::m\+\_\+b\+Active\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_action_a55d4d949e48db21e1e1b752e8eb5c2e6}
+\hypertarget{class_c_action_abb2dc369fffedd3074d99820f57c2090}{}\index{C\+Action@{C\+Action}!m\+\_\+u\+Action\+Lv@{m\+\_\+u\+Action\+Lv}}
+\index{m\+\_\+u\+Action\+Lv@{m\+\_\+u\+Action\+Lv}!C\+Action@{C\+Action}}
+\subsubsection[{m\+\_\+u\+Action\+Lv}]{\setlength{\rightskip}{0pt plus 5cm}U32 C\+Action\+::m\+\_\+u\+Action\+Lv\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_action_abb2dc369fffedd3074d99820f57c2090}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Project/\+Game/\+Lib/\+Object/\hyperlink{_action_8h}{Action.\+h}\item 
+D\+:/\+Project/\+Game/\+Lib/\+Object/\hyperlink{_action_8cpp}{Action.\+cpp}\end{DoxyCompactItemize}

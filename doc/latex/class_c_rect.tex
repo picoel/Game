@@ -1,0 +1,523 @@
+\hypertarget{class_c_rect}{}\section{C\+Rect クラス}
+\label{class_c_rect}\index{C\+Rect@{C\+Rect}}
+
+
+{\ttfamily \#include $<$Rect.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_rect_a9e8ba088900203ee8a73bb07c941db85}{C\+Rect} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ。 \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_rect_a8c39e88d9bb599e29523326890f13119}{$\sim$\+C\+Rect} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_rect_a1d9f0a04deaac9560e728472cbd278c1}{Set\+Pos} (F32 \+\_\+f\+Pos\+X, F32 \+\_\+f\+Pos\+Y)
+\begin{DoxyCompactList}\small\item\em 中心座標を設定。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_rect_ad5dbe9a3a6f2516e587b19d4c468bf2e}{Get\+Pos} (F32 $\ast$\+\_\+pf\+Pos\+X, F32 $\ast$\+\_\+pf\+Pos\+Y) const 
+\begin{DoxyCompactList}\small\item\em 中心座標を取得。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_rect_afafef92a566874ce29a31a7e28e9ae4b}{Set\+Left\+Up\+Pos} (F32 \+\_\+f\+Pos\+X, F32 \+\_\+f\+Pos\+Y)
+\begin{DoxyCompactList}\small\item\em 左上座標を設定。(現在の幅と高さに準じます。) \end{DoxyCompactList}\item 
+void \hyperlink{class_c_rect_a19c904cb98ed5b357a76bcfb2f6bbf2e}{Get\+Left\+Up\+Pos} (F32 $\ast$\+\_\+pf\+Pos\+X, F32 $\ast$\+\_\+pf\+Pos\+Y) const 
+\begin{DoxyCompactList}\small\item\em 左上座標を取得。(現在の幅と高さに準じます。) \end{DoxyCompactList}\item 
+void \hyperlink{class_c_rect_a6060586bb7b3b41eebf238185dfdba8b}{Set\+Center\+Up\+Pos} (F32 \+\_\+f\+Pos\+X, F32 \+\_\+f\+Pos\+Y)
+\begin{DoxyCompactList}\small\item\em 中央上座標を設定。(現在の幅と高さに準じます。) \end{DoxyCompactList}\item 
+void \hyperlink{class_c_rect_a114a09c379ff3c6707f683401225d4c8}{Get\+Center\+Up\+Pos} (F32 $\ast$\+\_\+pf\+Pos\+X, F32 $\ast$\+\_\+pf\+Pos\+Y) const 
+\begin{DoxyCompactList}\small\item\em 中央上座標を取得。(現在の幅と高さに準じます。) \end{DoxyCompactList}\item 
+void \hyperlink{class_c_rect_aca3cc385d30de4b5f7f67e85c725d6af}{Set\+Right\+Up\+Pos} (F32 \+\_\+f\+Pos\+X, F32 \+\_\+f\+Pos\+Y)
+\begin{DoxyCompactList}\small\item\em 右上座標を設定。(現在の幅と高さに準じます。) \end{DoxyCompactList}\item 
+void \hyperlink{class_c_rect_a0f9f026a6e7a493e333186f36cd5dc9c}{Get\+Right\+Up\+Pos} (F32 $\ast$\+\_\+pf\+Pos\+X, F32 $\ast$\+\_\+pf\+Pos\+Y) const 
+\begin{DoxyCompactList}\small\item\em 右上座標を取得。(現在の幅と高さに準じます。) \end{DoxyCompactList}\item 
+void \hyperlink{class_c_rect_a635abc68965cbf8d5398b83ad8e16048}{Set\+Left\+Center\+Pos} (F32 \+\_\+f\+Pos\+X, F32 \+\_\+f\+Pos\+Y)
+\begin{DoxyCompactList}\small\item\em 左中央座標を設定。(現在の幅と高さに準じます。) \end{DoxyCompactList}\item 
+void \hyperlink{class_c_rect_afc83f3426f39f457bf288fafce983a49}{Get\+Left\+Center\+Pos} (F32 $\ast$\+\_\+pf\+Pos\+X, F32 $\ast$\+\_\+pf\+Pos\+Y) const 
+\begin{DoxyCompactList}\small\item\em 左中央座標を取得。(現在の幅と高さに準じます。) \end{DoxyCompactList}\item 
+void \hyperlink{class_c_rect_adfd3f9e461fb4fc6310c858f74f80c34}{Set\+Right\+Center\+Pos} (F32 \+\_\+f\+Pos\+X, F32 \+\_\+f\+Pos\+Y)
+\begin{DoxyCompactList}\small\item\em 右中央座標を設定。(現在の幅と高さに準じます。) \end{DoxyCompactList}\item 
+void \hyperlink{class_c_rect_aa2283d8c8101c1f855964e873ad42d46}{Get\+Right\+Center\+Pos} (F32 $\ast$\+\_\+pf\+Pos\+X, F32 $\ast$\+\_\+pf\+Pos\+Y) const 
+\begin{DoxyCompactList}\small\item\em 右中央座標を取得。(現在の幅と高さに準じます。) \end{DoxyCompactList}\item 
+void \hyperlink{class_c_rect_a369db01e69b5ec5cf73c0a239fc20409}{Set\+Left\+Down\+Pos} (F32 \+\_\+f\+Pos\+X, F32 \+\_\+f\+Pos\+Y)
+\begin{DoxyCompactList}\small\item\em 左下座標を設定。(現在の幅と高さに準じます。) \end{DoxyCompactList}\item 
+void \hyperlink{class_c_rect_ab9dfed8d7f318fc41675265ceb7fded2}{Get\+Left\+Down\+Pos} (F32 $\ast$\+\_\+pf\+Pos\+X, F32 $\ast$\+\_\+pf\+Pos\+Y) const 
+\begin{DoxyCompactList}\small\item\em 左下座標を取得。(現在の幅と高さに準じます。) \end{DoxyCompactList}\item 
+void \hyperlink{class_c_rect_a242e048425b04ec842a21bce31720acf}{Set\+Center\+Down\+Pos} (F32 \+\_\+f\+Pos\+X, F32 \+\_\+f\+Pos\+Y)
+\begin{DoxyCompactList}\small\item\em 中央下座標を設定。(現在の幅と高さに準じます。) \end{DoxyCompactList}\item 
+void \hyperlink{class_c_rect_a90e31bf3ccbeb98eebec85f171c0b4b0}{Get\+Center\+Down\+Pos} (F32 $\ast$\+\_\+pf\+Pos\+X, F32 $\ast$\+\_\+pf\+Pos\+Y) const 
+\begin{DoxyCompactList}\small\item\em 中央下座標を取得。(現在の幅と高さに準じます。) \end{DoxyCompactList}\item 
+void \hyperlink{class_c_rect_ae46f40fca7748e66f94d7430d8bbfe12}{Set\+Right\+Down\+Pos} (F32 \+\_\+f\+Pos\+X, F32 \+\_\+f\+Pos\+Y)
+\begin{DoxyCompactList}\small\item\em 右下座標を設定。(現在の幅と高さに準じます。) \end{DoxyCompactList}\item 
+void \hyperlink{class_c_rect_a5ba47c13ce72dd13277728ced23fc8fe}{Get\+Right\+Down\+Pos} (F32 $\ast$\+\_\+pf\+Pos\+X, F32 $\ast$\+\_\+pf\+Pos\+Y) const 
+\begin{DoxyCompactList}\small\item\em 右下座標を取得。(現在の幅と高さに準じます。) \end{DoxyCompactList}\item 
+void \hyperlink{class_c_rect_aa8bf5f88199070d36ccecbeb48ab9f31}{Set\+Width} (F32 \+\_\+f\+Width)
+\begin{DoxyCompactList}\small\item\em 幅を設定。 \end{DoxyCompactList}\item 
+F32 \hyperlink{class_c_rect_a47d17ec52f9db4f4d2f64aa3eea7ea16}{Get\+Width} () const 
+\begin{DoxyCompactList}\small\item\em 幅を取得。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_rect_a6260569186759948fcd087e83b2ed406}{Set\+Height} (F32 \+\_\+f\+Height)
+\begin{DoxyCompactList}\small\item\em 高さを設定。 \end{DoxyCompactList}\item 
+F32 \hyperlink{class_c_rect_a85a708bf632ac0eb7e57ef77722385af}{Get\+Height} () const 
+\begin{DoxyCompactList}\small\item\em 高さを取得。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+F32 \hyperlink{class_c_rect_ae2982f53e2d73b419d584c3b8705d0eb}{m\+\_\+f\+Pos\+X}
+\item 
+F32 \hyperlink{class_c_rect_a88b075960b04cdee33071c8fddcbe309}{m\+\_\+f\+Pos\+Y}
+\item 
+F32 \hyperlink{class_c_rect_acd0d44459fc57787b43b85e457db109e}{m\+\_\+f\+Width}
+\item 
+F32 \hyperlink{class_c_rect_aa0cd7f677bb5551c5a77ab1683e1449a}{m\+\_\+f\+Height}
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\hypertarget{class_c_rect_a9e8ba088900203ee8a73bb07c941db85}{}\index{C\+Rect@{C\+Rect}!C\+Rect@{C\+Rect}}
+\index{C\+Rect@{C\+Rect}!C\+Rect@{C\+Rect}}
+\subsubsection[{C\+Rect()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Rect\+::\+C\+Rect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_rect_a9e8ba088900203ee8a73bb07c941db85}
+
+
+コンストラクタ。 
+
+\hypertarget{class_c_rect_a8c39e88d9bb599e29523326890f13119}{}\index{C\+Rect@{C\+Rect}!````~C\+Rect@{$\sim$\+C\+Rect}}
+\index{````~C\+Rect@{$\sim$\+C\+Rect}!C\+Rect@{C\+Rect}}
+\subsubsection[{$\sim$\+C\+Rect()}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\+Rect\+::$\sim$\+C\+Rect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_rect_a8c39e88d9bb599e29523326890f13119}
+
+
+デストラクタ。 
+
+
+
+\subsection{関数詳解}
+\hypertarget{class_c_rect_a90e31bf3ccbeb98eebec85f171c0b4b0}{}\index{C\+Rect@{C\+Rect}!Get\+Center\+Down\+Pos@{Get\+Center\+Down\+Pos}}
+\index{Get\+Center\+Down\+Pos@{Get\+Center\+Down\+Pos}!C\+Rect@{C\+Rect}}
+\subsubsection[{Get\+Center\+Down\+Pos(\+F32 $\ast$\+\_\+pf\+Pos\+X, F32 $\ast$\+\_\+pf\+Pos\+Y) const }]{\setlength{\rightskip}{0pt plus 5cm}void C\+Rect\+::\+Get\+Center\+Down\+Pos (
+\begin{DoxyParamCaption}
+\item[{F32 $\ast$}]{\+\_\+pf\+Pos\+X, }
+\item[{F32 $\ast$}]{\+\_\+pf\+Pos\+Y}
+\end{DoxyParamCaption}
+) const}\label{class_c_rect_a90e31bf3ccbeb98eebec85f171c0b4b0}
+
+
+中央下座標を取得。(現在の幅と高さに準じます。) 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt out}  & {\em \+\_\+pf\+Pos\+X} & \+: X座標の格納先。 \\
+\hline
+\mbox{\tt out}  & {\em \+\_\+pf\+Pos\+Y} & \+: Y座標の格納先。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_rect_a114a09c379ff3c6707f683401225d4c8}{}\index{C\+Rect@{C\+Rect}!Get\+Center\+Up\+Pos@{Get\+Center\+Up\+Pos}}
+\index{Get\+Center\+Up\+Pos@{Get\+Center\+Up\+Pos}!C\+Rect@{C\+Rect}}
+\subsubsection[{Get\+Center\+Up\+Pos(\+F32 $\ast$\+\_\+pf\+Pos\+X, F32 $\ast$\+\_\+pf\+Pos\+Y) const }]{\setlength{\rightskip}{0pt plus 5cm}void C\+Rect\+::\+Get\+Center\+Up\+Pos (
+\begin{DoxyParamCaption}
+\item[{F32 $\ast$}]{\+\_\+pf\+Pos\+X, }
+\item[{F32 $\ast$}]{\+\_\+pf\+Pos\+Y}
+\end{DoxyParamCaption}
+) const}\label{class_c_rect_a114a09c379ff3c6707f683401225d4c8}
+
+
+中央上座標を取得。(現在の幅と高さに準じます。) 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt out}  & {\em \+\_\+pf\+Pos\+X} & \+: X座標の格納先。 \\
+\hline
+\mbox{\tt out}  & {\em \+\_\+pf\+Pos\+Y} & \+: Y座標の格納先。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_rect_a85a708bf632ac0eb7e57ef77722385af}{}\index{C\+Rect@{C\+Rect}!Get\+Height@{Get\+Height}}
+\index{Get\+Height@{Get\+Height}!C\+Rect@{C\+Rect}}
+\subsubsection[{Get\+Height() const }]{\setlength{\rightskip}{0pt plus 5cm}F32 C\+Rect\+::\+Get\+Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_rect_a85a708bf632ac0eb7e57ef77722385af}
+
+
+高さを取得。 
+
+
+\begin{DoxyRetVals}{戻り値}
+{\em F32} & \+: 高さ。 \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{class_c_rect_afc83f3426f39f457bf288fafce983a49}{}\index{C\+Rect@{C\+Rect}!Get\+Left\+Center\+Pos@{Get\+Left\+Center\+Pos}}
+\index{Get\+Left\+Center\+Pos@{Get\+Left\+Center\+Pos}!C\+Rect@{C\+Rect}}
+\subsubsection[{Get\+Left\+Center\+Pos(\+F32 $\ast$\+\_\+pf\+Pos\+X, F32 $\ast$\+\_\+pf\+Pos\+Y) const }]{\setlength{\rightskip}{0pt plus 5cm}void C\+Rect\+::\+Get\+Left\+Center\+Pos (
+\begin{DoxyParamCaption}
+\item[{F32 $\ast$}]{\+\_\+pf\+Pos\+X, }
+\item[{F32 $\ast$}]{\+\_\+pf\+Pos\+Y}
+\end{DoxyParamCaption}
+) const}\label{class_c_rect_afc83f3426f39f457bf288fafce983a49}
+
+
+左中央座標を取得。(現在の幅と高さに準じます。) 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt out}  & {\em \+\_\+pf\+Pos\+X} & \+: X座標の格納先。 \\
+\hline
+\mbox{\tt out}  & {\em \+\_\+pf\+Pos\+Y} & \+: Y座標の格納先。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_rect_ab9dfed8d7f318fc41675265ceb7fded2}{}\index{C\+Rect@{C\+Rect}!Get\+Left\+Down\+Pos@{Get\+Left\+Down\+Pos}}
+\index{Get\+Left\+Down\+Pos@{Get\+Left\+Down\+Pos}!C\+Rect@{C\+Rect}}
+\subsubsection[{Get\+Left\+Down\+Pos(\+F32 $\ast$\+\_\+pf\+Pos\+X, F32 $\ast$\+\_\+pf\+Pos\+Y) const }]{\setlength{\rightskip}{0pt plus 5cm}void C\+Rect\+::\+Get\+Left\+Down\+Pos (
+\begin{DoxyParamCaption}
+\item[{F32 $\ast$}]{\+\_\+pf\+Pos\+X, }
+\item[{F32 $\ast$}]{\+\_\+pf\+Pos\+Y}
+\end{DoxyParamCaption}
+) const}\label{class_c_rect_ab9dfed8d7f318fc41675265ceb7fded2}
+
+
+左下座標を取得。(現在の幅と高さに準じます。) 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt out}  & {\em \+\_\+pf\+Pos\+X} & \+: X座標の格納先。 \\
+\hline
+\mbox{\tt out}  & {\em \+\_\+pf\+Pos\+Y} & \+: Y座標の格納先。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_rect_a19c904cb98ed5b357a76bcfb2f6bbf2e}{}\index{C\+Rect@{C\+Rect}!Get\+Left\+Up\+Pos@{Get\+Left\+Up\+Pos}}
+\index{Get\+Left\+Up\+Pos@{Get\+Left\+Up\+Pos}!C\+Rect@{C\+Rect}}
+\subsubsection[{Get\+Left\+Up\+Pos(\+F32 $\ast$\+\_\+pf\+Pos\+X, F32 $\ast$\+\_\+pf\+Pos\+Y) const }]{\setlength{\rightskip}{0pt plus 5cm}void C\+Rect\+::\+Get\+Left\+Up\+Pos (
+\begin{DoxyParamCaption}
+\item[{F32 $\ast$}]{\+\_\+pf\+Pos\+X, }
+\item[{F32 $\ast$}]{\+\_\+pf\+Pos\+Y}
+\end{DoxyParamCaption}
+) const}\label{class_c_rect_a19c904cb98ed5b357a76bcfb2f6bbf2e}
+
+
+左上座標を取得。(現在の幅と高さに準じます。) 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt out}  & {\em \+\_\+pf\+Pos\+X} & \+: X座標の格納先。 \\
+\hline
+\mbox{\tt out}  & {\em \+\_\+pf\+Pos\+Y} & \+: Y座標の格納先。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_rect_ad5dbe9a3a6f2516e587b19d4c468bf2e}{}\index{C\+Rect@{C\+Rect}!Get\+Pos@{Get\+Pos}}
+\index{Get\+Pos@{Get\+Pos}!C\+Rect@{C\+Rect}}
+\subsubsection[{Get\+Pos(\+F32 $\ast$\+\_\+pf\+Pos\+X, F32 $\ast$\+\_\+pf\+Pos\+Y) const }]{\setlength{\rightskip}{0pt plus 5cm}void C\+Rect\+::\+Get\+Pos (
+\begin{DoxyParamCaption}
+\item[{F32 $\ast$}]{\+\_\+pf\+Pos\+X, }
+\item[{F32 $\ast$}]{\+\_\+pf\+Pos\+Y}
+\end{DoxyParamCaption}
+) const}\label{class_c_rect_ad5dbe9a3a6f2516e587b19d4c468bf2e}
+
+
+中心座標を取得。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt out}  & {\em \+\_\+pf\+Pos\+X} & \+: X座標の格納先。 \\
+\hline
+\mbox{\tt out}  & {\em \+\_\+pf\+Pos\+Y} & \+: Y座標の格納先。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_rect_aa2283d8c8101c1f855964e873ad42d46}{}\index{C\+Rect@{C\+Rect}!Get\+Right\+Center\+Pos@{Get\+Right\+Center\+Pos}}
+\index{Get\+Right\+Center\+Pos@{Get\+Right\+Center\+Pos}!C\+Rect@{C\+Rect}}
+\subsubsection[{Get\+Right\+Center\+Pos(\+F32 $\ast$\+\_\+pf\+Pos\+X, F32 $\ast$\+\_\+pf\+Pos\+Y) const }]{\setlength{\rightskip}{0pt plus 5cm}void C\+Rect\+::\+Get\+Right\+Center\+Pos (
+\begin{DoxyParamCaption}
+\item[{F32 $\ast$}]{\+\_\+pf\+Pos\+X, }
+\item[{F32 $\ast$}]{\+\_\+pf\+Pos\+Y}
+\end{DoxyParamCaption}
+) const}\label{class_c_rect_aa2283d8c8101c1f855964e873ad42d46}
+
+
+右中央座標を取得。(現在の幅と高さに準じます。) 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt out}  & {\em \+\_\+pf\+Pos\+X} & \+: X座標の格納先。 \\
+\hline
+\mbox{\tt out}  & {\em \+\_\+pf\+Pos\+Y} & \+: Y座標の格納先。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_rect_a5ba47c13ce72dd13277728ced23fc8fe}{}\index{C\+Rect@{C\+Rect}!Get\+Right\+Down\+Pos@{Get\+Right\+Down\+Pos}}
+\index{Get\+Right\+Down\+Pos@{Get\+Right\+Down\+Pos}!C\+Rect@{C\+Rect}}
+\subsubsection[{Get\+Right\+Down\+Pos(\+F32 $\ast$\+\_\+pf\+Pos\+X, F32 $\ast$\+\_\+pf\+Pos\+Y) const }]{\setlength{\rightskip}{0pt plus 5cm}void C\+Rect\+::\+Get\+Right\+Down\+Pos (
+\begin{DoxyParamCaption}
+\item[{F32 $\ast$}]{\+\_\+pf\+Pos\+X, }
+\item[{F32 $\ast$}]{\+\_\+pf\+Pos\+Y}
+\end{DoxyParamCaption}
+) const}\label{class_c_rect_a5ba47c13ce72dd13277728ced23fc8fe}
+
+
+右下座標を取得。(現在の幅と高さに準じます。) 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt out}  & {\em \+\_\+pf\+Pos\+X} & \+: X座標の格納先。 \\
+\hline
+\mbox{\tt out}  & {\em \+\_\+pf\+Pos\+Y} & \+: Y座標の格納先。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_rect_a0f9f026a6e7a493e333186f36cd5dc9c}{}\index{C\+Rect@{C\+Rect}!Get\+Right\+Up\+Pos@{Get\+Right\+Up\+Pos}}
+\index{Get\+Right\+Up\+Pos@{Get\+Right\+Up\+Pos}!C\+Rect@{C\+Rect}}
+\subsubsection[{Get\+Right\+Up\+Pos(\+F32 $\ast$\+\_\+pf\+Pos\+X, F32 $\ast$\+\_\+pf\+Pos\+Y) const }]{\setlength{\rightskip}{0pt plus 5cm}void C\+Rect\+::\+Get\+Right\+Up\+Pos (
+\begin{DoxyParamCaption}
+\item[{F32 $\ast$}]{\+\_\+pf\+Pos\+X, }
+\item[{F32 $\ast$}]{\+\_\+pf\+Pos\+Y}
+\end{DoxyParamCaption}
+) const}\label{class_c_rect_a0f9f026a6e7a493e333186f36cd5dc9c}
+
+
+右上座標を取得。(現在の幅と高さに準じます。) 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt out}  & {\em \+\_\+pf\+Pos\+X} & \+: X座標の格納先。 \\
+\hline
+\mbox{\tt out}  & {\em \+\_\+pf\+Pos\+Y} & \+: Y座標の格納先。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_rect_a47d17ec52f9db4f4d2f64aa3eea7ea16}{}\index{C\+Rect@{C\+Rect}!Get\+Width@{Get\+Width}}
+\index{Get\+Width@{Get\+Width}!C\+Rect@{C\+Rect}}
+\subsubsection[{Get\+Width() const }]{\setlength{\rightskip}{0pt plus 5cm}F32 C\+Rect\+::\+Get\+Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_rect_a47d17ec52f9db4f4d2f64aa3eea7ea16}
+
+
+幅を取得。 
+
+
+\begin{DoxyRetVals}{戻り値}
+{\em F32} & \+: 幅。 \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{class_c_rect_a242e048425b04ec842a21bce31720acf}{}\index{C\+Rect@{C\+Rect}!Set\+Center\+Down\+Pos@{Set\+Center\+Down\+Pos}}
+\index{Set\+Center\+Down\+Pos@{Set\+Center\+Down\+Pos}!C\+Rect@{C\+Rect}}
+\subsubsection[{Set\+Center\+Down\+Pos(\+F32 \+\_\+f\+Pos\+X, F32 \+\_\+f\+Pos\+Y)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Rect\+::\+Set\+Center\+Down\+Pos (
+\begin{DoxyParamCaption}
+\item[{F32}]{\+\_\+f\+Pos\+X, }
+\item[{F32}]{\+\_\+f\+Pos\+Y}
+\end{DoxyParamCaption}
+)}\label{class_c_rect_a242e048425b04ec842a21bce31720acf}
+
+
+中央下座標を設定。(現在の幅と高さに準じます。) 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+f\+Pos\+X} & \+: X座標。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+f\+Pos\+Y} & \+: Y座標。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_rect_a6060586bb7b3b41eebf238185dfdba8b}{}\index{C\+Rect@{C\+Rect}!Set\+Center\+Up\+Pos@{Set\+Center\+Up\+Pos}}
+\index{Set\+Center\+Up\+Pos@{Set\+Center\+Up\+Pos}!C\+Rect@{C\+Rect}}
+\subsubsection[{Set\+Center\+Up\+Pos(\+F32 \+\_\+f\+Pos\+X, F32 \+\_\+f\+Pos\+Y)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Rect\+::\+Set\+Center\+Up\+Pos (
+\begin{DoxyParamCaption}
+\item[{F32}]{\+\_\+f\+Pos\+X, }
+\item[{F32}]{\+\_\+f\+Pos\+Y}
+\end{DoxyParamCaption}
+)}\label{class_c_rect_a6060586bb7b3b41eebf238185dfdba8b}
+
+
+中央上座標を設定。(現在の幅と高さに準じます。) 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+f\+Pos\+X} & \+: X座標。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+f\+Pos\+Y} & \+: Y座標。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_rect_a6260569186759948fcd087e83b2ed406}{}\index{C\+Rect@{C\+Rect}!Set\+Height@{Set\+Height}}
+\index{Set\+Height@{Set\+Height}!C\+Rect@{C\+Rect}}
+\subsubsection[{Set\+Height(\+F32 \+\_\+f\+Height)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Rect\+::\+Set\+Height (
+\begin{DoxyParamCaption}
+\item[{F32}]{\+\_\+f\+Height}
+\end{DoxyParamCaption}
+)}\label{class_c_rect_a6260569186759948fcd087e83b2ed406}
+
+
+高さを設定。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+f\+Height} & \+: 高さ。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_rect_a635abc68965cbf8d5398b83ad8e16048}{}\index{C\+Rect@{C\+Rect}!Set\+Left\+Center\+Pos@{Set\+Left\+Center\+Pos}}
+\index{Set\+Left\+Center\+Pos@{Set\+Left\+Center\+Pos}!C\+Rect@{C\+Rect}}
+\subsubsection[{Set\+Left\+Center\+Pos(\+F32 \+\_\+f\+Pos\+X, F32 \+\_\+f\+Pos\+Y)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Rect\+::\+Set\+Left\+Center\+Pos (
+\begin{DoxyParamCaption}
+\item[{F32}]{\+\_\+f\+Pos\+X, }
+\item[{F32}]{\+\_\+f\+Pos\+Y}
+\end{DoxyParamCaption}
+)}\label{class_c_rect_a635abc68965cbf8d5398b83ad8e16048}
+
+
+左中央座標を設定。(現在の幅と高さに準じます。) 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+f\+Pos\+X} & \+: X座標。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+f\+Pos\+Y} & \+: Y座標。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_rect_a369db01e69b5ec5cf73c0a239fc20409}{}\index{C\+Rect@{C\+Rect}!Set\+Left\+Down\+Pos@{Set\+Left\+Down\+Pos}}
+\index{Set\+Left\+Down\+Pos@{Set\+Left\+Down\+Pos}!C\+Rect@{C\+Rect}}
+\subsubsection[{Set\+Left\+Down\+Pos(\+F32 \+\_\+f\+Pos\+X, F32 \+\_\+f\+Pos\+Y)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Rect\+::\+Set\+Left\+Down\+Pos (
+\begin{DoxyParamCaption}
+\item[{F32}]{\+\_\+f\+Pos\+X, }
+\item[{F32}]{\+\_\+f\+Pos\+Y}
+\end{DoxyParamCaption}
+)}\label{class_c_rect_a369db01e69b5ec5cf73c0a239fc20409}
+
+
+左下座標を設定。(現在の幅と高さに準じます。) 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+f\+Pos\+X} & \+: X座標。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+f\+Pos\+Y} & \+: Y座標。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_rect_afafef92a566874ce29a31a7e28e9ae4b}{}\index{C\+Rect@{C\+Rect}!Set\+Left\+Up\+Pos@{Set\+Left\+Up\+Pos}}
+\index{Set\+Left\+Up\+Pos@{Set\+Left\+Up\+Pos}!C\+Rect@{C\+Rect}}
+\subsubsection[{Set\+Left\+Up\+Pos(\+F32 \+\_\+f\+Pos\+X, F32 \+\_\+f\+Pos\+Y)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Rect\+::\+Set\+Left\+Up\+Pos (
+\begin{DoxyParamCaption}
+\item[{F32}]{\+\_\+f\+Pos\+X, }
+\item[{F32}]{\+\_\+f\+Pos\+Y}
+\end{DoxyParamCaption}
+)}\label{class_c_rect_afafef92a566874ce29a31a7e28e9ae4b}
+
+
+左上座標を設定。(現在の幅と高さに準じます。) 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+f\+Pos\+X} & \+: X座標。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+f\+Pos\+Y} & \+: Y座標。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_rect_a1d9f0a04deaac9560e728472cbd278c1}{}\index{C\+Rect@{C\+Rect}!Set\+Pos@{Set\+Pos}}
+\index{Set\+Pos@{Set\+Pos}!C\+Rect@{C\+Rect}}
+\subsubsection[{Set\+Pos(\+F32 \+\_\+f\+Pos\+X, F32 \+\_\+f\+Pos\+Y)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Rect\+::\+Set\+Pos (
+\begin{DoxyParamCaption}
+\item[{F32}]{\+\_\+f\+Pos\+X, }
+\item[{F32}]{\+\_\+f\+Pos\+Y}
+\end{DoxyParamCaption}
+)}\label{class_c_rect_a1d9f0a04deaac9560e728472cbd278c1}
+
+
+中心座標を設定。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+f\+Pos\+X} & \+: X座標。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+f\+Pos\+Y} & \+: Y座標。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_rect_adfd3f9e461fb4fc6310c858f74f80c34}{}\index{C\+Rect@{C\+Rect}!Set\+Right\+Center\+Pos@{Set\+Right\+Center\+Pos}}
+\index{Set\+Right\+Center\+Pos@{Set\+Right\+Center\+Pos}!C\+Rect@{C\+Rect}}
+\subsubsection[{Set\+Right\+Center\+Pos(\+F32 \+\_\+f\+Pos\+X, F32 \+\_\+f\+Pos\+Y)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Rect\+::\+Set\+Right\+Center\+Pos (
+\begin{DoxyParamCaption}
+\item[{F32}]{\+\_\+f\+Pos\+X, }
+\item[{F32}]{\+\_\+f\+Pos\+Y}
+\end{DoxyParamCaption}
+)}\label{class_c_rect_adfd3f9e461fb4fc6310c858f74f80c34}
+
+
+右中央座標を設定。(現在の幅と高さに準じます。) 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+f\+Pos\+X} & \+: X座標。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+f\+Pos\+Y} & \+: Y座標。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_rect_ae46f40fca7748e66f94d7430d8bbfe12}{}\index{C\+Rect@{C\+Rect}!Set\+Right\+Down\+Pos@{Set\+Right\+Down\+Pos}}
+\index{Set\+Right\+Down\+Pos@{Set\+Right\+Down\+Pos}!C\+Rect@{C\+Rect}}
+\subsubsection[{Set\+Right\+Down\+Pos(\+F32 \+\_\+f\+Pos\+X, F32 \+\_\+f\+Pos\+Y)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Rect\+::\+Set\+Right\+Down\+Pos (
+\begin{DoxyParamCaption}
+\item[{F32}]{\+\_\+f\+Pos\+X, }
+\item[{F32}]{\+\_\+f\+Pos\+Y}
+\end{DoxyParamCaption}
+)}\label{class_c_rect_ae46f40fca7748e66f94d7430d8bbfe12}
+
+
+右下座標を設定。(現在の幅と高さに準じます。) 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+f\+Pos\+X} & \+: X座標。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+f\+Pos\+Y} & \+: Y座標。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_rect_aca3cc385d30de4b5f7f67e85c725d6af}{}\index{C\+Rect@{C\+Rect}!Set\+Right\+Up\+Pos@{Set\+Right\+Up\+Pos}}
+\index{Set\+Right\+Up\+Pos@{Set\+Right\+Up\+Pos}!C\+Rect@{C\+Rect}}
+\subsubsection[{Set\+Right\+Up\+Pos(\+F32 \+\_\+f\+Pos\+X, F32 \+\_\+f\+Pos\+Y)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Rect\+::\+Set\+Right\+Up\+Pos (
+\begin{DoxyParamCaption}
+\item[{F32}]{\+\_\+f\+Pos\+X, }
+\item[{F32}]{\+\_\+f\+Pos\+Y}
+\end{DoxyParamCaption}
+)}\label{class_c_rect_aca3cc385d30de4b5f7f67e85c725d6af}
+
+
+右上座標を設定。(現在の幅と高さに準じます。) 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+f\+Pos\+X} & \+: X座標。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+f\+Pos\+Y} & \+: Y座標。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_rect_aa8bf5f88199070d36ccecbeb48ab9f31}{}\index{C\+Rect@{C\+Rect}!Set\+Width@{Set\+Width}}
+\index{Set\+Width@{Set\+Width}!C\+Rect@{C\+Rect}}
+\subsubsection[{Set\+Width(\+F32 \+\_\+f\+Width)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Rect\+::\+Set\+Width (
+\begin{DoxyParamCaption}
+\item[{F32}]{\+\_\+f\+Width}
+\end{DoxyParamCaption}
+)}\label{class_c_rect_aa8bf5f88199070d36ccecbeb48ab9f31}
+
+
+幅を設定。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+f\+Width} & \+: 幅。 \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{メンバ詳解}
+\hypertarget{class_c_rect_aa0cd7f677bb5551c5a77ab1683e1449a}{}\index{C\+Rect@{C\+Rect}!m\+\_\+f\+Height@{m\+\_\+f\+Height}}
+\index{m\+\_\+f\+Height@{m\+\_\+f\+Height}!C\+Rect@{C\+Rect}}
+\subsubsection[{m\+\_\+f\+Height}]{\setlength{\rightskip}{0pt plus 5cm}F32 C\+Rect\+::m\+\_\+f\+Height\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_rect_aa0cd7f677bb5551c5a77ab1683e1449a}
+\hypertarget{class_c_rect_ae2982f53e2d73b419d584c3b8705d0eb}{}\index{C\+Rect@{C\+Rect}!m\+\_\+f\+Pos\+X@{m\+\_\+f\+Pos\+X}}
+\index{m\+\_\+f\+Pos\+X@{m\+\_\+f\+Pos\+X}!C\+Rect@{C\+Rect}}
+\subsubsection[{m\+\_\+f\+Pos\+X}]{\setlength{\rightskip}{0pt plus 5cm}F32 C\+Rect\+::m\+\_\+f\+Pos\+X\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_rect_ae2982f53e2d73b419d584c3b8705d0eb}
+\hypertarget{class_c_rect_a88b075960b04cdee33071c8fddcbe309}{}\index{C\+Rect@{C\+Rect}!m\+\_\+f\+Pos\+Y@{m\+\_\+f\+Pos\+Y}}
+\index{m\+\_\+f\+Pos\+Y@{m\+\_\+f\+Pos\+Y}!C\+Rect@{C\+Rect}}
+\subsubsection[{m\+\_\+f\+Pos\+Y}]{\setlength{\rightskip}{0pt plus 5cm}F32 C\+Rect\+::m\+\_\+f\+Pos\+Y\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_rect_a88b075960b04cdee33071c8fddcbe309}
+\hypertarget{class_c_rect_acd0d44459fc57787b43b85e457db109e}{}\index{C\+Rect@{C\+Rect}!m\+\_\+f\+Width@{m\+\_\+f\+Width}}
+\index{m\+\_\+f\+Width@{m\+\_\+f\+Width}!C\+Rect@{C\+Rect}}
+\subsubsection[{m\+\_\+f\+Width}]{\setlength{\rightskip}{0pt plus 5cm}F32 C\+Rect\+::m\+\_\+f\+Width\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_rect_acd0d44459fc57787b43b85e457db109e}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Project/\+Game/\+Lib/\+Rect/\hyperlink{_rect_8h}{Rect.\+h}\item 
+D\+:/\+Project/\+Game/\+Lib/\+Rect/\hyperlink{_rect_8cpp}{Rect.\+cpp}\end{DoxyCompactItemize}

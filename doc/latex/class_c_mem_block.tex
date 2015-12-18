@@ -1,0 +1,274 @@
+\hypertarget{class_c_mem_block}{}\section{C\+Mem\+Block クラス}
+\label{class_c_mem_block}\index{C\+Mem\+Block@{C\+Mem\+Block}}
+
+
+{\ttfamily \#include $<$Mem\+Block.\+h$>$}
+
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_c_mem_block_1_1_st_mem_block_footer}{St\+Mem\+Block\+Footer}
+\item 
+struct \hyperlink{struct_c_mem_block_1_1_st_mem_block_header}{St\+Mem\+Block\+Header}
+\end{DoxyCompactItemize}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_mem_block_a9a60b207cc79af9bd8ebd17c0fa8d3d3}{C\+Mem\+Block} (U\+Size \+\_\+u\+Block\+Size)
+\begin{DoxyCompactList}\small\item\em コンストラクタ。 \end{DoxyCompactList}\item 
+\hyperlink{class_c_mem_block_a3b5ef8f0163ad94f03d0342cb4a27f06}{C\+Mem\+Block} (U\+Size \+\_\+u\+Block\+Size, const S8 $\ast$\+\_\+ps\+File, U32 \+\_\+u\+Line)
+\begin{DoxyCompactList}\small\item\em コンストラクタ。 \end{DoxyCompactList}\item 
+\hyperlink{class_c_mem_block_a22ed0b5231e5e9342d9fd2ac3af63dd3}{$\sim$\+C\+Mem\+Block} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_mem_block_ad87158f4e8d752cca38e7569b31e5352}{Init} (U\+Size \+\_\+u\+Block\+Size, const S8 $\ast$\+\_\+ps\+File, U32 \+\_\+u\+Line)
+\begin{DoxyCompactList}\small\item\em 初期化。 \end{DoxyCompactList}\item 
+\hyperlink{struct_c_mem_block_1_1_st_mem_block_header}{St\+Mem\+Block\+Header} $\ast$ \hyperlink{class_c_mem_block_aa040c253df1f33bcb7b46744d7899926}{Get\+Header} ()
+\begin{DoxyCompactList}\small\item\em ヘッダーを取得。 \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{class_c_mem_block_a17d021cfca9eed9ef876e7e4e83d0a37}{Get\+Data} ()
+\begin{DoxyCompactList}\small\item\em データを取得。 \end{DoxyCompactList}\item 
+\hyperlink{struct_c_mem_block_1_1_st_mem_block_footer}{St\+Mem\+Block\+Footer} $\ast$ \hyperlink{class_c_mem_block_ab7fb22f0bac9e48ce23b0a84ee073efa}{Get\+Footer} ()
+\begin{DoxyCompactList}\small\item\em フッターを取得。 \end{DoxyCompactList}\item 
+U\+Size \hyperlink{class_c_mem_block_a5df8664b1d552d5cc8ef07becdb99a85}{Get\+Block\+Size} ()
+\begin{DoxyCompactList}\small\item\em ブロックのサイズを取得。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_mem_block_a017df5b011b6f0b004c452b32b9fbcfb}{Set\+Used} (bool \+\_\+b\+Used)
+\begin{DoxyCompactList}\small\item\em 使用中かどうかを設定。 \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_mem_block_a30b4a6e486f8be24b8dc936a5452f05f}{Is\+Used} () const 
+\begin{DoxyCompactList}\small\item\em 使用中かどうか。 \end{DoxyCompactList}\item 
+\hyperlink{class_c_mem_block}{C\+Mem\+Block} $\ast$ \hyperlink{class_c_mem_block_a3e7914300806f8b7d668874a471d467b}{Get\+Prev\+Block} ()
+\begin{DoxyCompactList}\small\item\em 前のブロックを取得。 \end{DoxyCompactList}\item 
+\hyperlink{class_c_mem_block}{C\+Mem\+Block} $\ast$ \hyperlink{class_c_mem_block_af3d476af4fc4a7cae6e18c27984010dc}{Get\+Next\+Block} ()
+\begin{DoxyCompactList}\small\item\em 次のブロックを取得。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_mem_block_a95104d68bc16b334e102511ab31fa384}{Set\+Next\+List} (\hyperlink{class_c_mem_block}{C\+Mem\+Block} $\ast$\+\_\+pc\+Mem\+Block)
+\begin{DoxyCompactList}\small\item\em 次のリストを設定。 \end{DoxyCompactList}\item 
+\hyperlink{class_c_mem_block}{C\+Mem\+Block} $\ast$ \hyperlink{class_c_mem_block_a651ad72a34789a05c85f1b3f74fe63d2}{Get\+Next\+List} ()
+\begin{DoxyCompactList}\small\item\em 次のリストを取得。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_mem_block_a9caa4fa399e9f3182ca12817ac61b3cc}{Set\+Prev\+List} (\hyperlink{class_c_mem_block}{C\+Mem\+Block} $\ast$\+\_\+pc\+Mem\+Block)
+\begin{DoxyCompactList}\small\item\em 前のリストを設定。 \end{DoxyCompactList}\item 
+\hyperlink{class_c_mem_block}{C\+Mem\+Block} $\ast$ \hyperlink{class_c_mem_block_abac041beb8e64379ada0d0f18a5c2d22}{Get\+Prev\+List} ()
+\begin{DoxyCompactList}\small\item\em 前のリストを取得。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_c_mem_block_1_1_st_mem_block_header}{St\+Mem\+Block\+Header} \hyperlink{class_c_mem_block_a79c40d205c3872976438afe7b21aa18b}{m\+\_\+st\+Mem\+Block\+Header}
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\hypertarget{class_c_mem_block_a9a60b207cc79af9bd8ebd17c0fa8d3d3}{}\index{C\+Mem\+Block@{C\+Mem\+Block}!C\+Mem\+Block@{C\+Mem\+Block}}
+\index{C\+Mem\+Block@{C\+Mem\+Block}!C\+Mem\+Block@{C\+Mem\+Block}}
+\subsubsection[{C\+Mem\+Block(\+U\+Size \+\_\+u\+Block\+Size)}]{\setlength{\rightskip}{0pt plus 5cm}C\+Mem\+Block\+::\+C\+Mem\+Block (
+\begin{DoxyParamCaption}
+\item[{U\+Size}]{\+\_\+u\+Block\+Size}
+\end{DoxyParamCaption}
+)}\label{class_c_mem_block_a9a60b207cc79af9bd8ebd17c0fa8d3d3}
+
+
+コンストラクタ。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+u\+Block\+Size} & \+: ブロックサイズ。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_mem_block_a3b5ef8f0163ad94f03d0342cb4a27f06}{}\index{C\+Mem\+Block@{C\+Mem\+Block}!C\+Mem\+Block@{C\+Mem\+Block}}
+\index{C\+Mem\+Block@{C\+Mem\+Block}!C\+Mem\+Block@{C\+Mem\+Block}}
+\subsubsection[{C\+Mem\+Block(\+U\+Size \+\_\+u\+Block\+Size, const S8 $\ast$\+\_\+ps\+File, U32 \+\_\+u\+Line)}]{\setlength{\rightskip}{0pt plus 5cm}C\+Mem\+Block\+::\+C\+Mem\+Block (
+\begin{DoxyParamCaption}
+\item[{U\+Size}]{\+\_\+u\+Block\+Size, }
+\item[{const S8 $\ast$}]{\+\_\+ps\+File, }
+\item[{U32}]{\+\_\+u\+Line}
+\end{DoxyParamCaption}
+)}\label{class_c_mem_block_a3b5ef8f0163ad94f03d0342cb4a27f06}
+
+
+コンストラクタ。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+u\+Block\+Size} & \+: ブロックサイズ。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+ps\+File} & \+: 呼び出し元のファイル名。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+u\+Line} & \+: 呼び出し元行数。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_mem_block_a22ed0b5231e5e9342d9fd2ac3af63dd3}{}\index{C\+Mem\+Block@{C\+Mem\+Block}!````~C\+Mem\+Block@{$\sim$\+C\+Mem\+Block}}
+\index{````~C\+Mem\+Block@{$\sim$\+C\+Mem\+Block}!C\+Mem\+Block@{C\+Mem\+Block}}
+\subsubsection[{$\sim$\+C\+Mem\+Block()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Mem\+Block\+::$\sim$\+C\+Mem\+Block (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_mem_block_a22ed0b5231e5e9342d9fd2ac3af63dd3}
+
+
+デストラクタ。 
+
+
+
+\subsection{関数詳解}
+\hypertarget{class_c_mem_block_a5df8664b1d552d5cc8ef07becdb99a85}{}\index{C\+Mem\+Block@{C\+Mem\+Block}!Get\+Block\+Size@{Get\+Block\+Size}}
+\index{Get\+Block\+Size@{Get\+Block\+Size}!C\+Mem\+Block@{C\+Mem\+Block}}
+\subsubsection[{Get\+Block\+Size()}]{\setlength{\rightskip}{0pt plus 5cm}U\+Size C\+Mem\+Block\+::\+Get\+Block\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_mem_block_a5df8664b1d552d5cc8ef07becdb99a85}
+
+
+ブロックのサイズを取得。 
+
+\hypertarget{class_c_mem_block_a17d021cfca9eed9ef876e7e4e83d0a37}{}\index{C\+Mem\+Block@{C\+Mem\+Block}!Get\+Data@{Get\+Data}}
+\index{Get\+Data@{Get\+Data}!C\+Mem\+Block@{C\+Mem\+Block}}
+\subsubsection[{Get\+Data()}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ C\+Mem\+Block\+::\+Get\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_mem_block_a17d021cfca9eed9ef876e7e4e83d0a37}
+
+
+データを取得。 
+
+\hypertarget{class_c_mem_block_ab7fb22f0bac9e48ce23b0a84ee073efa}{}\index{C\+Mem\+Block@{C\+Mem\+Block}!Get\+Footer@{Get\+Footer}}
+\index{Get\+Footer@{Get\+Footer}!C\+Mem\+Block@{C\+Mem\+Block}}
+\subsubsection[{Get\+Footer()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf St\+Mem\+Block\+Footer}$\ast$ C\+Mem\+Block\+::\+Get\+Footer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_mem_block_ab7fb22f0bac9e48ce23b0a84ee073efa}
+
+
+フッターを取得。 
+
+\hypertarget{class_c_mem_block_aa040c253df1f33bcb7b46744d7899926}{}\index{C\+Mem\+Block@{C\+Mem\+Block}!Get\+Header@{Get\+Header}}
+\index{Get\+Header@{Get\+Header}!C\+Mem\+Block@{C\+Mem\+Block}}
+\subsubsection[{Get\+Header()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf St\+Mem\+Block\+Header}$\ast$ C\+Mem\+Block\+::\+Get\+Header (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_mem_block_aa040c253df1f33bcb7b46744d7899926}
+
+
+ヘッダーを取得。 
+
+\hypertarget{class_c_mem_block_af3d476af4fc4a7cae6e18c27984010dc}{}\index{C\+Mem\+Block@{C\+Mem\+Block}!Get\+Next\+Block@{Get\+Next\+Block}}
+\index{Get\+Next\+Block@{Get\+Next\+Block}!C\+Mem\+Block@{C\+Mem\+Block}}
+\subsubsection[{Get\+Next\+Block()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Mem\+Block}$\ast$ C\+Mem\+Block\+::\+Get\+Next\+Block (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_mem_block_af3d476af4fc4a7cae6e18c27984010dc}
+
+
+次のブロックを取得。 
+
+\hypertarget{class_c_mem_block_a651ad72a34789a05c85f1b3f74fe63d2}{}\index{C\+Mem\+Block@{C\+Mem\+Block}!Get\+Next\+List@{Get\+Next\+List}}
+\index{Get\+Next\+List@{Get\+Next\+List}!C\+Mem\+Block@{C\+Mem\+Block}}
+\subsubsection[{Get\+Next\+List()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Mem\+Block}$\ast$ C\+Mem\+Block\+::\+Get\+Next\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_mem_block_a651ad72a34789a05c85f1b3f74fe63d2}
+
+
+次のリストを取得。 
+
+\hypertarget{class_c_mem_block_a3e7914300806f8b7d668874a471d467b}{}\index{C\+Mem\+Block@{C\+Mem\+Block}!Get\+Prev\+Block@{Get\+Prev\+Block}}
+\index{Get\+Prev\+Block@{Get\+Prev\+Block}!C\+Mem\+Block@{C\+Mem\+Block}}
+\subsubsection[{Get\+Prev\+Block()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Mem\+Block}$\ast$ C\+Mem\+Block\+::\+Get\+Prev\+Block (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_mem_block_a3e7914300806f8b7d668874a471d467b}
+
+
+前のブロックを取得。 
+
+\hypertarget{class_c_mem_block_abac041beb8e64379ada0d0f18a5c2d22}{}\index{C\+Mem\+Block@{C\+Mem\+Block}!Get\+Prev\+List@{Get\+Prev\+List}}
+\index{Get\+Prev\+List@{Get\+Prev\+List}!C\+Mem\+Block@{C\+Mem\+Block}}
+\subsubsection[{Get\+Prev\+List()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Mem\+Block}$\ast$ C\+Mem\+Block\+::\+Get\+Prev\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_mem_block_abac041beb8e64379ada0d0f18a5c2d22}
+
+
+前のリストを取得。 
+
+\hypertarget{class_c_mem_block_ad87158f4e8d752cca38e7569b31e5352}{}\index{C\+Mem\+Block@{C\+Mem\+Block}!Init@{Init}}
+\index{Init@{Init}!C\+Mem\+Block@{C\+Mem\+Block}}
+\subsubsection[{Init(\+U\+Size \+\_\+u\+Block\+Size, const S8 $\ast$\+\_\+ps\+File, U32 \+\_\+u\+Line)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Mem\+Block\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{U\+Size}]{\+\_\+u\+Block\+Size, }
+\item[{const S8 $\ast$}]{\+\_\+ps\+File, }
+\item[{U32}]{\+\_\+u\+Line}
+\end{DoxyParamCaption}
+)}\label{class_c_mem_block_ad87158f4e8d752cca38e7569b31e5352}
+
+
+初期化。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+u\+Block\+Size} & \+: ブロックサイズ。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+ps\+File} & \+: 呼び出し元のファイル名。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+u\+Line} & \+: 呼び出し元行数。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_mem_block_a30b4a6e486f8be24b8dc936a5452f05f}{}\index{C\+Mem\+Block@{C\+Mem\+Block}!Is\+Used@{Is\+Used}}
+\index{Is\+Used@{Is\+Used}!C\+Mem\+Block@{C\+Mem\+Block}}
+\subsubsection[{Is\+Used() const }]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Mem\+Block\+::\+Is\+Used (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_mem_block_a30b4a6e486f8be24b8dc936a5452f05f}
+
+
+使用中かどうか。 
+
+\hypertarget{class_c_mem_block_a95104d68bc16b334e102511ab31fa384}{}\index{C\+Mem\+Block@{C\+Mem\+Block}!Set\+Next\+List@{Set\+Next\+List}}
+\index{Set\+Next\+List@{Set\+Next\+List}!C\+Mem\+Block@{C\+Mem\+Block}}
+\subsubsection[{Set\+Next\+List(\+C\+Mem\+Block $\ast$\+\_\+pc\+Mem\+Block)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Mem\+Block\+::\+Set\+Next\+List (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Mem\+Block} $\ast$}]{\+\_\+pc\+Mem\+Block}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_mem_block_a95104d68bc16b334e102511ab31fa384}
+
+
+次のリストを設定。 
+
+\hypertarget{class_c_mem_block_a9caa4fa399e9f3182ca12817ac61b3cc}{}\index{C\+Mem\+Block@{C\+Mem\+Block}!Set\+Prev\+List@{Set\+Prev\+List}}
+\index{Set\+Prev\+List@{Set\+Prev\+List}!C\+Mem\+Block@{C\+Mem\+Block}}
+\subsubsection[{Set\+Prev\+List(\+C\+Mem\+Block $\ast$\+\_\+pc\+Mem\+Block)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Mem\+Block\+::\+Set\+Prev\+List (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Mem\+Block} $\ast$}]{\+\_\+pc\+Mem\+Block}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_mem_block_a9caa4fa399e9f3182ca12817ac61b3cc}
+
+
+前のリストを設定。 
+
+\hypertarget{class_c_mem_block_a017df5b011b6f0b004c452b32b9fbcfb}{}\index{C\+Mem\+Block@{C\+Mem\+Block}!Set\+Used@{Set\+Used}}
+\index{Set\+Used@{Set\+Used}!C\+Mem\+Block@{C\+Mem\+Block}}
+\subsubsection[{Set\+Used(bool \+\_\+b\+Used)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Mem\+Block\+::\+Set\+Used (
+\begin{DoxyParamCaption}
+\item[{bool}]{\+\_\+b\+Used}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_mem_block_a017df5b011b6f0b004c452b32b9fbcfb}
+
+
+使用中かどうかを設定。 
+
+
+
+\subsection{メンバ詳解}
+\hypertarget{class_c_mem_block_a79c40d205c3872976438afe7b21aa18b}{}\index{C\+Mem\+Block@{C\+Mem\+Block}!m\+\_\+st\+Mem\+Block\+Header@{m\+\_\+st\+Mem\+Block\+Header}}
+\index{m\+\_\+st\+Mem\+Block\+Header@{m\+\_\+st\+Mem\+Block\+Header}!C\+Mem\+Block@{C\+Mem\+Block}}
+\subsubsection[{m\+\_\+st\+Mem\+Block\+Header}]{\setlength{\rightskip}{0pt plus 5cm}{\bf St\+Mem\+Block\+Header} C\+Mem\+Block\+::m\+\_\+st\+Mem\+Block\+Header\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_mem_block_a79c40d205c3872976438afe7b21aa18b}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Project/\+Game/\+Lib/\+Memory/\hyperlink{_mem_block_8h}{Mem\+Block.\+h}\item 
+D\+:/\+Project/\+Game/\+Lib/\+Memory/\hyperlink{_mem_block_8cpp}{Mem\+Block.\+cpp}\end{DoxyCompactItemize}

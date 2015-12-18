@@ -1,0 +1,166 @@
+\hypertarget{class_c_frame_control}{}\section{C\+Frame\+Control クラス}
+\label{class_c_frame_control}\index{C\+Frame\+Control@{C\+Frame\+Control}}
+
+
+{\ttfamily \#include $<$Frame\+Control.\+h$>$}
+
+\subsection*{公開型}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_c_frame_control_a4d5daea7d8ab2b21db46d58602fb92c5}{En\+Frame\+Rate} \+: U32 \{ \hyperlink{class_c_frame_control_a4d5daea7d8ab2b21db46d58602fb92c5a3abae29b23303e771001fc089ec15357}{En\+Frame\+Rate\+::en\+F\+P\+S30}, 
+\hyperlink{class_c_frame_control_a4d5daea7d8ab2b21db46d58602fb92c5a0987a92fbe4240e0180dd6f0fac52ab8}{En\+Frame\+Rate\+::en\+F\+P\+S60}, 
+\hyperlink{class_c_frame_control_a4d5daea7d8ab2b21db46d58602fb92c5a079bb6413c37006b9fdc56add34e517b}{En\+Frame\+Rate\+::en\+Max}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_frame_control_ab7a3aca2dd8f16f397a868c2fd80e83a}{C\+Frame\+Control} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ。 \end{DoxyCompactList}\item 
+\hyperlink{class_c_frame_control_aa347263704fe2a02f33be39bf49196b9}{$\sim$\+C\+Frame\+Control} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_frame_control_a9c608dff09f66ff05ac946086046cedb}{Frame\+Process} (\hyperlink{class_i_render_context}{I\+Render\+Context} $\ast$\+\_\+pc\+Render\+Context)
+\begin{DoxyCompactList}\small\item\em フレーム処理。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_frame_control_a96a4916210e6373da4c66a46335d14b6}{Set\+Frame\+Rate} (\hyperlink{class_c_frame_control_a4d5daea7d8ab2b21db46d58602fb92c5}{En\+Frame\+Rate} \+\_\+e\+Frame\+Rate)
+\begin{DoxyCompactList}\small\item\em フレームレートの設定。 \end{DoxyCompactList}\item 
+\hyperlink{class_c_frame_control_a4d5daea7d8ab2b21db46d58602fb92c5}{En\+Frame\+Rate} \hyperlink{class_c_frame_control_a5761d1234db99fc0a248c53fb69f1887}{Get\+Frame\+Rate} () const 
+\begin{DoxyCompactList}\small\item\em フレームレートの取得。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_c_frame_control_ac06dddaff9b6dc0fdbd315ab18abb149}{Action\+Step} ()
+\begin{DoxyCompactList}\small\item\em アクションステップ。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_frame_control_a01363f79b83bcc4e696380b7c717ef7e}{Draw\+Step} (\hyperlink{class_i_render_context}{I\+Render\+Context} $\ast$\+\_\+pc\+Render\+Context)
+\begin{DoxyCompactList}\small\item\em 描画ステップ。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_frame_control_a4d5daea7d8ab2b21db46d58602fb92c5}{En\+Frame\+Rate} \hyperlink{class_c_frame_control_ac817bcae9dababe2c82ebaf3e8da3a41}{m\+\_\+e\+Frame\+Rate}
+\item 
+U32 \hyperlink{class_c_frame_control_a40839cdcc9ae34bfddac6a04b274d167}{m\+\_\+u\+Time\+Last\+End\+Frame}
+\end{DoxyCompactItemize}
+
+
+\subsection{列挙型メンバ詳解}
+\hypertarget{class_c_frame_control_a4d5daea7d8ab2b21db46d58602fb92c5}{}\index{C\+Frame\+Control@{C\+Frame\+Control}!En\+Frame\+Rate@{En\+Frame\+Rate}}
+\index{En\+Frame\+Rate@{En\+Frame\+Rate}!C\+Frame\+Control@{C\+Frame\+Control}}
+\subsubsection[{En\+Frame\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\+Frame\+Control\+::\+En\+Frame\+Rate} \+: U32\hspace{0.3cm}{\ttfamily [strong]}}\label{class_c_frame_control_a4d5daea7d8ab2b21db46d58602fb92c5}
+\begin{Desc}
+\item[列挙値]\par
+\begin{description}
+\index{en\+F\+P\+S30@{en\+F\+P\+S30}!C\+Frame\+Control@{C\+Frame\+Control}}\index{C\+Frame\+Control@{C\+Frame\+Control}!en\+F\+P\+S30@{en\+F\+P\+S30}}\item[{\em 
+\hypertarget{class_c_frame_control_a4d5daea7d8ab2b21db46d58602fb92c5a3abae29b23303e771001fc089ec15357}{}en\+F\+P\+S30\label{class_c_frame_control_a4d5daea7d8ab2b21db46d58602fb92c5a3abae29b23303e771001fc089ec15357}
+}]\index{en\+F\+P\+S60@{en\+F\+P\+S60}!C\+Frame\+Control@{C\+Frame\+Control}}\index{C\+Frame\+Control@{C\+Frame\+Control}!en\+F\+P\+S60@{en\+F\+P\+S60}}\item[{\em 
+\hypertarget{class_c_frame_control_a4d5daea7d8ab2b21db46d58602fb92c5a0987a92fbe4240e0180dd6f0fac52ab8}{}en\+F\+P\+S60\label{class_c_frame_control_a4d5daea7d8ab2b21db46d58602fb92c5a0987a92fbe4240e0180dd6f0fac52ab8}
+}]\index{en\+Max@{en\+Max}!C\+Frame\+Control@{C\+Frame\+Control}}\index{C\+Frame\+Control@{C\+Frame\+Control}!en\+Max@{en\+Max}}\item[{\em 
+\hypertarget{class_c_frame_control_a4d5daea7d8ab2b21db46d58602fb92c5a079bb6413c37006b9fdc56add34e517b}{}en\+Max\label{class_c_frame_control_a4d5daea7d8ab2b21db46d58602fb92c5a079bb6413c37006b9fdc56add34e517b}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{構築子と解体子}
+\hypertarget{class_c_frame_control_ab7a3aca2dd8f16f397a868c2fd80e83a}{}\index{C\+Frame\+Control@{C\+Frame\+Control}!C\+Frame\+Control@{C\+Frame\+Control}}
+\index{C\+Frame\+Control@{C\+Frame\+Control}!C\+Frame\+Control@{C\+Frame\+Control}}
+\subsubsection[{C\+Frame\+Control()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Frame\+Control\+::\+C\+Frame\+Control (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_frame_control_ab7a3aca2dd8f16f397a868c2fd80e83a}
+
+
+コンストラクタ。 
+
+\hypertarget{class_c_frame_control_aa347263704fe2a02f33be39bf49196b9}{}\index{C\+Frame\+Control@{C\+Frame\+Control}!````~C\+Frame\+Control@{$\sim$\+C\+Frame\+Control}}
+\index{````~C\+Frame\+Control@{$\sim$\+C\+Frame\+Control}!C\+Frame\+Control@{C\+Frame\+Control}}
+\subsubsection[{$\sim$\+C\+Frame\+Control()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Frame\+Control\+::$\sim$\+C\+Frame\+Control (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_frame_control_aa347263704fe2a02f33be39bf49196b9}
+
+
+デストラクタ。 
+
+
+
+\subsection{関数詳解}
+\hypertarget{class_c_frame_control_ac06dddaff9b6dc0fdbd315ab18abb149}{}\index{C\+Frame\+Control@{C\+Frame\+Control}!Action\+Step@{Action\+Step}}
+\index{Action\+Step@{Action\+Step}!C\+Frame\+Control@{C\+Frame\+Control}}
+\subsubsection[{Action\+Step()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Frame\+Control\+::\+Action\+Step (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_frame_control_ac06dddaff9b6dc0fdbd315ab18abb149}
+
+
+アクションステップ。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+pc\+Context} & \+: 描画コンテキスト。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_frame_control_a01363f79b83bcc4e696380b7c717ef7e}{}\index{C\+Frame\+Control@{C\+Frame\+Control}!Draw\+Step@{Draw\+Step}}
+\index{Draw\+Step@{Draw\+Step}!C\+Frame\+Control@{C\+Frame\+Control}}
+\subsubsection[{Draw\+Step(\+I\+Render\+Context $\ast$\+\_\+pc\+Render\+Context)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Frame\+Control\+::\+Draw\+Step (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Render\+Context} $\ast$}]{\+\_\+pc\+Render\+Context}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_frame_control_a01363f79b83bcc4e696380b7c717ef7e}
+
+
+描画ステップ。 
+
+\hypertarget{class_c_frame_control_a9c608dff09f66ff05ac946086046cedb}{}\index{C\+Frame\+Control@{C\+Frame\+Control}!Frame\+Process@{Frame\+Process}}
+\index{Frame\+Process@{Frame\+Process}!C\+Frame\+Control@{C\+Frame\+Control}}
+\subsubsection[{Frame\+Process(\+I\+Render\+Context $\ast$\+\_\+pc\+Render\+Context)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Frame\+Control\+::\+Frame\+Process (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Render\+Context} $\ast$}]{\+\_\+pc\+Context}
+\end{DoxyParamCaption}
+)}\label{class_c_frame_control_a9c608dff09f66ff05ac946086046cedb}
+
+
+フレーム処理。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+pc\+Context} & \+: 描画コンテキスト。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_frame_control_a5761d1234db99fc0a248c53fb69f1887}{}\index{C\+Frame\+Control@{C\+Frame\+Control}!Get\+Frame\+Rate@{Get\+Frame\+Rate}}
+\index{Get\+Frame\+Rate@{Get\+Frame\+Rate}!C\+Frame\+Control@{C\+Frame\+Control}}
+\subsubsection[{Get\+Frame\+Rate() const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf En\+Frame\+Rate} C\+Frame\+Control\+::\+Get\+Frame\+Rate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_frame_control_a5761d1234db99fc0a248c53fb69f1887}
+
+
+フレームレートの取得。 
+
+\hypertarget{class_c_frame_control_a96a4916210e6373da4c66a46335d14b6}{}\index{C\+Frame\+Control@{C\+Frame\+Control}!Set\+Frame\+Rate@{Set\+Frame\+Rate}}
+\index{Set\+Frame\+Rate@{Set\+Frame\+Rate}!C\+Frame\+Control@{C\+Frame\+Control}}
+\subsubsection[{Set\+Frame\+Rate(\+En\+Frame\+Rate \+\_\+e\+Frame\+Rate)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Frame\+Control\+::\+Set\+Frame\+Rate (
+\begin{DoxyParamCaption}
+\item[{{\bf En\+Frame\+Rate}}]{\+\_\+e\+Frame\+Rate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_frame_control_a96a4916210e6373da4c66a46335d14b6}
+
+
+フレームレートの設定。 
+
+
+
+\subsection{メンバ詳解}
+\hypertarget{class_c_frame_control_ac817bcae9dababe2c82ebaf3e8da3a41}{}\index{C\+Frame\+Control@{C\+Frame\+Control}!m\+\_\+e\+Frame\+Rate@{m\+\_\+e\+Frame\+Rate}}
+\index{m\+\_\+e\+Frame\+Rate@{m\+\_\+e\+Frame\+Rate}!C\+Frame\+Control@{C\+Frame\+Control}}
+\subsubsection[{m\+\_\+e\+Frame\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf En\+Frame\+Rate} C\+Frame\+Control\+::m\+\_\+e\+Frame\+Rate\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_frame_control_ac817bcae9dababe2c82ebaf3e8da3a41}
+\hypertarget{class_c_frame_control_a40839cdcc9ae34bfddac6a04b274d167}{}\index{C\+Frame\+Control@{C\+Frame\+Control}!m\+\_\+u\+Time\+Last\+End\+Frame@{m\+\_\+u\+Time\+Last\+End\+Frame}}
+\index{m\+\_\+u\+Time\+Last\+End\+Frame@{m\+\_\+u\+Time\+Last\+End\+Frame}!C\+Frame\+Control@{C\+Frame\+Control}}
+\subsubsection[{m\+\_\+u\+Time\+Last\+End\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}U32 C\+Frame\+Control\+::m\+\_\+u\+Time\+Last\+End\+Frame\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_frame_control_a40839cdcc9ae34bfddac6a04b274d167}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Project/\+Game/\+Game/\+Common/\hyperlink{_frame_control_8h}{Frame\+Control.\+h}\item 
+D\+:/\+Project/\+Game/\+Game/\+Common/\hyperlink{_frame_control_8cpp}{Frame\+Control.\+cpp}\end{DoxyCompactItemize}

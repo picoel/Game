@@ -1,0 +1,47 @@
+\hypertarget{_list_8h}{}\section{D\+:/\+Project/\+Game/\+Lib/\+Utility/\+List.h ファイル}
+\label{_list_8h}\index{D\+:/\+Project/\+Game/\+Lib/\+Utility/\+List.\+h@{D\+:/\+Project/\+Game/\+Lib/\+Utility/\+List.\+h}}
+
+
+動的配列定義。  
+
+
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$list$>$}\\*
+{\ttfamily \#include $<$deque$>$}\\*
+{\ttfamily \#include $<$queue$>$}\\*
+{\ttfamily \#include $<$memory$>$}\\*
+{\ttfamily \#include \char`\"{}Lib/\+Memory/\+Allocator/\+Allocator.\+h\char`\"{}}\\*
+\subsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class C $>$ }\\using \hyperlink{_list_8h_af54c38acd8944230f18792ac38211526}{C\+Vector} = std\+::vector$<$ C, \hyperlink{class_c_allocator}{C\+Allocator}$<$ C $>$ $>$
+\item 
+{\footnotesize template$<$class C $>$ }\\using \hyperlink{_list_8h_a13611c3f3705beb7fa6457d5254bb35f}{C\+List} = std\+::list$<$ C, \hyperlink{class_c_allocator}{C\+Allocator}$<$ C $>$ $>$
+\item 
+{\footnotesize template$<$class C $>$ }\\using \hyperlink{_list_8h_a96ec65f32bb6befb4ba0144831455dee}{C\+Deque} = std\+::deque$<$ C, \hyperlink{class_c_allocator}{C\+Allocator}$<$ C $>$ $>$
+\item 
+{\footnotesize template$<$class C $>$ }\\using \hyperlink{_list_8h_a8a5560c80485797f14f8845ed54a9f33}{C\+Queue} = std\+::queue$<$ C, \hyperlink{_list_8h_a96ec65f32bb6befb4ba0144831455dee}{C\+Deque}$<$ C $>$ $>$
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+動的配列定義。 
+
+\begin{DoxyDate}{日付}
+2015/05/23 04\+:16\+:10 
+\end{DoxyDate}
+
+
+\subsection{型定義詳解}
+\hypertarget{_list_8h_a96ec65f32bb6befb4ba0144831455dee}{}\index{List.\+h@{List.\+h}!C\+Deque@{C\+Deque}}
+\index{C\+Deque@{C\+Deque}!List.\+h@{List.\+h}}
+\subsubsection[{C\+Deque}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class C $>$ using {\bf C\+Deque} =  std\+::deque $<$ C, {\bf C\+Allocator}$<$C$>$ $>$}\label{_list_8h_a96ec65f32bb6befb4ba0144831455dee}
+\hypertarget{_list_8h_a13611c3f3705beb7fa6457d5254bb35f}{}\index{List.\+h@{List.\+h}!C\+List@{C\+List}}
+\index{C\+List@{C\+List}!List.\+h@{List.\+h}}
+\subsubsection[{C\+List}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class C $>$ using {\bf C\+List} =  std\+::list $<$ C, {\bf C\+Allocator}$<$C$>$ $>$}\label{_list_8h_a13611c3f3705beb7fa6457d5254bb35f}
+\hypertarget{_list_8h_a8a5560c80485797f14f8845ed54a9f33}{}\index{List.\+h@{List.\+h}!C\+Queue@{C\+Queue}}
+\index{C\+Queue@{C\+Queue}!List.\+h@{List.\+h}}
+\subsubsection[{C\+Queue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class C $>$ using {\bf C\+Queue} =  std\+::queue $<$ C, {\bf C\+Deque}$<$C$>$ $>$}\label{_list_8h_a8a5560c80485797f14f8845ed54a9f33}
+\hypertarget{_list_8h_af54c38acd8944230f18792ac38211526}{}\index{List.\+h@{List.\+h}!C\+Vector@{C\+Vector}}
+\index{C\+Vector@{C\+Vector}!List.\+h@{List.\+h}}
+\subsubsection[{C\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class C $>$ using {\bf C\+Vector} =  std\+::vector $<$ C, {\bf C\+Allocator}$<$C$>$ $>$}\label{_list_8h_af54c38acd8944230f18792ac38211526}

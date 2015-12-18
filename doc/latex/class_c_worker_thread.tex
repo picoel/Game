@@ -1,0 +1,138 @@
+\hypertarget{class_c_worker_thread}{}\section{C\+Worker\+Thread クラス}
+\label{class_c_worker_thread}\index{C\+Worker\+Thread@{C\+Worker\+Thread}}
+
+
+{\ttfamily \#include $<$Worker\+Thread.\+h$>$}
+
+C\+Worker\+Thread の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_worker_thread}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_worker_thread_a2c011a29dc6d6f5c0b40c09ed4f322b2}{C\+Worker\+Thread} (\hyperlink{class_c_worker_channel}{C\+Worker\+Channel} $\ast$\+\_\+pc\+Channel)
+\begin{DoxyCompactList}\small\item\em コンストラクタ。 \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_worker_thread_ac48e79f7cc0c6fa81c2600d79142a2d4}{$\sim$\+C\+Worker\+Thread} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_worker_thread_ac41c89ce50bb4f499f2d5154a8db5a0f}{Thread\+Callback} () override
+\begin{DoxyCompactList}\small\item\em コールバック関数。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_worker_thread_a670abeb8365dc320b291d97e7ea850b2}{Request\+End} ()
+\begin{DoxyCompactList}\small\item\em 終了リクエスト。 \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_worker_thread_a24c5e2381a0090c85e900558ee0b751a}{Is\+Wait} () const 
+\begin{DoxyCompactList}\small\item\em 待機中か。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_c_worker_thread_a88ea494fd920d5a096dd81cd18ffa5f1}{Set\+Wait} (bool \+\_\+b\+Wait)
+\begin{DoxyCompactList}\small\item\em 待機中か設定。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_worker_channel}{C\+Worker\+Channel} $\ast$ \hyperlink{class_c_worker_thread_a7168bcaeb8c06da52320dfe49bc4b427}{m\+\_\+pc\+Channel}
+\item 
+bool \hyperlink{class_c_worker_thread_ac2eeaf5d7a3a74d3b052e8aae18c350c}{m\+\_\+b\+Request\+End}
+\item 
+bool \hyperlink{class_c_worker_thread_ac692019a76899c582fd0759080108e0b}{m\+\_\+b\+Wait}
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\hypertarget{class_c_worker_thread_a2c011a29dc6d6f5c0b40c09ed4f322b2}{}\index{C\+Worker\+Thread@{C\+Worker\+Thread}!C\+Worker\+Thread@{C\+Worker\+Thread}}
+\index{C\+Worker\+Thread@{C\+Worker\+Thread}!C\+Worker\+Thread@{C\+Worker\+Thread}}
+\subsubsection[{C\+Worker\+Thread(\+C\+Worker\+Channel $\ast$\+\_\+pc\+Channel)}]{\setlength{\rightskip}{0pt plus 5cm}C\+Worker\+Thread\+::\+C\+Worker\+Thread (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Worker\+Channel} $\ast$}]{\+\_\+pc\+Channel}
+\end{DoxyParamCaption}
+)}\label{class_c_worker_thread_a2c011a29dc6d6f5c0b40c09ed4f322b2}
+
+
+コンストラクタ。 
+
+
+\begin{DoxyParams}{引数}
+{\em \+\_\+pc\+Channel} & \+: 仕事の受取元。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_worker_thread_ac48e79f7cc0c6fa81c2600d79142a2d4}{}\index{C\+Worker\+Thread@{C\+Worker\+Thread}!````~C\+Worker\+Thread@{$\sim$\+C\+Worker\+Thread}}
+\index{````~C\+Worker\+Thread@{$\sim$\+C\+Worker\+Thread}!C\+Worker\+Thread@{C\+Worker\+Thread}}
+\subsubsection[{$\sim$\+C\+Worker\+Thread()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Worker\+Thread\+::$\sim$\+C\+Worker\+Thread (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_worker_thread_ac48e79f7cc0c6fa81c2600d79142a2d4}
+
+
+デストラクタ。 
+
+
+
+\subsection{関数詳解}
+\hypertarget{class_c_worker_thread_a24c5e2381a0090c85e900558ee0b751a}{}\index{C\+Worker\+Thread@{C\+Worker\+Thread}!Is\+Wait@{Is\+Wait}}
+\index{Is\+Wait@{Is\+Wait}!C\+Worker\+Thread@{C\+Worker\+Thread}}
+\subsubsection[{Is\+Wait() const }]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Worker\+Thread\+::\+Is\+Wait (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_worker_thread_a24c5e2381a0090c85e900558ee0b751a}
+
+
+待機中か。 
+
+\hypertarget{class_c_worker_thread_a670abeb8365dc320b291d97e7ea850b2}{}\index{C\+Worker\+Thread@{C\+Worker\+Thread}!Request\+End@{Request\+End}}
+\index{Request\+End@{Request\+End}!C\+Worker\+Thread@{C\+Worker\+Thread}}
+\subsubsection[{Request\+End()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Worker\+Thread\+::\+Request\+End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_worker_thread_a670abeb8365dc320b291d97e7ea850b2}
+
+
+終了リクエスト。 
+
+\hypertarget{class_c_worker_thread_a88ea494fd920d5a096dd81cd18ffa5f1}{}\index{C\+Worker\+Thread@{C\+Worker\+Thread}!Set\+Wait@{Set\+Wait}}
+\index{Set\+Wait@{Set\+Wait}!C\+Worker\+Thread@{C\+Worker\+Thread}}
+\subsubsection[{Set\+Wait(bool \+\_\+b\+Wait)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Worker\+Thread\+::\+Set\+Wait (
+\begin{DoxyParamCaption}
+\item[{bool}]{\+\_\+b\+Wait}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_worker_thread_a88ea494fd920d5a096dd81cd18ffa5f1}
+
+
+待機中か設定。 
+
+\hypertarget{class_c_worker_thread_ac41c89ce50bb4f499f2d5154a8db5a0f}{}\index{C\+Worker\+Thread@{C\+Worker\+Thread}!Thread\+Callback@{Thread\+Callback}}
+\index{Thread\+Callback@{Thread\+Callback}!C\+Worker\+Thread@{C\+Worker\+Thread}}
+\subsubsection[{Thread\+Callback() override}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Worker\+Thread\+::\+Thread\+Callback (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_c_worker_thread_ac41c89ce50bb4f499f2d5154a8db5a0f}
+
+
+コールバック関数。 
+
+
+
+\hyperlink{class_c_thread_a15c60ba6d652d92c150fda5e10ebb23e}{C\+Thread}を再実装しています。
+
+
+
+\subsection{メンバ詳解}
+\hypertarget{class_c_worker_thread_ac2eeaf5d7a3a74d3b052e8aae18c350c}{}\index{C\+Worker\+Thread@{C\+Worker\+Thread}!m\+\_\+b\+Request\+End@{m\+\_\+b\+Request\+End}}
+\index{m\+\_\+b\+Request\+End@{m\+\_\+b\+Request\+End}!C\+Worker\+Thread@{C\+Worker\+Thread}}
+\subsubsection[{m\+\_\+b\+Request\+End}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Worker\+Thread\+::m\+\_\+b\+Request\+End\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_worker_thread_ac2eeaf5d7a3a74d3b052e8aae18c350c}
+\hypertarget{class_c_worker_thread_ac692019a76899c582fd0759080108e0b}{}\index{C\+Worker\+Thread@{C\+Worker\+Thread}!m\+\_\+b\+Wait@{m\+\_\+b\+Wait}}
+\index{m\+\_\+b\+Wait@{m\+\_\+b\+Wait}!C\+Worker\+Thread@{C\+Worker\+Thread}}
+\subsubsection[{m\+\_\+b\+Wait}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Worker\+Thread\+::m\+\_\+b\+Wait\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_worker_thread_ac692019a76899c582fd0759080108e0b}
+\hypertarget{class_c_worker_thread_a7168bcaeb8c06da52320dfe49bc4b427}{}\index{C\+Worker\+Thread@{C\+Worker\+Thread}!m\+\_\+pc\+Channel@{m\+\_\+pc\+Channel}}
+\index{m\+\_\+pc\+Channel@{m\+\_\+pc\+Channel}!C\+Worker\+Thread@{C\+Worker\+Thread}}
+\subsubsection[{m\+\_\+pc\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Worker\+Channel}$\ast$ C\+Worker\+Thread\+::m\+\_\+pc\+Channel\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_worker_thread_a7168bcaeb8c06da52320dfe49bc4b427}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Project/\+Game/\+Lib/\+Worker/\hyperlink{_worker_thread_8h}{Worker\+Thread.\+h}\item 
+D\+:/\+Project/\+Game/\+Lib/\+Worker/\hyperlink{_worker_thread_8cpp}{Worker\+Thread.\+cpp}\end{DoxyCompactItemize}

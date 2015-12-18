@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>My Project: D:/Project/Game/Lib/DirectX/DirectXTexture.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="namespaces.html"><span>名前空間</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8f3de2ae926fecfe6abd5379fd2b6eb1.html">Lib</a></li><li class="navelem"><a class="el" href="dir_ce932a2e48e4b48175bb0c5a38d11c23.html">DirectX</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">DirectXTexture.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_direct_x_texture_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef INCLUDE_DIRECTX_TEXTURE_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define INCLUDE_DIRECTX_TEXTURE_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_file_reader_8h.html">Lib/File/FileReader.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * @class CDirectXTexture</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * @brief DirectX用テクスチャクラス。</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_c_direct_x_texture.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_direct_x_texture.html">CDirectXTexture</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_c_direct_x_texture.html#a23305fa228b1ed1d3071b1cccae38d3c">CDirectXTexture</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_direct_x_texture.html#afd62064ff20750c1cc1dfd900ffac90c">~CDirectXTexture</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_direct_x_texture.html#a544fd8fb0c2f2b26853f4930764da184">CreateTexture</a>( <span class="keyword">const</span> D3D_TEXTURE2D_DESC&amp; _rstDesc );</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_direct_x_texture.html#a544fd8fb0c2f2b26853f4930764da184">CreateTexture</a>( <span class="keyword">const</span> DirectX::ScratchImage&amp; _rstImage, <span class="keyword">const</span> DirectX::TexMetadata&amp; _rstMetaData );</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_c_direct_x_texture.html#ab38734e60f44980fe0b63eef1c9f5eff">   29</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_direct_x_texture.html#ab38734e60f44980fe0b63eef1c9f5eff">IsCreate</a>()<span class="keyword"> const</span>{ <span class="keywordflow">return</span> <a class="code" href="class_c_direct_x_texture.html#ad6605a1b69303a8ae2c7ec6332223c23">m_bIsCreate</a>; }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_c_direct_x_texture.html#a93ed5f8b244517c1a20f7128f5f9878a">   32</a></span>&#160;    ID3DTexture2D*  <a class="code" href="class_c_direct_x_texture.html#a93ed5f8b244517c1a20f7128f5f9878a">m_pcTexture</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_c_direct_x_texture.html#ad6605a1b69303a8ae2c7ec6332223c23">   33</a></span>&#160;    <span class="keywordtype">bool</span>            <a class="code" href="class_c_direct_x_texture.html#ad6605a1b69303a8ae2c7ec6332223c23">m_bIsCreate</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> * @class CDirectXTextureReader</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"> * @brief ファイルから画像を読み込む。</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_c_direct_x_texture_reader.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_direct_x_texture_reader.html">CDirectXTextureReader</a></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    : <span class="keyword">public</span> <a class="code" href="class_c_file_reader.html">CFileReader</a></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_c_direct_x_texture_reader.html#a8067f8058a6d70ea0a9ff46aee2ae643">CDirectXTextureReader</a>( <span class="keyword">const</span> TChar* _psFileName );</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="class_c_direct_x_texture_reader.html#a8067f8058a6d70ea0a9ff46aee2ae643">CDirectXTextureReader</a>( <span class="keyword">const</span> TChar* _psFileName, <a class="code" href="namespacen_lib_1_1n_direct_x.html#a47fcba27656dfc022d6e7ca2a505da65">nLib::nDirectX::EnTextureFormat</a> _eFormat);</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_c_direct_x_texture_reader.html#a19885f989b8efc0ae652a27ddfe655e5">   48</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_direct_x_texture_reader.html#a19885f989b8efc0ae652a27ddfe655e5">~CDirectXTextureReader</a>(){}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_direct_x_texture_reader.html#abae2b7a2cf1957d8f0d117851bab35d5">ReadEndProcess</a>( <span class="keyword">const</span> <span class="keywordtype">void</span>* _pData, USize _uSize ) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_c_direct_x_texture_reader.html#af12294b81ba5ca060ac58d0b53dfb6e6">   54</a></span>&#160;    <span class="keyword">const</span> DirectX::ScratchImage&amp; <a class="code" href="class_c_direct_x_texture_reader.html#af12294b81ba5ca060ac58d0b53dfb6e6">GetImage</a>()<span class="keyword"> const</span>{ <span class="keywordflow">return</span> <a class="code" href="class_c_direct_x_texture_reader.html#a3e34a721e8e70a5bf417199c7a5f568b">m_stImage</a>; }</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_c_direct_x_texture_reader.html#aaa6dc8a5b66797b9661fc2f13ef642cb">   56</a></span>&#160;    <span class="keyword">const</span> DirectX::TexMetadata&amp; <a class="code" href="class_c_direct_x_texture_reader.html#aaa6dc8a5b66797b9661fc2f13ef642cb">GetMetadata</a>()<span class="keyword"> const</span>{ <span class="keywordflow">return</span> <a class="code" href="class_c_direct_x_texture_reader.html#a2588eec0104869cb09dd43d9ab2ac024">m_stMetaData</a>; }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_c_direct_x_texture_reader.html#ac09d73093277f3f444eee39b827fe92c">   59</a></span>&#160;    <a class="code" href="namespacen_lib_1_1n_direct_x.html#a47fcba27656dfc022d6e7ca2a505da65">nLib::nDirectX::EnTextureFormat</a> <a class="code" href="class_c_direct_x_texture_reader.html#ac09d73093277f3f444eee39b827fe92c">m_eFormat</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_c_direct_x_texture_reader.html#a3e34a721e8e70a5bf417199c7a5f568b">   61</a></span>&#160;    DirectX::ScratchImage   <a class="code" href="class_c_direct_x_texture_reader.html#a3e34a721e8e70a5bf417199c7a5f568b">m_stImage</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_c_direct_x_texture_reader.html#a2588eec0104869cb09dd43d9ab2ac024">   62</a></span>&#160;    DirectX::TexMetadata    <a class="code" href="class_c_direct_x_texture_reader.html#a2588eec0104869cb09dd43d9ab2ac024">m_stMetaData</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"> * @class CDirectXTextureCreatorFromFile</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"> * @brief ファイルから画像を読み込みテクスチャを作成する。</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_c_direct_x_texture_creator_from_file.html">   69</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_direct_x_texture_creator_from_file.html">CDirectXTextureCreatorFromFile</a></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    : <span class="keyword">public</span> <a class="code" href="class_c_direct_x_texture_reader.html">CDirectXTextureReader</a></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="class_c_direct_x_texture_creator_from_file.html#abc0c74b93240a98b4b12a59bbf343aee">CDirectXTextureCreatorFromFile</a>( <a class="code" href="class_c_direct_x_texture.html">CDirectXTexture</a>* _pcTexture, <span class="keyword">const</span> TChar* _psFileName, <span class="keywordtype">bool</span> _bIsSuicide );</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_c_direct_x_texture_creator_from_file.html#af8fccf4bb049bcbe98cd8af63e5bc6dd">   76</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_direct_x_texture_creator_from_file.html#af8fccf4bb049bcbe98cd8af63e5bc6dd">~CDirectXTextureCreatorFromFile</a>(){}</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_direct_x_texture_creator_from_file.html#a5358c62c1a9b7154b17e64d480fa140c">ReadEndProcess</a>( <span class="keyword">const</span> <span class="keywordtype">void</span>* _pData, USize _uSize ) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_direct_x_texture_creator_from_file.html#aff2a72e9d40761f7654e3b37d6c0b0dd">ReadEndProcessSync</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_c_direct_x_texture_creator_from_file.html#a81e5071041c6ebec32e1aeadc1bdcdbe">   84</a></span>&#160;    <a class="code" href="class_c_direct_x_texture.html">CDirectXTexture</a>*    <a class="code" href="class_c_direct_x_texture_creator_from_file.html#a81e5071041c6ebec32e1aeadc1bdcdbe">m_pcTexture</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="class_c_direct_x_texture_creator_from_file.html#ac362400f47c6bd70ddf171af97eea74b">   85</a></span>&#160;    <span class="keywordtype">bool</span>                <a class="code" href="class_c_direct_x_texture_creator_from_file.html#ac362400f47c6bd70ddf171af97eea74b">m_bIsSuicide</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif // #ifndef INCLUDE_DIRECTX_TEXTURE_H</span></div>
+<div class="ttc" id="class_c_direct_x_texture_html_ab38734e60f44980fe0b63eef1c9f5eff"><div class="ttname"><a href="class_c_direct_x_texture.html#ab38734e60f44980fe0b63eef1c9f5eff">CDirectXTexture::IsCreate</a></div><div class="ttdeci">bool IsCreate() const </div><div class="ttdoc">作成済みか。 </div><div class="ttdef"><b>Definition:</b> DirectXTexture.h:29</div></div>
+<div class="ttc" id="class_c_direct_x_texture_html_ad6605a1b69303a8ae2c7ec6332223c23"><div class="ttname"><a href="class_c_direct_x_texture.html#ad6605a1b69303a8ae2c7ec6332223c23">CDirectXTexture::m_bIsCreate</a></div><div class="ttdeci">bool m_bIsCreate</div><div class="ttdef"><b>Definition:</b> DirectXTexture.h:33</div></div>
+<div class="ttc" id="class_c_direct_x_texture_reader_html_a8067f8058a6d70ea0a9ff46aee2ae643"><div class="ttname"><a href="class_c_direct_x_texture_reader.html#a8067f8058a6d70ea0a9ff46aee2ae643">CDirectXTextureReader::CDirectXTextureReader</a></div><div class="ttdeci">CDirectXTextureReader(const TChar *_psFileName)</div><div class="ttdoc">コンストラクタ。 </div><div class="ttdef"><b>Definition:</b> DirectXTexture.cpp:79</div></div>
+<div class="ttc" id="class_c_direct_x_texture_reader_html"><div class="ttname"><a href="class_c_direct_x_texture_reader.html">CDirectXTextureReader</a></div><div class="ttdef"><b>Definition:</b> DirectXTexture.h:40</div></div>
+<div class="ttc" id="class_c_direct_x_texture_reader_html_a2588eec0104869cb09dd43d9ab2ac024"><div class="ttname"><a href="class_c_direct_x_texture_reader.html#a2588eec0104869cb09dd43d9ab2ac024">CDirectXTextureReader::m_stMetaData</a></div><div class="ttdeci">DirectX::TexMetadata m_stMetaData</div><div class="ttdef"><b>Definition:</b> DirectXTexture.h:62</div></div>
+<div class="ttc" id="class_c_direct_x_texture_reader_html_ac09d73093277f3f444eee39b827fe92c"><div class="ttname"><a href="class_c_direct_x_texture_reader.html#ac09d73093277f3f444eee39b827fe92c">CDirectXTextureReader::m_eFormat</a></div><div class="ttdeci">nLib::nDirectX::EnTextureFormat m_eFormat</div><div class="ttdef"><b>Definition:</b> DirectXTexture.h:59</div></div>
+<div class="ttc" id="class_c_direct_x_texture_creator_from_file_html_aff2a72e9d40761f7654e3b37d6c0b0dd"><div class="ttname"><a href="class_c_direct_x_texture_creator_from_file.html#aff2a72e9d40761f7654e3b37d6c0b0dd">CDirectXTextureCreatorFromFile::ReadEndProcessSync</a></div><div class="ttdeci">virtual void ReadEndProcessSync() override</div><div class="ttdoc">読み込み完了時の処理(メインスレッドと同期)。 </div><div class="ttdef"><b>Definition:</b> DirectXTexture.cpp:193</div></div>
+<div class="ttc" id="namespacen_lib_1_1n_direct_x_html_a47fcba27656dfc022d6e7ca2a505da65"><div class="ttname"><a href="namespacen_lib_1_1n_direct_x.html#a47fcba27656dfc022d6e7ca2a505da65">nLib::nDirectX::EnTextureFormat</a></div><div class="ttdeci">EnTextureFormat</div><div class="ttdef"><b>Definition:</b> DirectXDefinition.h:46</div></div>
+<div class="ttc" id="class_c_direct_x_texture_creator_from_file_html_abc0c74b93240a98b4b12a59bbf343aee"><div class="ttname"><a href="class_c_direct_x_texture_creator_from_file.html#abc0c74b93240a98b4b12a59bbf343aee">CDirectXTextureCreatorFromFile::CDirectXTextureCreatorFromFile</a></div><div class="ttdeci">CDirectXTextureCreatorFromFile(CDirectXTexture *_pcTexture, const TChar *_psFileName, bool _bIsSuicide)</div><div class="ttdoc">コンストラクタ。 </div><div class="ttdef"><b>Definition:</b> DirectXTexture.cpp:165</div></div>
+<div class="ttc" id="class_c_direct_x_texture_html_a544fd8fb0c2f2b26853f4930764da184"><div class="ttname"><a href="class_c_direct_x_texture.html#a544fd8fb0c2f2b26853f4930764da184">CDirectXTexture::CreateTexture</a></div><div class="ttdeci">void CreateTexture(const D3D_TEXTURE2D_DESC &amp;_rstDesc)</div><div class="ttdoc">テクスチャを作成。 </div><div class="ttdef"><b>Definition:</b> DirectXTexture.cpp:33</div></div>
+<div class="ttc" id="class_c_file_reader_html"><div class="ttname"><a href="class_c_file_reader.html">CFileReader</a></div><div class="ttdef"><b>Definition:</b> FileReader.h:16</div></div>
+<div class="ttc" id="_file_reader_8h_html"><div class="ttname"><a href="_file_reader_8h.html">FileReader.h</a></div><div class="ttdoc">ファイル読み込みクラス。 </div></div>
+<div class="ttc" id="class_c_direct_x_texture_reader_html_af12294b81ba5ca060ac58d0b53dfb6e6"><div class="ttname"><a href="class_c_direct_x_texture_reader.html#af12294b81ba5ca060ac58d0b53dfb6e6">CDirectXTextureReader::GetImage</a></div><div class="ttdeci">const DirectX::ScratchImage &amp; GetImage() const </div><div class="ttdoc">画像データを取得。 </div><div class="ttdef"><b>Definition:</b> DirectXTexture.h:54</div></div>
+<div class="ttc" id="class_c_direct_x_texture_html_afd62064ff20750c1cc1dfd900ffac90c"><div class="ttname"><a href="class_c_direct_x_texture.html#afd62064ff20750c1cc1dfd900ffac90c">CDirectXTexture::~CDirectXTexture</a></div><div class="ttdeci">virtual ~CDirectXTexture()</div><div class="ttdoc">デストラクタ。 </div><div class="ttdef"><b>Definition:</b> DirectXTexture.cpp:24</div></div>
+<div class="ttc" id="class_c_direct_x_texture_creator_from_file_html_af8fccf4bb049bcbe98cd8af63e5bc6dd"><div class="ttname"><a href="class_c_direct_x_texture_creator_from_file.html#af8fccf4bb049bcbe98cd8af63e5bc6dd">CDirectXTextureCreatorFromFile::~CDirectXTextureCreatorFromFile</a></div><div class="ttdeci">virtual ~CDirectXTextureCreatorFromFile()</div><div class="ttdoc">デストラクタ。 </div><div class="ttdef"><b>Definition:</b> DirectXTexture.h:76</div></div>
+<div class="ttc" id="class_c_direct_x_texture_html"><div class="ttname"><a href="class_c_direct_x_texture.html">CDirectXTexture</a></div><div class="ttdef"><b>Definition:</b> DirectXTexture.h:16</div></div>
+<div class="ttc" id="class_c_direct_x_texture_reader_html_a19885f989b8efc0ae652a27ddfe655e5"><div class="ttname"><a href="class_c_direct_x_texture_reader.html#a19885f989b8efc0ae652a27ddfe655e5">CDirectXTextureReader::~CDirectXTextureReader</a></div><div class="ttdeci">virtual ~CDirectXTextureReader()</div><div class="ttdoc">デストラクタ。 </div><div class="ttdef"><b>Definition:</b> DirectXTexture.h:48</div></div>
+<div class="ttc" id="class_c_direct_x_texture_creator_from_file_html_ac362400f47c6bd70ddf171af97eea74b"><div class="ttname"><a href="class_c_direct_x_texture_creator_from_file.html#ac362400f47c6bd70ddf171af97eea74b">CDirectXTextureCreatorFromFile::m_bIsSuicide</a></div><div class="ttdeci">bool m_bIsSuicide</div><div class="ttdef"><b>Definition:</b> DirectXTexture.h:85</div></div>
+<div class="ttc" id="class_c_direct_x_texture_creator_from_file_html_a5358c62c1a9b7154b17e64d480fa140c"><div class="ttname"><a href="class_c_direct_x_texture_creator_from_file.html#a5358c62c1a9b7154b17e64d480fa140c">CDirectXTextureCreatorFromFile::ReadEndProcess</a></div><div class="ttdeci">virtual void ReadEndProcess(const void *_pData, USize _uSize) override</div><div class="ttdoc">読み込み完了時の処理。 </div><div class="ttdef"><b>Definition:</b> DirectXTexture.cpp:177</div></div>
+<div class="ttc" id="class_c_direct_x_texture_html_a23305fa228b1ed1d3071b1cccae38d3c"><div class="ttname"><a href="class_c_direct_x_texture.html#a23305fa228b1ed1d3071b1cccae38d3c">CDirectXTexture::CDirectXTexture</a></div><div class="ttdeci">CDirectXTexture()</div><div class="ttdoc">コンストラクタ。 </div><div class="ttdef"><b>Definition:</b> DirectXTexture.cpp:15</div></div>
+<div class="ttc" id="class_c_direct_x_texture_html_a93ed5f8b244517c1a20f7128f5f9878a"><div class="ttname"><a href="class_c_direct_x_texture.html#a93ed5f8b244517c1a20f7128f5f9878a">CDirectXTexture::m_pcTexture</a></div><div class="ttdeci">ID3DTexture2D * m_pcTexture</div><div class="ttdef"><b>Definition:</b> DirectXTexture.h:32</div></div>
+<div class="ttc" id="class_c_direct_x_texture_reader_html_a3e34a721e8e70a5bf417199c7a5f568b"><div class="ttname"><a href="class_c_direct_x_texture_reader.html#a3e34a721e8e70a5bf417199c7a5f568b">CDirectXTextureReader::m_stImage</a></div><div class="ttdeci">DirectX::ScratchImage m_stImage</div><div class="ttdef"><b>Definition:</b> DirectXTexture.h:61</div></div>
+<div class="ttc" id="class_c_direct_x_texture_creator_from_file_html_a81e5071041c6ebec32e1aeadc1bdcdbe"><div class="ttname"><a href="class_c_direct_x_texture_creator_from_file.html#a81e5071041c6ebec32e1aeadc1bdcdbe">CDirectXTextureCreatorFromFile::m_pcTexture</a></div><div class="ttdeci">CDirectXTexture * m_pcTexture</div><div class="ttdef"><b>Definition:</b> DirectXTexture.h:84</div></div>
+<div class="ttc" id="class_c_direct_x_texture_reader_html_abae2b7a2cf1957d8f0d117851bab35d5"><div class="ttname"><a href="class_c_direct_x_texture_reader.html#abae2b7a2cf1957d8f0d117851bab35d5">CDirectXTextureReader::ReadEndProcess</a></div><div class="ttdeci">virtual void ReadEndProcess(const void *_pData, USize _uSize) override</div><div class="ttdoc">読み込み完了時の処理。 </div><div class="ttdef"><b>Definition:</b> DirectXTexture.cpp:101</div></div>
+<div class="ttc" id="class_c_direct_x_texture_reader_html_aaa6dc8a5b66797b9661fc2f13ef642cb"><div class="ttname"><a href="class_c_direct_x_texture_reader.html#aaa6dc8a5b66797b9661fc2f13ef642cb">CDirectXTextureReader::GetMetadata</a></div><div class="ttdeci">const DirectX::TexMetadata &amp; GetMetadata() const </div><div class="ttdoc">メタデータを取得。 </div><div class="ttdef"><b>Definition:</b> DirectXTexture.h:56</div></div>
+<div class="ttc" id="class_c_direct_x_texture_creator_from_file_html"><div class="ttname"><a href="class_c_direct_x_texture_creator_from_file.html">CDirectXTextureCreatorFromFile</a></div><div class="ttdef"><b>Definition:</b> DirectXTexture.h:69</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

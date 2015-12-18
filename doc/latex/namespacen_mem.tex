@@ -1,0 +1,102 @@
+\hypertarget{namespacen_mem}{}\section{n\+Mem 名前空間}
+\label{namespacen_mem}\index{n\+Mem@{n\+Mem}}
+\subsection*{列挙型}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacen_mem_a44d64d91225ba6c957054d2db885dfbe}{En\+Mem\+Page} \+: U32 \{ \hyperlink{namespacen_mem_a44d64d91225ba6c957054d2db885dfbea6a1b8649038aeb0a85ce63e897cea82f}{En\+Mem\+Page\+::en\+Stationed}, 
+\hyperlink{namespacen_mem_a44d64d91225ba6c957054d2db885dfbeabe9fa21614b3e6b1262058b536d50965}{En\+Mem\+Page\+::en\+Common}, 
+\hyperlink{namespacen_mem_a44d64d91225ba6c957054d2db885dfbea079bb6413c37006b9fdc56add34e517b}{En\+Mem\+Page\+::en\+Max}
+ \}
+\item 
+enum \hyperlink{namespacen_mem_aae5f274bd5d48f77be9c3142a1e83e8b}{En\+Alloc\+Mode} \+: U32 \{ \hyperlink{namespacen_mem_aae5f274bd5d48f77be9c3142a1e83e8ba51de7c871812c0d91929b2fa407db09f}{En\+Alloc\+Mode\+::en\+Forward}, 
+\hyperlink{namespacen_mem_aae5f274bd5d48f77be9c3142a1e83e8ba3b7d737dc6a726f089f8d85df120a77f}{En\+Alloc\+Mode\+::en\+Back}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{namespacen_mem_acb65bac5ab61012cdbde0ecce3e51d18}{Alloc} (U\+Size \+\_\+u\+Size, \hyperlink{namespacen_mem_a44d64d91225ba6c957054d2db885dfbe}{En\+Mem\+Page} \+\_\+e\+Page, \hyperlink{namespacen_mem_aae5f274bd5d48f77be9c3142a1e83e8b}{En\+Alloc\+Mode} \+\_\+e\+Mode, const S8 $\ast$\+\_\+ps\+File, U32 \+\_\+u\+Line)
+\begin{DoxyCompactList}\small\item\em メモリ確保。 \end{DoxyCompactList}\item 
+void \hyperlink{namespacen_mem_a9aaa87b3f418d881912df1c3acab0764}{Free} (void $\ast$\+\_\+p)
+\begin{DoxyCompactList}\small\item\em メモリ解放。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{列挙型詳解}
+\hypertarget{namespacen_mem_aae5f274bd5d48f77be9c3142a1e83e8b}{}\index{n\+Mem@{n\+Mem}!En\+Alloc\+Mode@{En\+Alloc\+Mode}}
+\index{En\+Alloc\+Mode@{En\+Alloc\+Mode}!n\+Mem@{n\+Mem}}
+\subsubsection[{En\+Alloc\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf n\+Mem\+::\+En\+Alloc\+Mode} \+: U32\hspace{0.3cm}{\ttfamily [strong]}}\label{namespacen_mem_aae5f274bd5d48f77be9c3142a1e83e8b}
+\begin{Desc}
+\item[列挙値]\par
+\begin{description}
+\index{en\+Forward@{en\+Forward}!n\+Mem@{n\+Mem}}\index{n\+Mem@{n\+Mem}!en\+Forward@{en\+Forward}}\item[{\em 
+\hypertarget{namespacen_mem_aae5f274bd5d48f77be9c3142a1e83e8ba51de7c871812c0d91929b2fa407db09f}{}en\+Forward\label{namespacen_mem_aae5f274bd5d48f77be9c3142a1e83e8ba51de7c871812c0d91929b2fa407db09f}
+}]\index{en\+Back@{en\+Back}!n\+Mem@{n\+Mem}}\index{n\+Mem@{n\+Mem}!en\+Back@{en\+Back}}\item[{\em 
+\hypertarget{namespacen_mem_aae5f274bd5d48f77be9c3142a1e83e8ba3b7d737dc6a726f089f8d85df120a77f}{}en\+Back\label{namespacen_mem_aae5f274bd5d48f77be9c3142a1e83e8ba3b7d737dc6a726f089f8d85df120a77f}
+}]\end{description}
+\end{Desc}
+\hypertarget{namespacen_mem_a44d64d91225ba6c957054d2db885dfbe}{}\index{n\+Mem@{n\+Mem}!En\+Mem\+Page@{En\+Mem\+Page}}
+\index{En\+Mem\+Page@{En\+Mem\+Page}!n\+Mem@{n\+Mem}}
+\subsubsection[{En\+Mem\+Page}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf n\+Mem\+::\+En\+Mem\+Page} \+: U32\hspace{0.3cm}{\ttfamily [strong]}}\label{namespacen_mem_a44d64d91225ba6c957054d2db885dfbe}
+\begin{Desc}
+\item[列挙値]\par
+\begin{description}
+\index{en\+Stationed@{en\+Stationed}!n\+Mem@{n\+Mem}}\index{n\+Mem@{n\+Mem}!en\+Stationed@{en\+Stationed}}\item[{\em 
+\hypertarget{namespacen_mem_a44d64d91225ba6c957054d2db885dfbea6a1b8649038aeb0a85ce63e897cea82f}{}en\+Stationed\label{namespacen_mem_a44d64d91225ba6c957054d2db885dfbea6a1b8649038aeb0a85ce63e897cea82f}
+}]常駐メモリページ。 \index{en\+Common@{en\+Common}!n\+Mem@{n\+Mem}}\index{n\+Mem@{n\+Mem}!en\+Common@{en\+Common}}\item[{\em 
+\hypertarget{namespacen_mem_a44d64d91225ba6c957054d2db885dfbeabe9fa21614b3e6b1262058b536d50965}{}en\+Common\label{namespacen_mem_a44d64d91225ba6c957054d2db885dfbeabe9fa21614b3e6b1262058b536d50965}
+}]コモンページ。 \index{en\+Max@{en\+Max}!n\+Mem@{n\+Mem}}\index{n\+Mem@{n\+Mem}!en\+Max@{en\+Max}}\item[{\em 
+\hypertarget{namespacen_mem_a44d64d91225ba6c957054d2db885dfbea079bb6413c37006b9fdc56add34e517b}{}en\+Max\label{namespacen_mem_a44d64d91225ba6c957054d2db885dfbea079bb6413c37006b9fdc56add34e517b}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{関数詳解}
+\hypertarget{namespacen_mem_acb65bac5ab61012cdbde0ecce3e51d18}{}\index{n\+Mem@{n\+Mem}!Alloc@{Alloc}}
+\index{Alloc@{Alloc}!n\+Mem@{n\+Mem}}
+\subsubsection[{Alloc(\+U\+Size \+\_\+u\+Size, En\+Mem\+Page \+\_\+e\+Page, En\+Alloc\+Mode \+\_\+e\+Mode, const S8 $\ast$\+\_\+ps\+File, U32 \+\_\+u\+Line)}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ n\+Mem\+::\+Alloc (
+\begin{DoxyParamCaption}
+\item[{U\+Size}]{\+\_\+u\+Size, }
+\item[{{\bf n\+Mem\+::\+En\+Mem\+Page}}]{\+\_\+e\+Page, }
+\item[{{\bf n\+Mem\+::\+En\+Alloc\+Mode}}]{\+\_\+e\+Mode, }
+\item[{const S8 $\ast$}]{\+\_\+ps\+File, }
+\item[{U32}]{\+\_\+u\+Line}
+\end{DoxyParamCaption}
+)}\label{namespacen_mem_acb65bac5ab61012cdbde0ecce3e51d18}
+
+
+メモリ確保。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+u\+Size} & \+: 確保するサイズ。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+e\+Page} & \+: アロケートページ。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+e\+Mode} & \+: アロケートモード。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+ps\+File} & \+: 呼び出し元ファイル。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+u\+Line} & \+: 呼び出し元行数。 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void$\ast$} & \+: 確保したメモリへのポインタ。 \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{namespacen_mem_a9aaa87b3f418d881912df1c3acab0764}{}\index{n\+Mem@{n\+Mem}!Free@{Free}}
+\index{Free@{Free}!n\+Mem@{n\+Mem}}
+\subsubsection[{Free(void $\ast$\+\_\+p)}]{\setlength{\rightskip}{0pt plus 5cm}void n\+Mem\+::\+Free (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{\+\_\+p}
+\end{DoxyParamCaption}
+)}\label{namespacen_mem_a9aaa87b3f418d881912df1c3acab0764}
+
+
+メモリ解放。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+p} & \+: 解放するポインタ。 \\
+\hline
+\end{DoxyParams}

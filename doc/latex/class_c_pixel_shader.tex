@@ -1,0 +1,112 @@
+\hypertarget{class_c_pixel_shader}{}\section{C\+Pixel\+Shader クラス}
+\label{class_c_pixel_shader}\index{C\+Pixel\+Shader@{C\+Pixel\+Shader}}
+
+
+{\ttfamily \#include $<$Pixel\+Shader.\+h$>$}
+
+C\+Pixel\+Shader の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_pixel_shader}
+\end{center}
+\end{figure}
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_c_pixel_shader_1_1_st_init_param}{St\+Init\+Param}
+\begin{DoxyCompactList}\small\item\em 初期化用パラメータ。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_pixel_shader_af98a997f879b9fc4f08affc2d1818bd1}{C\+Pixel\+Shader} (const \hyperlink{struct_c_pixel_shader_1_1_st_init_param}{St\+Init\+Param} \&\+\_\+rst\+Init\+Param)
+\begin{DoxyCompactList}\small\item\em コンストラクタ。 \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_pixel_shader_aad0c95b78a92ee366175157e09f6baea}{$\sim$\+C\+Pixel\+Shader} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_pixel_shader_a5a70cfcd3b998c6f55f4c95f351e940e}{Read\+End\+Process} (const void $\ast$\+\_\+p\+Data, U\+Size \+\_\+u\+Size) override
+\begin{DoxyCompactList}\small\item\em 読み込み完了時の処理。 \end{DoxyCompactList}\item 
+I\+D3\+D\+Pixel\+Shader $\ast$ \hyperlink{class_c_pixel_shader_ad13d85569d067e80b15ddee8fd10e2a9}{Get\+Shader} () const 
+\begin{DoxyCompactList}\small\item\em シェーダーを取得。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+I\+D3\+D\+Pixel\+Shader $\ast$ \hyperlink{class_c_pixel_shader_abd3ec734645bdd2d8828d30fad71ee4f}{m\+\_\+pc\+Pixel\+Shader}
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\hypertarget{class_c_pixel_shader_af98a997f879b9fc4f08affc2d1818bd1}{}\index{C\+Pixel\+Shader@{C\+Pixel\+Shader}!C\+Pixel\+Shader@{C\+Pixel\+Shader}}
+\index{C\+Pixel\+Shader@{C\+Pixel\+Shader}!C\+Pixel\+Shader@{C\+Pixel\+Shader}}
+\subsubsection[{C\+Pixel\+Shader(const St\+Init\+Param \&\+\_\+rst\+Init\+Param)}]{\setlength{\rightskip}{0pt plus 5cm}C\+Pixel\+Shader\+::\+C\+Pixel\+Shader (
+\begin{DoxyParamCaption}
+\item[{const {\bf St\+Init\+Param} \&}]{\+\_\+rst\+Init\+Param}
+\end{DoxyParamCaption}
+)}\label{class_c_pixel_shader_af98a997f879b9fc4f08affc2d1818bd1}
+
+
+コンストラクタ。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+rst\+Init\+Param} & \+: 初期化用パラメータ。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_pixel_shader_aad0c95b78a92ee366175157e09f6baea}{}\index{C\+Pixel\+Shader@{C\+Pixel\+Shader}!````~C\+Pixel\+Shader@{$\sim$\+C\+Pixel\+Shader}}
+\index{````~C\+Pixel\+Shader@{$\sim$\+C\+Pixel\+Shader}!C\+Pixel\+Shader@{C\+Pixel\+Shader}}
+\subsubsection[{$\sim$\+C\+Pixel\+Shader()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Pixel\+Shader\+::$\sim$\+C\+Pixel\+Shader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_pixel_shader_aad0c95b78a92ee366175157e09f6baea}
+
+
+デストラクタ。 
+
+
+
+\subsection{関数詳解}
+\hypertarget{class_c_pixel_shader_ad13d85569d067e80b15ddee8fd10e2a9}{}\index{C\+Pixel\+Shader@{C\+Pixel\+Shader}!Get\+Shader@{Get\+Shader}}
+\index{Get\+Shader@{Get\+Shader}!C\+Pixel\+Shader@{C\+Pixel\+Shader}}
+\subsubsection[{Get\+Shader() const }]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D\+Pixel\+Shader$\ast$ C\+Pixel\+Shader\+::\+Get\+Shader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_pixel_shader_ad13d85569d067e80b15ddee8fd10e2a9}
+
+
+シェーダーを取得。 
+
+\hypertarget{class_c_pixel_shader_a5a70cfcd3b998c6f55f4c95f351e940e}{}\index{C\+Pixel\+Shader@{C\+Pixel\+Shader}!Read\+End\+Process@{Read\+End\+Process}}
+\index{Read\+End\+Process@{Read\+End\+Process}!C\+Pixel\+Shader@{C\+Pixel\+Shader}}
+\subsubsection[{Read\+End\+Process(const void $\ast$\+\_\+p\+Data, U\+Size \+\_\+u\+Size) override}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Pixel\+Shader\+::\+Read\+End\+Process (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{\+\_\+p\+Data, }
+\item[{U\+Size}]{\+\_\+u\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_c_pixel_shader_a5a70cfcd3b998c6f55f4c95f351e940e}
+
+
+読み込み完了時の処理。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+p\+Data} & \+: 読み込んだデータ。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+u\+Size} & \+: 読み込んだデータサイズ。 \\
+\hline
+\end{DoxyParams}
+
+
+\hyperlink{class_c_file_reader_a5a18550133826ac43096629f6eaa8c42}{C\+File\+Reader}を再実装しています。
+
+
+
+\subsection{メンバ詳解}
+\hypertarget{class_c_pixel_shader_abd3ec734645bdd2d8828d30fad71ee4f}{}\index{C\+Pixel\+Shader@{C\+Pixel\+Shader}!m\+\_\+pc\+Pixel\+Shader@{m\+\_\+pc\+Pixel\+Shader}}
+\index{m\+\_\+pc\+Pixel\+Shader@{m\+\_\+pc\+Pixel\+Shader}!C\+Pixel\+Shader@{C\+Pixel\+Shader}}
+\subsubsection[{m\+\_\+pc\+Pixel\+Shader}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D\+Pixel\+Shader$\ast$ C\+Pixel\+Shader\+::m\+\_\+pc\+Pixel\+Shader\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_pixel_shader_abd3ec734645bdd2d8828d30fad71ee4f}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Project/\+Game/\+Lib/\+Direct\+X/\hyperlink{_pixel_shader_8h}{Pixel\+Shader.\+h}\item 
+D\+:/\+Project/\+Game/\+Lib/\+Direct\+X/\hyperlink{_pixel_shader_8cpp}{Pixel\+Shader.\+cpp}\end{DoxyCompactItemize}

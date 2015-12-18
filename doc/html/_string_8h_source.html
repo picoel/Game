@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>My Project: D:/Project/Game/Lib/String/String.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="namespaces.html"><span>名前空間</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8f3de2ae926fecfe6abd5379fd2b6eb1.html">Lib</a></li><li class="navelem"><a class="el" href="dir_fd3988fbbb80fff46699c5274cf66bdf.html">String</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">String.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_string_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef INCLUDE_TSTRING_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define INCLUDE_TSTRING_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;tchar.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_allocator_8h.html">Lib/Memory/Allocator/Allocator.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="_string_8h.html#aa5836abb39ef3fd81c33730f9cdd6962">   14</a></span>&#160;<span class="keyword">typedef</span> std::basic_string&lt; S8, std::char_traits&lt;S8&gt;, <a class="code" href="class_c_allocator.html">CAllocator&lt;S8&gt;</a> &gt; <a class="code" href="_string_8h.html#aa5836abb39ef3fd81c33730f9cdd6962">CString</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="_string_8h.html#a3ec9b4410d4ad94701b2d28bc5bad267">   15</a></span>&#160;<span class="keyword">typedef</span> std::basic_string&lt; S16, std::char_traits&lt;S16&gt;, <a class="code" href="class_c_allocator.html">CAllocator&lt;S16&gt;</a> &gt; <a class="code" href="_string_8h.html#a3ec9b4410d4ad94701b2d28bc5bad267">CWString</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="_string_8h.html#a65b002fe7fe31f6e84dbb7e46907e031">   16</a></span>&#160;<span class="keyword">typedef</span> std::basic_string&lt; TChar, std::char_traits&lt;TCHAR&gt;, <a class="code" href="class_c_allocator.html">CAllocator&lt;TCHAR&gt;</a> &gt; <a class="code" href="_string_8h.html#a65b002fe7fe31f6e84dbb7e46907e031">CTString</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif // #ifndef INCLUDE_TSTRING_H</span></div>
+<div class="ttc" id="_string_8h_html_aa5836abb39ef3fd81c33730f9cdd6962"><div class="ttname"><a href="_string_8h.html#aa5836abb39ef3fd81c33730f9cdd6962">CString</a></div><div class="ttdeci">std::basic_string&lt; S8, std::char_traits&lt; S8 &gt;, CAllocator&lt; S8 &gt; &gt; CString</div><div class="ttdef"><b>Definition:</b> String.h:14</div></div>
+<div class="ttc" id="_allocator_8h_html"><div class="ttname"><a href="_allocator_8h.html">Allocator.h</a></div><div class="ttdoc">MemManagerを用いたアロケータ。 </div></div>
+<div class="ttc" id="_string_8h_html_a3ec9b4410d4ad94701b2d28bc5bad267"><div class="ttname"><a href="_string_8h.html#a3ec9b4410d4ad94701b2d28bc5bad267">CWString</a></div><div class="ttdeci">std::basic_string&lt; S16, std::char_traits&lt; S16 &gt;, CAllocator&lt; S16 &gt; &gt; CWString</div><div class="ttdef"><b>Definition:</b> String.h:15</div></div>
+<div class="ttc" id="class_c_allocator_html"><div class="ttname"><a href="class_c_allocator.html">CAllocator</a></div><div class="ttdef"><b>Definition:</b> Allocator.h:18</div></div>
+<div class="ttc" id="_string_8h_html_a65b002fe7fe31f6e84dbb7e46907e031"><div class="ttname"><a href="_string_8h.html#a65b002fe7fe31f6e84dbb7e46907e031">CTString</a></div><div class="ttdeci">std::basic_string&lt; TChar, std::char_traits&lt; TCHAR &gt;, CAllocator&lt; TCHAR &gt; &gt; CTString</div><div class="ttdef"><b>Definition:</b> String.h:16</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

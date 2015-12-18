@@ -1,0 +1,144 @@
+\hypertarget{class_c_direct_x_texture_reader}{}\section{C\+Direct\+X\+Texture\+Reader クラス}
+\label{class_c_direct_x_texture_reader}\index{C\+Direct\+X\+Texture\+Reader@{C\+Direct\+X\+Texture\+Reader}}
+
+
+{\ttfamily \#include $<$Direct\+X\+Texture.\+h$>$}
+
+C\+Direct\+X\+Texture\+Reader の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_direct_x_texture_reader}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_direct_x_texture_reader_a8067f8058a6d70ea0a9ff46aee2ae643}{C\+Direct\+X\+Texture\+Reader} (const T\+Char $\ast$\+\_\+ps\+File\+Name)
+\begin{DoxyCompactList}\small\item\em コンストラクタ。 \end{DoxyCompactList}\item 
+\hyperlink{class_c_direct_x_texture_reader_af93e4ced10f50fd4070f826f33730f9a}{C\+Direct\+X\+Texture\+Reader} (const T\+Char $\ast$\+\_\+ps\+File\+Name, \hyperlink{namespacen_lib_1_1n_direct_x_a47fcba27656dfc022d6e7ca2a505da65}{n\+Lib\+::n\+Direct\+X\+::\+En\+Texture\+Format} \+\_\+e\+Format)
+\item 
+virtual \hyperlink{class_c_direct_x_texture_reader_a19885f989b8efc0ae652a27ddfe655e5}{$\sim$\+C\+Direct\+X\+Texture\+Reader} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_direct_x_texture_reader_abae2b7a2cf1957d8f0d117851bab35d5}{Read\+End\+Process} (const void $\ast$\+\_\+p\+Data, U\+Size \+\_\+u\+Size) override
+\begin{DoxyCompactList}\small\item\em 読み込み完了時の処理。 \end{DoxyCompactList}\item 
+const Direct\+X\+::\+Scratch\+Image \& \hyperlink{class_c_direct_x_texture_reader_af12294b81ba5ca060ac58d0b53dfb6e6}{Get\+Image} () const 
+\begin{DoxyCompactList}\small\item\em 画像データを取得。 \end{DoxyCompactList}\item 
+const Direct\+X\+::\+Tex\+Metadata \& \hyperlink{class_c_direct_x_texture_reader_aaa6dc8a5b66797b9661fc2f13ef642cb}{Get\+Metadata} () const 
+\begin{DoxyCompactList}\small\item\em メタデータを取得。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacen_lib_1_1n_direct_x_a47fcba27656dfc022d6e7ca2a505da65}{n\+Lib\+::n\+Direct\+X\+::\+En\+Texture\+Format} \hyperlink{class_c_direct_x_texture_reader_ac09d73093277f3f444eee39b827fe92c}{m\+\_\+e\+Format}
+\item 
+Direct\+X\+::\+Scratch\+Image \hyperlink{class_c_direct_x_texture_reader_a3e34a721e8e70a5bf417199c7a5f568b}{m\+\_\+st\+Image}
+\item 
+Direct\+X\+::\+Tex\+Metadata \hyperlink{class_c_direct_x_texture_reader_a2588eec0104869cb09dd43d9ab2ac024}{m\+\_\+st\+Meta\+Data}
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\hypertarget{class_c_direct_x_texture_reader_a8067f8058a6d70ea0a9ff46aee2ae643}{}\index{C\+Direct\+X\+Texture\+Reader@{C\+Direct\+X\+Texture\+Reader}!C\+Direct\+X\+Texture\+Reader@{C\+Direct\+X\+Texture\+Reader}}
+\index{C\+Direct\+X\+Texture\+Reader@{C\+Direct\+X\+Texture\+Reader}!C\+Direct\+X\+Texture\+Reader@{C\+Direct\+X\+Texture\+Reader}}
+\subsubsection[{C\+Direct\+X\+Texture\+Reader(const T\+Char $\ast$\+\_\+ps\+File\+Name)}]{\setlength{\rightskip}{0pt plus 5cm}C\+Direct\+X\+Texture\+Reader\+::\+C\+Direct\+X\+Texture\+Reader (
+\begin{DoxyParamCaption}
+\item[{const T\+Char $\ast$}]{\+\_\+ps\+File\+Name}
+\end{DoxyParamCaption}
+)}\label{class_c_direct_x_texture_reader_a8067f8058a6d70ea0a9ff46aee2ae643}
+
+
+コンストラクタ。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+ps\+File\+Name} & \+: 読み込むファイル名。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_direct_x_texture_reader_af93e4ced10f50fd4070f826f33730f9a}{}\index{C\+Direct\+X\+Texture\+Reader@{C\+Direct\+X\+Texture\+Reader}!C\+Direct\+X\+Texture\+Reader@{C\+Direct\+X\+Texture\+Reader}}
+\index{C\+Direct\+X\+Texture\+Reader@{C\+Direct\+X\+Texture\+Reader}!C\+Direct\+X\+Texture\+Reader@{C\+Direct\+X\+Texture\+Reader}}
+\subsubsection[{C\+Direct\+X\+Texture\+Reader(const T\+Char $\ast$\+\_\+ps\+File\+Name, n\+Lib\+::n\+Direct\+X\+::\+En\+Texture\+Format \+\_\+e\+Format)}]{\setlength{\rightskip}{0pt plus 5cm}C\+Direct\+X\+Texture\+Reader\+::\+C\+Direct\+X\+Texture\+Reader (
+\begin{DoxyParamCaption}
+\item[{const T\+Char $\ast$}]{\+\_\+ps\+File\+Name, }
+\item[{{\bf n\+Lib\+::n\+Direct\+X\+::\+En\+Texture\+Format}}]{\+\_\+e\+Format}
+\end{DoxyParamCaption}
+)}\label{class_c_direct_x_texture_reader_af93e4ced10f50fd4070f826f33730f9a}
+\hypertarget{class_c_direct_x_texture_reader_a19885f989b8efc0ae652a27ddfe655e5}{}\index{C\+Direct\+X\+Texture\+Reader@{C\+Direct\+X\+Texture\+Reader}!````~C\+Direct\+X\+Texture\+Reader@{$\sim$\+C\+Direct\+X\+Texture\+Reader}}
+\index{````~C\+Direct\+X\+Texture\+Reader@{$\sim$\+C\+Direct\+X\+Texture\+Reader}!C\+Direct\+X\+Texture\+Reader@{C\+Direct\+X\+Texture\+Reader}}
+\subsubsection[{$\sim$\+C\+Direct\+X\+Texture\+Reader()}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\+Direct\+X\+Texture\+Reader\+::$\sim$\+C\+Direct\+X\+Texture\+Reader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_direct_x_texture_reader_a19885f989b8efc0ae652a27ddfe655e5}
+
+
+デストラクタ。 
+
+
+
+\subsection{関数詳解}
+\hypertarget{class_c_direct_x_texture_reader_af12294b81ba5ca060ac58d0b53dfb6e6}{}\index{C\+Direct\+X\+Texture\+Reader@{C\+Direct\+X\+Texture\+Reader}!Get\+Image@{Get\+Image}}
+\index{Get\+Image@{Get\+Image}!C\+Direct\+X\+Texture\+Reader@{C\+Direct\+X\+Texture\+Reader}}
+\subsubsection[{Get\+Image() const }]{\setlength{\rightskip}{0pt plus 5cm}const Direct\+X\+::\+Scratch\+Image\& C\+Direct\+X\+Texture\+Reader\+::\+Get\+Image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_direct_x_texture_reader_af12294b81ba5ca060ac58d0b53dfb6e6}
+
+
+画像データを取得。 
+
+\hypertarget{class_c_direct_x_texture_reader_aaa6dc8a5b66797b9661fc2f13ef642cb}{}\index{C\+Direct\+X\+Texture\+Reader@{C\+Direct\+X\+Texture\+Reader}!Get\+Metadata@{Get\+Metadata}}
+\index{Get\+Metadata@{Get\+Metadata}!C\+Direct\+X\+Texture\+Reader@{C\+Direct\+X\+Texture\+Reader}}
+\subsubsection[{Get\+Metadata() const }]{\setlength{\rightskip}{0pt plus 5cm}const Direct\+X\+::\+Tex\+Metadata\& C\+Direct\+X\+Texture\+Reader\+::\+Get\+Metadata (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_direct_x_texture_reader_aaa6dc8a5b66797b9661fc2f13ef642cb}
+
+
+メタデータを取得。 
+
+\hypertarget{class_c_direct_x_texture_reader_abae2b7a2cf1957d8f0d117851bab35d5}{}\index{C\+Direct\+X\+Texture\+Reader@{C\+Direct\+X\+Texture\+Reader}!Read\+End\+Process@{Read\+End\+Process}}
+\index{Read\+End\+Process@{Read\+End\+Process}!C\+Direct\+X\+Texture\+Reader@{C\+Direct\+X\+Texture\+Reader}}
+\subsubsection[{Read\+End\+Process(const void $\ast$\+\_\+p\+Data, U\+Size \+\_\+u\+Size) override}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Direct\+X\+Texture\+Reader\+::\+Read\+End\+Process (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{\+\_\+p\+Data, }
+\item[{U\+Size}]{\+\_\+u\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_c_direct_x_texture_reader_abae2b7a2cf1957d8f0d117851bab35d5}
+
+
+読み込み完了時の処理。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+p\+Data} & \+: 読み込んだデータ。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+u\+Size} & \+: 読み込んだデータのサイズ。 \\
+\hline
+\end{DoxyParams}
+
+
+\hyperlink{class_c_file_reader_a5a18550133826ac43096629f6eaa8c42}{C\+File\+Reader}を再実装しています。
+
+
+
+\hyperlink{class_c_direct_x_texture_creator_from_file_a5358c62c1a9b7154b17e64d480fa140c}{C\+Direct\+X\+Texture\+Creator\+From\+File}で再実装されています。
+
+
+
+\subsection{メンバ詳解}
+\hypertarget{class_c_direct_x_texture_reader_ac09d73093277f3f444eee39b827fe92c}{}\index{C\+Direct\+X\+Texture\+Reader@{C\+Direct\+X\+Texture\+Reader}!m\+\_\+e\+Format@{m\+\_\+e\+Format}}
+\index{m\+\_\+e\+Format@{m\+\_\+e\+Format}!C\+Direct\+X\+Texture\+Reader@{C\+Direct\+X\+Texture\+Reader}}
+\subsubsection[{m\+\_\+e\+Format}]{\setlength{\rightskip}{0pt plus 5cm}{\bf n\+Lib\+::n\+Direct\+X\+::\+En\+Texture\+Format} C\+Direct\+X\+Texture\+Reader\+::m\+\_\+e\+Format\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_direct_x_texture_reader_ac09d73093277f3f444eee39b827fe92c}
+\hypertarget{class_c_direct_x_texture_reader_a3e34a721e8e70a5bf417199c7a5f568b}{}\index{C\+Direct\+X\+Texture\+Reader@{C\+Direct\+X\+Texture\+Reader}!m\+\_\+st\+Image@{m\+\_\+st\+Image}}
+\index{m\+\_\+st\+Image@{m\+\_\+st\+Image}!C\+Direct\+X\+Texture\+Reader@{C\+Direct\+X\+Texture\+Reader}}
+\subsubsection[{m\+\_\+st\+Image}]{\setlength{\rightskip}{0pt plus 5cm}Direct\+X\+::\+Scratch\+Image C\+Direct\+X\+Texture\+Reader\+::m\+\_\+st\+Image\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_direct_x_texture_reader_a3e34a721e8e70a5bf417199c7a5f568b}
+\hypertarget{class_c_direct_x_texture_reader_a2588eec0104869cb09dd43d9ab2ac024}{}\index{C\+Direct\+X\+Texture\+Reader@{C\+Direct\+X\+Texture\+Reader}!m\+\_\+st\+Meta\+Data@{m\+\_\+st\+Meta\+Data}}
+\index{m\+\_\+st\+Meta\+Data@{m\+\_\+st\+Meta\+Data}!C\+Direct\+X\+Texture\+Reader@{C\+Direct\+X\+Texture\+Reader}}
+\subsubsection[{m\+\_\+st\+Meta\+Data}]{\setlength{\rightskip}{0pt plus 5cm}Direct\+X\+::\+Tex\+Metadata C\+Direct\+X\+Texture\+Reader\+::m\+\_\+st\+Meta\+Data\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_direct_x_texture_reader_a2588eec0104869cb09dd43d9ab2ac024}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Project/\+Game/\+Lib/\+Direct\+X/\hyperlink{_direct_x_texture_8h}{Direct\+X\+Texture.\+h}\item 
+D\+:/\+Project/\+Game/\+Lib/\+Direct\+X/\hyperlink{_direct_x_texture_8cpp}{Direct\+X\+Texture.\+cpp}\end{DoxyCompactItemize}

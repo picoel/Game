@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>My Project: D:/Project/Game/Lib/File/FileReader.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="namespaces.html"><span>名前空間</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8f3de2ae926fecfe6abd5379fd2b6eb1.html">Lib</a></li><li class="navelem"><a class="el" href="dir_f2edaa5bc51c7310882a9f07696e1d6c.html">File</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">FileReader.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_file_reader_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef INCLUDE_LIB_FILE_FILEREADER_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define INCLUDE_LIB_FILE_FILEREADER_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_string_8h.html">Lib/String/String.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * @class   CFileReader</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * @brief   ファイル読み込みクラス。</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_c_file_reader.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_file_reader.html">CFileReader</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_c_file_reader.html#ac1c1601d5d3fea0418cc561a979fa5b4">CFileReader</a>( <span class="keyword">const</span> TChar* _psFileName );</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_c_file_reader.html#a4d1f50d0e41e3de38890100df04325b2">   22</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_file_reader.html#a4d1f50d0e41e3de38890100df04325b2">~CFileReader</a>(){}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_c_file_reader.html#a5a18550133826ac43096629f6eaa8c42">   25</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_file_reader.html#a5a18550133826ac43096629f6eaa8c42">ReadEndProcess</a>( <span class="keyword">const</span> <span class="keywordtype">void</span>* _pData, USize _uSize ){}</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_c_file_reader.html#ad95360f0d328f570fbc5faf3739732e1">   27</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_file_reader.html#ad95360f0d328f570fbc5faf3739732e1">ReadEndProcessSync</a>(){}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_c_file_reader.html#ae59f3337c42c1ca9e26a46336f52bd96">   30</a></span>&#160;    <span class="keyword">const</span> TChar* <a class="code" href="class_c_file_reader.html#ae59f3337c42c1ca9e26a46336f52bd96">GetFileName</a>()<span class="keyword"> const</span>{ <span class="keywordflow">return</span> <a class="code" href="class_c_file_reader.html#a336f2d904f2b316d584b7fba8f996d69">m_cFileName</a>.c_str(); }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_c_file_reader.html#ae354b54f0ebdbbf5bf59c773004cef6b">   33</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_file_reader.html#ae354b54f0ebdbbf5bf59c773004cef6b">IsReadEnd</a>()<span class="keyword"> const</span>{ <span class="keywordflow">return</span> <a class="code" href="class_c_file_reader.html#a1eeeadefb7a22567093fca3f1efbc1d7">m_bIsReadEnd</a>; }</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_c_file_reader.html#a0f04fd0be744cccb3a057e6cfd2cecd1">   35</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_file_reader.html#a0f04fd0be744cccb3a057e6cfd2cecd1">SetReadEnd</a>( <span class="keywordtype">bool</span> _bEnd ){ <a class="code" href="class_c_file_reader.html#a1eeeadefb7a22567093fca3f1efbc1d7">m_bIsReadEnd</a> = _bEnd; }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_c_file_reader.html#a336f2d904f2b316d584b7fba8f996d69">   38</a></span>&#160;    <a class="code" href="_string_8h.html#a65b002fe7fe31f6e84dbb7e46907e031">CTString</a>    <a class="code" href="class_c_file_reader.html#a336f2d904f2b316d584b7fba8f996d69">m_cFileName</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_c_file_reader.html#a1eeeadefb7a22567093fca3f1efbc1d7">   39</a></span>&#160;    <span class="keywordtype">bool</span>        <a class="code" href="class_c_file_reader.html#a1eeeadefb7a22567093fca3f1efbc1d7">m_bIsReadEnd</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif // #ifndef INCLUDE_LIB_FILE_FILEREADER_H</span></div>
+<div class="ttc" id="class_c_file_reader_html_a1eeeadefb7a22567093fca3f1efbc1d7"><div class="ttname"><a href="class_c_file_reader.html#a1eeeadefb7a22567093fca3f1efbc1d7">CFileReader::m_bIsReadEnd</a></div><div class="ttdeci">bool m_bIsReadEnd</div><div class="ttdef"><b>Definition:</b> FileReader.h:39</div></div>
+<div class="ttc" id="class_c_file_reader_html_a0f04fd0be744cccb3a057e6cfd2cecd1"><div class="ttname"><a href="class_c_file_reader.html#a0f04fd0be744cccb3a057e6cfd2cecd1">CFileReader::SetReadEnd</a></div><div class="ttdeci">void SetReadEnd(bool _bEnd)</div><div class="ttdoc">読み込みが完了したか設定。 </div><div class="ttdef"><b>Definition:</b> FileReader.h:35</div></div>
+<div class="ttc" id="class_c_file_reader_html_a336f2d904f2b316d584b7fba8f996d69"><div class="ttname"><a href="class_c_file_reader.html#a336f2d904f2b316d584b7fba8f996d69">CFileReader::m_cFileName</a></div><div class="ttdeci">CTString m_cFileName</div><div class="ttdef"><b>Definition:</b> FileReader.h:38</div></div>
+<div class="ttc" id="class_c_file_reader_html_ae59f3337c42c1ca9e26a46336f52bd96"><div class="ttname"><a href="class_c_file_reader.html#ae59f3337c42c1ca9e26a46336f52bd96">CFileReader::GetFileName</a></div><div class="ttdeci">const TChar * GetFileName() const </div><div class="ttdoc">読み込むファイル名を取得。 </div><div class="ttdef"><b>Definition:</b> FileReader.h:30</div></div>
+<div class="ttc" id="class_c_file_reader_html"><div class="ttname"><a href="class_c_file_reader.html">CFileReader</a></div><div class="ttdef"><b>Definition:</b> FileReader.h:16</div></div>
+<div class="ttc" id="class_c_file_reader_html_ac1c1601d5d3fea0418cc561a979fa5b4"><div class="ttname"><a href="class_c_file_reader.html#ac1c1601d5d3fea0418cc561a979fa5b4">CFileReader::CFileReader</a></div><div class="ttdeci">CFileReader(const TChar *_psFileName)</div><div class="ttdoc">コンストラクタ。 </div><div class="ttdef"><b>Definition:</b> FileReader.cpp:16</div></div>
+<div class="ttc" id="_string_8h_html_a65b002fe7fe31f6e84dbb7e46907e031"><div class="ttname"><a href="_string_8h.html#a65b002fe7fe31f6e84dbb7e46907e031">CTString</a></div><div class="ttdeci">std::basic_string&lt; TChar, std::char_traits&lt; TCHAR &gt;, CAllocator&lt; TCHAR &gt; &gt; CTString</div><div class="ttdef"><b>Definition:</b> String.h:16</div></div>
+<div class="ttc" id="class_c_file_reader_html_ae354b54f0ebdbbf5bf59c773004cef6b"><div class="ttname"><a href="class_c_file_reader.html#ae354b54f0ebdbbf5bf59c773004cef6b">CFileReader::IsReadEnd</a></div><div class="ttdeci">bool IsReadEnd() const </div><div class="ttdoc">読み込みが完了したか。 </div><div class="ttdef"><b>Definition:</b> FileReader.h:33</div></div>
+<div class="ttc" id="class_c_file_reader_html_a4d1f50d0e41e3de38890100df04325b2"><div class="ttname"><a href="class_c_file_reader.html#a4d1f50d0e41e3de38890100df04325b2">CFileReader::~CFileReader</a></div><div class="ttdeci">virtual ~CFileReader()</div><div class="ttdoc">デストラクタ。 </div><div class="ttdef"><b>Definition:</b> FileReader.h:22</div></div>
+<div class="ttc" id="class_c_file_reader_html_ad95360f0d328f570fbc5faf3739732e1"><div class="ttname"><a href="class_c_file_reader.html#ad95360f0d328f570fbc5faf3739732e1">CFileReader::ReadEndProcessSync</a></div><div class="ttdeci">virtual void ReadEndProcessSync()</div><div class="ttdoc">読み込み完了時の処理(メインスレッドと同期)。 </div><div class="ttdef"><b>Definition:</b> FileReader.h:27</div></div>
+<div class="ttc" id="_string_8h_html"><div class="ttname"><a href="_string_8h.html">String.h</a></div><div class="ttdoc">tchar型のstringクラス。 </div></div>
+<div class="ttc" id="class_c_file_reader_html_a5a18550133826ac43096629f6eaa8c42"><div class="ttname"><a href="class_c_file_reader.html#a5a18550133826ac43096629f6eaa8c42">CFileReader::ReadEndProcess</a></div><div class="ttdeci">virtual void ReadEndProcess(const void *_pData, USize _uSize)</div><div class="ttdoc">読み込み完了時の処理。 </div><div class="ttdef"><b>Definition:</b> FileReader.h:25</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

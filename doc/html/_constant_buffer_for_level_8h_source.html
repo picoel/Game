@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>My Project: D:/Project/Game/Lib/Render/ConstantBufferForLevel.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="namespaces.html"><span>名前空間</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8f3de2ae926fecfe6abd5379fd2b6eb1.html">Lib</a></li><li class="navelem"><a class="el" href="dir_46076e33a35e33c50c9d1b643b23b244.html">Render</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ConstantBufferForLevel.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_constant_buffer_for_level_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef INCLUDE_LIB_RENDER_COSTANT_BUFFER_FOR_LEVEL_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define INCLUDE_LIB_RENDER_COSTANT_BUFFER_FOR_LEVEL_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_constant_buffer_8h.html">Lib/Render/ConstantBuffer.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_matrix_8h.html">Lib/Math/Matrix.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * @class CConstantBufferForLevel</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * @brief オブジェクト用のコンスタントバッファー。</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_c_constant_buffer_for_level.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_constant_buffer_for_level.html">CConstantBufferForLevel</a> : <span class="keyword">public</span> <a class="code" href="class_i_constant_buffer.html">IConstantBuffer</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="struct_c_constant_buffer_for_level_1_1_st_constant_buffer.html">   21</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_c_constant_buffer_for_level_1_1_st_constant_buffer.html">StConstantBuffer</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    {</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="struct_c_constant_buffer_for_level_1_1_st_constant_buffer.html#a0f47f708a3588edd70482c2517a80457">   23</a></span>&#160;        <a class="code" href="struct_st_matrix.html">StMatrix&lt;F32&gt;</a>   <a class="code" href="struct_c_constant_buffer_for_level_1_1_st_constant_buffer.html#a0f47f708a3588edd70482c2517a80457">m_stMtxDummy</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="struct_c_constant_buffer_for_level_1_1_st_constant_buffer.html#ac4cf0fbf8e8fa5b757ba3176c97c29a4">   25</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="struct_c_constant_buffer_for_level_1_1_st_constant_buffer.html#ac4cf0fbf8e8fa5b757ba3176c97c29a4">Init</a>()</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            m_stMtxDummy.<a class="code" href="struct_st_matrix.html#adac0226609e953d602efc468d47c8d1f">Init</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    };</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="class_c_constant_buffer_for_level.html#a6dfcab6b58a853ba7225240a017753f8">CConstantBufferForLevel</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_c_constant_buffer_for_level.html#aef0faa964f193e24f9ce6b39dc17da89">   35</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_constant_buffer_for_level.html#aef0faa964f193e24f9ce6b39dc17da89">~CConstantBufferForLevel</a>(){}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_c_constant_buffer_for_level.html#a2de25b6e96d4ed77ab5e598389b3bd08">   38</a></span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">void</span>* <a class="code" href="class_c_constant_buffer_for_level.html#a2de25b6e96d4ed77ab5e598389b3bd08">GetData</a>()<span class="keyword"> const override</span>{ <span class="keywordflow">return</span> &amp;<a class="code" href="class_c_constant_buffer_for_level.html#a6b99c7a9716d8a6dc2c5619de2026d40">m_stBuffer</a>; }</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_c_constant_buffer_for_level.html#a5d653c0978f370dcef86eece263871dd">   40</a></span>&#160;    <span class="keyword">virtual</span> USize <a class="code" href="class_c_constant_buffer_for_level.html#a5d653c0978f370dcef86eece263871dd">GetSize</a>()<span class="keyword"> const override</span>{ <span class="keywordflow">return</span> <span class="keyword">sizeof</span>( <a class="code" href="class_c_constant_buffer_for_level.html#a6b99c7a9716d8a6dc2c5619de2026d40">m_stBuffer</a> ); }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_c_constant_buffer_for_level.html#a6b99c7a9716d8a6dc2c5619de2026d40">   43</a></span>&#160;    <a class="code" href="struct_c_constant_buffer_for_level_1_1_st_constant_buffer.html">StConstantBuffer</a> <a class="code" href="class_c_constant_buffer_for_level.html#a6b99c7a9716d8a6dc2c5619de2026d40">m_stBuffer</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif // #ifndef INCLUDE_LIB_RENDER_COSTANT_BUFFER_FOR_LEVEL_H</span></div>
+<div class="ttc" id="struct_c_constant_buffer_for_level_1_1_st_constant_buffer_html_a0f47f708a3588edd70482c2517a80457"><div class="ttname"><a href="struct_c_constant_buffer_for_level_1_1_st_constant_buffer.html#a0f47f708a3588edd70482c2517a80457">CConstantBufferForLevel::StConstantBuffer::m_stMtxDummy</a></div><div class="ttdeci">StMatrix&lt; F32 &gt; m_stMtxDummy</div><div class="ttdef"><b>Definition:</b> ConstantBufferForLevel.h:23</div></div>
+<div class="ttc" id="struct_st_matrix_html"><div class="ttname"><a href="struct_st_matrix.html">StMatrix&lt; F32 &gt;</a></div></div>
+<div class="ttc" id="_matrix_8h_html"><div class="ttname"><a href="_matrix_8h.html">Matrix.h</a></div><div class="ttdoc">行列演算。 </div></div>
+<div class="ttc" id="class_c_constant_buffer_for_level_html_aef0faa964f193e24f9ce6b39dc17da89"><div class="ttname"><a href="class_c_constant_buffer_for_level.html#aef0faa964f193e24f9ce6b39dc17da89">CConstantBufferForLevel::~CConstantBufferForLevel</a></div><div class="ttdeci">virtual ~CConstantBufferForLevel()</div><div class="ttdoc">デストラクタ。 </div><div class="ttdef"><b>Definition:</b> ConstantBufferForLevel.h:35</div></div>
+<div class="ttc" id="class_c_constant_buffer_for_level_html_a2de25b6e96d4ed77ab5e598389b3bd08"><div class="ttname"><a href="class_c_constant_buffer_for_level.html#a2de25b6e96d4ed77ab5e598389b3bd08">CConstantBufferForLevel::GetData</a></div><div class="ttdeci">virtual const void * GetData() const  override</div><div class="ttdoc">データを取得。 </div><div class="ttdef"><b>Definition:</b> ConstantBufferForLevel.h:38</div></div>
+<div class="ttc" id="struct_c_constant_buffer_for_level_1_1_st_constant_buffer_html"><div class="ttname"><a href="struct_c_constant_buffer_for_level_1_1_st_constant_buffer.html">CConstantBufferForLevel::StConstantBuffer</a></div><div class="ttdoc">コンスタントバッファー構造体。 </div><div class="ttdef"><b>Definition:</b> ConstantBufferForLevel.h:21</div></div>
+<div class="ttc" id="struct_st_matrix_html_adac0226609e953d602efc468d47c8d1f"><div class="ttname"><a href="struct_st_matrix.html#adac0226609e953d602efc468d47c8d1f">StMatrix::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdef"><b>Definition:</b> Matrix.h:24</div></div>
+<div class="ttc" id="class_i_constant_buffer_html"><div class="ttname"><a href="class_i_constant_buffer.html">IConstantBuffer</a></div><div class="ttdef"><b>Definition:</b> ConstantBuffer.h:24</div></div>
+<div class="ttc" id="class_c_constant_buffer_for_level_html_a6b99c7a9716d8a6dc2c5619de2026d40"><div class="ttname"><a href="class_c_constant_buffer_for_level.html#a6b99c7a9716d8a6dc2c5619de2026d40">CConstantBufferForLevel::m_stBuffer</a></div><div class="ttdeci">StConstantBuffer m_stBuffer</div><div class="ttdef"><b>Definition:</b> ConstantBufferForLevel.h:43</div></div>
+<div class="ttc" id="class_c_constant_buffer_for_level_html"><div class="ttname"><a href="class_c_constant_buffer_for_level.html">CConstantBufferForLevel</a></div><div class="ttdef"><b>Definition:</b> ConstantBufferForLevel.h:17</div></div>
+<div class="ttc" id="class_c_constant_buffer_for_level_html_a6dfcab6b58a853ba7225240a017753f8"><div class="ttname"><a href="class_c_constant_buffer_for_level.html#a6dfcab6b58a853ba7225240a017753f8">CConstantBufferForLevel::CConstantBufferForLevel</a></div><div class="ttdeci">CConstantBufferForLevel()</div><div class="ttdoc">コンストラクタ。 </div><div class="ttdef"><b>Definition:</b> ConstantBufferForLevel.cpp:14</div></div>
+<div class="ttc" id="_constant_buffer_8h_html"><div class="ttname"><a href="_constant_buffer_8h.html">ConstantBuffer.h</a></div></div>
+<div class="ttc" id="struct_c_constant_buffer_for_level_1_1_st_constant_buffer_html_ac4cf0fbf8e8fa5b757ba3176c97c29a4"><div class="ttname"><a href="struct_c_constant_buffer_for_level_1_1_st_constant_buffer.html#ac4cf0fbf8e8fa5b757ba3176c97c29a4">CConstantBufferForLevel::StConstantBuffer::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdef"><b>Definition:</b> ConstantBufferForLevel.h:25</div></div>
+<div class="ttc" id="class_c_constant_buffer_for_level_html_a5d653c0978f370dcef86eece263871dd"><div class="ttname"><a href="class_c_constant_buffer_for_level.html#a5d653c0978f370dcef86eece263871dd">CConstantBufferForLevel::GetSize</a></div><div class="ttdeci">virtual USize GetSize() const  override</div><div class="ttdoc">データサイズを取得。 </div><div class="ttdef"><b>Definition:</b> ConstantBufferForLevel.h:40</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

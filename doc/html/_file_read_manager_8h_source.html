@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>My Project: D:/Project/Game/Lib/File/FileReadManager.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="namespaces.html"><span>名前空間</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8f3de2ae926fecfe6abd5379fd2b6eb1.html">Lib</a></li><li class="navelem"><a class="el" href="dir_f2edaa5bc51c7310882a9f07696e1d6c.html">File</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">FileReadManager.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_file_read_manager_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef INCLUDE_LIB_FILE_FILEREADMANAGER_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define INCLUDE_LIB_FILE_FILEREADMANAGER_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_action_8h.html">Lib/Object/Action.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_list_8h.html">Lib/Utility/list.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_singleton_8h.html">Lib/Utility/Singleton.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_file_reader.html">CFileReader</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_file_read_thread.html">CFileReadThread</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_job_file_read.html">CJobFileRead</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * @class CFileReadManager</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * @brief ファイル読み込み管理クラス。</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_c_file_read_manager.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_file_read_manager.html">CFileReadManager</a> </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    : <span class="keyword">public</span> <a class="code" href="class_c_singleton.html">CSingleton</a>&lt;CFileReadManager&gt;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    , <span class="keyword">public</span> <a class="code" href="class_c_action.html">CAction</a></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_c_file_read_manager.html#a7a9788832ab00f7595c2782a849942e9">   26</a></span>&#160;    <span class="keyword">friend</span> <a class="code" href="class_c_singleton.html">CSingleton &lt;CFileReadManager&gt;</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="struct_c_file_read_manager_1_1_st_init_param.html">   30</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_c_file_read_manager_1_1_st_init_param.html">StInitParam</a></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="struct_c_file_read_manager_1_1_st_init_param.html#af1cbc7ffa676618303cd8a340e5dabd9">   32</a></span>&#160;        U32     <a class="code" href="struct_c_file_read_manager_1_1_st_init_param.html#af1cbc7ffa676618303cd8a340e5dabd9">m_uActionLv</a>;    </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="struct_c_file_read_manager_1_1_st_init_param.html#aef86dec93b34dbd21432aa5f8f56714a">   34</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="struct_c_file_read_manager_1_1_st_init_param.html#aef86dec93b34dbd21432aa5f8f56714a">Init</a>()</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            m_uActionLv = 0;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    };</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_c_file_read_manager.html#a3eafa43bdf03c4b3560900d952c6eb22">CFileReadManager</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_c_file_read_manager.html#a3eafa43bdf03c4b3560900d952c6eb22">CFileReadManager</a>( <span class="keyword">const</span> StInitParam&amp; _rstParam );</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_file_read_manager.html#a1ef0e31d0e5d89fe0722f124a312438c">~CFileReadManager</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_c_file_read_manager.html#a2be2641a242706bb410e976325a74665">   50</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_file_read_manager.html#a2be2641a242706bb410e976325a74665">CreateInstance</a>( <span class="keyword">const</span> <a class="code" href="struct_c_file_read_manager_1_1_st_init_param.html">StInitParam</a>&amp; _rstParam )</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="_assert_8h.html#adf20d809412f5a852f53e8a1bc1a6795">ASSERT</a>( <span class="keyword">nullptr</span> == <a class="code" href="class_c_singleton.html#a0a71a6912e89df78d7f0fc5a79ff6d98">sc_pcInstance</a> );</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="_mem_definition_8h.html#ac2555768576ce1c87f314a66f34af44d">P_DELETE</a>( <a class="code" href="class_c_singleton.html#a0a71a6912e89df78d7f0fc5a79ff6d98">sc_pcInstance</a> );</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="class_c_singleton.html#a0a71a6912e89df78d7f0fc5a79ff6d98">sc_pcInstance</a> = <a class="code" href="_mem_definition_8h.html#adc1c3eead37c5acb657ec133b6765abb">pnew</a> <a class="code" href="class_c_file_read_manager.html#a3eafa43bdf03c4b3560900d952c6eb22">CFileReadManager</a>( _rstParam );</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_file_read_manager.html#a0bd09488d14efeed36b3445188391d34">Request</a>( <a class="code" href="class_c_file_reader.html">CFileReader</a>* _pcFileReader );</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_file_read_manager.html#a1c0c420814fed21f257b71740c56a365">Action</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_c_file_read_manager.html#a06d2dd73e1e01a66e4072ecfe4507c54">   64</a></span>&#160;    <a class="code" href="_list_8h.html#af54c38acd8944230f18792ac38211526">CVector&lt;CJobFileRead*&gt;</a>  <a class="code" href="class_c_file_read_manager.html#a06d2dd73e1e01a66e4072ecfe4507c54">m_cJobList</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif // #ifndef INCLUDE_LIB_FILE_FILEREADMANAGER_H</span></div>
+<div class="ttc" id="class_c_singleton_html_a0a71a6912e89df78d7f0fc5a79ff6d98"><div class="ttname"><a href="class_c_singleton.html#a0a71a6912e89df78d7f0fc5a79ff6d98">CSingleton&lt; CFileReadManager &gt;::sc_pcInstance</a></div><div class="ttdeci">static CFileReadManager * sc_pcInstance</div><div class="ttdef"><b>Definition:</b> Singleton.h:48</div></div>
+<div class="ttc" id="_mem_definition_8h_html_adc1c3eead37c5acb657ec133b6765abb"><div class="ttname"><a href="_mem_definition_8h.html#adc1c3eead37c5acb657ec133b6765abb">pnew</a></div><div class="ttdeci">#define pnew</div><div class="ttdef"><b>Definition:</b> MemDefinition.h:106</div></div>
+<div class="ttc" id="class_c_file_read_manager_html_a06d2dd73e1e01a66e4072ecfe4507c54"><div class="ttname"><a href="class_c_file_read_manager.html#a06d2dd73e1e01a66e4072ecfe4507c54">CFileReadManager::m_cJobList</a></div><div class="ttdeci">CVector&lt; CJobFileRead * &gt; m_cJobList</div><div class="ttdef"><b>Definition:</b> FileReadManager.h:64</div></div>
+<div class="ttc" id="class_c_file_read_manager_html_a0bd09488d14efeed36b3445188391d34"><div class="ttname"><a href="class_c_file_read_manager.html#a0bd09488d14efeed36b3445188391d34">CFileReadManager::Request</a></div><div class="ttdeci">void Request(CFileReader *_pcFileReader)</div><div class="ttdoc">ファイル読み込みリクエスト。 </div><div class="ttdef"><b>Definition:</b> FileReadManager.cpp:57</div></div>
+<div class="ttc" id="class_c_singleton_html"><div class="ttname"><a href="class_c_singleton.html">CSingleton</a></div><div class="ttdef"><b>Definition:</b> Singleton.h:12</div></div>
+<div class="ttc" id="class_c_file_read_manager_html_a1ef0e31d0e5d89fe0722f124a312438c"><div class="ttname"><a href="class_c_file_read_manager.html#a1ef0e31d0e5d89fe0722f124a312438c">CFileReadManager::~CFileReadManager</a></div><div class="ttdeci">virtual ~CFileReadManager()</div><div class="ttdoc">デストラクタ。 </div><div class="ttdef"><b>Definition:</b> FileReadManager.cpp:34</div></div>
+<div class="ttc" id="_list_8h_html_af54c38acd8944230f18792ac38211526"><div class="ttname"><a href="_list_8h.html#af54c38acd8944230f18792ac38211526">CVector</a></div><div class="ttdeci">std::vector&lt; C, CAllocator&lt; C &gt; &gt; CVector</div><div class="ttdef"><b>Definition:</b> List.h:17</div></div>
+<div class="ttc" id="_action_8h_html"><div class="ttname"><a href="_action_8h.html">Action.h</a></div><div class="ttdoc">Actionを行う基底クラス。 </div></div>
+<div class="ttc" id="_assert_8h_html_adf20d809412f5a852f53e8a1bc1a6795"><div class="ttname"><a href="_assert_8h.html#adf20d809412f5a852f53e8a1bc1a6795">ASSERT</a></div><div class="ttdeci">#define ASSERT(EXPRESSION)</div><div class="ttdef"><b>Definition:</b> Assert.h:18</div></div>
+<div class="ttc" id="_mem_definition_8h_html_ac2555768576ce1c87f314a66f34af44d"><div class="ttname"><a href="_mem_definition_8h.html#ac2555768576ce1c87f314a66f34af44d">P_DELETE</a></div><div class="ttdeci">#define P_DELETE(p)</div><div class="ttdef"><b>Definition:</b> MemDefinition.h:111</div></div>
+<div class="ttc" id="class_c_file_read_manager_html_a3eafa43bdf03c4b3560900d952c6eb22"><div class="ttname"><a href="class_c_file_read_manager.html#a3eafa43bdf03c4b3560900d952c6eb22">CFileReadManager::CFileReadManager</a></div><div class="ttdeci">CFileReadManager()</div><div class="ttdoc">コンストラクタ。 </div><div class="ttdef"><b>Definition:</b> FileReadManager.cpp:17</div></div>
+<div class="ttc" id="struct_c_file_read_manager_1_1_st_init_param_html"><div class="ttname"><a href="struct_c_file_read_manager_1_1_st_init_param.html">CFileReadManager::StInitParam</a></div><div class="ttdoc">初期化用パラメータ。 </div><div class="ttdef"><b>Definition:</b> FileReadManager.h:30</div></div>
+<div class="ttc" id="class_c_file_reader_html"><div class="ttname"><a href="class_c_file_reader.html">CFileReader</a></div><div class="ttdef"><b>Definition:</b> FileReader.h:16</div></div>
+<div class="ttc" id="class_c_file_read_manager_html_a2be2641a242706bb410e976325a74665"><div class="ttname"><a href="class_c_file_read_manager.html#a2be2641a242706bb410e976325a74665">CFileReadManager::CreateInstance</a></div><div class="ttdeci">static void CreateInstance(const StInitParam &amp;_rstParam)</div><div class="ttdoc">インスタンス作成。 </div><div class="ttdef"><b>Definition:</b> FileReadManager.h:50</div></div>
+<div class="ttc" id="class_c_file_read_manager_html_a1c0c420814fed21f257b71740c56a365"><div class="ttname"><a href="class_c_file_read_manager.html#a1c0c420814fed21f257b71740c56a365">CFileReadManager::Action</a></div><div class="ttdeci">virtual void Action() override</div><div class="ttdoc">アクション処理。 </div><div class="ttdef"><b>Definition:</b> FileReadManager.cpp:74</div></div>
+<div class="ttc" id="struct_c_file_read_manager_1_1_st_init_param_html_aef86dec93b34dbd21432aa5f8f56714a"><div class="ttname"><a href="struct_c_file_read_manager_1_1_st_init_param.html#aef86dec93b34dbd21432aa5f8f56714a">CFileReadManager::StInitParam::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdef"><b>Definition:</b> FileReadManager.h:34</div></div>
+<div class="ttc" id="class_c_action_html"><div class="ttname"><a href="class_c_action.html">CAction</a></div><div class="ttdoc">Actionを行う基底クラス。 </div><div class="ttdef"><b>Definition:</b> Action.h:14</div></div>
+<div class="ttc" id="class_c_file_read_manager_html"><div class="ttname"><a href="class_c_file_read_manager.html">CFileReadManager</a></div><div class="ttdef"><b>Definition:</b> FileReadManager.h:22</div></div>
+<div class="ttc" id="_singleton_8h_html"><div class="ttname"><a href="_singleton_8h.html">Singleton.h</a></div></div>
+<div class="ttc" id="struct_c_file_read_manager_1_1_st_init_param_html_af1cbc7ffa676618303cd8a340e5dabd9"><div class="ttname"><a href="struct_c_file_read_manager_1_1_st_init_param.html#af1cbc7ffa676618303cd8a340e5dabd9">CFileReadManager::StInitParam::m_uActionLv</a></div><div class="ttdeci">U32 m_uActionLv</div><div class="ttdoc">アクションレベル。 </div><div class="ttdef"><b>Definition:</b> FileReadManager.h:32</div></div>
+<div class="ttc" id="class_c_job_file_read_html"><div class="ttname"><a href="class_c_job_file_read.html">CJobFileRead</a></div><div class="ttdef"><b>Definition:</b> JobFileRead.h:18</div></div>
+<div class="ttc" id="class_c_file_read_thread_html"><div class="ttname"><a href="class_c_file_read_thread.html">CFileReadThread</a></div><div class="ttdef"><b>Definition:</b> FileReadThread.h:18</div></div>
+<div class="ttc" id="_list_8h_html"><div class="ttname"><a href="_list_8h.html">List.h</a></div><div class="ttdoc">動的配列定義。 </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

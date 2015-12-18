@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>My Project: D:/Project/Game/Lib/PMD/PMDReader.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="namespaces.html"><span>名前空間</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8f3de2ae926fecfe6abd5379fd2b6eb1.html">Lib</a></li><li class="navelem"><a class="el" href="dir_a89d950c5089f2585ec53929b66d8b2b.html">PMD</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">PMDReader.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_p_m_d_reader_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef INCLUDE_LIB_PMD_PMDREADER_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define INCLUDE_LIB_PMD_PMDREADER_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_file_reader_8h.html">Lib/File/FileReader.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * @class CPMDReader</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * @brief PMDファイル読み込み。</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_c_p_m_d_reader.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_p_m_d_reader.html">CPMDReader</a> : <span class="keyword">public</span> <a class="code" href="class_c_file_reader.html">CFileReader</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_c_p_m_d_reader.html#a8d2c4bdfa2c288fe4d3507a26c7f13a7">CPMDReader</a>( <span class="keyword">const</span> TChar* _psFileName );</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_p_m_d_reader.html#a3e1afba2bd86e420c731ba5c114d2ec5">~CPMDReader</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_p_m_d_reader.html#a326af26b1815aaa4b088b037fb76e05f">ReadEndProcess</a>( <span class="keyword">const</span> <span class="keywordtype">void</span>* _pData, USize _uSize ) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_c_p_m_d_reader.html#a082ea64273d18d684b3fc2deced6090f">   28</a></span>&#160;    <span class="keyword">const</span> meshio::pmd::IO&amp; <a class="code" href="class_c_p_m_d_reader.html#a082ea64273d18d684b3fc2deced6090f">GetPMDData</a>()<span class="keyword"> const</span>{ <span class="keywordflow">return</span> <a class="code" href="class_c_p_m_d_reader.html#aaecdb1ffd39ffe2cb5c87597c581173f">m_stData</a>; }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_c_p_m_d_reader.html#aaecdb1ffd39ffe2cb5c87597c581173f">   31</a></span>&#160;    meshio::pmd::IO <a class="code" href="class_c_p_m_d_reader.html#aaecdb1ffd39ffe2cb5c87597c581173f">m_stData</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif // #ifndef INCLUDE_LIB_PMD_PMDREADER_H</span></div>
+<div class="ttc" id="class_c_p_m_d_reader_html_aaecdb1ffd39ffe2cb5c87597c581173f"><div class="ttname"><a href="class_c_p_m_d_reader.html#aaecdb1ffd39ffe2cb5c87597c581173f">CPMDReader::m_stData</a></div><div class="ttdeci">meshio::pmd::IO m_stData</div><div class="ttdef"><b>Definition:</b> PMDReader.h:31</div></div>
+<div class="ttc" id="class_c_p_m_d_reader_html_a8d2c4bdfa2c288fe4d3507a26c7f13a7"><div class="ttname"><a href="class_c_p_m_d_reader.html#a8d2c4bdfa2c288fe4d3507a26c7f13a7">CPMDReader::CPMDReader</a></div><div class="ttdeci">CPMDReader(const TChar *_psFileName)</div><div class="ttdoc">コンストラクタ。 </div><div class="ttdef"><b>Definition:</b> PMDReader.cpp:14</div></div>
+<div class="ttc" id="class_c_p_m_d_reader_html"><div class="ttname"><a href="class_c_p_m_d_reader.html">CPMDReader</a></div><div class="ttdef"><b>Definition:</b> PMDReader.h:16</div></div>
+<div class="ttc" id="class_c_p_m_d_reader_html_a326af26b1815aaa4b088b037fb76e05f"><div class="ttname"><a href="class_c_p_m_d_reader.html#a326af26b1815aaa4b088b037fb76e05f">CPMDReader::ReadEndProcess</a></div><div class="ttdeci">virtual void ReadEndProcess(const void *_pData, USize _uSize) override</div><div class="ttdoc">読み込み完了時の処理。 </div><div class="ttdef"><b>Definition:</b> PMDReader.cpp:32</div></div>
+<div class="ttc" id="class_c_file_reader_html"><div class="ttname"><a href="class_c_file_reader.html">CFileReader</a></div><div class="ttdef"><b>Definition:</b> FileReader.h:16</div></div>
+<div class="ttc" id="_file_reader_8h_html"><div class="ttname"><a href="_file_reader_8h.html">FileReader.h</a></div><div class="ttdoc">ファイル読み込みクラス。 </div></div>
+<div class="ttc" id="class_c_p_m_d_reader_html_a082ea64273d18d684b3fc2deced6090f"><div class="ttname"><a href="class_c_p_m_d_reader.html#a082ea64273d18d684b3fc2deced6090f">CPMDReader::GetPMDData</a></div><div class="ttdeci">const meshio::pmd::IO &amp; GetPMDData() const </div><div class="ttdoc">PMDデータの取得。 </div><div class="ttdef"><b>Definition:</b> PMDReader.h:28</div></div>
+<div class="ttc" id="class_c_p_m_d_reader_html_a3e1afba2bd86e420c731ba5c114d2ec5"><div class="ttname"><a href="class_c_p_m_d_reader.html#a3e1afba2bd86e420c731ba5c114d2ec5">CPMDReader::~CPMDReader</a></div><div class="ttdeci">virtual ~CPMDReader()</div><div class="ttdoc">デストラクタ。 </div><div class="ttdef"><b>Definition:</b> PMDReader.cpp:23</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

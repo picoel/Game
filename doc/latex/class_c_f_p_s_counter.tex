@@ -1,0 +1,123 @@
+\hypertarget{class_c_f_p_s_counter}{}\section{C\+F\+P\+S\+Counter クラス}
+\label{class_c_f_p_s_counter}\index{C\+F\+P\+S\+Counter@{C\+F\+P\+S\+Counter}}
+
+
+{\ttfamily \#include $<$F\+P\+S\+Counter.\+h$>$}
+
+C\+F\+P\+S\+Counter の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_f_p_s_counter}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_f_p_s_counter_a2529e1d7efc77fe1c24f9161bae4eab4}{C\+F\+P\+S\+Counter} (U32 \+\_\+u\+Act\+Lv, U32 \+\_\+u\+Sample\+Num)
+\begin{DoxyCompactList}\small\item\em コンストラクタ。 \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_f_p_s_counter_a58e43daf84e7df4964508f43d55038f3}{$\sim$\+C\+F\+P\+S\+Counter} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_f_p_s_counter_acc82281b59837fb8378cbd5ef8941072}{Action} ()
+\begin{DoxyCompactList}\small\item\em 更新処理。 \end{DoxyCompactList}\item 
+F32 \hyperlink{class_c_f_p_s_counter_a2ac0a4c5774a5208b6af18f31c7dcddf}{Get\+F\+P\+S} () const 
+\begin{DoxyCompactList}\small\item\em F\+P\+Sを取得。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+U32 \hyperlink{class_c_f_p_s_counter_a345278d70add89b57165f4c11b28410a}{m\+\_\+u\+Sample\+Num}
+\item 
+\hyperlink{_list_8h_a13611c3f3705beb7fa6457d5254bb35f}{C\+List}$<$ U32 $>$ \hyperlink{class_c_f_p_s_counter_a3bc8b67ee009e6480edbbdddabbbdc71}{m\+\_\+c\+Time\+Frame\+List}
+\item 
+U32 \hyperlink{class_c_f_p_s_counter_a0f8e3c1f1555dc826e73d39fd8d6539a}{m\+\_\+u\+Time\+Total}
+\item 
+U32 \hyperlink{class_c_f_p_s_counter_a1c5d70cbc932c76ba74d5706ffb015f9}{m\+\_\+u\+Time\+Prev}
+\item 
+F32 \hyperlink{class_c_f_p_s_counter_a0bc4d470c3de0b1aff04acc6f08b1284}{m\+\_\+f\+F\+P\+S}
+\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{構築子と解体子}
+\hypertarget{class_c_f_p_s_counter_a2529e1d7efc77fe1c24f9161bae4eab4}{}\index{C\+F\+P\+S\+Counter@{C\+F\+P\+S\+Counter}!C\+F\+P\+S\+Counter@{C\+F\+P\+S\+Counter}}
+\index{C\+F\+P\+S\+Counter@{C\+F\+P\+S\+Counter}!C\+F\+P\+S\+Counter@{C\+F\+P\+S\+Counter}}
+\subsubsection[{C\+F\+P\+S\+Counter(\+U32 \+\_\+u\+Act\+Lv, U32 \+\_\+u\+Sample\+Num)}]{\setlength{\rightskip}{0pt plus 5cm}C\+F\+P\+S\+Counter\+::\+C\+F\+P\+S\+Counter (
+\begin{DoxyParamCaption}
+\item[{U32}]{\+\_\+u\+Act\+Lv, }
+\item[{U32}]{\+\_\+u\+Sample\+Num}
+\end{DoxyParamCaption}
+)}\label{class_c_f_p_s_counter_a2529e1d7efc77fe1c24f9161bae4eab4}
+
+
+コンストラクタ。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+u\+Act\+Lv} & \+: アクションレベル。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+u\+Sample\+Num} & \+: F\+P\+Sを計算する際のサンプル数。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_f_p_s_counter_a58e43daf84e7df4964508f43d55038f3}{}\index{C\+F\+P\+S\+Counter@{C\+F\+P\+S\+Counter}!````~C\+F\+P\+S\+Counter@{$\sim$\+C\+F\+P\+S\+Counter}}
+\index{````~C\+F\+P\+S\+Counter@{$\sim$\+C\+F\+P\+S\+Counter}!C\+F\+P\+S\+Counter@{C\+F\+P\+S\+Counter}}
+\subsubsection[{$\sim$\+C\+F\+P\+S\+Counter()}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\+F\+P\+S\+Counter\+::$\sim$\+C\+F\+P\+S\+Counter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_f_p_s_counter_a58e43daf84e7df4964508f43d55038f3}
+
+
+デストラクタ。 
+
+
+
+\subsection{関数詳解}
+\hypertarget{class_c_f_p_s_counter_acc82281b59837fb8378cbd5ef8941072}{}\index{C\+F\+P\+S\+Counter@{C\+F\+P\+S\+Counter}!Action@{Action}}
+\index{Action@{Action}!C\+F\+P\+S\+Counter@{C\+F\+P\+S\+Counter}}
+\subsubsection[{Action()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+F\+P\+S\+Counter\+::\+Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_f_p_s_counter_acc82281b59837fb8378cbd5ef8941072}
+
+
+更新処理。 
+
+
+
+\hyperlink{class_c_action_a3fcc5cc0fde844c5cb6e50f7eec9da3c}{C\+Action}を再実装しています。
+
+\hypertarget{class_c_f_p_s_counter_a2ac0a4c5774a5208b6af18f31c7dcddf}{}\index{C\+F\+P\+S\+Counter@{C\+F\+P\+S\+Counter}!Get\+F\+P\+S@{Get\+F\+P\+S}}
+\index{Get\+F\+P\+S@{Get\+F\+P\+S}!C\+F\+P\+S\+Counter@{C\+F\+P\+S\+Counter}}
+\subsubsection[{Get\+F\+P\+S() const }]{\setlength{\rightskip}{0pt plus 5cm}F32 C\+F\+P\+S\+Counter\+::\+Get\+F\+P\+S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_f_p_s_counter_a2ac0a4c5774a5208b6af18f31c7dcddf}
+
+
+F\+P\+Sを取得。 
+
+
+
+\subsection{メンバ詳解}
+\hypertarget{class_c_f_p_s_counter_a3bc8b67ee009e6480edbbdddabbbdc71}{}\index{C\+F\+P\+S\+Counter@{C\+F\+P\+S\+Counter}!m\+\_\+c\+Time\+Frame\+List@{m\+\_\+c\+Time\+Frame\+List}}
+\index{m\+\_\+c\+Time\+Frame\+List@{m\+\_\+c\+Time\+Frame\+List}!C\+F\+P\+S\+Counter@{C\+F\+P\+S\+Counter}}
+\subsubsection[{m\+\_\+c\+Time\+Frame\+List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+List}$<$U32$>$ C\+F\+P\+S\+Counter\+::m\+\_\+c\+Time\+Frame\+List\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_f_p_s_counter_a3bc8b67ee009e6480edbbdddabbbdc71}
+\hypertarget{class_c_f_p_s_counter_a0bc4d470c3de0b1aff04acc6f08b1284}{}\index{C\+F\+P\+S\+Counter@{C\+F\+P\+S\+Counter}!m\+\_\+f\+F\+P\+S@{m\+\_\+f\+F\+P\+S}}
+\index{m\+\_\+f\+F\+P\+S@{m\+\_\+f\+F\+P\+S}!C\+F\+P\+S\+Counter@{C\+F\+P\+S\+Counter}}
+\subsubsection[{m\+\_\+f\+F\+P\+S}]{\setlength{\rightskip}{0pt plus 5cm}F32 C\+F\+P\+S\+Counter\+::m\+\_\+f\+F\+P\+S\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_f_p_s_counter_a0bc4d470c3de0b1aff04acc6f08b1284}
+\hypertarget{class_c_f_p_s_counter_a345278d70add89b57165f4c11b28410a}{}\index{C\+F\+P\+S\+Counter@{C\+F\+P\+S\+Counter}!m\+\_\+u\+Sample\+Num@{m\+\_\+u\+Sample\+Num}}
+\index{m\+\_\+u\+Sample\+Num@{m\+\_\+u\+Sample\+Num}!C\+F\+P\+S\+Counter@{C\+F\+P\+S\+Counter}}
+\subsubsection[{m\+\_\+u\+Sample\+Num}]{\setlength{\rightskip}{0pt plus 5cm}U32 C\+F\+P\+S\+Counter\+::m\+\_\+u\+Sample\+Num\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_f_p_s_counter_a345278d70add89b57165f4c11b28410a}
+\hypertarget{class_c_f_p_s_counter_a1c5d70cbc932c76ba74d5706ffb015f9}{}\index{C\+F\+P\+S\+Counter@{C\+F\+P\+S\+Counter}!m\+\_\+u\+Time\+Prev@{m\+\_\+u\+Time\+Prev}}
+\index{m\+\_\+u\+Time\+Prev@{m\+\_\+u\+Time\+Prev}!C\+F\+P\+S\+Counter@{C\+F\+P\+S\+Counter}}
+\subsubsection[{m\+\_\+u\+Time\+Prev}]{\setlength{\rightskip}{0pt plus 5cm}U32 C\+F\+P\+S\+Counter\+::m\+\_\+u\+Time\+Prev\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_f_p_s_counter_a1c5d70cbc932c76ba74d5706ffb015f9}
+\hypertarget{class_c_f_p_s_counter_a0f8e3c1f1555dc826e73d39fd8d6539a}{}\index{C\+F\+P\+S\+Counter@{C\+F\+P\+S\+Counter}!m\+\_\+u\+Time\+Total@{m\+\_\+u\+Time\+Total}}
+\index{m\+\_\+u\+Time\+Total@{m\+\_\+u\+Time\+Total}!C\+F\+P\+S\+Counter@{C\+F\+P\+S\+Counter}}
+\subsubsection[{m\+\_\+u\+Time\+Total}]{\setlength{\rightskip}{0pt plus 5cm}U32 C\+F\+P\+S\+Counter\+::m\+\_\+u\+Time\+Total\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_f_p_s_counter_a0f8e3c1f1555dc826e73d39fd8d6539a}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Project/\+Game/\+Lib/\+Debug/\hyperlink{_f_p_s_counter_8h}{F\+P\+S\+Counter.\+h}\item 
+D\+:/\+Project/\+Game/\+Lib/\+Debug/\hyperlink{_f_p_s_counter_8cpp}{F\+P\+S\+Counter.\+cpp}\end{DoxyCompactItemize}

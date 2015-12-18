@@ -1,0 +1,141 @@
+\hypertarget{class_c_init_sequence}{}\section{C\+Init\+Sequence クラス}
+\label{class_c_init_sequence}\index{C\+Init\+Sequence@{C\+Init\+Sequence}}
+
+
+{\ttfamily \#include $<$Init\+Sequence.\+h$>$}
+
+C\+Init\+Sequence の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_init_sequence}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_init_sequence_a29e4587c31c2ae19ef9cd646973bbeba}{C\+Init\+Sequence} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ。 \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_init_sequence_abc416fc4b10a9421767a0e5ce923d67a}{$\sim$\+C\+Init\+Sequence} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_init_sequence_a52cb5822b6f2c281f3969fadc61a47fb}{Loop\+Start\+Act} () override
+\begin{DoxyCompactList}\small\item\em フレーム開始時の処理。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_init_sequence_aae10f421cc1738b571022d2bdc3898d0}{Loop\+End\+Act} () override
+\begin{DoxyCompactList}\small\item\em フレーム終了時の処理。 \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_init_sequence_ac837c22aeab7e9c10f3f9a217390661c}{Is\+End} () const  override
+\begin{DoxyCompactList}\small\item\em 終了したか。 \end{DoxyCompactList}\item 
+U32 \hyperlink{class_c_init_sequence_a7d4aec0184771958424f2234716a4945}{Get\+Next} () const  override
+\begin{DoxyCompactList}\small\item\em 次のシーケンスを取得。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_p_m_d_reader}{C\+P\+M\+D\+Reader} $\ast$ \hyperlink{class_c_init_sequence_acb2968a68f82f21b579371f0d2533863}{m\+\_\+pc\+P\+M\+D\+Reader}
+\item 
+\hyperlink{class_c_p_m_d_mesh}{C\+P\+M\+D\+Mesh} $\ast$ \hyperlink{class_c_init_sequence_a2a6637e5348a20fe286258e723b85d31}{m\+\_\+pc\+Mesh}
+\item 
+\hyperlink{class_c_mesh_drawer}{C\+Mesh\+Drawer} $\ast$ \hyperlink{class_c_init_sequence_a7581fe58f808b9490a8d65e026fd334e}{m\+\_\+pc\+Mesh\+Drawer}
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\hypertarget{class_c_init_sequence_a29e4587c31c2ae19ef9cd646973bbeba}{}\index{C\+Init\+Sequence@{C\+Init\+Sequence}!C\+Init\+Sequence@{C\+Init\+Sequence}}
+\index{C\+Init\+Sequence@{C\+Init\+Sequence}!C\+Init\+Sequence@{C\+Init\+Sequence}}
+\subsubsection[{C\+Init\+Sequence()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Init\+Sequence\+::\+C\+Init\+Sequence (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_init_sequence_a29e4587c31c2ae19ef9cd646973bbeba}
+
+
+コンストラクタ。 
+
+\hypertarget{class_c_init_sequence_abc416fc4b10a9421767a0e5ce923d67a}{}\index{C\+Init\+Sequence@{C\+Init\+Sequence}!````~C\+Init\+Sequence@{$\sim$\+C\+Init\+Sequence}}
+\index{````~C\+Init\+Sequence@{$\sim$\+C\+Init\+Sequence}!C\+Init\+Sequence@{C\+Init\+Sequence}}
+\subsubsection[{$\sim$\+C\+Init\+Sequence()}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\+Init\+Sequence\+::$\sim$\+C\+Init\+Sequence (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_init_sequence_abc416fc4b10a9421767a0e5ce923d67a}
+
+
+デストラクタ。 
+
+
+
+\subsection{関数詳解}
+\hypertarget{class_c_init_sequence_a7d4aec0184771958424f2234716a4945}{}\index{C\+Init\+Sequence@{C\+Init\+Sequence}!Get\+Next@{Get\+Next}}
+\index{Get\+Next@{Get\+Next}!C\+Init\+Sequence@{C\+Init\+Sequence}}
+\subsubsection[{Get\+Next() const  override}]{\setlength{\rightskip}{0pt plus 5cm}U32 C\+Init\+Sequence\+::\+Get\+Next (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_c_init_sequence_a7d4aec0184771958424f2234716a4945}
+
+
+次のシーケンスを取得。 
+
+
+
+\hyperlink{class_c_sequence_a9819cf065c49e5a8bee7f04f62d37d16}{C\+Sequence}を実装しています。
+
+\hypertarget{class_c_init_sequence_ac837c22aeab7e9c10f3f9a217390661c}{}\index{C\+Init\+Sequence@{C\+Init\+Sequence}!Is\+End@{Is\+End}}
+\index{Is\+End@{Is\+End}!C\+Init\+Sequence@{C\+Init\+Sequence}}
+\subsubsection[{Is\+End() const  override}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Init\+Sequence\+::\+Is\+End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_c_init_sequence_ac837c22aeab7e9c10f3f9a217390661c}
+
+
+終了したか。 
+
+
+
+\hyperlink{class_c_sequence_acec92faef8ee677063980776b4c242a1}{C\+Sequence}を実装しています。
+
+\hypertarget{class_c_init_sequence_aae10f421cc1738b571022d2bdc3898d0}{}\index{C\+Init\+Sequence@{C\+Init\+Sequence}!Loop\+End\+Act@{Loop\+End\+Act}}
+\index{Loop\+End\+Act@{Loop\+End\+Act}!C\+Init\+Sequence@{C\+Init\+Sequence}}
+\subsubsection[{Loop\+End\+Act() override}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Init\+Sequence\+::\+Loop\+End\+Act (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_c_init_sequence_aae10f421cc1738b571022d2bdc3898d0}
+
+
+フレーム終了時の処理。 
+
+
+
+\hyperlink{class_c_sequence_a0a2f5146bf33a4bd8c480d9da5a0538d}{C\+Sequence}を再実装しています。
+
+\hypertarget{class_c_init_sequence_a52cb5822b6f2c281f3969fadc61a47fb}{}\index{C\+Init\+Sequence@{C\+Init\+Sequence}!Loop\+Start\+Act@{Loop\+Start\+Act}}
+\index{Loop\+Start\+Act@{Loop\+Start\+Act}!C\+Init\+Sequence@{C\+Init\+Sequence}}
+\subsubsection[{Loop\+Start\+Act() override}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Init\+Sequence\+::\+Loop\+Start\+Act (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_c_init_sequence_a52cb5822b6f2c281f3969fadc61a47fb}
+
+
+フレーム開始時の処理。 
+
+
+
+\hyperlink{class_c_sequence_a0124977c5ae40f9289c7867ff71c743d}{C\+Sequence}を再実装しています。
+
+
+
+\subsection{メンバ詳解}
+\hypertarget{class_c_init_sequence_a2a6637e5348a20fe286258e723b85d31}{}\index{C\+Init\+Sequence@{C\+Init\+Sequence}!m\+\_\+pc\+Mesh@{m\+\_\+pc\+Mesh}}
+\index{m\+\_\+pc\+Mesh@{m\+\_\+pc\+Mesh}!C\+Init\+Sequence@{C\+Init\+Sequence}}
+\subsubsection[{m\+\_\+pc\+Mesh}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+P\+M\+D\+Mesh}$\ast$ C\+Init\+Sequence\+::m\+\_\+pc\+Mesh\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_init_sequence_a2a6637e5348a20fe286258e723b85d31}
+\hypertarget{class_c_init_sequence_a7581fe58f808b9490a8d65e026fd334e}{}\index{C\+Init\+Sequence@{C\+Init\+Sequence}!m\+\_\+pc\+Mesh\+Drawer@{m\+\_\+pc\+Mesh\+Drawer}}
+\index{m\+\_\+pc\+Mesh\+Drawer@{m\+\_\+pc\+Mesh\+Drawer}!C\+Init\+Sequence@{C\+Init\+Sequence}}
+\subsubsection[{m\+\_\+pc\+Mesh\+Drawer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Mesh\+Drawer}$\ast$ C\+Init\+Sequence\+::m\+\_\+pc\+Mesh\+Drawer\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_init_sequence_a7581fe58f808b9490a8d65e026fd334e}
+\hypertarget{class_c_init_sequence_acb2968a68f82f21b579371f0d2533863}{}\index{C\+Init\+Sequence@{C\+Init\+Sequence}!m\+\_\+pc\+P\+M\+D\+Reader@{m\+\_\+pc\+P\+M\+D\+Reader}}
+\index{m\+\_\+pc\+P\+M\+D\+Reader@{m\+\_\+pc\+P\+M\+D\+Reader}!C\+Init\+Sequence@{C\+Init\+Sequence}}
+\subsubsection[{m\+\_\+pc\+P\+M\+D\+Reader}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+P\+M\+D\+Reader}$\ast$ C\+Init\+Sequence\+::m\+\_\+pc\+P\+M\+D\+Reader\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_init_sequence_acb2968a68f82f21b579371f0d2533863}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Project/\+Game/\+Title/\hyperlink{_init_sequence_8h}{Init\+Sequence.\+h}\end{DoxyCompactItemize}

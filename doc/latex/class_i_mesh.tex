@@ -1,0 +1,161 @@
+\hypertarget{class_i_mesh}{}\section{I\+Mesh クラス}
+\label{class_i_mesh}\index{I\+Mesh@{I\+Mesh}}
+
+
+{\ttfamily \#include $<$Mesh.\+h$>$}
+
+I\+Mesh の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_i_mesh}
+\end{center}
+\end{figure}
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_i_mesh_1_1_st_material}{St\+Material}
+\begin{DoxyCompactList}\small\item\em マテリアル情報。 \end{DoxyCompactList}\item 
+struct \hyperlink{struct_i_mesh_1_1_st_vertex}{St\+Vertex}
+\begin{DoxyCompactList}\small\item\em 頂点情報。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_i_mesh_a39bf278a127fe4a317c53e8e0dd66d32}{I\+Mesh} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ。 \end{DoxyCompactList}\item 
+virtual \hyperlink{class_i_mesh_a1227ad691cc829ef540b3ff956019423}{$\sim$\+I\+Mesh} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ。 \end{DoxyCompactList}\item 
+virtual U32 \hyperlink{class_i_mesh_a98ac2c9b1da3c22191e4198833a4f6ef}{Get\+Vertex\+Num} () const  =0
+\begin{DoxyCompactList}\small\item\em 頂点情報数を取得。 \end{DoxyCompactList}\item 
+virtual const \hyperlink{struct_i_mesh_1_1_st_vertex}{St\+Vertex} $\ast$ \hyperlink{class_i_mesh_a91d4b99a5a91cb54d364cc6a8342b187}{Get\+Vertex\+Array} () const  =0
+\begin{DoxyCompactList}\small\item\em 頂点情報配列を取得。 \end{DoxyCompactList}\item 
+virtual U32 \hyperlink{class_i_mesh_a580358c71d8766c1e0aa8037b51a9296}{Get\+Index\+Num} () const  =0
+\begin{DoxyCompactList}\small\item\em インデックス数を取得。 \end{DoxyCompactList}\item 
+virtual const U32 $\ast$ \hyperlink{class_i_mesh_a3a9e9207cfae24ae1dd62eb2d2356301}{Get\+Index\+Array} () const  =0
+\begin{DoxyCompactList}\small\item\em インデックス配列を取得。 \end{DoxyCompactList}\item 
+virtual U32 \hyperlink{class_i_mesh_a1b8922bc90cd0951062053e24287ad6c}{Get\+Material\+Num} () const  =0
+\begin{DoxyCompactList}\small\item\em マテリアル数を取得。 \end{DoxyCompactList}\item 
+virtual const \hyperlink{struct_i_mesh_1_1_st_material}{St\+Material} $\ast$ \hyperlink{class_i_mesh_a48afb85120e333b50ac9de73b8b60d16}{Get\+Material\+Array} () const  =0
+\begin{DoxyCompactList}\small\item\em マテリアル配列を取得。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\hypertarget{class_i_mesh_a39bf278a127fe4a317c53e8e0dd66d32}{}\index{I\+Mesh@{I\+Mesh}!I\+Mesh@{I\+Mesh}}
+\index{I\+Mesh@{I\+Mesh}!I\+Mesh@{I\+Mesh}}
+\subsubsection[{I\+Mesh()}]{\setlength{\rightskip}{0pt plus 5cm}I\+Mesh\+::\+I\+Mesh (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_i_mesh_a39bf278a127fe4a317c53e8e0dd66d32}
+
+
+コンストラクタ。 
+
+\hypertarget{class_i_mesh_a1227ad691cc829ef540b3ff956019423}{}\index{I\+Mesh@{I\+Mesh}!````~I\+Mesh@{$\sim$\+I\+Mesh}}
+\index{````~I\+Mesh@{$\sim$\+I\+Mesh}!I\+Mesh@{I\+Mesh}}
+\subsubsection[{$\sim$\+I\+Mesh()}]{\setlength{\rightskip}{0pt plus 5cm}virtual I\+Mesh\+::$\sim$\+I\+Mesh (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_i_mesh_a1227ad691cc829ef540b3ff956019423}
+
+
+デストラクタ。 
+
+
+
+\subsection{関数詳解}
+\hypertarget{class_i_mesh_a3a9e9207cfae24ae1dd62eb2d2356301}{}\index{I\+Mesh@{I\+Mesh}!Get\+Index\+Array@{Get\+Index\+Array}}
+\index{Get\+Index\+Array@{Get\+Index\+Array}!I\+Mesh@{I\+Mesh}}
+\subsubsection[{Get\+Index\+Array() const  =0}]{\setlength{\rightskip}{0pt plus 5cm}virtual const U32$\ast$ I\+Mesh\+::\+Get\+Index\+Array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_i_mesh_a3a9e9207cfae24ae1dd62eb2d2356301}
+
+
+インデックス配列を取得。 
+
+
+
+\hyperlink{class_c_p_m_d_mesh_ab2b12b75b3ed1ed3017cff8d52f1677b}{C\+P\+M\+D\+Mesh}で実装されています。
+
+\hypertarget{class_i_mesh_a580358c71d8766c1e0aa8037b51a9296}{}\index{I\+Mesh@{I\+Mesh}!Get\+Index\+Num@{Get\+Index\+Num}}
+\index{Get\+Index\+Num@{Get\+Index\+Num}!I\+Mesh@{I\+Mesh}}
+\subsubsection[{Get\+Index\+Num() const  =0}]{\setlength{\rightskip}{0pt plus 5cm}virtual U32 I\+Mesh\+::\+Get\+Index\+Num (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_i_mesh_a580358c71d8766c1e0aa8037b51a9296}
+
+
+インデックス数を取得。 
+
+
+
+\hyperlink{class_c_p_m_d_mesh_a0127281ef228e27dd6232069c5ffd164}{C\+P\+M\+D\+Mesh}で実装されています。
+
+\hypertarget{class_i_mesh_a48afb85120e333b50ac9de73b8b60d16}{}\index{I\+Mesh@{I\+Mesh}!Get\+Material\+Array@{Get\+Material\+Array}}
+\index{Get\+Material\+Array@{Get\+Material\+Array}!I\+Mesh@{I\+Mesh}}
+\subsubsection[{Get\+Material\+Array() const  =0}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf St\+Material}$\ast$ I\+Mesh\+::\+Get\+Material\+Array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_i_mesh_a48afb85120e333b50ac9de73b8b60d16}
+
+
+マテリアル配列を取得。 
+
+
+
+\hyperlink{class_c_p_m_d_mesh_a8b6ba1255586f2387442ec24f92ade55}{C\+P\+M\+D\+Mesh}で実装されています。
+
+\hypertarget{class_i_mesh_a1b8922bc90cd0951062053e24287ad6c}{}\index{I\+Mesh@{I\+Mesh}!Get\+Material\+Num@{Get\+Material\+Num}}
+\index{Get\+Material\+Num@{Get\+Material\+Num}!I\+Mesh@{I\+Mesh}}
+\subsubsection[{Get\+Material\+Num() const  =0}]{\setlength{\rightskip}{0pt plus 5cm}virtual U32 I\+Mesh\+::\+Get\+Material\+Num (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_i_mesh_a1b8922bc90cd0951062053e24287ad6c}
+
+
+マテリアル数を取得。 
+
+
+
+\hyperlink{class_c_p_m_d_mesh_a3dc32e47f692de7cc2c998b65a416c6d}{C\+P\+M\+D\+Mesh}で実装されています。
+
+\hypertarget{class_i_mesh_a91d4b99a5a91cb54d364cc6a8342b187}{}\index{I\+Mesh@{I\+Mesh}!Get\+Vertex\+Array@{Get\+Vertex\+Array}}
+\index{Get\+Vertex\+Array@{Get\+Vertex\+Array}!I\+Mesh@{I\+Mesh}}
+\subsubsection[{Get\+Vertex\+Array() const  =0}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf St\+Vertex}$\ast$ I\+Mesh\+::\+Get\+Vertex\+Array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_i_mesh_a91d4b99a5a91cb54d364cc6a8342b187}
+
+
+頂点情報配列を取得。 
+
+
+
+\hyperlink{class_c_p_m_d_mesh_aa2b096b1102286fec5d8ea7cc381bb55}{C\+P\+M\+D\+Mesh}で実装されています。
+
+\hypertarget{class_i_mesh_a98ac2c9b1da3c22191e4198833a4f6ef}{}\index{I\+Mesh@{I\+Mesh}!Get\+Vertex\+Num@{Get\+Vertex\+Num}}
+\index{Get\+Vertex\+Num@{Get\+Vertex\+Num}!I\+Mesh@{I\+Mesh}}
+\subsubsection[{Get\+Vertex\+Num() const  =0}]{\setlength{\rightskip}{0pt plus 5cm}virtual U32 I\+Mesh\+::\+Get\+Vertex\+Num (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_i_mesh_a98ac2c9b1da3c22191e4198833a4f6ef}
+
+
+頂点情報数を取得。 
+
+
+
+\hyperlink{class_c_p_m_d_mesh_a99a0e4d3664fae495cfe216170294aab}{C\+P\+M\+D\+Mesh}で実装されています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Project/\+Game/\+Lib/\+Mesh/\hyperlink{_mesh_8h}{Mesh.\+h}\end{DoxyCompactItemize}

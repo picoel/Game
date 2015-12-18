@@ -1,0 +1,119 @@
+\hypertarget{_mem_definition_8h}{}\section{D\+:/\+Project/\+Game/\+Lib/\+Memory/\+Mem\+Definition.h ファイル}
+\label{_mem_definition_8h}\index{D\+:/\+Project/\+Game/\+Lib/\+Memory/\+Mem\+Definition.\+h@{D\+:/\+Project/\+Game/\+Lib/\+Memory/\+Mem\+Definition.\+h}}
+
+
+メモリ関連の定義。  
+
+
+\subsection*{名前空間}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacen_mem}{n\+Mem}
+\end{DoxyCompactItemize}
+\subsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_mem_definition_8h_adc1c3eead37c5acb657ec133b6765abb}{pnew}~new
+\item 
+\#define \hyperlink{_mem_definition_8h_ac2555768576ce1c87f314a66f34af44d}{P\+\_\+\+D\+E\+L\+E\+T\+E}(p)~if(p)\{ delete p; p = nullptr;\}
+\item 
+\#define \hyperlink{_mem_definition_8h_a478f25f1d780ff2f410c199f33bf0072}{P\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+A\+R\+R\+A\+Y}(p)~if(p)\{ delete\mbox{[}$\,$\mbox{]} p; p = nullptr; \}
+\end{DoxyCompactItemize}
+\subsection*{列挙型}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacen_mem_a44d64d91225ba6c957054d2db885dfbe}{n\+Mem\+::\+En\+Mem\+Page} \+: U32 \{ \hyperlink{namespacen_mem_a44d64d91225ba6c957054d2db885dfbea6a1b8649038aeb0a85ce63e897cea82f}{n\+Mem\+::\+En\+Mem\+Page\+::en\+Stationed}, 
+\hyperlink{namespacen_mem_a44d64d91225ba6c957054d2db885dfbeabe9fa21614b3e6b1262058b536d50965}{n\+Mem\+::\+En\+Mem\+Page\+::en\+Common}, 
+\hyperlink{namespacen_mem_a44d64d91225ba6c957054d2db885dfbea079bb6413c37006b9fdc56add34e517b}{n\+Mem\+::\+En\+Mem\+Page\+::en\+Max}
+ \}
+\item 
+enum \hyperlink{namespacen_mem_aae5f274bd5d48f77be9c3142a1e83e8b}{n\+Mem\+::\+En\+Alloc\+Mode} \+: U32 \{ \hyperlink{namespacen_mem_aae5f274bd5d48f77be9c3142a1e83e8ba51de7c871812c0d91929b2fa407db09f}{n\+Mem\+::\+En\+Alloc\+Mode\+::en\+Forward}, 
+\hyperlink{namespacen_mem_aae5f274bd5d48f77be9c3142a1e83e8ba3b7d737dc6a726f089f8d85df120a77f}{n\+Mem\+::\+En\+Alloc\+Mode\+::en\+Back}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{namespacen_mem_acb65bac5ab61012cdbde0ecce3e51d18}{n\+Mem\+::\+Alloc} (U\+Size \+\_\+u\+Size, En\+Mem\+Page \+\_\+e\+Page, En\+Alloc\+Mode \+\_\+e\+Mode, const S8 $\ast$\+\_\+ps\+File, U32 \+\_\+u\+Line)
+\begin{DoxyCompactList}\small\item\em メモリ確保。 \end{DoxyCompactList}\item 
+void \hyperlink{namespacen_mem_a9aaa87b3f418d881912df1c3acab0764}{n\+Mem\+::\+Free} (void $\ast$\+\_\+p)
+\begin{DoxyCompactList}\small\item\em メモリ解放。 \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{_mem_definition_8h_ae5134c441f47c4296be21d0f2a33d8f1}{operator new} (std\+::size\+\_\+t \+\_\+u\+Size, \hyperlink{namespacen_mem_a44d64d91225ba6c957054d2db885dfbe}{n\+Mem\+::\+En\+Mem\+Page} \+\_\+e\+Page, \hyperlink{namespacen_mem_aae5f274bd5d48f77be9c3142a1e83e8b}{n\+Mem\+::\+En\+Alloc\+Mode} \+\_\+e\+Mode, const S8 $\ast$\+\_\+ps\+File, U32 \+\_\+u\+Line)  throw ()
+\item 
+void $\ast$ \hyperlink{_mem_definition_8h_af8c27ae71485b5a1e7fc2a38e6053df4}{operator new\mbox{[}$\,$\mbox{]}} (std\+::size\+\_\+t \+\_\+u\+Size, \hyperlink{namespacen_mem_a44d64d91225ba6c957054d2db885dfbe}{n\+Mem\+::\+En\+Mem\+Page} \+\_\+e\+Page, \hyperlink{namespacen_mem_aae5f274bd5d48f77be9c3142a1e83e8b}{n\+Mem\+::\+En\+Alloc\+Mode} \+\_\+e\+Mode, const S8 $\ast$\+\_\+ps\+File, U32 \+\_\+u\+Line)  throw ()
+\item 
+void $\ast$ \hyperlink{_mem_definition_8h_a6f1548a647b654a5a0c2a974506e2481}{operator new} (std\+::size\+\_\+t \+\_\+u\+Size, \hyperlink{namespacen_mem_a44d64d91225ba6c957054d2db885dfbe}{n\+Mem\+::\+En\+Mem\+Page} \+\_\+e\+Page, \hyperlink{namespacen_mem_aae5f274bd5d48f77be9c3142a1e83e8b}{n\+Mem\+::\+En\+Alloc\+Mode} \+\_\+e\+Mode)  throw ()
+\item 
+void $\ast$ \hyperlink{_mem_definition_8h_a20eb05bba11c47002af85ac4e263c8d1}{operator new\mbox{[}$\,$\mbox{]}} (std\+::size\+\_\+t \+\_\+u\+Size, \hyperlink{namespacen_mem_a44d64d91225ba6c957054d2db885dfbe}{n\+Mem\+::\+En\+Mem\+Page} \+\_\+e\+Page, \hyperlink{namespacen_mem_aae5f274bd5d48f77be9c3142a1e83e8b}{n\+Mem\+::\+En\+Alloc\+Mode} \+\_\+e\+Mode)  throw ()
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+メモリ関連の定義。 
+
+\begin{DoxyDate}{日付}
+2015/05/24 03\+:54\+:05 
+\end{DoxyDate}
+
+
+\subsection{マクロ定義詳解}
+\hypertarget{_mem_definition_8h_ac2555768576ce1c87f314a66f34af44d}{}\index{Mem\+Definition.\+h@{Mem\+Definition.\+h}!P\+\_\+\+D\+E\+L\+E\+T\+E@{P\+\_\+\+D\+E\+L\+E\+T\+E}}
+\index{P\+\_\+\+D\+E\+L\+E\+T\+E@{P\+\_\+\+D\+E\+L\+E\+T\+E}!Mem\+Definition.\+h@{Mem\+Definition.\+h}}
+\subsubsection[{P\+\_\+\+D\+E\+L\+E\+T\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+\_\+\+D\+E\+L\+E\+T\+E(
+\begin{DoxyParamCaption}
+\item[{}]{p}
+\end{DoxyParamCaption}
+)~if(p)\{ delete p; p = nullptr;\}}\label{_mem_definition_8h_ac2555768576ce1c87f314a66f34af44d}
+\hypertarget{_mem_definition_8h_a478f25f1d780ff2f410c199f33bf0072}{}\index{Mem\+Definition.\+h@{Mem\+Definition.\+h}!P\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+A\+R\+R\+A\+Y@{P\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+A\+R\+R\+A\+Y}}
+\index{P\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+A\+R\+R\+A\+Y@{P\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+A\+R\+R\+A\+Y}!Mem\+Definition.\+h@{Mem\+Definition.\+h}}
+\subsubsection[{P\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+A\+R\+R\+A\+Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+A\+R\+R\+A\+Y(
+\begin{DoxyParamCaption}
+\item[{}]{p}
+\end{DoxyParamCaption}
+)~if(p)\{ delete\mbox{[}$\,$\mbox{]} p; p = nullptr; \}}\label{_mem_definition_8h_a478f25f1d780ff2f410c199f33bf0072}
+\hypertarget{_mem_definition_8h_adc1c3eead37c5acb657ec133b6765abb}{}\index{Mem\+Definition.\+h@{Mem\+Definition.\+h}!pnew@{pnew}}
+\index{pnew@{pnew}!Mem\+Definition.\+h@{Mem\+Definition.\+h}}
+\subsubsection[{pnew}]{\setlength{\rightskip}{0pt plus 5cm}\#define pnew~new}\label{_mem_definition_8h_adc1c3eead37c5acb657ec133b6765abb}
+
+
+\subsection{関数詳解}
+\hypertarget{_mem_definition_8h_ae5134c441f47c4296be21d0f2a33d8f1}{}\index{Mem\+Definition.\+h@{Mem\+Definition.\+h}!operator new@{operator new}}
+\index{operator new@{operator new}!Mem\+Definition.\+h@{Mem\+Definition.\+h}}
+\subsubsection[{operator new(std\+::size\+\_\+t \+\_\+u\+Size, n\+Mem\+::\+En\+Mem\+Page \+\_\+e\+Page, n\+Mem\+::\+En\+Alloc\+Mode \+\_\+e\+Mode, const S8 $\ast$\+\_\+ps\+File, U32 \+\_\+u\+Line)}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ operator new (
+\begin{DoxyParamCaption}
+\item[{std\+::size\+\_\+t}]{\+\_\+u\+Size, }
+\item[{{\bf n\+Mem\+::\+En\+Mem\+Page}}]{\+\_\+e\+Page, }
+\item[{{\bf n\+Mem\+::\+En\+Alloc\+Mode}}]{\+\_\+e\+Mode, }
+\item[{const S8 $\ast$}]{\+\_\+ps\+File, }
+\item[{U32}]{\+\_\+u\+Line}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\label{_mem_definition_8h_ae5134c441f47c4296be21d0f2a33d8f1}
+\hypertarget{_mem_definition_8h_a6f1548a647b654a5a0c2a974506e2481}{}\index{Mem\+Definition.\+h@{Mem\+Definition.\+h}!operator new@{operator new}}
+\index{operator new@{operator new}!Mem\+Definition.\+h@{Mem\+Definition.\+h}}
+\subsubsection[{operator new(std\+::size\+\_\+t \+\_\+u\+Size, n\+Mem\+::\+En\+Mem\+Page \+\_\+e\+Page, n\+Mem\+::\+En\+Alloc\+Mode \+\_\+e\+Mode)}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ operator new (
+\begin{DoxyParamCaption}
+\item[{std\+::size\+\_\+t}]{\+\_\+u\+Size, }
+\item[{{\bf n\+Mem\+::\+En\+Mem\+Page}}]{\+\_\+e\+Page, }
+\item[{{\bf n\+Mem\+::\+En\+Alloc\+Mode}}]{\+\_\+e\+Mode}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\label{_mem_definition_8h_a6f1548a647b654a5a0c2a974506e2481}
+\hypertarget{_mem_definition_8h_af8c27ae71485b5a1e7fc2a38e6053df4}{}\index{Mem\+Definition.\+h@{Mem\+Definition.\+h}!operator new\mbox{[}$\,$\mbox{]}@{operator new[]}}
+\index{operator new\mbox{[}$\,$\mbox{]}@{operator new[]}!Mem\+Definition.\+h@{Mem\+Definition.\+h}}
+\subsubsection[{operator new[](std\+::size\+\_\+t \+\_\+u\+Size, n\+Mem\+::\+En\+Mem\+Page \+\_\+e\+Page, n\+Mem\+::\+En\+Alloc\+Mode \+\_\+e\+Mode, const S8 $\ast$\+\_\+ps\+File, U32 \+\_\+u\+Line)}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ operator new\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{std\+::size\+\_\+t}]{\+\_\+u\+Size, }
+\item[{{\bf n\+Mem\+::\+En\+Mem\+Page}}]{\+\_\+e\+Page, }
+\item[{{\bf n\+Mem\+::\+En\+Alloc\+Mode}}]{\+\_\+e\+Mode, }
+\item[{const S8 $\ast$}]{\+\_\+ps\+File, }
+\item[{U32}]{\+\_\+u\+Line}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\label{_mem_definition_8h_af8c27ae71485b5a1e7fc2a38e6053df4}
+\hypertarget{_mem_definition_8h_a20eb05bba11c47002af85ac4e263c8d1}{}\index{Mem\+Definition.\+h@{Mem\+Definition.\+h}!operator new\mbox{[}$\,$\mbox{]}@{operator new[]}}
+\index{operator new\mbox{[}$\,$\mbox{]}@{operator new[]}!Mem\+Definition.\+h@{Mem\+Definition.\+h}}
+\subsubsection[{operator new[](std\+::size\+\_\+t \+\_\+u\+Size, n\+Mem\+::\+En\+Mem\+Page \+\_\+e\+Page, n\+Mem\+::\+En\+Alloc\+Mode \+\_\+e\+Mode)}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ operator new\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{std\+::size\+\_\+t}]{\+\_\+u\+Size, }
+\item[{{\bf n\+Mem\+::\+En\+Mem\+Page}}]{\+\_\+e\+Page, }
+\item[{{\bf n\+Mem\+::\+En\+Alloc\+Mode}}]{\+\_\+e\+Mode}
+\end{DoxyParamCaption}
+) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}\label{_mem_definition_8h_a20eb05bba11c47002af85ac4e263c8d1}

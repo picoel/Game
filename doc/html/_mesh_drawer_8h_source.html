@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>My Project: D:/Project/Game/Lib/Mesh/MeshDrawer.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="namespaces.html"><span>名前空間</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8f3de2ae926fecfe6abd5379fd2b6eb1.html">Lib</a></li><li class="navelem"><a class="el" href="dir_3746ea10c174e6358da539fe5a790930.html">Mesh</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">MeshDrawer.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_mesh_drawer_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef INCLUDE_LIB_MESH_MESHDRAWER_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define INCLUDE_LIB_MESH_MESHDRAWER_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_mesh_8h.html">Lib/Mesh/Mesh.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_direct_x_texture.html">CDirectXTexture</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span><a class="code" href="class_i_render_context.html">IRenderContext</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * @class CMeshDrawer</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * @brief メッシュの描画。</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_c_mesh_drawer.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_mesh_drawer.html">CMeshDrawer</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_c_mesh_drawer.html#a10d0f7891d2a54904ed3078708029ba4">CMeshDrawer</a>( <span class="keyword">const</span> <a class="code" href="class_i_mesh.html">IMesh</a>* _pcMesh );</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_mesh_drawer.html#a806a4c666e00bfd72066ac1b405db2a1">~CMeshDrawer</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_mesh_drawer.html#a82ac2291582f714a5af0300526f4f107">Draw</a>( <a class="code" href="class_i_render_context.html">IRenderContext</a>* _pcContext );</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_mesh_drawer.html#aa342de95f105b4f22c75367b344df335">IsReadEnd</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_mesh_drawer.html#aae1ac0846695db38abfc282b9f3bd829">CreateVertexBuffer</a>( <span class="keyword">const</span> <a class="code" href="class_i_mesh.html">IMesh</a>* _pcMesh );</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_mesh_drawer.html#af01061282afe0e1c73be2b8faeb144b0">CreateIndexBuffer</a>( <span class="keyword">const</span> <a class="code" href="class_i_mesh.html">IMesh</a>* _pcMesh );</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_mesh_drawer.html#a20a0681c8e2835a8e16988011e1b20e1">CreateMaterial</a>( <span class="keyword">const</span> <a class="code" href="class_i_mesh.html">IMesh</a>* _pcMesh );</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_c_mesh_drawer.html#afd868ffa4352ee572c96ce27503ffbef">   40</a></span>&#160;    ID3DBuffer*         <a class="code" href="class_c_mesh_drawer.html#afd868ffa4352ee572c96ce27503ffbef">m_pcVertexBuffer</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_c_mesh_drawer.html#ac0ff368c1f0142014951771916e81859">   41</a></span>&#160;    ID3DBuffer*         <a class="code" href="class_c_mesh_drawer.html#ac0ff368c1f0142014951771916e81859">m_pcIndexBuffer</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_c_mesh_drawer.html#a1f43f0a290e81f825c5b504df8d73f04">   43</a></span>&#160;    U32                 <a class="code" href="class_c_mesh_drawer.html#a1f43f0a290e81f825c5b504df8d73f04">m_uMaterialNum</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_c_mesh_drawer.html#a8dfc3abb01754af03e7df870da7a872d">   44</a></span>&#160;    <a class="code" href="struct_i_mesh_1_1_st_material.html">IMesh::StMaterial</a>*  <a class="code" href="class_c_mesh_drawer.html#a8dfc3abb01754af03e7df870da7a872d">m_pstMaterialArray</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_c_mesh_drawer.html#a1e05fd8e03370903b786ad8ef4921cfa">   45</a></span>&#160;    <a class="code" href="class_c_direct_x_texture.html">CDirectXTexture</a>**   <a class="code" href="class_c_mesh_drawer.html#a1e05fd8e03370903b786ad8ef4921cfa">m_pcTextureArray</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif // #ifndef INCLUDE_LIB_MESH_MESHDRAWER_H</span></div>
+<div class="ttc" id="class_c_mesh_drawer_html_a1f43f0a290e81f825c5b504df8d73f04"><div class="ttname"><a href="class_c_mesh_drawer.html#a1f43f0a290e81f825c5b504df8d73f04">CMeshDrawer::m_uMaterialNum</a></div><div class="ttdeci">U32 m_uMaterialNum</div><div class="ttdef"><b>Definition:</b> MeshDrawer.h:43</div></div>
+<div class="ttc" id="class_c_mesh_drawer_html_aae1ac0846695db38abfc282b9f3bd829"><div class="ttname"><a href="class_c_mesh_drawer.html#aae1ac0846695db38abfc282b9f3bd829">CMeshDrawer::CreateVertexBuffer</a></div><div class="ttdeci">void CreateVertexBuffer(const IMesh *_pcMesh)</div><div class="ttdoc">頂点バッファーの作成。 </div><div class="ttdef"><b>Definition:</b> MeshDrawer.cpp:88</div></div>
+<div class="ttc" id="class_c_mesh_drawer_html_a8dfc3abb01754af03e7df870da7a872d"><div class="ttname"><a href="class_c_mesh_drawer.html#a8dfc3abb01754af03e7df870da7a872d">CMeshDrawer::m_pstMaterialArray</a></div><div class="ttdeci">IMesh::StMaterial * m_pstMaterialArray</div><div class="ttdef"><b>Definition:</b> MeshDrawer.h:44</div></div>
+<div class="ttc" id="class_c_mesh_drawer_html_a10d0f7891d2a54904ed3078708029ba4"><div class="ttname"><a href="class_c_mesh_drawer.html#a10d0f7891d2a54904ed3078708029ba4">CMeshDrawer::CMeshDrawer</a></div><div class="ttdeci">CMeshDrawer(const IMesh *_pcMesh)</div><div class="ttdoc">コンストラクタ。 </div><div class="ttdef"><b>Definition:</b> MeshDrawer.cpp:16</div></div>
+<div class="ttc" id="class_c_mesh_drawer_html_aa342de95f105b4f22c75367b344df335"><div class="ttname"><a href="class_c_mesh_drawer.html#aa342de95f105b4f22c75367b344df335">CMeshDrawer::IsReadEnd</a></div><div class="ttdeci">bool IsReadEnd() const </div><div class="ttdoc">読み込みが完了したか。 </div><div class="ttdef"><b>Definition:</b> MeshDrawer.cpp:61</div></div>
+<div class="ttc" id="class_c_mesh_drawer_html_a20a0681c8e2835a8e16988011e1b20e1"><div class="ttname"><a href="class_c_mesh_drawer.html#a20a0681c8e2835a8e16988011e1b20e1">CMeshDrawer::CreateMaterial</a></div><div class="ttdeci">void CreateMaterial(const IMesh *_pcMesh)</div><div class="ttdoc">マテリアル情報の作成。 </div><div class="ttdef"><b>Definition:</b> MeshDrawer.cpp:150</div></div>
+<div class="ttc" id="class_i_render_context_html"><div class="ttname"><a href="class_i_render_context.html">IRenderContext</a></div><div class="ttdef"><b>Definition:</b> RenderContext.h:16</div></div>
+<div class="ttc" id="class_c_mesh_drawer_html_afd868ffa4352ee572c96ce27503ffbef"><div class="ttname"><a href="class_c_mesh_drawer.html#afd868ffa4352ee572c96ce27503ffbef">CMeshDrawer::m_pcVertexBuffer</a></div><div class="ttdeci">ID3DBuffer * m_pcVertexBuffer</div><div class="ttdef"><b>Definition:</b> MeshDrawer.h:40</div></div>
+<div class="ttc" id="class_c_mesh_drawer_html_a82ac2291582f714a5af0300526f4f107"><div class="ttname"><a href="class_c_mesh_drawer.html#a82ac2291582f714a5af0300526f4f107">CMeshDrawer::Draw</a></div><div class="ttdeci">void Draw(IRenderContext *_pcContext)</div><div class="ttdoc">描画処理。 </div><div class="ttdef"><b>Definition:</b> MeshDrawer.cpp:52</div></div>
+<div class="ttc" id="class_c_direct_x_texture_html"><div class="ttname"><a href="class_c_direct_x_texture.html">CDirectXTexture</a></div><div class="ttdef"><b>Definition:</b> DirectXTexture.h:16</div></div>
+<div class="ttc" id="class_c_mesh_drawer_html"><div class="ttname"><a href="class_c_mesh_drawer.html">CMeshDrawer</a></div><div class="ttdef"><b>Definition:</b> MeshDrawer.h:18</div></div>
+<div class="ttc" id="class_c_mesh_drawer_html_a806a4c666e00bfd72066ac1b405db2a1"><div class="ttname"><a href="class_c_mesh_drawer.html#a806a4c666e00bfd72066ac1b405db2a1">CMeshDrawer::~CMeshDrawer</a></div><div class="ttdeci">virtual ~CMeshDrawer()</div><div class="ttdoc">デストラクタ。 </div><div class="ttdef"><b>Definition:</b> MeshDrawer.cpp:35</div></div>
+<div class="ttc" id="_mesh_8h_html"><div class="ttname"><a href="_mesh_8h.html">Mesh.h</a></div><div class="ttdoc">ポリゴンメッシュインターフェイス。  2015/12/03 01:24:39 </div></div>
+<div class="ttc" id="class_i_mesh_html"><div class="ttname"><a href="class_i_mesh.html">IMesh</a></div><div class="ttdef"><b>Definition:</b> Mesh.h:18</div></div>
+<div class="ttc" id="class_c_mesh_drawer_html_af01061282afe0e1c73be2b8faeb144b0"><div class="ttname"><a href="class_c_mesh_drawer.html#af01061282afe0e1c73be2b8faeb144b0">CMeshDrawer::CreateIndexBuffer</a></div><div class="ttdeci">void CreateIndexBuffer(const IMesh *_pcMesh)</div><div class="ttdoc">インデックスバッファーの作成。 </div><div class="ttdef"><b>Definition:</b> MeshDrawer.cpp:119</div></div>
+<div class="ttc" id="class_c_mesh_drawer_html_ac0ff368c1f0142014951771916e81859"><div class="ttname"><a href="class_c_mesh_drawer.html#ac0ff368c1f0142014951771916e81859">CMeshDrawer::m_pcIndexBuffer</a></div><div class="ttdeci">ID3DBuffer * m_pcIndexBuffer</div><div class="ttdef"><b>Definition:</b> MeshDrawer.h:41</div></div>
+<div class="ttc" id="class_c_mesh_drawer_html_a1e05fd8e03370903b786ad8ef4921cfa"><div class="ttname"><a href="class_c_mesh_drawer.html#a1e05fd8e03370903b786ad8ef4921cfa">CMeshDrawer::m_pcTextureArray</a></div><div class="ttdeci">CDirectXTexture ** m_pcTextureArray</div><div class="ttdef"><b>Definition:</b> MeshDrawer.h:45</div></div>
+<div class="ttc" id="struct_i_mesh_1_1_st_material_html"><div class="ttname"><a href="struct_i_mesh_1_1_st_material.html">IMesh::StMaterial</a></div><div class="ttdoc">マテリアル情報。 </div><div class="ttdef"><b>Definition:</b> Mesh.h:37</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

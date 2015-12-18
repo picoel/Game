@@ -1,0 +1,181 @@
+\hypertarget{class_c_file_read_thread}{}\section{C\+File\+Read\+Thread クラス}
+\label{class_c_file_read_thread}\index{C\+File\+Read\+Thread@{C\+File\+Read\+Thread}}
+
+
+{\ttfamily \#include $<$File\+Read\+Thread.\+h$>$}
+
+C\+File\+Read\+Thread の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_file_read_thread}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_file_read_thread_a6be058890450e1457324d738a42324e8}{C\+File\+Read\+Thread} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ。 \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_file_read_thread_a249a969dafa6aa1fb98b87098f3d9f22}{$\sim$\+C\+File\+Read\+Thread} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_file_read_thread_a74368d5091a88e1ad149e35a09fba026}{Thread\+Callback} () override
+\begin{DoxyCompactList}\small\item\em 開始したスレッドから呼ばれるコールバック関数。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_file_read_thread_a93688d92c0a249522ab133a4de08b727}{Request} (const T\+Char $\ast$\+\_\+ps\+File\+Name)
+\begin{DoxyCompactList}\small\item\em ファイル読み込みリクエスト。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_file_read_thread_a36a83980898059b75c22fb0e9fba9b8c}{Request\+End\+Thread} ()
+\begin{DoxyCompactList}\small\item\em スレッド終了リクエスト。 \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_file_read_thread_a67df23cd8c25bb51a414838353576c6c}{Is\+Read\+End} ()
+\begin{DoxyCompactList}\small\item\em 読み込みが終了したか。 \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{class_c_file_read_thread_a13d5df9d60ab84216882cd4791b88f46}{Get\+Data} ()
+\begin{DoxyCompactList}\small\item\em 読み込んだデータを取得。 \end{DoxyCompactList}\item 
+U\+Size \hyperlink{class_c_file_read_thread_ae89ecd3f84e68aa48eea6f3ed787484c}{Get\+Size} ()
+\begin{DoxyCompactList}\small\item\em 読み込んだデータサイズを取得。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_string_8h_a65b002fe7fe31f6e84dbb7e46907e031}{C\+T\+String} \hyperlink{class_c_file_read_thread_a6a9ea67314b0dc1e77f3eb0b2ab16cf3}{m\+\_\+c\+File\+Name}
+\item 
+bool \hyperlink{class_c_file_read_thread_abca3c8548dd1eb8c48d052c20819e928}{m\+\_\+b\+Is\+Request}
+\item 
+bool \hyperlink{class_c_file_read_thread_acb76507c5a24b0cc3f7ccb1339712419}{m\+\_\+b\+Is\+Read\+End}
+\item 
+bool \hyperlink{class_c_file_read_thread_a00e36c8dc11b75c8f555afe0a0f84dbf}{m\+\_\+b\+Request\+End}
+\item 
+void $\ast$ \hyperlink{class_c_file_read_thread_aa185614299cc1f92f4320f59398f6837}{m\+\_\+p\+Data}
+\item 
+U\+Size \hyperlink{class_c_file_read_thread_afcc49a43972a0ccb2f59a498678e6f14}{m\+\_\+u\+Size}
+\item 
+\hyperlink{class_c_critical_section}{C\+Critical\+Section} \hyperlink{class_c_file_read_thread_af324ea4f111a34d97c846f9ec95bc004}{m\+\_\+c\+Critical\+Section}
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\hypertarget{class_c_file_read_thread_a6be058890450e1457324d738a42324e8}{}\index{C\+File\+Read\+Thread@{C\+File\+Read\+Thread}!C\+File\+Read\+Thread@{C\+File\+Read\+Thread}}
+\index{C\+File\+Read\+Thread@{C\+File\+Read\+Thread}!C\+File\+Read\+Thread@{C\+File\+Read\+Thread}}
+\subsubsection[{C\+File\+Read\+Thread()}]{\setlength{\rightskip}{0pt plus 5cm}C\+File\+Read\+Thread\+::\+C\+File\+Read\+Thread (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_file_read_thread_a6be058890450e1457324d738a42324e8}
+
+
+コンストラクタ。 
+
+\hypertarget{class_c_file_read_thread_a249a969dafa6aa1fb98b87098f3d9f22}{}\index{C\+File\+Read\+Thread@{C\+File\+Read\+Thread}!````~C\+File\+Read\+Thread@{$\sim$\+C\+File\+Read\+Thread}}
+\index{````~C\+File\+Read\+Thread@{$\sim$\+C\+File\+Read\+Thread}!C\+File\+Read\+Thread@{C\+File\+Read\+Thread}}
+\subsubsection[{$\sim$\+C\+File\+Read\+Thread()}]{\setlength{\rightskip}{0pt plus 5cm}C\+File\+Read\+Thread\+::$\sim$\+C\+File\+Read\+Thread (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_file_read_thread_a249a969dafa6aa1fb98b87098f3d9f22}
+
+
+デストラクタ。 
+
+
+
+\subsection{関数詳解}
+\hypertarget{class_c_file_read_thread_a13d5df9d60ab84216882cd4791b88f46}{}\index{C\+File\+Read\+Thread@{C\+File\+Read\+Thread}!Get\+Data@{Get\+Data}}
+\index{Get\+Data@{Get\+Data}!C\+File\+Read\+Thread@{C\+File\+Read\+Thread}}
+\subsubsection[{Get\+Data()}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ C\+File\+Read\+Thread\+::\+Get\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_file_read_thread_a13d5df9d60ab84216882cd4791b88f46}
+
+
+読み込んだデータを取得。 
+
+\hypertarget{class_c_file_read_thread_ae89ecd3f84e68aa48eea6f3ed787484c}{}\index{C\+File\+Read\+Thread@{C\+File\+Read\+Thread}!Get\+Size@{Get\+Size}}
+\index{Get\+Size@{Get\+Size}!C\+File\+Read\+Thread@{C\+File\+Read\+Thread}}
+\subsubsection[{Get\+Size()}]{\setlength{\rightskip}{0pt plus 5cm}U\+Size C\+File\+Read\+Thread\+::\+Get\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_file_read_thread_ae89ecd3f84e68aa48eea6f3ed787484c}
+
+
+読み込んだデータサイズを取得。 
+
+\hypertarget{class_c_file_read_thread_a67df23cd8c25bb51a414838353576c6c}{}\index{C\+File\+Read\+Thread@{C\+File\+Read\+Thread}!Is\+Read\+End@{Is\+Read\+End}}
+\index{Is\+Read\+End@{Is\+Read\+End}!C\+File\+Read\+Thread@{C\+File\+Read\+Thread}}
+\subsubsection[{Is\+Read\+End()}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+File\+Read\+Thread\+::\+Is\+Read\+End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_file_read_thread_a67df23cd8c25bb51a414838353576c6c}
+
+
+読み込みが終了したか。 
+
+\hypertarget{class_c_file_read_thread_a93688d92c0a249522ab133a4de08b727}{}\index{C\+File\+Read\+Thread@{C\+File\+Read\+Thread}!Request@{Request}}
+\index{Request@{Request}!C\+File\+Read\+Thread@{C\+File\+Read\+Thread}}
+\subsubsection[{Request(const T\+Char $\ast$\+\_\+ps\+File\+Name)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+File\+Read\+Thread\+::\+Request (
+\begin{DoxyParamCaption}
+\item[{const T\+Char $\ast$}]{\+\_\+ps\+File\+Name}
+\end{DoxyParamCaption}
+)}\label{class_c_file_read_thread_a93688d92c0a249522ab133a4de08b727}
+
+
+ファイル読み込みリクエスト。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+ps\+File\+Name} & \+: 読み込むファイルネーム。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_file_read_thread_a36a83980898059b75c22fb0e9fba9b8c}{}\index{C\+File\+Read\+Thread@{C\+File\+Read\+Thread}!Request\+End\+Thread@{Request\+End\+Thread}}
+\index{Request\+End\+Thread@{Request\+End\+Thread}!C\+File\+Read\+Thread@{C\+File\+Read\+Thread}}
+\subsubsection[{Request\+End\+Thread()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+File\+Read\+Thread\+::\+Request\+End\+Thread (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_file_read_thread_a36a83980898059b75c22fb0e9fba9b8c}
+
+
+スレッド終了リクエスト。 
+
+\hypertarget{class_c_file_read_thread_a74368d5091a88e1ad149e35a09fba026}{}\index{C\+File\+Read\+Thread@{C\+File\+Read\+Thread}!Thread\+Callback@{Thread\+Callback}}
+\index{Thread\+Callback@{Thread\+Callback}!C\+File\+Read\+Thread@{C\+File\+Read\+Thread}}
+\subsubsection[{Thread\+Callback() override}]{\setlength{\rightskip}{0pt plus 5cm}void C\+File\+Read\+Thread\+::\+Thread\+Callback (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_c_file_read_thread_a74368d5091a88e1ad149e35a09fba026}
+
+
+開始したスレッドから呼ばれるコールバック関数。 
+
+
+
+\hyperlink{class_c_thread_a15c60ba6d652d92c150fda5e10ebb23e}{C\+Thread}を再実装しています。
+
+
+
+\subsection{メンバ詳解}
+\hypertarget{class_c_file_read_thread_acb76507c5a24b0cc3f7ccb1339712419}{}\index{C\+File\+Read\+Thread@{C\+File\+Read\+Thread}!m\+\_\+b\+Is\+Read\+End@{m\+\_\+b\+Is\+Read\+End}}
+\index{m\+\_\+b\+Is\+Read\+End@{m\+\_\+b\+Is\+Read\+End}!C\+File\+Read\+Thread@{C\+File\+Read\+Thread}}
+\subsubsection[{m\+\_\+b\+Is\+Read\+End}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+File\+Read\+Thread\+::m\+\_\+b\+Is\+Read\+End\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_read_thread_acb76507c5a24b0cc3f7ccb1339712419}
+\hypertarget{class_c_file_read_thread_abca3c8548dd1eb8c48d052c20819e928}{}\index{C\+File\+Read\+Thread@{C\+File\+Read\+Thread}!m\+\_\+b\+Is\+Request@{m\+\_\+b\+Is\+Request}}
+\index{m\+\_\+b\+Is\+Request@{m\+\_\+b\+Is\+Request}!C\+File\+Read\+Thread@{C\+File\+Read\+Thread}}
+\subsubsection[{m\+\_\+b\+Is\+Request}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+File\+Read\+Thread\+::m\+\_\+b\+Is\+Request\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_read_thread_abca3c8548dd1eb8c48d052c20819e928}
+\hypertarget{class_c_file_read_thread_a00e36c8dc11b75c8f555afe0a0f84dbf}{}\index{C\+File\+Read\+Thread@{C\+File\+Read\+Thread}!m\+\_\+b\+Request\+End@{m\+\_\+b\+Request\+End}}
+\index{m\+\_\+b\+Request\+End@{m\+\_\+b\+Request\+End}!C\+File\+Read\+Thread@{C\+File\+Read\+Thread}}
+\subsubsection[{m\+\_\+b\+Request\+End}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+File\+Read\+Thread\+::m\+\_\+b\+Request\+End\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_read_thread_a00e36c8dc11b75c8f555afe0a0f84dbf}
+\hypertarget{class_c_file_read_thread_af324ea4f111a34d97c846f9ec95bc004}{}\index{C\+File\+Read\+Thread@{C\+File\+Read\+Thread}!m\+\_\+c\+Critical\+Section@{m\+\_\+c\+Critical\+Section}}
+\index{m\+\_\+c\+Critical\+Section@{m\+\_\+c\+Critical\+Section}!C\+File\+Read\+Thread@{C\+File\+Read\+Thread}}
+\subsubsection[{m\+\_\+c\+Critical\+Section}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Critical\+Section} C\+File\+Read\+Thread\+::m\+\_\+c\+Critical\+Section\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_read_thread_af324ea4f111a34d97c846f9ec95bc004}
+\hypertarget{class_c_file_read_thread_a6a9ea67314b0dc1e77f3eb0b2ab16cf3}{}\index{C\+File\+Read\+Thread@{C\+File\+Read\+Thread}!m\+\_\+c\+File\+Name@{m\+\_\+c\+File\+Name}}
+\index{m\+\_\+c\+File\+Name@{m\+\_\+c\+File\+Name}!C\+File\+Read\+Thread@{C\+File\+Read\+Thread}}
+\subsubsection[{m\+\_\+c\+File\+Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+T\+String} C\+File\+Read\+Thread\+::m\+\_\+c\+File\+Name\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_read_thread_a6a9ea67314b0dc1e77f3eb0b2ab16cf3}
+\hypertarget{class_c_file_read_thread_aa185614299cc1f92f4320f59398f6837}{}\index{C\+File\+Read\+Thread@{C\+File\+Read\+Thread}!m\+\_\+p\+Data@{m\+\_\+p\+Data}}
+\index{m\+\_\+p\+Data@{m\+\_\+p\+Data}!C\+File\+Read\+Thread@{C\+File\+Read\+Thread}}
+\subsubsection[{m\+\_\+p\+Data}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ C\+File\+Read\+Thread\+::m\+\_\+p\+Data\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_read_thread_aa185614299cc1f92f4320f59398f6837}
+\hypertarget{class_c_file_read_thread_afcc49a43972a0ccb2f59a498678e6f14}{}\index{C\+File\+Read\+Thread@{C\+File\+Read\+Thread}!m\+\_\+u\+Size@{m\+\_\+u\+Size}}
+\index{m\+\_\+u\+Size@{m\+\_\+u\+Size}!C\+File\+Read\+Thread@{C\+File\+Read\+Thread}}
+\subsubsection[{m\+\_\+u\+Size}]{\setlength{\rightskip}{0pt plus 5cm}U\+Size C\+File\+Read\+Thread\+::m\+\_\+u\+Size\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_read_thread_afcc49a43972a0ccb2f59a498678e6f14}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Project/\+Game/\+Lib/\+File/\hyperlink{_file_read_thread_8h}{File\+Read\+Thread.\+h}\item 
+D\+:/\+Project/\+Game/\+Lib/\+File/\hyperlink{_file_read_thread_8cpp}{File\+Read\+Thread.\+cpp}\end{DoxyCompactItemize}

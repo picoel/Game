@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>My Project: D:/Project/Game/Lib/Memory/MemAllocator.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="namespaces.html"><span>名前空間</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8f3de2ae926fecfe6abd5379fd2b6eb1.html">Lib</a></li><li class="navelem"><a class="el" href="dir_af23e7e4d50f6b39ce689339f85a571e.html">Memory</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">MemAllocator.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_mem_allocator_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef INCLUDE_MEMALLOCATOR_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define INCLUDE_MEMALLOCATOR_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_critical_section_8h.html">Lib/Thread/CriticalSection.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_mem_block_8h.html">Lib/Memory/MemBlock.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *  @class  CMemAllocator</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_c_mem_allocator.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_mem_allocator.html">CMemAllocator</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="struct_c_mem_allocator_1_1_st_init_param.html">   20</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_c_mem_allocator_1_1_st_init_param.html">StInitParam</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="struct_c_mem_allocator_1_1_st_init_param.html#a955c7d57350b1dcd81384b4d840f7640">   22</a></span>&#160;        <span class="keyword">enum</span> <a class="code" href="struct_c_mem_allocator_1_1_st_init_param.html#a955c7d57350b1dcd81384b4d840f7640">EnPartitionNum</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        {</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="struct_c_mem_allocator_1_1_st_init_param.html#a955c7d57350b1dcd81384b4d840f7640a0ca20bb8a5dd26dfe82bc2903de60fe4">   24</a></span>&#160;            <a class="code" href="struct_c_mem_allocator_1_1_st_init_param.html#a955c7d57350b1dcd81384b4d840f7640a0ca20bb8a5dd26dfe82bc2903de60fe4">enPartitionNum_1</a> = 0,</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="struct_c_mem_allocator_1_1_st_init_param.html#a955c7d57350b1dcd81384b4d840f7640af1d5bc5d22250ca125b054f37706040e">   25</a></span>&#160;            <a class="code" href="struct_c_mem_allocator_1_1_st_init_param.html#a955c7d57350b1dcd81384b4d840f7640af1d5bc5d22250ca125b054f37706040e">enPartitionNum_2</a>,</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="struct_c_mem_allocator_1_1_st_init_param.html#a955c7d57350b1dcd81384b4d840f7640a1312772dd3abeefbde69e0f507b8d779">   26</a></span>&#160;            <a class="code" href="struct_c_mem_allocator_1_1_st_init_param.html#a955c7d57350b1dcd81384b4d840f7640a1312772dd3abeefbde69e0f507b8d779">enPartitionNum_4</a>,</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="struct_c_mem_allocator_1_1_st_init_param.html#a955c7d57350b1dcd81384b4d840f7640a7ba62b92898f629eaaa2a5897a6deb31">   27</a></span>&#160;            <a class="code" href="struct_c_mem_allocator_1_1_st_init_param.html#a955c7d57350b1dcd81384b4d840f7640a7ba62b92898f629eaaa2a5897a6deb31">enPartitionNum_8</a>,</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="struct_c_mem_allocator_1_1_st_init_param.html#a955c7d57350b1dcd81384b4d840f7640a3c26d9f65ab34bfa454c0a2db921ec3f">   28</a></span>&#160;            <a class="code" href="struct_c_mem_allocator_1_1_st_init_param.html#a955c7d57350b1dcd81384b4d840f7640a3c26d9f65ab34bfa454c0a2db921ec3f">enPartitionNum_16</a>,</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="struct_c_mem_allocator_1_1_st_init_param.html#a955c7d57350b1dcd81384b4d840f7640a440b4be066761dc8f92b8bea6fbbc837">   29</a></span>&#160;            <a class="code" href="struct_c_mem_allocator_1_1_st_init_param.html#a955c7d57350b1dcd81384b4d840f7640a440b4be066761dc8f92b8bea6fbbc837">enPartitionNum_32</a>,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="struct_c_mem_allocator_1_1_st_init_param.html#a955c7d57350b1dcd81384b4d840f7640af07274577ae5023d78b56b2a9fdcc97e">   31</a></span>&#160;            <a class="code" href="struct_c_mem_allocator_1_1_st_init_param.html#a955c7d57350b1dcd81384b4d840f7640af07274577ae5023d78b56b2a9fdcc97e">enPartitionNum_Max</a>,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        };</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="struct_c_mem_allocator_1_1_st_init_param.html#a27002d26b5ccf62e8588984954f01bd9">   34</a></span>&#160;        USize           <a class="code" href="struct_c_mem_allocator_1_1_st_init_param.html#a27002d26b5ccf62e8588984954f01bd9">m_uSize</a>;        </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="struct_c_mem_allocator_1_1_st_init_param.html#acf563f108b9d517ac97622d915eaa08d">   35</a></span>&#160;        <a class="code" href="struct_c_mem_allocator_1_1_st_init_param.html#a955c7d57350b1dcd81384b4d840f7640">EnPartitionNum</a>  <a class="code" href="struct_c_mem_allocator_1_1_st_init_param.html#acf563f108b9d517ac97622d915eaa08d">m_ePartition</a>;   </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="struct_c_mem_allocator_1_1_st_init_param.html#a1638c147ccd7ff9868f832ae6ef17bdd">   37</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="struct_c_mem_allocator_1_1_st_init_param.html#a1638c147ccd7ff9868f832ae6ef17bdd">Init</a>()</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            m_uSize = 0;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            m_ePartition = <a class="code" href="struct_c_mem_allocator_1_1_st_init_param.html#a955c7d57350b1dcd81384b4d840f7640a440b4be066761dc8f92b8bea6fbbc837">enPartitionNum_32</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    };</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_c_mem_allocator.html#abf840ff9239492607ab3a3b8e0df2066">   45</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="class_c_mem_allocator.html#abf840ff9239492607ab3a3b8e0df2066">EnAllocMode</a> : U32</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="class_c_mem_allocator.html#abf840ff9239492607ab3a3b8e0df2066a51de7c871812c0d91929b2fa407db09f">enForward</a>,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="class_c_mem_allocator.html#abf840ff9239492607ab3a3b8e0df2066a3b7d737dc6a726f089f8d85df120a77f">enBack</a>,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    };</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_c_mem_allocator.html#a89a6785ad0679112693421390834c58a">CMemAllocator</a>( <span class="keyword">const</span> StInitParam&amp; _rstInitParam );</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_mem_allocator.html#afcf3bf84876c42ab83cdc2ba10a7dac3">~CMemAllocator</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span>* <a class="code" href="class_c_mem_allocator.html#a65875035e030185e91391b1ce29eecdd">Alloc</a>( USize _uSize, <span class="keyword">const</span> S8* _psFile, U32 _uLine );</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span>* <a class="code" href="class_c_mem_allocator.html#a776e73bfdd517d758ccfe515298d6716">AllocBack</a>( USize _uSize, <span class="keyword">const</span> S8* _psFile, U32 _uLine );</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span>* <a class="code" href="class_c_mem_allocator.html#a78bd707276d68fc2aa5828dbb86a74df">AllocFromMemBlock</a>( <a class="code" href="class_c_mem_block.html">CMemBlock</a>* _pcMemBlock, USize _uSize, <span class="keyword">const</span> S8* _psFile, U32 _uLine, <a class="code" href="class_c_mem_allocator.html#abf840ff9239492607ab3a3b8e0df2066">EnAllocMode</a> _eMode );</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_mem_allocator.html#ac679b89a322afa320a994d8bedec415d">Free</a>( <span class="keywordtype">void</span>* _p );</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_mem_allocator.html#ab3c38b86c68cfc86a3e95bb7964efd97">IsAllocatedPointer</a>( <span class="keywordtype">void</span>* _p ) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_c_mem_allocator.html#a48c0568fb21eb63978af2137aab23ad6">   71</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span>* <span class="keyword">operator</span> <span class="keyword">new</span>( std::size_t _uSize )</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> malloc( _uSize );</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_c_mem_allocator.html#af156badb5f8380a0d9ee76afad22c496">   76</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <span class="keyword">operator</span> <span class="keyword">delete</span>( <span class="keywordtype">void</span>* _p )</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        free( _p );</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="class_c_mem_allocator.html#a780a1a1225569ea2d2a8b7db9f9c7089">   83</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="class_c_mem_allocator.html#a780a1a1225569ea2d2a8b7db9f9c7089">EnFirstLevel</a></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    {</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="class_c_mem_allocator.html#a780a1a1225569ea2d2a8b7db9f9c7089ab914654c48cd4a1779f988840ea2a151">   85</a></span>&#160;        <a class="code" href="class_c_mem_allocator.html#a780a1a1225569ea2d2a8b7db9f9c7089ab914654c48cd4a1779f988840ea2a151">enFirstLevel_Max</a> = <span class="keyword">sizeof</span>( USize ) * 8,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    };</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="class_c_mem_allocator.html#a920fe29d9b0bdaa721eaa20c66abaa2e">   90</a></span>&#160;    USize <a class="code" href="class_c_mem_allocator.html#a920fe29d9b0bdaa721eaa20c66abaa2e">GetBlockSize</a>(USize _uSize)</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    { </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">sizeof</span>( <a class="code" href="struct_c_mem_block_1_1_st_mem_block_header.html">CMemBlock::StMemBlockHeader</a> ) + _uSize + <span class="keyword">sizeof</span>( <a class="code" href="struct_c_mem_block_1_1_st_mem_block_footer.html">CMemBlock::StMemBlockFooter</a> );</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_mem_allocator.html#af607e6b68b3b614e769b6e93078a04ca">GetLevel</a>( U32* _puOutFirst, U32* _puOutSecond, USize _uBlockSize );</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_mem_allocator.html#a7a916e62db377590430d6969551cc547">SetFreeList</a>( <a class="code" href="class_c_mem_block.html">CMemBlock</a>* _pcMemBlock );</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_mem_allocator.html#a54bea8680421134c27912868508792aa">RemoveFreeList</a>( <a class="code" href="class_c_mem_block.html">CMemBlock</a>* _pcMemBlock );</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_mem_allocator.html#a5157e10cc3b426b42f661a6f3c0d8f51">SearchFreeListLevel</a>( U32* _pOutFirstLevel, U32* _pOutSecondLevel, USize _uBlockSize );</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    U32 <a class="code" href="class_c_mem_allocator.html#a9f0303603e63a742cc97c82d64fe90d5">GetFreeListIndex</a>( U32 _uFirstLevel, U32 _uSecondLevel );</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="class_c_mem_allocator.html#a5ae9573631f11b58cb0741dd5d071d4e">  108</a></span>&#160;    <a class="code" href="struct_c_mem_allocator_1_1_st_init_param.html">StInitParam</a> <a class="code" href="class_c_mem_allocator.html#a5ae9573631f11b58cb0741dd5d071d4e">m_stInitParam</a>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="class_c_mem_allocator.html#ad729846ce9ff5ecdac69574604140e39">  110</a></span>&#160;    U8*         <a class="code" href="class_c_mem_allocator.html#ad729846ce9ff5ecdac69574604140e39">m_pMemory</a>;                              </div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="class_c_mem_allocator.html#aac2d7de345dbb577fa47907647bb831f">  111</a></span>&#160;    <a class="code" href="class_c_mem_block.html">CMemBlock</a>*  <a class="code" href="class_c_mem_allocator.html#aac2d7de345dbb577fa47907647bb831f">m_pEndBlock</a>;                            </div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="class_c_mem_allocator.html#a5593b5d4263ee5e0af22458ad8f89f21">  112</a></span>&#160;    <a class="code" href="class_c_mem_block.html">CMemBlock</a>** <a class="code" href="class_c_mem_allocator.html#a5593b5d4263ee5e0af22458ad8f89f21">m_pFreeBlockArray</a>;                      </div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="class_c_mem_allocator.html#a9f35f48a378b79fc033b6aa6dcf13b73">  113</a></span>&#160;    U64         <a class="code" href="class_c_mem_allocator.html#a9f35f48a378b79fc033b6aa6dcf13b73">m_uIsFree</a>;                              </div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="class_c_mem_allocator.html#a6fc0c334bf8f88d108b7f7ca1b87c682">  114</a></span>&#160;    U32         <a class="code" href="class_c_mem_allocator.html#a6fc0c334bf8f88d108b7f7ca1b87c682">m_uIsFreeArray</a>[ <a class="code" href="class_c_mem_allocator.html#a780a1a1225569ea2d2a8b7db9f9c7089ab914654c48cd4a1779f988840ea2a151">enFirstLevel_Max</a> ];     </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="class_c_mem_allocator.html#ac777d3d046eab9d58e8749a68a6bf36c">  116</a></span>&#160;    <a class="code" href="class_c_critical_section.html">CCriticalSection</a>    <a class="code" href="class_c_mem_allocator.html#ac777d3d046eab9d58e8749a68a6bf36c">m_cCriticalSection</a>;             </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#if defined( USE_MEMORY_DEBUG )</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keyword">struct </span>StDebugMemoryInfo</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        USize       m_uMemorySizeTotal;         </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        USize       m_uMemorySizeUsed;          </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        USize       m_uMemorySizePeek;          </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        U32         m_uCountAlloc;              </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        U32         m_uCountFree;               </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordtype">void</span> Init()</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            m_uMemorySizeTotal = 0;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            m_uMemorySizeUsed = 0;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            m_uMemorySizePeek = 0;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            m_uCountAlloc = 0;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            m_uCountFree = 0;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        }</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    };</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keyword">const</span> StDebugMemoryInfo&amp; GetDebugMemoryInfo()<span class="keyword"> const</span>{ <span class="keywordflow">return</span> m_stDebugMemoryInfo; }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordtype">void</span> PrintDebugMemBlockInfoAll( <span class="keywordtype">bool</span> _bPrintUsed, <span class="keywordtype">bool</span> _bPrintFree );</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordtype">void</span> InitDebugInfo( USize _uTotalSize, USize _uUsedSize );</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordtype">void</span> UpdateDebugInfoByAlloc( USize _uAllocBlockSize );</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordtype">void</span> UpdateDebugInfoByFree( USize _uFreeBlockSize );</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordtype">void</span> PrintDebugMemBlockInfo( <a class="code" href="class_c_mem_block.html">CMemBlock</a>* _pcMemBlock );</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    StDebugMemoryInfo   m_stDebugMemoryInfo;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">#endif // #if defined( USE_MEMORY_DEBUG )</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;};</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">#endif // #ifndef INCLUDE_MEMALLOCATOR_H</span></div>
+<div class="ttc" id="struct_c_mem_allocator_1_1_st_init_param_html_a1638c147ccd7ff9868f832ae6ef17bdd"><div class="ttname"><a href="struct_c_mem_allocator_1_1_st_init_param.html#a1638c147ccd7ff9868f832ae6ef17bdd">CMemAllocator::StInitParam::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdef"><b>Definition:</b> MemAllocator.h:37</div></div>
+<div class="ttc" id="class_c_mem_allocator_html_ac679b89a322afa320a994d8bedec415d"><div class="ttname"><a href="class_c_mem_allocator.html#ac679b89a322afa320a994d8bedec415d">CMemAllocator::Free</a></div><div class="ttdeci">void Free(void *_p)</div><div class="ttdoc">メモリを解放。 </div><div class="ttdef"><b>Definition:</b> MemAllocator.cpp:293</div></div>
+<div class="ttc" id="class_c_mem_allocator_html_aac2d7de345dbb577fa47907647bb831f"><div class="ttname"><a href="class_c_mem_allocator.html#aac2d7de345dbb577fa47907647bb831f">CMemAllocator::m_pEndBlock</a></div><div class="ttdeci">CMemBlock * m_pEndBlock</div><div class="ttdoc">終端ブロック。 </div><div class="ttdef"><b>Definition:</b> MemAllocator.h:111</div></div>
+<div class="ttc" id="class_c_mem_allocator_html_afcf3bf84876c42ab83cdc2ba10a7dac3"><div class="ttname"><a href="class_c_mem_allocator.html#afcf3bf84876c42ab83cdc2ba10a7dac3">CMemAllocator::~CMemAllocator</a></div><div class="ttdeci">virtual ~CMemAllocator()</div><div class="ttdoc">デストラクタ。 </div><div class="ttdef"><b>Definition:</b> MemAllocator.cpp:85</div></div>
+<div class="ttc" id="struct_c_mem_allocator_1_1_st_init_param_html_a955c7d57350b1dcd81384b4d840f7640"><div class="ttname"><a href="struct_c_mem_allocator_1_1_st_init_param.html#a955c7d57350b1dcd81384b4d840f7640">CMemAllocator::StInitParam::EnPartitionNum</a></div><div class="ttdeci">EnPartitionNum</div><div class="ttdef"><b>Definition:</b> MemAllocator.h:22</div></div>
+<div class="ttc" id="_critical_section_8h_html"><div class="ttname"><a href="_critical_section_8h.html">CriticalSection.h</a></div><div class="ttdoc">クリティカルセクション制御。 </div></div>
+<div class="ttc" id="struct_c_mem_allocator_1_1_st_init_param_html_a955c7d57350b1dcd81384b4d840f7640a0ca20bb8a5dd26dfe82bc2903de60fe4"><div class="ttname"><a href="struct_c_mem_allocator_1_1_st_init_param.html#a955c7d57350b1dcd81384b4d840f7640a0ca20bb8a5dd26dfe82bc2903de60fe4">CMemAllocator::StInitParam::enPartitionNum_1</a></div><div class="ttdef"><b>Definition:</b> MemAllocator.h:24</div></div>
+<div class="ttc" id="struct_c_mem_allocator_1_1_st_init_param_html"><div class="ttname"><a href="struct_c_mem_allocator_1_1_st_init_param.html">CMemAllocator::StInitParam</a></div><div class="ttdoc">初期化用パラメータ。 </div><div class="ttdef"><b>Definition:</b> MemAllocator.h:20</div></div>
+<div class="ttc" id="class_c_mem_allocator_html_a65875035e030185e91391b1ce29eecdd"><div class="ttname"><a href="class_c_mem_allocator.html#a65875035e030185e91391b1ce29eecdd">CMemAllocator::Alloc</a></div><div class="ttdeci">void * Alloc(USize _uSize, const S8 *_psFile, U32 _uLine)</div><div class="ttdoc">メモリを確保。 </div><div class="ttdef"><b>Definition:</b> MemAllocator.cpp:97</div></div>
+<div class="ttc" id="class_c_mem_allocator_html_ac777d3d046eab9d58e8749a68a6bf36c"><div class="ttname"><a href="class_c_mem_allocator.html#ac777d3d046eab9d58e8749a68a6bf36c">CMemAllocator::m_cCriticalSection</a></div><div class="ttdeci">CCriticalSection m_cCriticalSection</div><div class="ttdoc">クリティカルセクション。 </div><div class="ttdef"><b>Definition:</b> MemAllocator.h:116</div></div>
+<div class="ttc" id="struct_c_mem_allocator_1_1_st_init_param_html_a955c7d57350b1dcd81384b4d840f7640a3c26d9f65ab34bfa454c0a2db921ec3f"><div class="ttname"><a href="struct_c_mem_allocator_1_1_st_init_param.html#a955c7d57350b1dcd81384b4d840f7640a3c26d9f65ab34bfa454c0a2db921ec3f">CMemAllocator::StInitParam::enPartitionNum_16</a></div><div class="ttdef"><b>Definition:</b> MemAllocator.h:28</div></div>
+<div class="ttc" id="class_c_mem_allocator_html_a54bea8680421134c27912868508792aa"><div class="ttname"><a href="class_c_mem_allocator.html#a54bea8680421134c27912868508792aa">CMemAllocator::RemoveFreeList</a></div><div class="ttdeci">void RemoveFreeList(CMemBlock *_pcMemBlock)</div><div class="ttdoc">Freeリストから領域を解除。 </div><div class="ttdef"><b>Definition:</b> MemAllocator.cpp:457</div></div>
+<div class="ttc" id="_mem_block_8h_html"><div class="ttname"><a href="_mem_block_8h.html">MemBlock.h</a></div><div class="ttdoc">メモリブロッククラスの定義。 </div></div>
+<div class="ttc" id="class_c_mem_allocator_html_abf840ff9239492607ab3a3b8e0df2066a51de7c871812c0d91929b2fa407db09f"><div class="ttname"><a href="class_c_mem_allocator.html#abf840ff9239492607ab3a3b8e0df2066a51de7c871812c0d91929b2fa407db09f">CMemAllocator::EnAllocMode::enForward</a></div></div>
+<div class="ttc" id="class_c_mem_allocator_html_abf840ff9239492607ab3a3b8e0df2066"><div class="ttname"><a href="class_c_mem_allocator.html#abf840ff9239492607ab3a3b8e0df2066">CMemAllocator::EnAllocMode</a></div><div class="ttdeci">EnAllocMode</div><div class="ttdoc">アロケートモード。 </div><div class="ttdef"><b>Definition:</b> MemAllocator.h:45</div></div>
+<div class="ttc" id="struct_c_mem_allocator_1_1_st_init_param_html_a955c7d57350b1dcd81384b4d840f7640a7ba62b92898f629eaaa2a5897a6deb31"><div class="ttname"><a href="struct_c_mem_allocator_1_1_st_init_param.html#a955c7d57350b1dcd81384b4d840f7640a7ba62b92898f629eaaa2a5897a6deb31">CMemAllocator::StInitParam::enPartitionNum_8</a></div><div class="ttdef"><b>Definition:</b> MemAllocator.h:27</div></div>
+<div class="ttc" id="struct_c_mem_block_1_1_st_mem_block_header_html"><div class="ttname"><a href="struct_c_mem_block_1_1_st_mem_block_header.html">CMemBlock::StMemBlockHeader</a></div><div class="ttdef"><b>Definition:</b> MemBlock.h:17</div></div>
+<div class="ttc" id="class_c_mem_allocator_html_a5593b5d4263ee5e0af22458ad8f89f21"><div class="ttname"><a href="class_c_mem_allocator.html#a5593b5d4263ee5e0af22458ad8f89f21">CMemAllocator::m_pFreeBlockArray</a></div><div class="ttdeci">CMemBlock ** m_pFreeBlockArray</div><div class="ttdoc">解放済みの領域リスト。 </div><div class="ttdef"><b>Definition:</b> MemAllocator.h:112</div></div>
+<div class="ttc" id="class_c_mem_allocator_html"><div class="ttname"><a href="class_c_mem_allocator.html">CMemAllocator</a></div><div class="ttdef"><b>Definition:</b> MemAllocator.h:16</div></div>
+<div class="ttc" id="struct_c_mem_allocator_1_1_st_init_param_html_a955c7d57350b1dcd81384b4d840f7640a1312772dd3abeefbde69e0f507b8d779"><div class="ttname"><a href="struct_c_mem_allocator_1_1_st_init_param.html#a955c7d57350b1dcd81384b4d840f7640a1312772dd3abeefbde69e0f507b8d779">CMemAllocator::StInitParam::enPartitionNum_4</a></div><div class="ttdef"><b>Definition:</b> MemAllocator.h:26</div></div>
+<div class="ttc" id="class_c_mem_allocator_html_a78bd707276d68fc2aa5828dbb86a74df"><div class="ttname"><a href="class_c_mem_allocator.html#a78bd707276d68fc2aa5828dbb86a74df">CMemAllocator::AllocFromMemBlock</a></div><div class="ttdeci">void * AllocFromMemBlock(CMemBlock *_pcMemBlock, USize _uSize, const S8 *_psFile, U32 _uLine, EnAllocMode _eMode)</div><div class="ttdoc">指定したメモリブロックからメモリを確保。 </div><div class="ttdef"><b>Definition:</b> MemAllocator.cpp:214</div></div>
+<div class="ttc" id="class_c_mem_allocator_html_a7a916e62db377590430d6969551cc547"><div class="ttname"><a href="class_c_mem_allocator.html#a7a916e62db377590430d6969551cc547">CMemAllocator::SetFreeList</a></div><div class="ttdeci">void SetFreeList(CMemBlock *_pcMemBlock)</div><div class="ttdoc">Freeリストに領域をセット。 </div><div class="ttdef"><b>Definition:</b> MemAllocator.cpp:416</div></div>
+<div class="ttc" id="class_c_mem_allocator_html_ad729846ce9ff5ecdac69574604140e39"><div class="ttname"><a href="class_c_mem_allocator.html#ad729846ce9ff5ecdac69574604140e39">CMemAllocator::m_pMemory</a></div><div class="ttdeci">U8 * m_pMemory</div><div class="ttdoc">確保したメモリ。 </div><div class="ttdef"><b>Definition:</b> MemAllocator.h:110</div></div>
+<div class="ttc" id="class_c_mem_allocator_html_a5ae9573631f11b58cb0741dd5d071d4e"><div class="ttname"><a href="class_c_mem_allocator.html#a5ae9573631f11b58cb0741dd5d071d4e">CMemAllocator::m_stInitParam</a></div><div class="ttdeci">StInitParam m_stInitParam</div><div class="ttdef"><b>Definition:</b> MemAllocator.h:108</div></div>
+<div class="ttc" id="struct_c_mem_allocator_1_1_st_init_param_html_a955c7d57350b1dcd81384b4d840f7640a440b4be066761dc8f92b8bea6fbbc837"><div class="ttname"><a href="struct_c_mem_allocator_1_1_st_init_param.html#a955c7d57350b1dcd81384b4d840f7640a440b4be066761dc8f92b8bea6fbbc837">CMemAllocator::StInitParam::enPartitionNum_32</a></div><div class="ttdef"><b>Definition:</b> MemAllocator.h:29</div></div>
+<div class="ttc" id="class_c_mem_allocator_html_abf840ff9239492607ab3a3b8e0df2066a3b7d737dc6a726f089f8d85df120a77f"><div class="ttname"><a href="class_c_mem_allocator.html#abf840ff9239492607ab3a3b8e0df2066a3b7d737dc6a726f089f8d85df120a77f">CMemAllocator::EnAllocMode::enBack</a></div></div>
+<div class="ttc" id="class_c_mem_allocator_html_a9f0303603e63a742cc97c82d64fe90d5"><div class="ttname"><a href="class_c_mem_allocator.html#a9f0303603e63a742cc97c82d64fe90d5">CMemAllocator::GetFreeListIndex</a></div><div class="ttdeci">U32 GetFreeListIndex(U32 _uFirstLevel, U32 _uSecondLevel)</div><div class="ttdoc">レベルからFreeリストのインデックスを取得。 </div><div class="ttdef"><b>Definition:</b> MemAllocator.cpp:572</div></div>
+<div class="ttc" id="class_c_mem_allocator_html_a9f35f48a378b79fc033b6aa6dcf13b73"><div class="ttname"><a href="class_c_mem_allocator.html#a9f35f48a378b79fc033b6aa6dcf13b73">CMemAllocator::m_uIsFree</a></div><div class="ttdeci">U64 m_uIsFree</div><div class="ttdoc">解放済みの領域があるか。(1stLevel) </div><div class="ttdef"><b>Definition:</b> MemAllocator.h:113</div></div>
+<div class="ttc" id="struct_c_mem_allocator_1_1_st_init_param_html_acf563f108b9d517ac97622d915eaa08d"><div class="ttname"><a href="struct_c_mem_allocator_1_1_st_init_param.html#acf563f108b9d517ac97622d915eaa08d">CMemAllocator::StInitParam::m_ePartition</a></div><div class="ttdeci">EnPartitionNum m_ePartition</div><div class="ttdoc">メモリ分割数。 </div><div class="ttdef"><b>Definition:</b> MemAllocator.h:35</div></div>
+<div class="ttc" id="class_c_mem_allocator_html_a920fe29d9b0bdaa721eaa20c66abaa2e"><div class="ttname"><a href="class_c_mem_allocator.html#a920fe29d9b0bdaa721eaa20c66abaa2e">CMemAllocator::GetBlockSize</a></div><div class="ttdeci">USize GetBlockSize(USize _uSize)</div><div class="ttdoc">要求されたサイズから、実際に確保するブロックサイズを取得。 </div><div class="ttdef"><b>Definition:</b> MemAllocator.h:90</div></div>
+<div class="ttc" id="class_c_mem_allocator_html_a776e73bfdd517d758ccfe515298d6716"><div class="ttname"><a href="class_c_mem_allocator.html#a776e73bfdd517d758ccfe515298d6716">CMemAllocator::AllocBack</a></div><div class="ttdeci">void * AllocBack(USize _uSize, const S8 *_psFile, U32 _uLine)</div><div class="ttdoc">最後尾からメモリを確保。 </div><div class="ttdef"><b>Definition:</b> MemAllocator.cpp:147</div></div>
+<div class="ttc" id="class_c_mem_allocator_html_a89a6785ad0679112693421390834c58a"><div class="ttname"><a href="class_c_mem_allocator.html#a89a6785ad0679112693421390834c58a">CMemAllocator::CMemAllocator</a></div><div class="ttdeci">CMemAllocator(const StInitParam &amp;_rstInitParam)</div><div class="ttdoc">コンストラクタ。 </div><div class="ttdef"><b>Definition:</b> MemAllocator.cpp:37</div></div>
+<div class="ttc" id="class_c_mem_block_html"><div class="ttname"><a href="class_c_mem_block.html">CMemBlock</a></div><div class="ttdef"><b>Definition:</b> MemBlock.h:14</div></div>
+<div class="ttc" id="class_c_mem_allocator_html_a780a1a1225569ea2d2a8b7db9f9c7089"><div class="ttname"><a href="class_c_mem_allocator.html#a780a1a1225569ea2d2a8b7db9f9c7089">CMemAllocator::EnFirstLevel</a></div><div class="ttdeci">EnFirstLevel</div><div class="ttdoc">FirstLevel。 </div><div class="ttdef"><b>Definition:</b> MemAllocator.h:83</div></div>
+<div class="ttc" id="class_c_mem_allocator_html_a5157e10cc3b426b42f661a6f3c0d8f51"><div class="ttname"><a href="class_c_mem_allocator.html#a5157e10cc3b426b42f661a6f3c0d8f51">CMemAllocator::SearchFreeListLevel</a></div><div class="ttdeci">bool SearchFreeListLevel(U32 *_pOutFirstLevel, U32 *_pOutSecondLevel, USize _uBlockSize)</div><div class="ttdoc">Freeリストから確保出来る領域のレベルを探す。 </div><div class="ttdef"><b>Definition:</b> MemAllocator.cpp:518</div></div>
+<div class="ttc" id="class_c_mem_allocator_html_a6fc0c334bf8f88d108b7f7ca1b87c682"><div class="ttname"><a href="class_c_mem_allocator.html#a6fc0c334bf8f88d108b7f7ca1b87c682">CMemAllocator::m_uIsFreeArray</a></div><div class="ttdeci">U32 m_uIsFreeArray[enFirstLevel_Max]</div><div class="ttdoc">解放済みの領域があるか。(2ndLevel) </div><div class="ttdef"><b>Definition:</b> MemAllocator.h:114</div></div>
+<div class="ttc" id="struct_c_mem_block_1_1_st_mem_block_footer_html"><div class="ttname"><a href="struct_c_mem_block_1_1_st_mem_block_footer.html">CMemBlock::StMemBlockFooter</a></div><div class="ttdef"><b>Definition:</b> MemBlock.h:48</div></div>
+<div class="ttc" id="class_c_mem_allocator_html_a780a1a1225569ea2d2a8b7db9f9c7089ab914654c48cd4a1779f988840ea2a151"><div class="ttname"><a href="class_c_mem_allocator.html#a780a1a1225569ea2d2a8b7db9f9c7089ab914654c48cd4a1779f988840ea2a151">CMemAllocator::enFirstLevel_Max</a></div><div class="ttdef"><b>Definition:</b> MemAllocator.h:85</div></div>
+<div class="ttc" id="class_c_mem_allocator_html_af607e6b68b3b614e769b6e93078a04ca"><div class="ttname"><a href="class_c_mem_allocator.html#af607e6b68b3b614e769b6e93078a04ca">CMemAllocator::GetLevel</a></div><div class="ttdeci">void GetLevel(U32 *_puOutFirst, U32 *_puOutSecond, USize _uBlockSize)</div><div class="ttdoc">サイズからレベルを取得。 </div><div class="ttdef"><b>Definition:</b> MemAllocator.cpp:377</div></div>
+<div class="ttc" id="struct_c_mem_allocator_1_1_st_init_param_html_a955c7d57350b1dcd81384b4d840f7640af07274577ae5023d78b56b2a9fdcc97e"><div class="ttname"><a href="struct_c_mem_allocator_1_1_st_init_param.html#a955c7d57350b1dcd81384b4d840f7640af07274577ae5023d78b56b2a9fdcc97e">CMemAllocator::StInitParam::enPartitionNum_Max</a></div><div class="ttdef"><b>Definition:</b> MemAllocator.h:31</div></div>
+<div class="ttc" id="struct_c_mem_allocator_1_1_st_init_param_html_a27002d26b5ccf62e8588984954f01bd9"><div class="ttname"><a href="struct_c_mem_allocator_1_1_st_init_param.html#a27002d26b5ccf62e8588984954f01bd9">CMemAllocator::StInitParam::m_uSize</a></div><div class="ttdeci">USize m_uSize</div><div class="ttdoc">確保するメモリサイズ。 </div><div class="ttdef"><b>Definition:</b> MemAllocator.h:34</div></div>
+<div class="ttc" id="struct_c_mem_allocator_1_1_st_init_param_html_a955c7d57350b1dcd81384b4d840f7640af1d5bc5d22250ca125b054f37706040e"><div class="ttname"><a href="struct_c_mem_allocator_1_1_st_init_param.html#a955c7d57350b1dcd81384b4d840f7640af1d5bc5d22250ca125b054f37706040e">CMemAllocator::StInitParam::enPartitionNum_2</a></div><div class="ttdef"><b>Definition:</b> MemAllocator.h:25</div></div>
+<div class="ttc" id="class_c_mem_allocator_html_ab3c38b86c68cfc86a3e95bb7964efd97"><div class="ttname"><a href="class_c_mem_allocator.html#ab3c38b86c68cfc86a3e95bb7964efd97">CMemAllocator::IsAllocatedPointer</a></div><div class="ttdeci">bool IsAllocatedPointer(void *_p) const </div><div class="ttdoc">このメモリアロケータで確保したポインタか。 </div><div class="ttdef"><b>Definition:</b> MemAllocator.cpp:359</div></div>
+<div class="ttc" id="class_c_critical_section_html"><div class="ttname"><a href="class_c_critical_section.html">CCriticalSection</a></div><div class="ttdef"><b>Definition:</b> CriticalSection.h:16</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

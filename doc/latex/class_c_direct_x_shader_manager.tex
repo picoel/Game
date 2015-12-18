@@ -1,0 +1,127 @@
+\hypertarget{class_c_direct_x_shader_manager}{}\section{C\+Direct\+X\+Shader\+Manager クラス}
+\label{class_c_direct_x_shader_manager}\index{C\+Direct\+X\+Shader\+Manager@{C\+Direct\+X\+Shader\+Manager}}
+
+
+{\ttfamily \#include $<$Direct\+X\+Shader\+Manager.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_direct_x_shader_manager_a40710f22f33988c7ee6b2d0846738e46}{C\+Direct\+X\+Shader\+Manager} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ。 \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_direct_x_shader_manager_ad54969294f58847ac0bb1d91eabf7978}{$\sim$\+C\+Direct\+X\+Shader\+Manager} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ。 \end{DoxyCompactList}\item 
+const \hyperlink{class_c_vertex_shader}{C\+Vertex\+Shader} $\ast$ \hyperlink{class_c_direct_x_shader_manager_abf4e16c5b7fca6755d01d1a1e4f7b623}{Get\+Vertex\+Shader} (\hyperlink{_shader_definition_8h_a232ca48c9a8e2a62b45a96e7929a2bdb}{En\+Vertex\+Shader} \+\_\+e\+Vertex\+Shader) const 
+\begin{DoxyCompactList}\small\item\em 頂点シェーダーを取得。 \end{DoxyCompactList}\item 
+const \hyperlink{class_c_pixel_shader}{C\+Pixel\+Shader} $\ast$ \hyperlink{class_c_direct_x_shader_manager_a04f2e46307dac941beffb075dc4f21e9}{Get\+Pixel\+Shader} (\hyperlink{_shader_definition_8h_ab8ae26d268e6e5baee47fbba4d03f4cf}{En\+Pixel\+Shader} \+\_\+e\+Pixel\+Shader) const 
+\begin{DoxyCompactList}\small\item\em ピクセルシェーダーを取得。 \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_direct_x_shader_manager_a3099819b5ea0631e419485554d4e1095}{Is\+Read\+End} () const 
+\begin{DoxyCompactList}\small\item\em 読み込みが完了したか。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_vertex_shader}{C\+Vertex\+Shader} $\ast$ \hyperlink{class_c_direct_x_shader_manager_ac5f58343fb18d284ddd799f5728d29aa}{m\+\_\+pc\+Vertex\+Shader\+Array} \mbox{[}\hyperlink{_lib_utility_8h_a564389767079011d2a47cdb641d81353}{s\+\_\+cast}$<$ U32 $>$(\hyperlink{_shader_definition_8h_a232ca48c9a8e2a62b45a96e7929a2bdba079bb6413c37006b9fdc56add34e517b}{En\+Vertex\+Shader\+::en\+Max})\mbox{]}
+\item 
+\hyperlink{class_c_pixel_shader}{C\+Pixel\+Shader} $\ast$ \hyperlink{class_c_direct_x_shader_manager_a2f6249831a45357aaa133c615603a54b}{m\+\_\+pc\+Pixel\+Shader\+Array} \mbox{[}\hyperlink{_lib_utility_8h_a564389767079011d2a47cdb641d81353}{s\+\_\+cast}$<$ U32 $>$(\hyperlink{_shader_definition_8h_ab8ae26d268e6e5baee47fbba4d03f4cfa079bb6413c37006b9fdc56add34e517b}{En\+Pixel\+Shader\+::en\+Max})\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\hypertarget{class_c_direct_x_shader_manager_a40710f22f33988c7ee6b2d0846738e46}{}\index{C\+Direct\+X\+Shader\+Manager@{C\+Direct\+X\+Shader\+Manager}!C\+Direct\+X\+Shader\+Manager@{C\+Direct\+X\+Shader\+Manager}}
+\index{C\+Direct\+X\+Shader\+Manager@{C\+Direct\+X\+Shader\+Manager}!C\+Direct\+X\+Shader\+Manager@{C\+Direct\+X\+Shader\+Manager}}
+\subsubsection[{C\+Direct\+X\+Shader\+Manager()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Direct\+X\+Shader\+Manager\+::\+C\+Direct\+X\+Shader\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_direct_x_shader_manager_a40710f22f33988c7ee6b2d0846738e46}
+
+
+コンストラクタ。 
+
+\hypertarget{class_c_direct_x_shader_manager_ad54969294f58847ac0bb1d91eabf7978}{}\index{C\+Direct\+X\+Shader\+Manager@{C\+Direct\+X\+Shader\+Manager}!````~C\+Direct\+X\+Shader\+Manager@{$\sim$\+C\+Direct\+X\+Shader\+Manager}}
+\index{````~C\+Direct\+X\+Shader\+Manager@{$\sim$\+C\+Direct\+X\+Shader\+Manager}!C\+Direct\+X\+Shader\+Manager@{C\+Direct\+X\+Shader\+Manager}}
+\subsubsection[{$\sim$\+C\+Direct\+X\+Shader\+Manager()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Direct\+X\+Shader\+Manager\+::$\sim$\+C\+Direct\+X\+Shader\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_direct_x_shader_manager_ad54969294f58847ac0bb1d91eabf7978}
+
+
+デストラクタ。 
+
+
+
+\subsection{関数詳解}
+\hypertarget{class_c_direct_x_shader_manager_a04f2e46307dac941beffb075dc4f21e9}{}\index{C\+Direct\+X\+Shader\+Manager@{C\+Direct\+X\+Shader\+Manager}!Get\+Pixel\+Shader@{Get\+Pixel\+Shader}}
+\index{Get\+Pixel\+Shader@{Get\+Pixel\+Shader}!C\+Direct\+X\+Shader\+Manager@{C\+Direct\+X\+Shader\+Manager}}
+\subsubsection[{Get\+Pixel\+Shader(\+En\+Pixel\+Shader \+\_\+e\+Pixel\+Shader) const }]{\setlength{\rightskip}{0pt plus 5cm}const {\bf C\+Pixel\+Shader} $\ast$ C\+Direct\+X\+Shader\+Manager\+::\+Get\+Pixel\+Shader (
+\begin{DoxyParamCaption}
+\item[{{\bf En\+Pixel\+Shader}}]{\+\_\+e\+Pixel\+Shader}
+\end{DoxyParamCaption}
+) const}\label{class_c_direct_x_shader_manager_a04f2e46307dac941beffb075dc4f21e9}
+
+
+ピクセルシェーダーを取得。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+e\+Pixel\+Shader} & \+: 取得するピクセルシェーダー。 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em const} & C\+Pixel\+Shader$\ast$ \+: ピクセルシェーダー。 \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{class_c_direct_x_shader_manager_abf4e16c5b7fca6755d01d1a1e4f7b623}{}\index{C\+Direct\+X\+Shader\+Manager@{C\+Direct\+X\+Shader\+Manager}!Get\+Vertex\+Shader@{Get\+Vertex\+Shader}}
+\index{Get\+Vertex\+Shader@{Get\+Vertex\+Shader}!C\+Direct\+X\+Shader\+Manager@{C\+Direct\+X\+Shader\+Manager}}
+\subsubsection[{Get\+Vertex\+Shader(\+En\+Vertex\+Shader \+\_\+e\+Vertex\+Shader) const }]{\setlength{\rightskip}{0pt plus 5cm}const {\bf C\+Vertex\+Shader} $\ast$ C\+Direct\+X\+Shader\+Manager\+::\+Get\+Vertex\+Shader (
+\begin{DoxyParamCaption}
+\item[{{\bf En\+Vertex\+Shader}}]{\+\_\+e\+Vertex\+Shader}
+\end{DoxyParamCaption}
+) const}\label{class_c_direct_x_shader_manager_abf4e16c5b7fca6755d01d1a1e4f7b623}
+
+
+頂点シェーダーを取得。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+e\+Vertex\+Shader} & \+: 取得する頂点シェーダー。 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em const} & C\+Vertex\+Shader$\ast$ \+: 頂点シェーダー。 \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{class_c_direct_x_shader_manager_a3099819b5ea0631e419485554d4e1095}{}\index{C\+Direct\+X\+Shader\+Manager@{C\+Direct\+X\+Shader\+Manager}!Is\+Read\+End@{Is\+Read\+End}}
+\index{Is\+Read\+End@{Is\+Read\+End}!C\+Direct\+X\+Shader\+Manager@{C\+Direct\+X\+Shader\+Manager}}
+\subsubsection[{Is\+Read\+End() const }]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Direct\+X\+Shader\+Manager\+::\+Is\+Read\+End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_direct_x_shader_manager_a3099819b5ea0631e419485554d4e1095}
+
+
+読み込みが完了したか。 
+
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & \+: 全てのシェーダーが使用可能になればtrue。 \\
+\hline
+\end{DoxyRetVals}
+
+
+\subsection{メンバ詳解}
+\hypertarget{class_c_direct_x_shader_manager_a2f6249831a45357aaa133c615603a54b}{}\index{C\+Direct\+X\+Shader\+Manager@{C\+Direct\+X\+Shader\+Manager}!m\+\_\+pc\+Pixel\+Shader\+Array@{m\+\_\+pc\+Pixel\+Shader\+Array}}
+\index{m\+\_\+pc\+Pixel\+Shader\+Array@{m\+\_\+pc\+Pixel\+Shader\+Array}!C\+Direct\+X\+Shader\+Manager@{C\+Direct\+X\+Shader\+Manager}}
+\subsubsection[{m\+\_\+pc\+Pixel\+Shader\+Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Pixel\+Shader}$\ast$ C\+Direct\+X\+Shader\+Manager\+::m\+\_\+pc\+Pixel\+Shader\+Array\mbox{[}{\bf s\+\_\+cast}$<$ U32 $>$({\bf En\+Pixel\+Shader\+::en\+Max})\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_direct_x_shader_manager_a2f6249831a45357aaa133c615603a54b}
+\hypertarget{class_c_direct_x_shader_manager_ac5f58343fb18d284ddd799f5728d29aa}{}\index{C\+Direct\+X\+Shader\+Manager@{C\+Direct\+X\+Shader\+Manager}!m\+\_\+pc\+Vertex\+Shader\+Array@{m\+\_\+pc\+Vertex\+Shader\+Array}}
+\index{m\+\_\+pc\+Vertex\+Shader\+Array@{m\+\_\+pc\+Vertex\+Shader\+Array}!C\+Direct\+X\+Shader\+Manager@{C\+Direct\+X\+Shader\+Manager}}
+\subsubsection[{m\+\_\+pc\+Vertex\+Shader\+Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Vertex\+Shader}$\ast$ C\+Direct\+X\+Shader\+Manager\+::m\+\_\+pc\+Vertex\+Shader\+Array\mbox{[}{\bf s\+\_\+cast}$<$ U32 $>$({\bf En\+Vertex\+Shader\+::en\+Max})\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_direct_x_shader_manager_ac5f58343fb18d284ddd799f5728d29aa}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Project/\+Game/\+Lib/\+Direct\+X/\hyperlink{_direct_x_shader_manager_8h}{Direct\+X\+Shader\+Manager.\+h}\item 
+D\+:/\+Project/\+Game/\+Lib/\+Direct\+X/\hyperlink{_direct_x_shader_manager_8cpp}{Direct\+X\+Shader\+Manager.\+cpp}\end{DoxyCompactItemize}

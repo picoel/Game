@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>My Project: D:/Project/Game/Lib/Memory/MemBlock.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="namespaces.html"><span>名前空間</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8f3de2ae926fecfe6abd5379fd2b6eb1.html">Lib</a></li><li class="navelem"><a class="el" href="dir_af23e7e4d50f6b39ce689339f85a571e.html">Memory</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">MemBlock.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_mem_block_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef INCLUDE_CMEMBLOCK_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define INCLUDE_CMEMBLOCK_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * @class CMemBlock</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * @brief メモリブロック。</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_c_mem_block.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_mem_block.html">CMemBlock</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="struct_c_mem_block_1_1_st_mem_block_header.html">   17</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_c_mem_block_1_1_st_mem_block_header.html">StMemBlockHeader</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="struct_c_mem_block_1_1_st_mem_block_header.html#af862b5b841afc92fb1f96a403b85d0d3">   19</a></span>&#160;        <span class="keyword">enum</span> <a class="code" href="struct_c_mem_block_1_1_st_mem_block_header.html#af862b5b841afc92fb1f96a403b85d0d3">EnFlag</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        {</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="struct_c_mem_block_1_1_st_mem_block_header.html#af862b5b841afc92fb1f96a403b85d0d3ad5570458e60e586877c5c7f6861abbae">   21</a></span>&#160;            <a class="code" href="struct_c_mem_block_1_1_st_mem_block_header.html#af862b5b841afc92fb1f96a403b85d0d3ad5570458e60e586877c5c7f6861abbae">enFlag_Free</a>,</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="struct_c_mem_block_1_1_st_mem_block_header.html#af862b5b841afc92fb1f96a403b85d0d3a4085fda7f46e872514d6dffeb378d8da">   22</a></span>&#160;            <a class="code" href="struct_c_mem_block_1_1_st_mem_block_header.html#af862b5b841afc92fb1f96a403b85d0d3a4085fda7f46e872514d6dffeb378d8da">enFlag_Used</a>,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        };</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="struct_c_mem_block_1_1_st_mem_block_header.html#a6196b148899e1e848178ac0fb4558631">   25</a></span>&#160;        USize   <a class="code" href="struct_c_mem_block_1_1_st_mem_block_header.html#a6196b148899e1e848178ac0fb4558631">m_uAllocSize</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="struct_c_mem_block_1_1_st_mem_block_header.html#a03465c909a135c3df47c8fd29d6d1e62">   26</a></span>&#160;        S32 <a class="code" href="struct_c_mem_block_1_1_st_mem_block_header.html#a03465c909a135c3df47c8fd29d6d1e62">m_sFlag</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="struct_c_mem_block_1_1_st_mem_block_header.html#a1c67a679f3d7591a55cbc3c30623a775">   27</a></span>&#160;        <a class="code" href="class_c_mem_block.html">CMemBlock</a>*  <a class="code" href="struct_c_mem_block_1_1_st_mem_block_header.html#a1c67a679f3d7591a55cbc3c30623a775">m_pPrev</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="struct_c_mem_block_1_1_st_mem_block_header.html#a499c6f32668e35c16009557d7aadefea">   28</a></span>&#160;        <a class="code" href="class_c_mem_block.html">CMemBlock</a>*  <a class="code" href="struct_c_mem_block_1_1_st_mem_block_header.html#a499c6f32668e35c16009557d7aadefea">m_pNext</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#if defined( USE_MEMORY_DEBUG )</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">const</span> S8*   m_psDebugAllocFile;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        U32         m_uDebugAllocLine;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif // #if defined( USE_MEMORY_DEBUG ) </span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="struct_c_mem_block_1_1_st_mem_block_header.html#aabc565788807b9f94d2ed84daadd52ee">   35</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="struct_c_mem_block_1_1_st_mem_block_header.html#aabc565788807b9f94d2ed84daadd52ee">Init</a>()</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            m_uAllocSize = 0;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            m_sFlag = <a class="code" href="struct_c_mem_block_1_1_st_mem_block_header.html#af862b5b841afc92fb1f96a403b85d0d3ad5570458e60e586877c5c7f6861abbae">enFlag_Free</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            m_pPrev = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            m_pNext = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#if defined( USE_MEMORY_DEBUG )</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            m_psDebugAllocFile = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            m_uDebugAllocLine = 0;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif // #if defined( USE_MEMORY_DEBUG )</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    };</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="struct_c_mem_block_1_1_st_mem_block_footer.html">   48</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_c_mem_block_1_1_st_mem_block_footer.html">StMemBlockFooter</a></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    {</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="struct_c_mem_block_1_1_st_mem_block_footer.html#a7179368e394992595e25c768ee9fb614">   50</a></span>&#160;        USize <a class="code" href="struct_c_mem_block_1_1_st_mem_block_footer.html#a7179368e394992595e25c768ee9fb614">m_uBlockSize</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#if defined( USE_MEMORY_DEBUG )</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        U32 m_uOverRunCheck;    </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif // #if defined( USE_MEMORY_DEBUG)</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="struct_c_mem_block_1_1_st_mem_block_footer.html#a09f1d48b8e8e13c6cd454226e0853e00">   55</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="struct_c_mem_block_1_1_st_mem_block_footer.html#a09f1d48b8e8e13c6cd454226e0853e00">Init</a>()</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            m_uBlockSize = 0;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#if defined( USE_MEMORY_DEBUG )</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            m_uOverRunCheck = 0xDEADC0DE;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif // #if defined( USE_MEMORY_DEBUG)</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    };</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="class_c_mem_block.html#a9a60b207cc79af9bd8ebd17c0fa8d3d3">CMemBlock</a>( USize _uBlockSize );</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="class_c_mem_block.html#a9a60b207cc79af9bd8ebd17c0fa8d3d3">CMemBlock</a>( USize _uBlockSize, <span class="keyword">const</span> S8* _psFile, U32 _uLine );</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_c_mem_block.html#a22ed0b5231e5e9342d9fd2ac3af63dd3">   70</a></span>&#160;    <a class="code" href="class_c_mem_block.html#a22ed0b5231e5e9342d9fd2ac3af63dd3">~CMemBlock</a>(){};</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_mem_block.html#ad87158f4e8d752cca38e7569b31e5352">Init</a>( USize _uBlockSize, <span class="keyword">const</span> S8* _psFile, U32 _uLine );</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_c_mem_block.html#aa040c253df1f33bcb7b46744d7899926">   76</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="struct_c_mem_block_1_1_st_mem_block_header.html">StMemBlockHeader</a>* <a class="code" href="class_c_mem_block.html#aa040c253df1f33bcb7b46744d7899926">GetHeader</a>(){ <span class="keywordflow">return</span> &amp;<a class="code" href="class_c_mem_block.html#a79c40d205c3872976438afe7b21aa18b">m_stMemBlockHeader</a>; }</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_c_mem_block.html#a17d021cfca9eed9ef876e7e4e83d0a37">   78</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span>*    <a class="code" href="class_c_mem_block.html#a17d021cfca9eed9ef876e7e4e83d0a37">GetData</a>() { <span class="keywordflow">return</span> <a class="code" href="_lib_utility_8h.html#a1f68aa20bbc7ad6e840a7ec1aca94deb">r_cast</a>&lt;U8*&gt;(<span class="keyword">this</span>) + <span class="keyword">sizeof</span>( <a class="code" href="struct_c_mem_block_1_1_st_mem_block_header.html">StMemBlockHeader</a> ); }</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_c_mem_block.html#ab7fb22f0bac9e48ce23b0a84ee073efa">   80</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="struct_c_mem_block_1_1_st_mem_block_footer.html">StMemBlockFooter</a>* <a class="code" href="class_c_mem_block.html#ab7fb22f0bac9e48ce23b0a84ee073efa">GetFooter</a>()</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    { </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordtype">void</span>* pRet = <a class="code" href="_lib_utility_8h.html#a1f68aa20bbc7ad6e840a7ec1aca94deb">r_cast</a>&lt;U8*&gt;( this ) + <span class="keyword">sizeof</span>( <a class="code" href="struct_c_mem_block_1_1_st_mem_block_header.html">StMemBlockHeader</a> ) + <a class="code" href="class_c_mem_block.html#a79c40d205c3872976438afe7b21aa18b">m_stMemBlockHeader</a>.<a class="code" href="struct_c_mem_block_1_1_st_mem_block_header.html#a6196b148899e1e848178ac0fb4558631">m_uAllocSize</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_lib_utility_8h.html#a564389767079011d2a47cdb641d81353">s_cast</a>&lt;<a class="code" href="struct_c_mem_block_1_1_st_mem_block_footer.html">StMemBlockFooter</a>*&gt;( pRet ); </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="class_c_mem_block.html#a5df8664b1d552d5cc8ef07becdb99a85">   87</a></span>&#160;    <span class="keyword">inline</span> USize <a class="code" href="class_c_mem_block.html#a5df8664b1d552d5cc8ef07becdb99a85">GetBlockSize</a>(){ <span class="keywordflow">return</span> <a class="code" href="class_c_mem_block.html#ab7fb22f0bac9e48ce23b0a84ee073efa">GetFooter</a>()-&gt;<a class="code" href="struct_c_mem_block_1_1_st_mem_block_footer.html#a7179368e394992595e25c768ee9fb614">m_uBlockSize</a>; }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="class_c_mem_block.html#a017df5b011b6f0b004c452b32b9fbcfb">   90</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_c_mem_block.html#a017df5b011b6f0b004c452b32b9fbcfb">SetUsed</a>( <span class="keywordtype">bool</span> _bUsed ){ <a class="code" href="class_c_mem_block.html#a79c40d205c3872976438afe7b21aa18b">m_stMemBlockHeader</a>.<a class="code" href="struct_c_mem_block_1_1_st_mem_block_header.html#a03465c909a135c3df47c8fd29d6d1e62">m_sFlag</a> = _bUsed ? <a class="code" href="struct_c_mem_block_1_1_st_mem_block_header.html#af862b5b841afc92fb1f96a403b85d0d3a4085fda7f46e872514d6dffeb378d8da">StMemBlockHeader::enFlag_Used</a> : <a class="code" href="struct_c_mem_block_1_1_st_mem_block_header.html#af862b5b841afc92fb1f96a403b85d0d3ad5570458e60e586877c5c7f6861abbae">StMemBlockHeader::enFlag_Free</a>; }</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_c_mem_block.html#a30b4a6e486f8be24b8dc936a5452f05f">   92</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_mem_block.html#a30b4a6e486f8be24b8dc936a5452f05f">IsUsed</a>()<span class="keyword"> const</span>{ <span class="keywordflow">return</span> <a class="code" href="class_c_mem_block.html#a79c40d205c3872976438afe7b21aa18b">m_stMemBlockHeader</a>.<a class="code" href="struct_c_mem_block_1_1_st_mem_block_header.html#a03465c909a135c3df47c8fd29d6d1e62">m_sFlag</a> == <a class="code" href="struct_c_mem_block_1_1_st_mem_block_header.html#af862b5b841afc92fb1f96a403b85d0d3a4085fda7f46e872514d6dffeb378d8da">StMemBlockHeader::enFlag_Used</a>; }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="class_c_mem_block.html#a3e7914300806f8b7d668874a471d467b">   95</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="class_c_mem_block.html">CMemBlock</a>* <a class="code" href="class_c_mem_block.html#a3e7914300806f8b7d668874a471d467b">GetPrevBlock</a>()</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        U8* <span class="keyword">const</span> pThis = <a class="code" href="_lib_utility_8h.html#a1f68aa20bbc7ad6e840a7ec1aca94deb">r_cast</a>&lt;U8*&gt;( this );</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <a class="code" href="struct_c_mem_block_1_1_st_mem_block_footer.html">StMemBlockFooter</a>* pPrevFooter = <a class="code" href="_lib_utility_8h.html#a1f68aa20bbc7ad6e840a7ec1aca94deb">r_cast</a>&lt;<a class="code" href="struct_c_mem_block_1_1_st_mem_block_footer.html">StMemBlockFooter</a>*&gt;( pThis - <span class="keyword">sizeof</span>( <a class="code" href="struct_c_mem_block_1_1_st_mem_block_footer.html">StMemBlockFooter</a> ) );</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_lib_utility_8h.html#a1f68aa20bbc7ad6e840a7ec1aca94deb">r_cast</a>&lt;<a class="code" href="class_c_mem_block.html">CMemBlock</a>*&gt;( pThis - pPrevFooter-&gt;m_uBlockSize );</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="class_c_mem_block.html#af3d476af4fc4a7cae6e18c27984010dc">  102</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="class_c_mem_block.html">CMemBlock</a>* <a class="code" href="class_c_mem_block.html#af3d476af4fc4a7cae6e18c27984010dc">GetNextBlock</a>(){ <span class="keywordflow">return</span> <a class="code" href="_lib_utility_8h.html#a1f68aa20bbc7ad6e840a7ec1aca94deb">r_cast</a>&lt;<a class="code" href="class_c_mem_block.html">CMemBlock</a>*&gt;( <a class="code" href="_lib_utility_8h.html#a1f68aa20bbc7ad6e840a7ec1aca94deb">r_cast</a>&lt;U8*&gt;( this ) + <a class="code" href="class_c_mem_block.html#a5df8664b1d552d5cc8ef07becdb99a85">GetBlockSize</a>() ); }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="class_c_mem_block.html#a95104d68bc16b334e102511ab31fa384">  105</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_c_mem_block.html#a95104d68bc16b334e102511ab31fa384">SetNextList</a>( <a class="code" href="class_c_mem_block.html">CMemBlock</a>* _pcMemBlock ){ <a class="code" href="class_c_mem_block.html#a79c40d205c3872976438afe7b21aa18b">m_stMemBlockHeader</a>.<a class="code" href="struct_c_mem_block_1_1_st_mem_block_header.html#a499c6f32668e35c16009557d7aadefea">m_pNext</a> = _pcMemBlock;}</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="class_c_mem_block.html#a651ad72a34789a05c85f1b3f74fe63d2">  107</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="class_c_mem_block.html">CMemBlock</a>* <a class="code" href="class_c_mem_block.html#a651ad72a34789a05c85f1b3f74fe63d2">GetNextList</a>(){ <span class="keywordflow">return</span> <a class="code" href="class_c_mem_block.html#a79c40d205c3872976438afe7b21aa18b">m_stMemBlockHeader</a>.<a class="code" href="struct_c_mem_block_1_1_st_mem_block_header.html#a499c6f32668e35c16009557d7aadefea">m_pNext</a>;}</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="class_c_mem_block.html#a9caa4fa399e9f3182ca12817ac61b3cc">  109</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_c_mem_block.html#a9caa4fa399e9f3182ca12817ac61b3cc">SetPrevList</a>(<a class="code" href="class_c_mem_block.html">CMemBlock</a>* _pcMemBlock ){ <a class="code" href="class_c_mem_block.html#a79c40d205c3872976438afe7b21aa18b">m_stMemBlockHeader</a>.<a class="code" href="struct_c_mem_block_1_1_st_mem_block_header.html#a1c67a679f3d7591a55cbc3c30623a775">m_pPrev</a> = _pcMemBlock;}</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="class_c_mem_block.html#abac041beb8e64379ada0d0f18a5c2d22">  111</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="class_c_mem_block.html">CMemBlock</a>* <a class="code" href="class_c_mem_block.html#abac041beb8e64379ada0d0f18a5c2d22">GetPrevList</a>(){ <span class="keywordflow">return</span> <a class="code" href="class_c_mem_block.html#a79c40d205c3872976438afe7b21aa18b">m_stMemBlockHeader</a>.<a class="code" href="struct_c_mem_block_1_1_st_mem_block_header.html#a1c67a679f3d7591a55cbc3c30623a775">m_pPrev</a>; }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#if defined( USE_MEMORY_DEBUG)</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">bool</span> IsErrorBufferOverRun(){ <span class="keywordflow">return</span> 0xDEADC0DE != <a class="code" href="class_c_mem_block.html#ab7fb22f0bac9e48ce23b0a84ee073efa">GetFooter</a>()-&gt;m_uOverRunCheck; }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#endif // #if defined( USE_MEMORY_DEBUG)</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="class_c_mem_block.html#a79c40d205c3872976438afe7b21aa18b">  118</a></span>&#160;    <a class="code" href="struct_c_mem_block_1_1_st_mem_block_header.html">StMemBlockHeader</a>    <a class="code" href="class_c_mem_block.html#a79c40d205c3872976438afe7b21aa18b">m_stMemBlockHeader</a>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;};</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif // #ifndef INCLUDE_CMEMBLOCK_H</span></div>
+<div class="ttc" id="struct_c_mem_block_1_1_st_mem_block_footer_html_a09f1d48b8e8e13c6cd454226e0853e00"><div class="ttname"><a href="struct_c_mem_block_1_1_st_mem_block_footer.html#a09f1d48b8e8e13c6cd454226e0853e00">CMemBlock::StMemBlockFooter::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdef"><b>Definition:</b> MemBlock.h:55</div></div>
+<div class="ttc" id="class_c_mem_block_html_ab7fb22f0bac9e48ce23b0a84ee073efa"><div class="ttname"><a href="class_c_mem_block.html#ab7fb22f0bac9e48ce23b0a84ee073efa">CMemBlock::GetFooter</a></div><div class="ttdeci">StMemBlockFooter * GetFooter()</div><div class="ttdoc">フッターを取得。 </div><div class="ttdef"><b>Definition:</b> MemBlock.h:80</div></div>
+<div class="ttc" id="class_c_mem_block_html_a5df8664b1d552d5cc8ef07becdb99a85"><div class="ttname"><a href="class_c_mem_block.html#a5df8664b1d552d5cc8ef07becdb99a85">CMemBlock::GetBlockSize</a></div><div class="ttdeci">USize GetBlockSize()</div><div class="ttdoc">ブロックのサイズを取得。 </div><div class="ttdef"><b>Definition:</b> MemBlock.h:87</div></div>
+<div class="ttc" id="struct_c_mem_block_1_1_st_mem_block_header_html_aabc565788807b9f94d2ed84daadd52ee"><div class="ttname"><a href="struct_c_mem_block_1_1_st_mem_block_header.html#aabc565788807b9f94d2ed84daadd52ee">CMemBlock::StMemBlockHeader::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdef"><b>Definition:</b> MemBlock.h:35</div></div>
+<div class="ttc" id="struct_c_mem_block_1_1_st_mem_block_header_html_af862b5b841afc92fb1f96a403b85d0d3"><div class="ttname"><a href="struct_c_mem_block_1_1_st_mem_block_header.html#af862b5b841afc92fb1f96a403b85d0d3">CMemBlock::StMemBlockHeader::EnFlag</a></div><div class="ttdeci">EnFlag</div><div class="ttdef"><b>Definition:</b> MemBlock.h:19</div></div>
+<div class="ttc" id="class_c_mem_block_html_abac041beb8e64379ada0d0f18a5c2d22"><div class="ttname"><a href="class_c_mem_block.html#abac041beb8e64379ada0d0f18a5c2d22">CMemBlock::GetPrevList</a></div><div class="ttdeci">CMemBlock * GetPrevList()</div><div class="ttdoc">前のリストを取得。 </div><div class="ttdef"><b>Definition:</b> MemBlock.h:111</div></div>
+<div class="ttc" id="class_c_mem_block_html_a30b4a6e486f8be24b8dc936a5452f05f"><div class="ttname"><a href="class_c_mem_block.html#a30b4a6e486f8be24b8dc936a5452f05f">CMemBlock::IsUsed</a></div><div class="ttdeci">bool IsUsed() const </div><div class="ttdoc">使用中かどうか。 </div><div class="ttdef"><b>Definition:</b> MemBlock.h:92</div></div>
+<div class="ttc" id="class_c_mem_block_html_aa040c253df1f33bcb7b46744d7899926"><div class="ttname"><a href="class_c_mem_block.html#aa040c253df1f33bcb7b46744d7899926">CMemBlock::GetHeader</a></div><div class="ttdeci">StMemBlockHeader * GetHeader()</div><div class="ttdoc">ヘッダーを取得。 </div><div class="ttdef"><b>Definition:</b> MemBlock.h:76</div></div>
+<div class="ttc" id="struct_c_mem_block_1_1_st_mem_block_header_html_a499c6f32668e35c16009557d7aadefea"><div class="ttname"><a href="struct_c_mem_block_1_1_st_mem_block_header.html#a499c6f32668e35c16009557d7aadefea">CMemBlock::StMemBlockHeader::m_pNext</a></div><div class="ttdeci">CMemBlock * m_pNext</div><div class="ttdef"><b>Definition:</b> MemBlock.h:28</div></div>
+<div class="ttc" id="class_c_mem_block_html_ad87158f4e8d752cca38e7569b31e5352"><div class="ttname"><a href="class_c_mem_block.html#ad87158f4e8d752cca38e7569b31e5352">CMemBlock::Init</a></div><div class="ttdeci">void Init(USize _uBlockSize, const S8 *_psFile, U32 _uLine)</div><div class="ttdoc">初期化。 </div><div class="ttdef"><b>Definition:</b> MemBlock.cpp:38</div></div>
+<div class="ttc" id="class_c_mem_block_html_a651ad72a34789a05c85f1b3f74fe63d2"><div class="ttname"><a href="class_c_mem_block.html#a651ad72a34789a05c85f1b3f74fe63d2">CMemBlock::GetNextList</a></div><div class="ttdeci">CMemBlock * GetNextList()</div><div class="ttdoc">次のリストを取得。 </div><div class="ttdef"><b>Definition:</b> MemBlock.h:107</div></div>
+<div class="ttc" id="struct_c_mem_block_1_1_st_mem_block_header_html"><div class="ttname"><a href="struct_c_mem_block_1_1_st_mem_block_header.html">CMemBlock::StMemBlockHeader</a></div><div class="ttdef"><b>Definition:</b> MemBlock.h:17</div></div>
+<div class="ttc" id="class_c_mem_block_html_a17d021cfca9eed9ef876e7e4e83d0a37"><div class="ttname"><a href="class_c_mem_block.html#a17d021cfca9eed9ef876e7e4e83d0a37">CMemBlock::GetData</a></div><div class="ttdeci">void * GetData()</div><div class="ttdoc">データを取得。 </div><div class="ttdef"><b>Definition:</b> MemBlock.h:78</div></div>
+<div class="ttc" id="struct_c_mem_block_1_1_st_mem_block_header_html_af862b5b841afc92fb1f96a403b85d0d3ad5570458e60e586877c5c7f6861abbae"><div class="ttname"><a href="struct_c_mem_block_1_1_st_mem_block_header.html#af862b5b841afc92fb1f96a403b85d0d3ad5570458e60e586877c5c7f6861abbae">CMemBlock::StMemBlockHeader::enFlag_Free</a></div><div class="ttdef"><b>Definition:</b> MemBlock.h:21</div></div>
+<div class="ttc" id="class_c_mem_block_html_a22ed0b5231e5e9342d9fd2ac3af63dd3"><div class="ttname"><a href="class_c_mem_block.html#a22ed0b5231e5e9342d9fd2ac3af63dd3">CMemBlock::~CMemBlock</a></div><div class="ttdeci">~CMemBlock()</div><div class="ttdoc">デストラクタ。 </div><div class="ttdef"><b>Definition:</b> MemBlock.h:70</div></div>
+<div class="ttc" id="class_c_mem_block_html_a3e7914300806f8b7d668874a471d467b"><div class="ttname"><a href="class_c_mem_block.html#a3e7914300806f8b7d668874a471d467b">CMemBlock::GetPrevBlock</a></div><div class="ttdeci">CMemBlock * GetPrevBlock()</div><div class="ttdoc">前のブロックを取得。 </div><div class="ttdef"><b>Definition:</b> MemBlock.h:95</div></div>
+<div class="ttc" id="class_c_mem_block_html_af3d476af4fc4a7cae6e18c27984010dc"><div class="ttname"><a href="class_c_mem_block.html#af3d476af4fc4a7cae6e18c27984010dc">CMemBlock::GetNextBlock</a></div><div class="ttdeci">CMemBlock * GetNextBlock()</div><div class="ttdoc">次のブロックを取得。 </div><div class="ttdef"><b>Definition:</b> MemBlock.h:102</div></div>
+<div class="ttc" id="struct_c_mem_block_1_1_st_mem_block_header_html_a03465c909a135c3df47c8fd29d6d1e62"><div class="ttname"><a href="struct_c_mem_block_1_1_st_mem_block_header.html#a03465c909a135c3df47c8fd29d6d1e62">CMemBlock::StMemBlockHeader::m_sFlag</a></div><div class="ttdeci">S32 m_sFlag</div><div class="ttdef"><b>Definition:</b> MemBlock.h:26</div></div>
+<div class="ttc" id="struct_c_mem_block_1_1_st_mem_block_header_html_a1c67a679f3d7591a55cbc3c30623a775"><div class="ttname"><a href="struct_c_mem_block_1_1_st_mem_block_header.html#a1c67a679f3d7591a55cbc3c30623a775">CMemBlock::StMemBlockHeader::m_pPrev</a></div><div class="ttdeci">CMemBlock * m_pPrev</div><div class="ttdef"><b>Definition:</b> MemBlock.h:27</div></div>
+<div class="ttc" id="class_c_mem_block_html_a95104d68bc16b334e102511ab31fa384"><div class="ttname"><a href="class_c_mem_block.html#a95104d68bc16b334e102511ab31fa384">CMemBlock::SetNextList</a></div><div class="ttdeci">void SetNextList(CMemBlock *_pcMemBlock)</div><div class="ttdoc">次のリストを設定。 </div><div class="ttdef"><b>Definition:</b> MemBlock.h:105</div></div>
+<div class="ttc" id="class_c_mem_block_html_a9caa4fa399e9f3182ca12817ac61b3cc"><div class="ttname"><a href="class_c_mem_block.html#a9caa4fa399e9f3182ca12817ac61b3cc">CMemBlock::SetPrevList</a></div><div class="ttdeci">void SetPrevList(CMemBlock *_pcMemBlock)</div><div class="ttdoc">前のリストを設定。 </div><div class="ttdef"><b>Definition:</b> MemBlock.h:109</div></div>
+<div class="ttc" id="class_c_mem_block_html"><div class="ttname"><a href="class_c_mem_block.html">CMemBlock</a></div><div class="ttdef"><b>Definition:</b> MemBlock.h:14</div></div>
+<div class="ttc" id="_lib_utility_8h_html_a1f68aa20bbc7ad6e840a7ec1aca94deb"><div class="ttname"><a href="_lib_utility_8h.html#a1f68aa20bbc7ad6e840a7ec1aca94deb">r_cast</a></div><div class="ttdeci">#define r_cast</div><div class="ttdef"><b>Definition:</b> LibUtility.h:15</div></div>
+<div class="ttc" id="struct_c_mem_block_1_1_st_mem_block_footer_html"><div class="ttname"><a href="struct_c_mem_block_1_1_st_mem_block_footer.html">CMemBlock::StMemBlockFooter</a></div><div class="ttdef"><b>Definition:</b> MemBlock.h:48</div></div>
+<div class="ttc" id="struct_c_mem_block_1_1_st_mem_block_footer_html_a7179368e394992595e25c768ee9fb614"><div class="ttname"><a href="struct_c_mem_block_1_1_st_mem_block_footer.html#a7179368e394992595e25c768ee9fb614">CMemBlock::StMemBlockFooter::m_uBlockSize</a></div><div class="ttdeci">USize m_uBlockSize</div><div class="ttdef"><b>Definition:</b> MemBlock.h:50</div></div>
+<div class="ttc" id="_lib_utility_8h_html_a564389767079011d2a47cdb641d81353"><div class="ttname"><a href="_lib_utility_8h.html#a564389767079011d2a47cdb641d81353">s_cast</a></div><div class="ttdeci">#define s_cast</div><div class="ttdef"><b>Definition:</b> LibUtility.h:14</div></div>
+<div class="ttc" id="struct_c_mem_block_1_1_st_mem_block_header_html_af862b5b841afc92fb1f96a403b85d0d3a4085fda7f46e872514d6dffeb378d8da"><div class="ttname"><a href="struct_c_mem_block_1_1_st_mem_block_header.html#af862b5b841afc92fb1f96a403b85d0d3a4085fda7f46e872514d6dffeb378d8da">CMemBlock::StMemBlockHeader::enFlag_Used</a></div><div class="ttdef"><b>Definition:</b> MemBlock.h:22</div></div>
+<div class="ttc" id="class_c_mem_block_html_a9a60b207cc79af9bd8ebd17c0fa8d3d3"><div class="ttname"><a href="class_c_mem_block.html#a9a60b207cc79af9bd8ebd17c0fa8d3d3">CMemBlock::CMemBlock</a></div><div class="ttdeci">CMemBlock(USize _uBlockSize)</div><div class="ttdoc">コンストラクタ。 </div><div class="ttdef"><b>Definition:</b> MemBlock.cpp:14</div></div>
+<div class="ttc" id="class_c_mem_block_html_a017df5b011b6f0b004c452b32b9fbcfb"><div class="ttname"><a href="class_c_mem_block.html#a017df5b011b6f0b004c452b32b9fbcfb">CMemBlock::SetUsed</a></div><div class="ttdeci">void SetUsed(bool _bUsed)</div><div class="ttdoc">使用中かどうかを設定。 </div><div class="ttdef"><b>Definition:</b> MemBlock.h:90</div></div>
+<div class="ttc" id="class_c_mem_block_html_a79c40d205c3872976438afe7b21aa18b"><div class="ttname"><a href="class_c_mem_block.html#a79c40d205c3872976438afe7b21aa18b">CMemBlock::m_stMemBlockHeader</a></div><div class="ttdeci">StMemBlockHeader m_stMemBlockHeader</div><div class="ttdef"><b>Definition:</b> MemBlock.h:118</div></div>
+<div class="ttc" id="struct_c_mem_block_1_1_st_mem_block_header_html_a6196b148899e1e848178ac0fb4558631"><div class="ttname"><a href="struct_c_mem_block_1_1_st_mem_block_header.html#a6196b148899e1e848178ac0fb4558631">CMemBlock::StMemBlockHeader::m_uAllocSize</a></div><div class="ttdeci">USize m_uAllocSize</div><div class="ttdef"><b>Definition:</b> MemBlock.h:25</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

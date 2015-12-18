@@ -1,0 +1,204 @@
+\hypertarget{class_c_win_base}{}\section{C\+Win\+Base クラス}
+\label{class_c_win_base}\index{C\+Win\+Base@{C\+Win\+Base}}
+
+
+{\ttfamily \#include $<$Win\+Base.\+h$>$}
+
+C\+Win\+Base の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_win_base}
+\end{center}
+\end{figure}
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_c_win_base_1_1_st_init_param}{St\+Init\+Param}
+\begin{DoxyCompactList}\small\item\em 初期化用パラメータ。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_win_base_a61c9bced0a9d9cdcbbed44ad5d555a68}{C\+Win\+Base} (const \hyperlink{struct_c_win_base_1_1_st_init_param}{St\+Init\+Param} \&\+\_\+rst\+Init\+Param)
+\begin{DoxyCompactList}\small\item\em コンストラクタ。 \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_win_base_a7d8eda9e0a576178dc7c86967b6e9626}{$\sim$\+C\+Win\+Base} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ。 \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_win_base_ac9d42b98ac82db19bd562615fa9decd7}{Init\+Window} ()
+\begin{DoxyCompactList}\small\item\em ウィンドウの初期化。 \end{DoxyCompactList}\item 
+virtual L\+R\+E\+S\+U\+L\+T \hyperlink{class_c_win_base_a3c4c86f97de4eddaa300a73c952c84b2}{Wnd\+Proc} (H\+W\+N\+D \+\_\+h\+Wnd, U\+I\+N\+T \+\_\+u\+Msg, W\+P\+A\+R\+A\+M \+\_\+u\+W\+Param, L\+P\+A\+R\+A\+M \+\_\+u\+L\+Param)
+\item 
+S32 \hyperlink{class_c_win_base_a9f6a1a2c0b539863b6ad0fab052196dd}{Get\+Width} () const 
+\begin{DoxyCompactList}\small\item\em ウィンドウの幅を取得。 \end{DoxyCompactList}\item 
+S32 \hyperlink{class_c_win_base_ab283c793e272287f91e58e8ac9f31c63}{Get\+Height} () const 
+\begin{DoxyCompactList}\small\item\em ウィンドウの高さを取得。 \end{DoxyCompactList}\item 
+H\+W\+N\+D \hyperlink{class_c_win_base_afc7879c3e92a6a9a912191a0c318f25c}{Get\+Window\+Handle} () const 
+\begin{DoxyCompactList}\small\item\em ウィンドウハンドルを取得。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static L\+R\+E\+S\+U\+L\+T C\+A\+L\+L\+B\+A\+C\+K \hyperlink{class_c_win_base_a6aeddce777aab9aa11122ad0a4c87287}{Wnd\+Proc\+Wrapper} (H\+W\+N\+D \+\_\+h\+Wnd, U\+I\+N\+T \+\_\+u\+Msg, W\+P\+A\+R\+A\+M \+\_\+u\+W\+Param, L\+P\+A\+R\+A\+M \+\_\+u\+L\+Param)
+\begin{DoxyCompactList}\small\item\em ウィンドウプロシージャ。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{限定公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_c_win_base_1_1_st_init_param}{St\+Init\+Param} \hyperlink{class_c_win_base_abffc43f13e4878d093ffb0014cdad8a4}{m\+\_\+st\+Init\+Param}
+\begin{DoxyCompactList}\small\item\em 初期化用パラメータ。 \end{DoxyCompactList}\item 
+\hyperlink{_string_8h_a65b002fe7fe31f6e84dbb7e46907e031}{C\+T\+String} \hyperlink{class_c_win_base_a51dd5d7b97d383a2262d398926afd69f}{m\+\_\+c\+Class\+Name}
+\begin{DoxyCompactList}\small\item\em クラス名。 \end{DoxyCompactList}\item 
+\hyperlink{_string_8h_a65b002fe7fe31f6e84dbb7e46907e031}{C\+T\+String} \hyperlink{class_c_win_base_a167e6b8f4adb4f249e45147a84c47c9e}{m\+\_\+c\+Window\+Name}
+\begin{DoxyCompactList}\small\item\em ウィンドウ名。 \end{DoxyCompactList}\item 
+H\+W\+N\+D \hyperlink{class_c_win_base_acbf763d98e40063d0676af4279a619a3}{m\+\_\+h\+Wnd}
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\hypertarget{class_c_win_base_a61c9bced0a9d9cdcbbed44ad5d555a68}{}\index{C\+Win\+Base@{C\+Win\+Base}!C\+Win\+Base@{C\+Win\+Base}}
+\index{C\+Win\+Base@{C\+Win\+Base}!C\+Win\+Base@{C\+Win\+Base}}
+\subsubsection[{C\+Win\+Base(const St\+Init\+Param \&\+\_\+rst\+Init\+Param)}]{\setlength{\rightskip}{0pt plus 5cm}C\+Win\+Base\+::\+C\+Win\+Base (
+\begin{DoxyParamCaption}
+\item[{const {\bf St\+Init\+Param} \&}]{\+\_\+rst\+Init\+Param}
+\end{DoxyParamCaption}
+)}\label{class_c_win_base_a61c9bced0a9d9cdcbbed44ad5d555a68}
+
+
+コンストラクタ。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+rst\+Init\+Param} & \+: 初期化用パラメータ。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_win_base_a7d8eda9e0a576178dc7c86967b6e9626}{}\index{C\+Win\+Base@{C\+Win\+Base}!````~C\+Win\+Base@{$\sim$\+C\+Win\+Base}}
+\index{````~C\+Win\+Base@{$\sim$\+C\+Win\+Base}!C\+Win\+Base@{C\+Win\+Base}}
+\subsubsection[{$\sim$\+C\+Win\+Base()}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\+Win\+Base\+::$\sim$\+C\+Win\+Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_win_base_a7d8eda9e0a576178dc7c86967b6e9626}
+
+
+デストラクタ。 
+
+
+
+\subsection{関数詳解}
+\hypertarget{class_c_win_base_ab283c793e272287f91e58e8ac9f31c63}{}\index{C\+Win\+Base@{C\+Win\+Base}!Get\+Height@{Get\+Height}}
+\index{Get\+Height@{Get\+Height}!C\+Win\+Base@{C\+Win\+Base}}
+\subsubsection[{Get\+Height() const }]{\setlength{\rightskip}{0pt plus 5cm}S32 C\+Win\+Base\+::\+Get\+Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_win_base_ab283c793e272287f91e58e8ac9f31c63}
+
+
+ウィンドウの高さを取得。 
+
+\hypertarget{class_c_win_base_a9f6a1a2c0b539863b6ad0fab052196dd}{}\index{C\+Win\+Base@{C\+Win\+Base}!Get\+Width@{Get\+Width}}
+\index{Get\+Width@{Get\+Width}!C\+Win\+Base@{C\+Win\+Base}}
+\subsubsection[{Get\+Width() const }]{\setlength{\rightskip}{0pt plus 5cm}S32 C\+Win\+Base\+::\+Get\+Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_win_base_a9f6a1a2c0b539863b6ad0fab052196dd}
+
+
+ウィンドウの幅を取得。 
+
+\hypertarget{class_c_win_base_afc7879c3e92a6a9a912191a0c318f25c}{}\index{C\+Win\+Base@{C\+Win\+Base}!Get\+Window\+Handle@{Get\+Window\+Handle}}
+\index{Get\+Window\+Handle@{Get\+Window\+Handle}!C\+Win\+Base@{C\+Win\+Base}}
+\subsubsection[{Get\+Window\+Handle() const }]{\setlength{\rightskip}{0pt plus 5cm}H\+W\+N\+D C\+Win\+Base\+::\+Get\+Window\+Handle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_win_base_afc7879c3e92a6a9a912191a0c318f25c}
+
+
+ウィンドウハンドルを取得。 
+
+\hypertarget{class_c_win_base_ac9d42b98ac82db19bd562615fa9decd7}{}\index{C\+Win\+Base@{C\+Win\+Base}!Init\+Window@{Init\+Window}}
+\index{Init\+Window@{Init\+Window}!C\+Win\+Base@{C\+Win\+Base}}
+\subsubsection[{Init\+Window()}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Win\+Base\+::\+Init\+Window (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_win_base_ac9d42b98ac82db19bd562615fa9decd7}
+
+
+ウィンドウの初期化。 
+
+ウィンドウの作成。 \hypertarget{class_c_win_base_a3c4c86f97de4eddaa300a73c952c84b2}{}\index{C\+Win\+Base@{C\+Win\+Base}!Wnd\+Proc@{Wnd\+Proc}}
+\index{Wnd\+Proc@{Wnd\+Proc}!C\+Win\+Base@{C\+Win\+Base}}
+\subsubsection[{Wnd\+Proc(\+H\+W\+N\+D \+\_\+h\+Wnd, U\+I\+N\+T \+\_\+u\+Msg, W\+P\+A\+R\+A\+M \+\_\+u\+W\+Param, L\+P\+A\+R\+A\+M \+\_\+u\+L\+Param)}]{\setlength{\rightskip}{0pt plus 5cm}L\+R\+E\+S\+U\+L\+T C\+Win\+Base\+::\+Wnd\+Proc (
+\begin{DoxyParamCaption}
+\item[{H\+W\+N\+D}]{\+\_\+h\+Wnd, }
+\item[{U\+I\+N\+T}]{\+\_\+u\+Msg, }
+\item[{W\+P\+A\+R\+A\+M}]{\+\_\+u\+W\+Param, }
+\item[{L\+P\+A\+R\+A\+M}]{\+\_\+u\+L\+Param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_win_base_a3c4c86f97de4eddaa300a73c952c84b2}
+
+
+\hyperlink{class_c_win_direct_x11_aac1053a3e7bba9cd66e60e45f754a06e}{C\+Win\+Direct\+X11}で再実装されています。
+
+\hypertarget{class_c_win_base_a6aeddce777aab9aa11122ad0a4c87287}{}\index{C\+Win\+Base@{C\+Win\+Base}!Wnd\+Proc\+Wrapper@{Wnd\+Proc\+Wrapper}}
+\index{Wnd\+Proc\+Wrapper@{Wnd\+Proc\+Wrapper}!C\+Win\+Base@{C\+Win\+Base}}
+\subsubsection[{Wnd\+Proc\+Wrapper(\+H\+W\+N\+D \+\_\+h\+Wnd, U\+I\+N\+T \+\_\+u\+Msg, W\+P\+A\+R\+A\+M \+\_\+u\+W\+Param, L\+P\+A\+R\+A\+M \+\_\+u\+L\+Param)}]{\setlength{\rightskip}{0pt plus 5cm}L\+R\+E\+S\+U\+L\+T C\+A\+L\+L\+B\+A\+C\+K C\+Win\+Base\+::\+Wnd\+Proc\+Wrapper (
+\begin{DoxyParamCaption}
+\item[{H\+W\+N\+D}]{\+\_\+h\+Wnd, }
+\item[{U\+I\+N\+T}]{\+\_\+u\+Msg, }
+\item[{W\+P\+A\+R\+A\+M}]{\+\_\+u\+W\+Param, }
+\item[{L\+P\+A\+R\+A\+M}]{\+\_\+u\+L\+Param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_win_base_a6aeddce777aab9aa11122ad0a4c87287}
+
+
+ウィンドウプロシージャ。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+h\+Wnd} & \+: ウィンドウハンドル。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+u\+Msg} & \+: メッセージ。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+u\+W\+Param} & \+: パラメータ。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+u\+L\+Param} & \+: パラメータ。 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em L\+R\+E\+S\+U\+L\+T} & \+: 処理結果。 \\
+\hline
+\end{DoxyRetVals}
+
+
+\subsection{メンバ詳解}
+\hypertarget{class_c_win_base_a51dd5d7b97d383a2262d398926afd69f}{}\index{C\+Win\+Base@{C\+Win\+Base}!m\+\_\+c\+Class\+Name@{m\+\_\+c\+Class\+Name}}
+\index{m\+\_\+c\+Class\+Name@{m\+\_\+c\+Class\+Name}!C\+Win\+Base@{C\+Win\+Base}}
+\subsubsection[{m\+\_\+c\+Class\+Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+T\+String} C\+Win\+Base\+::m\+\_\+c\+Class\+Name\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_win_base_a51dd5d7b97d383a2262d398926afd69f}
+
+
+クラス名。 
+
+\hypertarget{class_c_win_base_a167e6b8f4adb4f249e45147a84c47c9e}{}\index{C\+Win\+Base@{C\+Win\+Base}!m\+\_\+c\+Window\+Name@{m\+\_\+c\+Window\+Name}}
+\index{m\+\_\+c\+Window\+Name@{m\+\_\+c\+Window\+Name}!C\+Win\+Base@{C\+Win\+Base}}
+\subsubsection[{m\+\_\+c\+Window\+Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+T\+String} C\+Win\+Base\+::m\+\_\+c\+Window\+Name\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_win_base_a167e6b8f4adb4f249e45147a84c47c9e}
+
+
+ウィンドウ名。 
+
+\hypertarget{class_c_win_base_acbf763d98e40063d0676af4279a619a3}{}\index{C\+Win\+Base@{C\+Win\+Base}!m\+\_\+h\+Wnd@{m\+\_\+h\+Wnd}}
+\index{m\+\_\+h\+Wnd@{m\+\_\+h\+Wnd}!C\+Win\+Base@{C\+Win\+Base}}
+\subsubsection[{m\+\_\+h\+Wnd}]{\setlength{\rightskip}{0pt plus 5cm}H\+W\+N\+D C\+Win\+Base\+::m\+\_\+h\+Wnd\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_win_base_acbf763d98e40063d0676af4279a619a3}
+\hypertarget{class_c_win_base_abffc43f13e4878d093ffb0014cdad8a4}{}\index{C\+Win\+Base@{C\+Win\+Base}!m\+\_\+st\+Init\+Param@{m\+\_\+st\+Init\+Param}}
+\index{m\+\_\+st\+Init\+Param@{m\+\_\+st\+Init\+Param}!C\+Win\+Base@{C\+Win\+Base}}
+\subsubsection[{m\+\_\+st\+Init\+Param}]{\setlength{\rightskip}{0pt plus 5cm}{\bf St\+Init\+Param} C\+Win\+Base\+::m\+\_\+st\+Init\+Param\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_win_base_abffc43f13e4878d093ffb0014cdad8a4}
+
+
+初期化用パラメータ。 
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Project/\+Game/\+Windows/\hyperlink{_win_base_8h}{Win\+Base.\+h}\item 
+D\+:/\+Project/\+Game/\+Windows/\hyperlink{_win_base_8cpp}{Win\+Base.\+cpp}\end{DoxyCompactItemize}

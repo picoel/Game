@@ -1,0 +1,94 @@
+\hypertarget{class_c_allocator}{}\section{C\+Allocator$<$ T $>$ クラステンプレート}
+\label{class_c_allocator}\index{C\+Allocator$<$ T $>$@{C\+Allocator$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Allocator.\+h$>$}
+
+C\+Allocator$<$ T $>$ の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_allocator}
+\end{center}
+\end{figure}
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_c_allocator_1_1rebind}{rebind}
+\end{DoxyCompactItemize}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_allocator_ac47a279ea8fcbd55f7c8df3044bf93ff}{C\+Allocator} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ。 \end{DoxyCompactList}\item 
+{\footnotesize template$<$class U $>$ }\\\hyperlink{class_c_allocator_a7ee93416bbf19a9a20ad9f971208a2d3}{C\+Allocator} (const \hyperlink{class_c_allocator}{C\+Allocator}$<$ U $>$ \&\+\_\+r\+Allocator)
+\item 
+\hyperlink{class_c_allocator_ab62db0893a3119e3f99d29f3adfe9565}{$\sim$\+C\+Allocator} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ。 \end{DoxyCompactList}\item 
+pointer \hyperlink{class_c_allocator_a2d88f40d4a8e61088ad90aa779c2b9dc}{allocate} (size\+\_\+type \+\_\+u\+Num, const\+\_\+pointer \+\_\+hint=0)
+\begin{DoxyCompactList}\small\item\em メモリの確保。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_allocator_ac85aa74964df1ac149878fb68ed5017a}{deallocate} (pointer \+\_\+p, size\+\_\+type \+\_\+u\+Num)
+\begin{DoxyCompactList}\small\item\em メモリの解放。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\hypertarget{class_c_allocator_ac47a279ea8fcbd55f7c8df3044bf93ff}{}\index{C\+Allocator@{C\+Allocator}!C\+Allocator@{C\+Allocator}}
+\index{C\+Allocator@{C\+Allocator}!C\+Allocator@{C\+Allocator}}
+\subsubsection[{C\+Allocator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf C\+Allocator}$<$ T $>$\+::{\bf C\+Allocator} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_allocator_ac47a279ea8fcbd55f7c8df3044bf93ff}
+
+
+コンストラクタ。 
+
+\hypertarget{class_c_allocator_a7ee93416bbf19a9a20ad9f971208a2d3}{}\index{C\+Allocator@{C\+Allocator}!C\+Allocator@{C\+Allocator}}
+\index{C\+Allocator@{C\+Allocator}!C\+Allocator@{C\+Allocator}}
+\subsubsection[{C\+Allocator(const C\+Allocator$<$ U $>$ \&\+\_\+r\+Allocator)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ template$<$class U $>$ {\bf C\+Allocator}$<$ T $>$\+::{\bf C\+Allocator} (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+Allocator}$<$ U $>$ \&}]{\+\_\+r\+Allocator}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_allocator_a7ee93416bbf19a9a20ad9f971208a2d3}
+\hypertarget{class_c_allocator_ab62db0893a3119e3f99d29f3adfe9565}{}\index{C\+Allocator@{C\+Allocator}!````~C\+Allocator@{$\sim$\+C\+Allocator}}
+\index{````~C\+Allocator@{$\sim$\+C\+Allocator}!C\+Allocator@{C\+Allocator}}
+\subsubsection[{$\sim$\+C\+Allocator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf C\+Allocator}$<$ T $>$\+::$\sim${\bf C\+Allocator} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_allocator_ab62db0893a3119e3f99d29f3adfe9565}
+
+
+デストラクタ。 
+
+
+
+\subsection{関数詳解}
+\hypertarget{class_c_allocator_a2d88f40d4a8e61088ad90aa779c2b9dc}{}\index{C\+Allocator@{C\+Allocator}!allocate@{allocate}}
+\index{allocate@{allocate}!C\+Allocator@{C\+Allocator}}
+\subsubsection[{allocate(size\+\_\+type \+\_\+u\+Num, const\+\_\+pointer \+\_\+hint=0)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ pointer {\bf C\+Allocator}$<$ T $>$\+::allocate (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+type}]{\+\_\+u\+Num, }
+\item[{const\+\_\+pointer}]{\+\_\+hint = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_allocator_a2d88f40d4a8e61088ad90aa779c2b9dc}
+
+
+メモリの確保。 
+
+\hypertarget{class_c_allocator_ac85aa74964df1ac149878fb68ed5017a}{}\index{C\+Allocator@{C\+Allocator}!deallocate@{deallocate}}
+\index{deallocate@{deallocate}!C\+Allocator@{C\+Allocator}}
+\subsubsection[{deallocate(pointer \+\_\+p, size\+\_\+type \+\_\+u\+Num)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf C\+Allocator}$<$ T $>$\+::deallocate (
+\begin{DoxyParamCaption}
+\item[{pointer}]{\+\_\+p, }
+\item[{size\+\_\+type}]{\+\_\+u\+Num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_allocator_ac85aa74964df1ac149878fb68ed5017a}
+
+
+メモリの解放。 
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Project/\+Game/\+Lib/\+Memory/\+Allocator/\hyperlink{_allocator_8h}{Allocator.\+h}\end{DoxyCompactItemize}

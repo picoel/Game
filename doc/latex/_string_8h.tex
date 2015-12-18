@@ -1,0 +1,39 @@
+\hypertarget{_string_8h}{}\section{D\+:/\+Project/\+Game/\+Lib/\+String/\+String.h ファイル}
+\label{_string_8h}\index{D\+:/\+Project/\+Game/\+Lib/\+String/\+String.\+h@{D\+:/\+Project/\+Game/\+Lib/\+String/\+String.\+h}}
+
+
+tchar型のstringクラス。  
+
+
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$tchar.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}Lib/\+Memory/\+Allocator/\+Allocator.\+h\char`\"{}}\\*
+\subsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::basic\+\_\+string$<$ S8, std\+::char\+\_\+traits$<$ S8 $>$, \hyperlink{class_c_allocator}{C\+Allocator}$<$ S8 $>$ $>$ \hyperlink{_string_8h_aa5836abb39ef3fd81c33730f9cdd6962}{C\+String}
+\item 
+typedef std\+::basic\+\_\+string$<$ S16, std\+::char\+\_\+traits$<$ S16 $>$, \hyperlink{class_c_allocator}{C\+Allocator}$<$ S16 $>$ $>$ \hyperlink{_string_8h_a3ec9b4410d4ad94701b2d28bc5bad267}{C\+W\+String}
+\item 
+typedef std\+::basic\+\_\+string$<$ T\+Char, std\+::char\+\_\+traits$<$ T\+C\+H\+A\+R $>$, \hyperlink{class_c_allocator}{C\+Allocator}$<$ T\+C\+H\+A\+R $>$ $>$ \hyperlink{_string_8h_a65b002fe7fe31f6e84dbb7e46907e031}{C\+T\+String}
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+tchar型のstringクラス。 
+
+\begin{DoxyDate}{日付}
+2015/05/02 01\+:16\+:34 
+\end{DoxyDate}
+
+
+\subsection{型定義詳解}
+\hypertarget{_string_8h_aa5836abb39ef3fd81c33730f9cdd6962}{}\index{String.\+h@{String.\+h}!C\+String@{C\+String}}
+\index{C\+String@{C\+String}!String.\+h@{String.\+h}}
+\subsubsection[{C\+String}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::basic\+\_\+string$<$ S8, std\+::char\+\_\+traits$<$S8$>$, {\bf C\+Allocator}$<$S8$>$ $>$ {\bf C\+String}}\label{_string_8h_aa5836abb39ef3fd81c33730f9cdd6962}
+\hypertarget{_string_8h_a65b002fe7fe31f6e84dbb7e46907e031}{}\index{String.\+h@{String.\+h}!C\+T\+String@{C\+T\+String}}
+\index{C\+T\+String@{C\+T\+String}!String.\+h@{String.\+h}}
+\subsubsection[{C\+T\+String}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::basic\+\_\+string$<$ T\+Char, std\+::char\+\_\+traits$<$T\+C\+H\+A\+R$>$, {\bf C\+Allocator}$<$T\+C\+H\+A\+R$>$ $>$ {\bf C\+T\+String}}\label{_string_8h_a65b002fe7fe31f6e84dbb7e46907e031}
+\hypertarget{_string_8h_a3ec9b4410d4ad94701b2d28bc5bad267}{}\index{String.\+h@{String.\+h}!C\+W\+String@{C\+W\+String}}
+\index{C\+W\+String@{C\+W\+String}!String.\+h@{String.\+h}}
+\subsubsection[{C\+W\+String}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::basic\+\_\+string$<$ S16, std\+::char\+\_\+traits$<$S16$>$, {\bf C\+Allocator}$<$S16$>$ $>$ {\bf C\+W\+String}}\label{_string_8h_a3ec9b4410d4ad94701b2d28bc5bad267}

@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>My Project: D:/Project/Game/Lib/Lib.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="namespaces.html"><span>名前空間</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8f3de2ae926fecfe6abd5379fd2b6eb1.html">Lib</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Lib.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_lib_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef INCLUDE_LIB_LIB_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define INCLUDE_LIB_LIB_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// 外部に公開するヘッダファイル。</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// プラットフォームごとのインクルード。</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#if defined( _WIN32 ) || defined( _WIN64 )</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_lib_windows_8h.html">Lib/LibWindows.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif // #if defined( _WIN32 ) || defined( _WIN64 )</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_lib_define_8h.html">Lib/LibDefine.h</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_type_8h.html">Lib/Type/Type.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_lib_utility_8h.html">Lib/Utility/LibUtility.h</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_list_8h.html">Lib/Utility/List.h</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_range_8h.html">Lib/Utility/Range.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_singleton_8h.html">Lib/Utility/Singleton.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;SDK/meshio/src/meshio.h&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_assert_8h.html">Lib/Debug/Assert.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_log_8h.html">Lib/Debug/Log.h</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_f_p_s_counter_8h.html">Lib/Debug/FPSCounter.h</a>&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_f_p_s_viewer_8h.html">Lib/Debug/FPSViewer.h</a>&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_debug_process_time_8h.html">Lib/Debug/DebugProcessTime.h</a>&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_direct_x_8h.html">Lib/DirectX/DirectX.h</a>&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_direct_x_definition_8h.html">Lib/DirectX/DirectXDefinition.h</a>&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_direct_x_device_factory_8h.html">Lib/DirectX/DirectXDeviceFactory.h</a>&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_direct_x_device_factory_d_x11_8h.html">Lib/DirectX/DirectXDeviceFactoryDX11.h</a>&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_render_context_d_x11_8h.html">Lib/DirectX/RenderContextDX11.h</a>&quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_render_context_factory_d_x11_8h.html">Lib/DirectX/RenderContextFactoryDX11.h</a>&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_file_reader_8h.html">Lib/File/FileReader.h</a>&quot;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_file_read_manager_8h.html">Lib/File/FileReadManager.h</a>&quot;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_main_loop_thread_8h.html">Lib/MainLoop/MainLoopThread.h</a>&quot;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_bit_8h.html">Lib/Math/Bit.h</a>&quot;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_vector_8h.html">Lib/Math/Vector.h</a>&quot;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_matrix_8h.html">Lib/Math/Matrix.h</a>&quot;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_mesh_8h.html">Lib/Mesh/Mesh.h</a>&quot;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_mesh_drawer_8h.html">Lib/Mesh/MeshDrawer.h</a>&quot;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_mem_definition_8h.html">Lib/Memory/MemDefinition.h</a>&quot;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_action_list_8h.html">Lib/Object/ActionList.h</a>&quot;</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_action_8h.html">Lib/Object/Action.h</a>&quot;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_draw_8h.html">Lib/Object/Draw.h</a>&quot;</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_draw_list_8h.html">Lib/Object/DrawList.h</a>&quot;</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_p_m_d_reader_8h.html">Lib/PMD/PMDReader.h</a>&quot;</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_p_m_d_mesh_8h.html">Lib/PMD/PMDMesh.h</a>&quot;</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_render_context_8h.html">Lib/Render/RenderContext.h</a>&quot;</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_render_thread_8h.html">Lib/Render/RenderThread.h</a>&quot;</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_random_8h.html">Lib/Random/Random.h</a>&quot;</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_sequence_8h.html">Lib/Sequence/Sequence.h</a>&quot;</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_sequence_control_8h.html">Lib/Sequence/SequenceControl.h</a>&quot;</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_sequence_factory_8h.html">Lib/Sequence/SequenceFactory.h</a>&quot;</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_string_8h.html">Lib/String/String.h</a>&quot;</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_critical_section_8h.html">Lib/Thread/CriticalSection.h</a>&quot;</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_thread_8h.html">Lib/Thread/Thread.h</a>&quot;</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_job_8h.html">Lib/Worker/Job.h</a>&quot;</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_worker_8h.html">Lib/Worker/Worker.h</a>&quot;</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacen_lib.html">nLib</a></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="structn_lib_1_1_st_lib_setting.html">   67</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structn_lib_1_1_st_lib_setting.html">StLibSetting</a></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    {</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="structn_lib_1_1_st_lib_setting.html#a849353b655516d16bb7c74d26713aa5e">   69</a></span>&#160;        <a class="code" href="struct_c_worker_1_1_st_init_param.html">CWorker::StInitParam</a>            <a class="code" href="structn_lib_1_1_st_lib_setting.html#a849353b655516d16bb7c74d26713aa5e">m_stWorkerParam</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="structn_lib_1_1_st_lib_setting.html#a5c91592ac1acd5926b97b623ebc292cd">   70</a></span>&#160;        <a class="code" href="struct_c_action_list_1_1_st_init_param.html">CActionList::StInitParam</a>        <a class="code" href="structn_lib_1_1_st_lib_setting.html#a5c91592ac1acd5926b97b623ebc292cd">m_stActionParam</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="structn_lib_1_1_st_lib_setting.html#aac4349f6f2830386c5243828c2e60899">   71</a></span>&#160;        <a class="code" href="struct_c_draw_list_1_1_st_init_param.html">CDrawList::StInitParam</a>          <a class="code" href="structn_lib_1_1_st_lib_setting.html#aac4349f6f2830386c5243828c2e60899">m_stDrawParam</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="structn_lib_1_1_st_lib_setting.html#a2ae2236932650acb41b9dce9d5af8885">   72</a></span>&#160;        <a class="code" href="struct_c_file_read_manager_1_1_st_init_param.html">CFileReadManager::StInitParam</a>   <a class="code" href="structn_lib_1_1_st_lib_setting.html#a2ae2236932650acb41b9dce9d5af8885">m_stFileReadParam</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="structn_lib_1_1_st_lib_setting.html#a8b9241564d945e851cc42a6367f00629">   73</a></span>&#160;        <a class="code" href="struct_c_sequence_control_1_1_st_init_param.html">CSequenceControl::StInitParam</a>   <a class="code" href="structn_lib_1_1_st_lib_setting.html#a8b9241564d945e851cc42a6367f00629">m_stSequenceParam</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">    #if defined( USE_DIRECTX_11 )</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        CRenderContextDX11::StInitParam m_stRenderContextParam;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">    #endif // #if defined( USE_DIRECTX_11 )</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="structn_lib_1_1_st_lib_setting.html#abfef2a9a3a680a8623c36934552a14a8">   79</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="structn_lib_1_1_st_lib_setting.html#abfef2a9a3a680a8623c36934552a14a8">Init</a>()</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            m_stWorkerParam.<a class="code" href="struct_c_worker_1_1_st_init_param.html#ac581e8da704092d007f40e73afc38b47">Init</a>();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            m_stActionParam.<a class="code" href="struct_c_action_list_1_1_st_init_param.html#a9ae0b36a7a6bf7b30d1d07f989ebac5e">Init</a>();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            m_stDrawParam.<a class="code" href="struct_c_draw_list_1_1_st_init_param.html#ae258cf1b8a6cd36a1158eabe891dd38c">Init</a>();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            m_stFileReadParam.<a class="code" href="struct_c_file_read_manager_1_1_st_init_param.html#aef86dec93b34dbd21432aa5f8f56714a">Init</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            m_stSequenceParam.<a class="code" href="struct_c_sequence_control_1_1_st_init_param.html#ac78120d0e0fff4af4ab3064075f5aa48">Init</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">        #if defined( USE_DIRECTX_11 )</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            m_stRenderContextParam.Init();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">        #endif // #if defined( USE_DIRECTX_11 )</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    };</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespacen_lib.html#a392a158d6ad2b21d098ec6eb669ed06c">InitMemAllocator</a>( USize _uMemSize );</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespacen_lib.html#a6846b79576336adc07122ef5c2770783">Initialize</a>( <span class="keyword">const</span> StLibSetting&amp; _rstSetting );</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespacen_lib.html#a3209c494611928a27a500a408e3defef">Finalize</a>();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="namespacen_lib.html#ab595f1979af93fc48b349c380d2c55cb">IsEndRequest</a>();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif // #ifndef INCLUDE_LIB_LIB_H</span></div>
+<div class="ttc" id="_p_m_d_mesh_8h_html"><div class="ttname"><a href="_p_m_d_mesh_8h.html">PMDMesh.h</a></div><div class="ttdoc">PMD形式のポリゴンメッシュ。  2015/12/03 01:30:57. </div></div>
+<div class="ttc" id="struct_c_worker_1_1_st_init_param_html"><div class="ttname"><a href="struct_c_worker_1_1_st_init_param.html">CWorker::StInitParam</a></div><div class="ttdoc">初期化用パラメータ。 </div><div class="ttdef"><b>Definition:</b> Worker.h:28</div></div>
+<div class="ttc" id="_direct_x_device_factory_d_x11_8h_html"><div class="ttname"><a href="_direct_x_device_factory_d_x11_8h.html">DirectXDeviceFactoryDX11.h</a></div><div class="ttdoc">DirectX11用デバイス生成クラス。 </div></div>
+<div class="ttc" id="_file_read_manager_8h_html"><div class="ttname"><a href="_file_read_manager_8h.html">FileReadManager.h</a></div><div class="ttdoc">ファイル読み込み管理クラス。 </div></div>
+<div class="ttc" id="_vector_8h_html"><div class="ttname"><a href="_vector_8h.html">Vector.h</a></div><div class="ttdoc">ベクトル演算。 </div></div>
+<div class="ttc" id="_lib_define_8h_html"><div class="ttname"><a href="_lib_define_8h.html">LibDefine.h</a></div><div class="ttdoc">ライブラリで使用する定義。 </div></div>
+<div class="ttc" id="_lib_windows_8h_html"><div class="ttname"><a href="_lib_windows_8h.html">LibWindows.h</a></div><div class="ttdoc">Windows用ライブラリヘッダ。 </div></div>
+<div class="ttc" id="_render_context_factory_d_x11_8h_html"><div class="ttname"><a href="_render_context_factory_d_x11_8h.html">RenderContextFactoryDX11.h</a></div><div class="ttdoc">DX11用描画コンテキスト生成クラス。  2015/11/15 19:38:38. </div></div>
+<div class="ttc" id="_f_p_s_viewer_8h_html"><div class="ttname"><a href="_f_p_s_viewer_8h.html">FPSViewer.h</a></div><div class="ttdoc">FPS表示クラス。  2015/11/15 20:48:39. </div></div>
+<div class="ttc" id="_direct_x_definition_8h_html"><div class="ttname"><a href="_direct_x_definition_8h.html">DirectXDefinition.h</a></div><div class="ttdoc">Direct用定義。 </div></div>
+<div class="ttc" id="_critical_section_8h_html"><div class="ttname"><a href="_critical_section_8h.html">CriticalSection.h</a></div><div class="ttdoc">クリティカルセクション制御。 </div></div>
+<div class="ttc" id="_job_8h_html"><div class="ttname"><a href="_job_8h.html">Job.h</a></div><div class="ttdoc">WorkerThreadで行う仕事クラス。 </div></div>
+<div class="ttc" id="structn_lib_1_1_st_lib_setting_html_a5c91592ac1acd5926b97b623ebc292cd"><div class="ttname"><a href="structn_lib_1_1_st_lib_setting.html#a5c91592ac1acd5926b97b623ebc292cd">nLib::StLibSetting::m_stActionParam</a></div><div class="ttdeci">CActionList::StInitParam m_stActionParam</div><div class="ttdef"><b>Definition:</b> Lib.h:70</div></div>
+<div class="ttc" id="_bit_8h_html"><div class="ttname"><a href="_bit_8h.html">Bit.h</a></div><div class="ttdoc">Bit演算関数。 </div></div>
+<div class="ttc" id="_f_p_s_counter_8h_html"><div class="ttname"><a href="_f_p_s_counter_8h.html">FPSCounter.h</a></div><div class="ttdoc">FPS計測クラス。 </div></div>
+<div class="ttc" id="_matrix_8h_html"><div class="ttname"><a href="_matrix_8h.html">Matrix.h</a></div><div class="ttdoc">行列演算。 </div></div>
+<div class="ttc" id="_sequence_8h_html"><div class="ttname"><a href="_sequence_8h.html">Sequence.h</a></div><div class="ttdoc">シーケンス。 </div></div>
+<div class="ttc" id="struct_c_worker_1_1_st_init_param_html_ac581e8da704092d007f40e73afc38b47"><div class="ttname"><a href="struct_c_worker_1_1_st_init_param.html#ac581e8da704092d007f40e73afc38b47">CWorker::StInitParam::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdef"><b>Definition:</b> Worker.h:33</div></div>
+<div class="ttc" id="_assert_8h_html"><div class="ttname"><a href="_assert_8h.html">Assert.h</a></div><div class="ttdoc">アサート定義。 </div></div>
+<div class="ttc" id="_action_8h_html"><div class="ttname"><a href="_action_8h.html">Action.h</a></div><div class="ttdoc">Actionを行う基底クラス。 </div></div>
+<div class="ttc" id="namespacen_lib_html"><div class="ttname"><a href="namespacen_lib.html">nLib</a></div><div class="ttdef"><b>Definition:</b> DirectXDefinition.h:42</div></div>
+<div class="ttc" id="struct_c_sequence_control_1_1_st_init_param_html_ac78120d0e0fff4af4ab3064075f5aa48"><div class="ttname"><a href="struct_c_sequence_control_1_1_st_init_param.html#ac78120d0e0fff4af4ab3064075f5aa48">CSequenceControl::StInitParam::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdef"><b>Definition:</b> SequenceControl.h:28</div></div>
+<div class="ttc" id="namespacen_lib_html_a392a158d6ad2b21d098ec6eb669ed06c"><div class="ttname"><a href="namespacen_lib.html#a392a158d6ad2b21d098ec6eb669ed06c">nLib::InitMemAllocator</a></div><div class="ttdeci">void InitMemAllocator(USize _uMemSize)</div><div class="ttdoc">メモリアロケータの初期化。 </div><div class="ttdef"><b>Definition:</b> Lib.cpp:21</div></div>
+<div class="ttc" id="struct_c_file_read_manager_1_1_st_init_param_html"><div class="ttname"><a href="struct_c_file_read_manager_1_1_st_init_param.html">CFileReadManager::StInitParam</a></div><div class="ttdoc">初期化用パラメータ。 </div><div class="ttdef"><b>Definition:</b> FileReadManager.h:30</div></div>
+<div class="ttc" id="_log_8h_html"><div class="ttname"><a href="_log_8h.html">Log.h</a></div><div class="ttdoc">ログ出力。 </div></div>
+<div class="ttc" id="_draw_list_8h_html"><div class="ttname"><a href="_draw_list_8h.html">DrawList.h</a></div><div class="ttdoc">CDrawクラスのリスト。  2015/11/04 05:05:23. </div></div>
+<div class="ttc" id="_type_8h_html"><div class="ttname"><a href="_type_8h.html">Type.h</a></div><div class="ttdoc">型定義。 </div></div>
+<div class="ttc" id="struct_c_action_list_1_1_st_init_param_html"><div class="ttname"><a href="struct_c_action_list_1_1_st_init_param.html">CActionList::StInitParam</a></div><div class="ttdoc">初期化用構造体。 </div><div class="ttdef"><b>Definition:</b> ActionList.h:28</div></div>
+<div class="ttc" id="_mem_definition_8h_html"><div class="ttname"><a href="_mem_definition_8h.html">MemDefinition.h</a></div><div class="ttdoc">メモリ関連の定義。 </div></div>
+<div class="ttc" id="_main_loop_thread_8h_html"><div class="ttname"><a href="_main_loop_thread_8h.html">MainLoopThread.h</a></div><div class="ttdoc">メインループ制御スレッド。  2015/11/15 18:47:28 </div></div>
+<div class="ttc" id="structn_lib_1_1_st_lib_setting_html_aac4349f6f2830386c5243828c2e60899"><div class="ttname"><a href="structn_lib_1_1_st_lib_setting.html#aac4349f6f2830386c5243828c2e60899">nLib::StLibSetting::m_stDrawParam</a></div><div class="ttdeci">CDrawList::StInitParam m_stDrawParam</div><div class="ttdef"><b>Definition:</b> Lib.h:71</div></div>
+<div class="ttc" id="_sequence_factory_8h_html"><div class="ttname"><a href="_sequence_factory_8h.html">SequenceFactory.h</a></div><div class="ttdoc">シーケンス生成クラス。 </div></div>
+<div class="ttc" id="_file_reader_8h_html"><div class="ttname"><a href="_file_reader_8h.html">FileReader.h</a></div><div class="ttdoc">ファイル読み込みクラス。 </div></div>
+<div class="ttc" id="_lib_utility_8h_html"><div class="ttname"><a href="_lib_utility_8h.html">LibUtility.h</a></div><div class="ttdoc">ユーティリティ </div></div>
+<div class="ttc" id="structn_lib_1_1_st_lib_setting_html_a2ae2236932650acb41b9dce9d5af8885"><div class="ttname"><a href="structn_lib_1_1_st_lib_setting.html#a2ae2236932650acb41b9dce9d5af8885">nLib::StLibSetting::m_stFileReadParam</a></div><div class="ttdeci">CFileReadManager::StInitParam m_stFileReadParam</div><div class="ttdef"><b>Definition:</b> Lib.h:72</div></div>
+<div class="ttc" id="namespacen_lib_html_a6846b79576336adc07122ef5c2770783"><div class="ttname"><a href="namespacen_lib.html#a6846b79576336adc07122ef5c2770783">nLib::Initialize</a></div><div class="ttdeci">void Initialize(const StLibSetting &amp;_rstSetting)</div><div class="ttdoc">ライブラリの初期化処理。 </div><div class="ttdef"><b>Definition:</b> Lib.cpp:34</div></div>
+<div class="ttc" id="_direct_x_device_factory_8h_html"><div class="ttname"><a href="_direct_x_device_factory_8h.html">DirectXDeviceFactory.h</a></div><div class="ttdoc">DirectXDevice生成インターフェース。 </div></div>
+<div class="ttc" id="_thread_8h_html"><div class="ttname"><a href="_thread_8h.html">Thread.h</a></div><div class="ttdoc">スレッド制御。 </div></div>
+<div class="ttc" id="_range_8h_html"><div class="ttname"><a href="_range_8h.html">Range.h</a></div><div class="ttdoc">範囲クラス。 </div></div>
+<div class="ttc" id="struct_c_file_read_manager_1_1_st_init_param_html_aef86dec93b34dbd21432aa5f8f56714a"><div class="ttname"><a href="struct_c_file_read_manager_1_1_st_init_param.html#aef86dec93b34dbd21432aa5f8f56714a">CFileReadManager::StInitParam::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdef"><b>Definition:</b> FileReadManager.h:34</div></div>
+<div class="ttc" id="_direct_x_8h_html"><div class="ttname"><a href="_direct_x_8h.html">DirectX.h</a></div><div class="ttdoc">DirectX関連の管理。 </div></div>
+<div class="ttc" id="_render_thread_8h_html"><div class="ttname"><a href="_render_thread_8h.html">RenderThread.h</a></div><div class="ttdoc">描画用スレッド。 </div></div>
+<div class="ttc" id="struct_c_draw_list_1_1_st_init_param_html_ae258cf1b8a6cd36a1158eabe891dd38c"><div class="ttname"><a href="struct_c_draw_list_1_1_st_init_param.html#ae258cf1b8a6cd36a1158eabe891dd38c">CDrawList::StInitParam::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdef"><b>Definition:</b> DrawList.h:35</div></div>
+<div class="ttc" id="_mesh_8h_html"><div class="ttname"><a href="_mesh_8h.html">Mesh.h</a></div><div class="ttdoc">ポリゴンメッシュインターフェイス。  2015/12/03 01:24:39 </div></div>
+<div class="ttc" id="struct_c_draw_list_1_1_st_init_param_html"><div class="ttname"><a href="struct_c_draw_list_1_1_st_init_param.html">CDrawList::StInitParam</a></div><div class="ttdoc">初期化用構造体。 </div><div class="ttdef"><b>Definition:</b> DrawList.h:30</div></div>
+<div class="ttc" id="struct_c_action_list_1_1_st_init_param_html_a9ae0b36a7a6bf7b30d1d07f989ebac5e"><div class="ttname"><a href="struct_c_action_list_1_1_st_init_param.html#a9ae0b36a7a6bf7b30d1d07f989ebac5e">CActionList::StInitParam::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdef"><b>Definition:</b> ActionList.h:33</div></div>
+<div class="ttc" id="_singleton_8h_html"><div class="ttname"><a href="_singleton_8h.html">Singleton.h</a></div></div>
+<div class="ttc" id="_draw_8h_html"><div class="ttname"><a href="_draw_8h.html">Draw.h</a></div><div class="ttdoc">描画を行う基底クラス。  2015/11/04 05:00:18 </div></div>
+<div class="ttc" id="_random_8h_html"><div class="ttname"><a href="_random_8h.html">Random.h</a></div><div class="ttdoc">乱数生成クラス。 </div></div>
+<div class="ttc" id="_p_m_d_reader_8h_html"><div class="ttname"><a href="_p_m_d_reader_8h.html">PMDReader.h</a></div><div class="ttdoc">PMDファイル読み込み。  2015/12/02 10:41:52. </div></div>
+<div class="ttc" id="_render_context_8h_html"><div class="ttname"><a href="_render_context_8h.html">RenderContext.h</a></div><div class="ttdoc">描画コンテキスト。 </div></div>
+<div class="ttc" id="namespacen_lib_html_ab595f1979af93fc48b349c380d2c55cb"><div class="ttname"><a href="namespacen_lib.html#ab595f1979af93fc48b349c380d2c55cb">nLib::IsEndRequest</a></div><div class="ttdeci">bool IsEndRequest()</div><div class="ttdoc">終了リクエストがあるか。 </div><div class="ttdef"><b>Definition:</b> Lib.cpp:122</div></div>
+<div class="ttc" id="_string_8h_html"><div class="ttname"><a href="_string_8h.html">String.h</a></div><div class="ttdoc">tchar型のstringクラス。 </div></div>
+<div class="ttc" id="_worker_8h_html"><div class="ttname"><a href="_worker_8h.html">Worker.h</a></div><div class="ttdoc">ワーカースレッド。 </div></div>
+<div class="ttc" id="_mesh_drawer_8h_html"><div class="ttname"><a href="_mesh_drawer_8h.html">MeshDrawer.h</a></div><div class="ttdoc">メッシュ描画。  2015/12/03 06:26:54 </div></div>
+<div class="ttc" id="_action_list_8h_html"><div class="ttname"><a href="_action_list_8h.html">ActionList.h</a></div></div>
+<div class="ttc" id="_debug_process_time_8h_html"><div class="ttname"><a href="_debug_process_time_8h.html">DebugProcessTime.h</a></div><div class="ttdoc">処理時間計測クラス。 </div></div>
+<div class="ttc" id="structn_lib_1_1_st_lib_setting_html_abfef2a9a3a680a8623c36934552a14a8"><div class="ttname"><a href="structn_lib_1_1_st_lib_setting.html#abfef2a9a3a680a8623c36934552a14a8">nLib::StLibSetting::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdef"><b>Definition:</b> Lib.h:79</div></div>
+<div class="ttc" id="structn_lib_1_1_st_lib_setting_html_a8b9241564d945e851cc42a6367f00629"><div class="ttname"><a href="structn_lib_1_1_st_lib_setting.html#a8b9241564d945e851cc42a6367f00629">nLib::StLibSetting::m_stSequenceParam</a></div><div class="ttdeci">CSequenceControl::StInitParam m_stSequenceParam</div><div class="ttdef"><b>Definition:</b> Lib.h:73</div></div>
+<div class="ttc" id="structn_lib_1_1_st_lib_setting_html_a849353b655516d16bb7c74d26713aa5e"><div class="ttname"><a href="structn_lib_1_1_st_lib_setting.html#a849353b655516d16bb7c74d26713aa5e">nLib::StLibSetting::m_stWorkerParam</a></div><div class="ttdeci">CWorker::StInitParam m_stWorkerParam</div><div class="ttdef"><b>Definition:</b> Lib.h:69</div></div>
+<div class="ttc" id="namespacen_lib_html_a3209c494611928a27a500a408e3defef"><div class="ttname"><a href="namespacen_lib.html#a3209c494611928a27a500a408e3defef">nLib::Finalize</a></div><div class="ttdeci">void Finalize()</div><div class="ttdoc">ライブラリの終了処理。 </div><div class="ttdef"><b>Definition:</b> Lib.cpp:91</div></div>
+<div class="ttc" id="_list_8h_html"><div class="ttname"><a href="_list_8h.html">List.h</a></div><div class="ttdoc">動的配列定義。 </div></div>
+<div class="ttc" id="_sequence_control_8h_html"><div class="ttname"><a href="_sequence_control_8h.html">SequenceControl.h</a></div><div class="ttdoc">シーケンス制御クラス。 </div></div>
+<div class="ttc" id="_render_context_d_x11_8h_html"><div class="ttname"><a href="_render_context_d_x11_8h.html">RenderContextDX11.h</a></div><div class="ttdoc">DirectX11 描画コンテキスト。 </div></div>
+<div class="ttc" id="structn_lib_1_1_st_lib_setting_html"><div class="ttname"><a href="structn_lib_1_1_st_lib_setting.html">nLib::StLibSetting</a></div><div class="ttdoc">ライブラリの設定。 </div><div class="ttdef"><b>Definition:</b> Lib.h:67</div></div>
+<div class="ttc" id="struct_c_sequence_control_1_1_st_init_param_html"><div class="ttname"><a href="struct_c_sequence_control_1_1_st_init_param.html">CSequenceControl::StInitParam</a></div><div class="ttdoc">初期化用パラメータ。 </div><div class="ttdef"><b>Definition:</b> SequenceControl.h:23</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

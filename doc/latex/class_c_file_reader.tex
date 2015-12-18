@@ -1,0 +1,148 @@
+\hypertarget{class_c_file_reader}{}\section{C\+File\+Reader クラス}
+\label{class_c_file_reader}\index{C\+File\+Reader@{C\+File\+Reader}}
+
+
+{\ttfamily \#include $<$File\+Reader.\+h$>$}
+
+C\+File\+Reader の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.028986cm]{class_c_file_reader}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_file_reader_ac1c1601d5d3fea0418cc561a979fa5b4}{C\+File\+Reader} (const T\+Char $\ast$\+\_\+ps\+File\+Name)
+\begin{DoxyCompactList}\small\item\em コンストラクタ。 \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_file_reader_a4d1f50d0e41e3de38890100df04325b2}{$\sim$\+C\+File\+Reader} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_file_reader_a5a18550133826ac43096629f6eaa8c42}{Read\+End\+Process} (const void $\ast$\+\_\+p\+Data, U\+Size \+\_\+u\+Size)
+\begin{DoxyCompactList}\small\item\em 読み込み完了時の処理。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_file_reader_ad95360f0d328f570fbc5faf3739732e1}{Read\+End\+Process\+Sync} ()
+\begin{DoxyCompactList}\small\item\em 読み込み完了時の処理(メインスレッドと同期)。 \end{DoxyCompactList}\item 
+const T\+Char $\ast$ \hyperlink{class_c_file_reader_ae59f3337c42c1ca9e26a46336f52bd96}{Get\+File\+Name} () const 
+\begin{DoxyCompactList}\small\item\em 読み込むファイル名を取得。 \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_file_reader_ae354b54f0ebdbbf5bf59c773004cef6b}{Is\+Read\+End} () const 
+\begin{DoxyCompactList}\small\item\em 読み込みが完了したか。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_file_reader_a0f04fd0be744cccb3a057e6cfd2cecd1}{Set\+Read\+End} (bool \+\_\+b\+End)
+\begin{DoxyCompactList}\small\item\em 読み込みが完了したか設定。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_string_8h_a65b002fe7fe31f6e84dbb7e46907e031}{C\+T\+String} \hyperlink{class_c_file_reader_a336f2d904f2b316d584b7fba8f996d69}{m\+\_\+c\+File\+Name}
+\item 
+bool \hyperlink{class_c_file_reader_a1eeeadefb7a22567093fca3f1efbc1d7}{m\+\_\+b\+Is\+Read\+End}
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\hypertarget{class_c_file_reader_ac1c1601d5d3fea0418cc561a979fa5b4}{}\index{C\+File\+Reader@{C\+File\+Reader}!C\+File\+Reader@{C\+File\+Reader}}
+\index{C\+File\+Reader@{C\+File\+Reader}!C\+File\+Reader@{C\+File\+Reader}}
+\subsubsection[{C\+File\+Reader(const T\+Char $\ast$\+\_\+ps\+File\+Name)}]{\setlength{\rightskip}{0pt plus 5cm}C\+File\+Reader\+::\+C\+File\+Reader (
+\begin{DoxyParamCaption}
+\item[{const T\+Char $\ast$}]{\+\_\+ps\+File\+Name}
+\end{DoxyParamCaption}
+)}\label{class_c_file_reader_ac1c1601d5d3fea0418cc561a979fa5b4}
+
+
+コンストラクタ。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+ps\+File\+Name} & \+: 読み込むファイルネーム。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_file_reader_a4d1f50d0e41e3de38890100df04325b2}{}\index{C\+File\+Reader@{C\+File\+Reader}!````~C\+File\+Reader@{$\sim$\+C\+File\+Reader}}
+\index{````~C\+File\+Reader@{$\sim$\+C\+File\+Reader}!C\+File\+Reader@{C\+File\+Reader}}
+\subsubsection[{$\sim$\+C\+File\+Reader()}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\+File\+Reader\+::$\sim$\+C\+File\+Reader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_file_reader_a4d1f50d0e41e3de38890100df04325b2}
+
+
+デストラクタ。 
+
+
+
+\subsection{関数詳解}
+\hypertarget{class_c_file_reader_ae59f3337c42c1ca9e26a46336f52bd96}{}\index{C\+File\+Reader@{C\+File\+Reader}!Get\+File\+Name@{Get\+File\+Name}}
+\index{Get\+File\+Name@{Get\+File\+Name}!C\+File\+Reader@{C\+File\+Reader}}
+\subsubsection[{Get\+File\+Name() const }]{\setlength{\rightskip}{0pt plus 5cm}const T\+Char$\ast$ C\+File\+Reader\+::\+Get\+File\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_file_reader_ae59f3337c42c1ca9e26a46336f52bd96}
+
+
+読み込むファイル名を取得。 
+
+\hypertarget{class_c_file_reader_ae354b54f0ebdbbf5bf59c773004cef6b}{}\index{C\+File\+Reader@{C\+File\+Reader}!Is\+Read\+End@{Is\+Read\+End}}
+\index{Is\+Read\+End@{Is\+Read\+End}!C\+File\+Reader@{C\+File\+Reader}}
+\subsubsection[{Is\+Read\+End() const }]{\setlength{\rightskip}{0pt plus 5cm}bool C\+File\+Reader\+::\+Is\+Read\+End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_file_reader_ae354b54f0ebdbbf5bf59c773004cef6b}
+
+
+読み込みが完了したか。 
+
+\hypertarget{class_c_file_reader_a5a18550133826ac43096629f6eaa8c42}{}\index{C\+File\+Reader@{C\+File\+Reader}!Read\+End\+Process@{Read\+End\+Process}}
+\index{Read\+End\+Process@{Read\+End\+Process}!C\+File\+Reader@{C\+File\+Reader}}
+\subsubsection[{Read\+End\+Process(const void $\ast$\+\_\+p\+Data, U\+Size \+\_\+u\+Size)}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\+File\+Reader\+::\+Read\+End\+Process (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{\+\_\+p\+Data, }
+\item[{U\+Size}]{\+\_\+u\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_file_reader_a5a18550133826ac43096629f6eaa8c42}
+
+
+読み込み完了時の処理。 
+
+
+
+\hyperlink{class_c_direct_x_texture_creator_from_file_a5358c62c1a9b7154b17e64d480fa140c}{C\+Direct\+X\+Texture\+Creator\+From\+File}, \hyperlink{class_c_direct_x_texture_reader_abae2b7a2cf1957d8f0d117851bab35d5}{C\+Direct\+X\+Texture\+Reader}, \hyperlink{class_c_pixel_shader_a5a70cfcd3b998c6f55f4c95f351e940e}{C\+Pixel\+Shader}, \hyperlink{class_c_vertex_shader_a6e640bce4b58ca267c39b9287a973c3b}{C\+Vertex\+Shader}, \hyperlink{class_c_p_m_d_reader_a326af26b1815aaa4b088b037fb76e05f}{C\+P\+M\+D\+Reader}で再実装されています。
+
+\hypertarget{class_c_file_reader_ad95360f0d328f570fbc5faf3739732e1}{}\index{C\+File\+Reader@{C\+File\+Reader}!Read\+End\+Process\+Sync@{Read\+End\+Process\+Sync}}
+\index{Read\+End\+Process\+Sync@{Read\+End\+Process\+Sync}!C\+File\+Reader@{C\+File\+Reader}}
+\subsubsection[{Read\+End\+Process\+Sync()}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\+File\+Reader\+::\+Read\+End\+Process\+Sync (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_file_reader_ad95360f0d328f570fbc5faf3739732e1}
+
+
+読み込み完了時の処理(メインスレッドと同期)。 
+
+
+
+\hyperlink{class_c_direct_x_texture_creator_from_file_aff2a72e9d40761f7654e3b37d6c0b0dd}{C\+Direct\+X\+Texture\+Creator\+From\+File}で再実装されています。
+
+\hypertarget{class_c_file_reader_a0f04fd0be744cccb3a057e6cfd2cecd1}{}\index{C\+File\+Reader@{C\+File\+Reader}!Set\+Read\+End@{Set\+Read\+End}}
+\index{Set\+Read\+End@{Set\+Read\+End}!C\+File\+Reader@{C\+File\+Reader}}
+\subsubsection[{Set\+Read\+End(bool \+\_\+b\+End)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+File\+Reader\+::\+Set\+Read\+End (
+\begin{DoxyParamCaption}
+\item[{bool}]{\+\_\+b\+End}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_file_reader_a0f04fd0be744cccb3a057e6cfd2cecd1}
+
+
+読み込みが完了したか設定。 
+
+
+
+\subsection{メンバ詳解}
+\hypertarget{class_c_file_reader_a1eeeadefb7a22567093fca3f1efbc1d7}{}\index{C\+File\+Reader@{C\+File\+Reader}!m\+\_\+b\+Is\+Read\+End@{m\+\_\+b\+Is\+Read\+End}}
+\index{m\+\_\+b\+Is\+Read\+End@{m\+\_\+b\+Is\+Read\+End}!C\+File\+Reader@{C\+File\+Reader}}
+\subsubsection[{m\+\_\+b\+Is\+Read\+End}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+File\+Reader\+::m\+\_\+b\+Is\+Read\+End\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_reader_a1eeeadefb7a22567093fca3f1efbc1d7}
+\hypertarget{class_c_file_reader_a336f2d904f2b316d584b7fba8f996d69}{}\index{C\+File\+Reader@{C\+File\+Reader}!m\+\_\+c\+File\+Name@{m\+\_\+c\+File\+Name}}
+\index{m\+\_\+c\+File\+Name@{m\+\_\+c\+File\+Name}!C\+File\+Reader@{C\+File\+Reader}}
+\subsubsection[{m\+\_\+c\+File\+Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+T\+String} C\+File\+Reader\+::m\+\_\+c\+File\+Name\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_reader_a336f2d904f2b316d584b7fba8f996d69}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Project/\+Game/\+Lib/\+File/\hyperlink{_file_reader_8h}{File\+Reader.\+h}\item 
+D\+:/\+Project/\+Game/\+Lib/\+File/\hyperlink{_file_reader_8cpp}{File\+Reader.\+cpp}\end{DoxyCompactItemize}

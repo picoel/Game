@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LibPrecompile.cpp" />
+    <ClCompile Include="Debug\DebugProcessTime.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory\MemAllocator.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory\MemBlock.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory\MemManager.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread\CriticalSection.cpp">
+      <Filter>Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\Assert.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\ActionList.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Action.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\FPSCounter.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory\MemDefinition.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread\Thread.cpp">
+      <Filter>Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\RenderThread.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="File\FileReadManager.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="File\FileReader.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="File\FileReadThread.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectX\RenderContextDX11.cpp">
+      <Filter>DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectX\PixelShader.cpp">
+      <Filter>DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectX\VertexShader.cpp">
+      <Filter>DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectX\DirectXDeviceFactoryDX11.cpp">
+      <Filter>DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectX\DirectX.cpp">
+      <Filter>DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Worker\WorkerChannel.cpp">
+      <Filter>Worker</Filter>
+    </ClCompile>
+    <ClCompile Include="Worker\WorkerThread.cpp">
+      <Filter>Worker</Filter>
+    </ClCompile>
+    <ClCompile Include="Worker\WorkerManager.cpp">
+      <Filter>Worker</Filter>
+    </ClCompile>
+    <ClCompile Include="File\JobFileRead.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectX\DirectXTexture.cpp">
+      <Filter>DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Worker\Worker.cpp">
+      <Filter>Worker</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib.cpp" />
+    <ClCompile Include="Sequence\SequenceControl.cpp">
+      <Filter>Sequence</Filter>
+    </ClCompile>
+    <ClCompile Include="Rect\Rect.cpp">
+      <Filter>Rect</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectX\DirectXShaderManager.cpp">
+      <Filter>DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Draw.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\DrawList.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="MainLoop\MainLoopThread.cpp">
+      <Filter>MainLoop</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\FPSViewer.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="PMD\PMDReader.cpp">
+      <Filter>Mesh\PMD</Filter>
+    </ClCompile>
+    <ClCompile Include="PMD\PMDMesh.cpp">
+      <Filter>Mesh\PMD</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectX\DirectXUtility.cpp">
+      <Filter>DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh\MeshDrawer.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\ConstantBufferDataForFrame.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\ConstantBufferDataForLevel.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\ConstantBufferDataForObject.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectX\ConstantBuffer.cpp">
+      <Filter>DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\ConstantBufferDataForMaterial.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LibPrecompile.h" />
+    <ClInclude Include="Debug\DebugProcessTime.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Bit.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\MemAllocator.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\MemBlock.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\MemManager.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Random\Random.h">
+      <Filter>Random</Filter>
+    </ClInclude>
+    <ClInclude Include="Random\RandomInt.h">
+      <Filter>Random</Filter>
+    </ClInclude>
+    <ClInclude Include="Random\RandomReal.h">
+      <Filter>Random</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\CriticalSection.h">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="LibDefine.h" />
+    <ClInclude Include="String\String.h">
+      <Filter>String</Filter>
+    </ClInclude>
+    <ClInclude Include="LibWindows.h" />
+    <ClInclude Include="Type\TypeWin.h">
+      <Filter>Type</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug\Assert.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\RenderContext.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\DirectXDefinition.h">
+      <Filter>DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Singleton.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Action.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\ActionList.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug\FPSCounter.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\List.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug\Log.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\LibUtility.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Type\Type.h">
+      <Filter>Type</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\MemDefinition.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\Thread.h">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\RenderThread.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Range.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\Allocator\Allocator.h">
+      <Filter>Memory\Allocator</Filter>
+    </ClInclude>
+    <ClInclude Include="File\FileReadManager.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="File\FileReader.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="File\FileReadThread.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\RenderContextDX11.h">
+      <Filter>DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\PixelShader.h">
+      <Filter>DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\VertexShader.h">
+      <Filter>DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\DirectXDeviceFactory.h">
+      <Filter>DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\DirectXDeviceFactoryDX11.h">
+      <Filter>DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\DirectX.h">
+      <Filter>DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Worker\Job.h">
+      <Filter>Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="Worker\WorkerThread.h">
+      <Filter>Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="Worker\WorkerChannel.h">
+      <Filter>Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="Worker\WorkerManager.h">
+      <Filter>Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="File\JobFileRead.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\DirectXTexture.h">
+      <Filter>DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib.h" />
+    <ClInclude Include="Worker\Worker.h">
+      <Filter>Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="Sequence\Sequence.h">
+      <Filter>Sequence</Filter>
+    </ClInclude>
+    <ClInclude Include="Sequence\SequenceControl.h">
+      <Filter>Sequence</Filter>
+    </ClInclude>
+    <ClInclude Include="Sequence\SequenceFactory.h">
+      <Filter>Sequence</Filter>
+    </ClInclude>
+    <ClInclude Include="Rect\Rect.h">
+      <Filter>Rect</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\DirectXShaderManager.h">
+      <Filter>DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\ShaderDefinition.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\DirectXShaderDefinition.h">
+      <Filter>DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vector.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Matrix.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\DirectXConstantBufferDefinition.h">
+      <Filter>DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Draw.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\DrawList.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\ObjectList.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\ObjectListDetail.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="MainLoop\MainLoopThread.h">
+      <Filter>MainLoop</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\RenderContextFactory.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\RenderContextFactoryDX11.h">
+      <Filter>DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug\FPSViewer.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="PMD\PMDReader.h">
+      <Filter>Mesh\PMD</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh\Mesh.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="PMD\PMDMesh.h">
+      <Filter>Mesh\PMD</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\DirectXUtility.h">
+      <Filter>DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh\MeshDrawer.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\Render.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\ConstantBufferData.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\ConstantBufferDataForFrame.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\ConstantBufferDataForLevel.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\ConstantBufferDataForObject.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\ConstantBuffer.h">
+      <Filter>DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\ConstantBufferDataForMaterial.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Debug">
+      <UniqueIdentifier>{f72451a5-733b-45bc-8757-1e9ebb6f098e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{68aff45f-4fa9-4171-bb00-c31fc66cedf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{5308dd5b-55f9-448c-befd-31b1e2066943}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Random">
+      <UniqueIdentifier>{79830e22-5479-421f-8424-5904435d18c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="String">
+      <UniqueIdentifier>{f70a8a82-3962-4a58-bb72-407c679c91e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Thread">
+      <UniqueIdentifier>{4bf664db-2578-40db-87c3-034f750ac6e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory\Allocator">
+      <UniqueIdentifier>{01aac2b9-eef7-4680-9016-5d8505839c35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Type">
+      <UniqueIdentifier>{503f4ae0-ab48-4afe-ba6d-7e52e7ea636d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{9e6886c2-5789-42cf-89e3-2ba337951acc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render">
+      <UniqueIdentifier>{d5573e71-1025-4ede-b632-f55c59b7337f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectX">
+      <UniqueIdentifier>{3195cf8b-ca44-4a95-8a50-e1d37c385682}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{9f5f1004-9143-4bc3-9957-086db02eed27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HLSL">
+      <UniqueIdentifier>{9c8b46ba-44bb-49ec-af9d-9fb12991fbdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File">
+      <UniqueIdentifier>{795fb875-61af-4ca0-b04e-b5e3b738a64b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Worker">
+      <UniqueIdentifier>{35fdee11-1833-43f8-bc1c-3b1ee61debf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rect">
+      <UniqueIdentifier>{fe047049-2f36-4541-bbff-ae7b3eb7ee67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainLoop">
+      <UniqueIdentifier>{d1ed11fd-2104-479f-8963-b32ba85c7156}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sequence">
+      <UniqueIdentifier>{618218e6-3a30-43f7-a163-8e3a19c2d6c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mesh">
+      <UniqueIdentifier>{f9d83e47-a1f4-44d1-bf10-f211369cffc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mesh\PMD">
+      <UniqueIdentifier>{81a0ed9b-1490-4ac3-968e-c176d8bafa01}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="HLSL\SpritePixelShader.hlsl">
+      <Filter>HLSL</Filter>
+    </FxCompile>
+    <FxCompile Include="HLSL\SpriteVertexShader.hlsl">
+      <Filter>HLSL</Filter>
+    </FxCompile>
+    <FxCompile Include="HLSL\3DPixelShader.hlsl">
+      <Filter>HLSL</Filter>
+    </FxCompile>
+    <FxCompile Include="HLSL\3DVertexShader.hlsl">
+      <Filter>HLSL</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HLSL\SpriteShader.hlsli">
+      <Filter>HLSL</Filter>
+    </None>
+    <None Include="HLSL\ConstantBuffer.hlsli">
+      <Filter>HLSL</Filter>
+    </None>
+    <None Include="HLSL\3DShader.hlsli">
+      <Filter>HLSL</Filter>
+    </None>
+  </ItemGroup>
+</Project>

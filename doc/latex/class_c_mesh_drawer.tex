@@ -1,0 +1,176 @@
+\hypertarget{class_c_mesh_drawer}{}\section{C\+Mesh\+Drawer クラス}
+\label{class_c_mesh_drawer}\index{C\+Mesh\+Drawer@{C\+Mesh\+Drawer}}
+
+
+{\ttfamily \#include $<$Mesh\+Drawer.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_mesh_drawer_a10d0f7891d2a54904ed3078708029ba4}{C\+Mesh\+Drawer} (const \hyperlink{class_i_mesh}{I\+Mesh} $\ast$\+\_\+pc\+Mesh)
+\begin{DoxyCompactList}\small\item\em コンストラクタ。 \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_mesh_drawer_a806a4c666e00bfd72066ac1b405db2a1}{$\sim$\+C\+Mesh\+Drawer} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_mesh_drawer_a82ac2291582f714a5af0300526f4f107}{Draw} (\hyperlink{class_i_render_context}{I\+Render\+Context} $\ast$\+\_\+pc\+Context)
+\begin{DoxyCompactList}\small\item\em 描画処理。 \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_mesh_drawer_aa342de95f105b4f22c75367b344df335}{Is\+Read\+End} () const 
+\begin{DoxyCompactList}\small\item\em 読み込みが完了したか。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_c_mesh_drawer_aae1ac0846695db38abfc282b9f3bd829}{Create\+Vertex\+Buffer} (const \hyperlink{class_i_mesh}{I\+Mesh} $\ast$\+\_\+pc\+Mesh)
+\begin{DoxyCompactList}\small\item\em 頂点バッファーの作成。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_mesh_drawer_af01061282afe0e1c73be2b8faeb144b0}{Create\+Index\+Buffer} (const \hyperlink{class_i_mesh}{I\+Mesh} $\ast$\+\_\+pc\+Mesh)
+\begin{DoxyCompactList}\small\item\em インデックスバッファーの作成。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_mesh_drawer_a20a0681c8e2835a8e16988011e1b20e1}{Create\+Material} (const \hyperlink{class_i_mesh}{I\+Mesh} $\ast$\+\_\+pc\+Mesh)
+\begin{DoxyCompactList}\small\item\em マテリアル情報の作成。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+I\+D3\+D\+Buffer $\ast$ \hyperlink{class_c_mesh_drawer_afd868ffa4352ee572c96ce27503ffbef}{m\+\_\+pc\+Vertex\+Buffer}
+\item 
+I\+D3\+D\+Buffer $\ast$ \hyperlink{class_c_mesh_drawer_ac0ff368c1f0142014951771916e81859}{m\+\_\+pc\+Index\+Buffer}
+\item 
+U32 \hyperlink{class_c_mesh_drawer_a1f43f0a290e81f825c5b504df8d73f04}{m\+\_\+u\+Material\+Num}
+\item 
+\hyperlink{struct_i_mesh_1_1_st_material}{I\+Mesh\+::\+St\+Material} $\ast$ \hyperlink{class_c_mesh_drawer_a8dfc3abb01754af03e7df870da7a872d}{m\+\_\+pst\+Material\+Array}
+\item 
+\hyperlink{class_c_direct_x_texture}{C\+Direct\+X\+Texture} $\ast$$\ast$ \hyperlink{class_c_mesh_drawer_a1e05fd8e03370903b786ad8ef4921cfa}{m\+\_\+pc\+Texture\+Array}
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\hypertarget{class_c_mesh_drawer_a10d0f7891d2a54904ed3078708029ba4}{}\index{C\+Mesh\+Drawer@{C\+Mesh\+Drawer}!C\+Mesh\+Drawer@{C\+Mesh\+Drawer}}
+\index{C\+Mesh\+Drawer@{C\+Mesh\+Drawer}!C\+Mesh\+Drawer@{C\+Mesh\+Drawer}}
+\subsubsection[{C\+Mesh\+Drawer(const I\+Mesh $\ast$\+\_\+pc\+Mesh)}]{\setlength{\rightskip}{0pt plus 5cm}C\+Mesh\+Drawer\+::\+C\+Mesh\+Drawer (
+\begin{DoxyParamCaption}
+\item[{const {\bf I\+Mesh} $\ast$}]{\+\_\+pc\+Mesh}
+\end{DoxyParamCaption}
+)}\label{class_c_mesh_drawer_a10d0f7891d2a54904ed3078708029ba4}
+
+
+コンストラクタ。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+pc\+Mesh} & \+: メッシュ情報。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_mesh_drawer_a806a4c666e00bfd72066ac1b405db2a1}{}\index{C\+Mesh\+Drawer@{C\+Mesh\+Drawer}!````~C\+Mesh\+Drawer@{$\sim$\+C\+Mesh\+Drawer}}
+\index{````~C\+Mesh\+Drawer@{$\sim$\+C\+Mesh\+Drawer}!C\+Mesh\+Drawer@{C\+Mesh\+Drawer}}
+\subsubsection[{$\sim$\+C\+Mesh\+Drawer()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Mesh\+Drawer\+::$\sim$\+C\+Mesh\+Drawer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_mesh_drawer_a806a4c666e00bfd72066ac1b405db2a1}
+
+
+デストラクタ。 
+
+
+
+\subsection{関数詳解}
+\hypertarget{class_c_mesh_drawer_af01061282afe0e1c73be2b8faeb144b0}{}\index{C\+Mesh\+Drawer@{C\+Mesh\+Drawer}!Create\+Index\+Buffer@{Create\+Index\+Buffer}}
+\index{Create\+Index\+Buffer@{Create\+Index\+Buffer}!C\+Mesh\+Drawer@{C\+Mesh\+Drawer}}
+\subsubsection[{Create\+Index\+Buffer(const I\+Mesh $\ast$\+\_\+pc\+Mesh)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Mesh\+Drawer\+::\+Create\+Index\+Buffer (
+\begin{DoxyParamCaption}
+\item[{const {\bf I\+Mesh} $\ast$}]{\+\_\+pc\+Mesh}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_mesh_drawer_af01061282afe0e1c73be2b8faeb144b0}
+
+
+インデックスバッファーの作成。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+pc\+Mesh} & \+: メッシュ情報。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_mesh_drawer_a20a0681c8e2835a8e16988011e1b20e1}{}\index{C\+Mesh\+Drawer@{C\+Mesh\+Drawer}!Create\+Material@{Create\+Material}}
+\index{Create\+Material@{Create\+Material}!C\+Mesh\+Drawer@{C\+Mesh\+Drawer}}
+\subsubsection[{Create\+Material(const I\+Mesh $\ast$\+\_\+pc\+Mesh)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Mesh\+Drawer\+::\+Create\+Material (
+\begin{DoxyParamCaption}
+\item[{const {\bf I\+Mesh} $\ast$}]{\+\_\+pc\+Mesh}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_mesh_drawer_a20a0681c8e2835a8e16988011e1b20e1}
+
+
+マテリアル情報の作成。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+pc\+Mesh} & \+: メッシュ情報。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_mesh_drawer_aae1ac0846695db38abfc282b9f3bd829}{}\index{C\+Mesh\+Drawer@{C\+Mesh\+Drawer}!Create\+Vertex\+Buffer@{Create\+Vertex\+Buffer}}
+\index{Create\+Vertex\+Buffer@{Create\+Vertex\+Buffer}!C\+Mesh\+Drawer@{C\+Mesh\+Drawer}}
+\subsubsection[{Create\+Vertex\+Buffer(const I\+Mesh $\ast$\+\_\+pc\+Mesh)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Mesh\+Drawer\+::\+Create\+Vertex\+Buffer (
+\begin{DoxyParamCaption}
+\item[{const {\bf I\+Mesh} $\ast$}]{\+\_\+pc\+Mesh}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_mesh_drawer_aae1ac0846695db38abfc282b9f3bd829}
+
+
+頂点バッファーの作成。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+pc\+Mesh} & \+: メッシュ情報。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_mesh_drawer_a82ac2291582f714a5af0300526f4f107}{}\index{C\+Mesh\+Drawer@{C\+Mesh\+Drawer}!Draw@{Draw}}
+\index{Draw@{Draw}!C\+Mesh\+Drawer@{C\+Mesh\+Drawer}}
+\subsubsection[{Draw(\+I\+Render\+Context $\ast$\+\_\+pc\+Context)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Mesh\+Drawer\+::\+Draw (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Render\+Context} $\ast$}]{\+\_\+pc\+Context}
+\end{DoxyParamCaption}
+)}\label{class_c_mesh_drawer_a82ac2291582f714a5af0300526f4f107}
+
+
+描画処理。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+pc\+Context} & \+: 描画コンテキスト。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_mesh_drawer_aa342de95f105b4f22c75367b344df335}{}\index{C\+Mesh\+Drawer@{C\+Mesh\+Drawer}!Is\+Read\+End@{Is\+Read\+End}}
+\index{Is\+Read\+End@{Is\+Read\+End}!C\+Mesh\+Drawer@{C\+Mesh\+Drawer}}
+\subsubsection[{Is\+Read\+End() const }]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Mesh\+Drawer\+::\+Is\+Read\+End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_mesh_drawer_aa342de95f105b4f22c75367b344df335}
+
+
+読み込みが完了したか。 
+
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & \+: 完了していればtrue。 \\
+\hline
+\end{DoxyRetVals}
+
+
+\subsection{メンバ詳解}
+\hypertarget{class_c_mesh_drawer_ac0ff368c1f0142014951771916e81859}{}\index{C\+Mesh\+Drawer@{C\+Mesh\+Drawer}!m\+\_\+pc\+Index\+Buffer@{m\+\_\+pc\+Index\+Buffer}}
+\index{m\+\_\+pc\+Index\+Buffer@{m\+\_\+pc\+Index\+Buffer}!C\+Mesh\+Drawer@{C\+Mesh\+Drawer}}
+\subsubsection[{m\+\_\+pc\+Index\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D\+Buffer$\ast$ C\+Mesh\+Drawer\+::m\+\_\+pc\+Index\+Buffer\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_mesh_drawer_ac0ff368c1f0142014951771916e81859}
+\hypertarget{class_c_mesh_drawer_a1e05fd8e03370903b786ad8ef4921cfa}{}\index{C\+Mesh\+Drawer@{C\+Mesh\+Drawer}!m\+\_\+pc\+Texture\+Array@{m\+\_\+pc\+Texture\+Array}}
+\index{m\+\_\+pc\+Texture\+Array@{m\+\_\+pc\+Texture\+Array}!C\+Mesh\+Drawer@{C\+Mesh\+Drawer}}
+\subsubsection[{m\+\_\+pc\+Texture\+Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Direct\+X\+Texture}$\ast$$\ast$ C\+Mesh\+Drawer\+::m\+\_\+pc\+Texture\+Array\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_mesh_drawer_a1e05fd8e03370903b786ad8ef4921cfa}
+\hypertarget{class_c_mesh_drawer_afd868ffa4352ee572c96ce27503ffbef}{}\index{C\+Mesh\+Drawer@{C\+Mesh\+Drawer}!m\+\_\+pc\+Vertex\+Buffer@{m\+\_\+pc\+Vertex\+Buffer}}
+\index{m\+\_\+pc\+Vertex\+Buffer@{m\+\_\+pc\+Vertex\+Buffer}!C\+Mesh\+Drawer@{C\+Mesh\+Drawer}}
+\subsubsection[{m\+\_\+pc\+Vertex\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D\+Buffer$\ast$ C\+Mesh\+Drawer\+::m\+\_\+pc\+Vertex\+Buffer\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_mesh_drawer_afd868ffa4352ee572c96ce27503ffbef}
+\hypertarget{class_c_mesh_drawer_a8dfc3abb01754af03e7df870da7a872d}{}\index{C\+Mesh\+Drawer@{C\+Mesh\+Drawer}!m\+\_\+pst\+Material\+Array@{m\+\_\+pst\+Material\+Array}}
+\index{m\+\_\+pst\+Material\+Array@{m\+\_\+pst\+Material\+Array}!C\+Mesh\+Drawer@{C\+Mesh\+Drawer}}
+\subsubsection[{m\+\_\+pst\+Material\+Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Mesh\+::\+St\+Material}$\ast$ C\+Mesh\+Drawer\+::m\+\_\+pst\+Material\+Array\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_mesh_drawer_a8dfc3abb01754af03e7df870da7a872d}
+\hypertarget{class_c_mesh_drawer_a1f43f0a290e81f825c5b504df8d73f04}{}\index{C\+Mesh\+Drawer@{C\+Mesh\+Drawer}!m\+\_\+u\+Material\+Num@{m\+\_\+u\+Material\+Num}}
+\index{m\+\_\+u\+Material\+Num@{m\+\_\+u\+Material\+Num}!C\+Mesh\+Drawer@{C\+Mesh\+Drawer}}
+\subsubsection[{m\+\_\+u\+Material\+Num}]{\setlength{\rightskip}{0pt plus 5cm}U32 C\+Mesh\+Drawer\+::m\+\_\+u\+Material\+Num\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_mesh_drawer_a1f43f0a290e81f825c5b504df8d73f04}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Project/\+Game/\+Lib/\+Mesh/\hyperlink{_mesh_drawer_8h}{Mesh\+Drawer.\+h}\item 
+D\+:/\+Project/\+Game/\+Lib/\+Mesh/\hyperlink{_mesh_drawer_8cpp}{Mesh\+Drawer.\+cpp}\end{DoxyCompactItemize}

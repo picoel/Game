@@ -1,0 +1,138 @@
+\hypertarget{class_c_file_read_manager}{}\section{C\+File\+Read\+Manager クラス}
+\label{class_c_file_read_manager}\index{C\+File\+Read\+Manager@{C\+File\+Read\+Manager}}
+
+
+{\ttfamily \#include $<$File\+Read\+Manager.\+h$>$}
+
+C\+File\+Read\+Manager の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_file_read_manager}
+\end{center}
+\end{figure}
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_c_file_read_manager_1_1_st_init_param}{St\+Init\+Param}
+\begin{DoxyCompactList}\small\item\em 初期化用パラメータ。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_c_file_read_manager_a1ef0e31d0e5d89fe0722f124a312438c}{$\sim$\+C\+File\+Read\+Manager} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_file_read_manager_a0bd09488d14efeed36b3445188391d34}{Request} (\hyperlink{class_c_file_reader}{C\+File\+Reader} $\ast$\+\_\+pc\+File\+Reader)
+\begin{DoxyCompactList}\small\item\em ファイル読み込みリクエスト。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_file_read_manager_a1c0c420814fed21f257b71740c56a365}{Action} () override
+\begin{DoxyCompactList}\small\item\em アクション処理。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_c_file_read_manager_a2be2641a242706bb410e976325a74665}{Create\+Instance} (const \hyperlink{struct_c_file_read_manager_1_1_st_init_param}{St\+Init\+Param} \&\+\_\+rst\+Param)
+\begin{DoxyCompactList}\small\item\em インスタンス作成。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_file_read_manager_a3eafa43bdf03c4b3560900d952c6eb22}{C\+File\+Read\+Manager} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ。 \end{DoxyCompactList}\item 
+\hyperlink{class_c_file_read_manager_a75ad845bcfe35443ef29d2a2cfe843cd}{C\+File\+Read\+Manager} (const \hyperlink{struct_c_file_read_manager_1_1_st_init_param}{St\+Init\+Param} \&\+\_\+rst\+Param)
+\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+friend \hyperlink{class_c_file_read_manager_a7a9788832ab00f7595c2782a849942e9}{C\+Singleton$<$ C\+File\+Read\+Manager $>$}
+\item 
+\hyperlink{_list_8h_af54c38acd8944230f18792ac38211526}{C\+Vector}$<$ \hyperlink{class_c_job_file_read}{C\+Job\+File\+Read} $\ast$ $>$ \hyperlink{class_c_file_read_manager_a06d2dd73e1e01a66e4072ecfe4507c54}{m\+\_\+c\+Job\+List}
+\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{構築子と解体子}
+\hypertarget{class_c_file_read_manager_a3eafa43bdf03c4b3560900d952c6eb22}{}\index{C\+File\+Read\+Manager@{C\+File\+Read\+Manager}!C\+File\+Read\+Manager@{C\+File\+Read\+Manager}}
+\index{C\+File\+Read\+Manager@{C\+File\+Read\+Manager}!C\+File\+Read\+Manager@{C\+File\+Read\+Manager}}
+\subsubsection[{C\+File\+Read\+Manager()}]{\setlength{\rightskip}{0pt plus 5cm}C\+File\+Read\+Manager\+::\+C\+File\+Read\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_read_manager_a3eafa43bdf03c4b3560900d952c6eb22}
+
+
+コンストラクタ。 
+
+\hypertarget{class_c_file_read_manager_a75ad845bcfe35443ef29d2a2cfe843cd}{}\index{C\+File\+Read\+Manager@{C\+File\+Read\+Manager}!C\+File\+Read\+Manager@{C\+File\+Read\+Manager}}
+\index{C\+File\+Read\+Manager@{C\+File\+Read\+Manager}!C\+File\+Read\+Manager@{C\+File\+Read\+Manager}}
+\subsubsection[{C\+File\+Read\+Manager(const St\+Init\+Param \&\+\_\+rst\+Param)}]{\setlength{\rightskip}{0pt plus 5cm}C\+File\+Read\+Manager\+::\+C\+File\+Read\+Manager (
+\begin{DoxyParamCaption}
+\item[{const {\bf St\+Init\+Param} \&}]{\+\_\+rst\+Param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_read_manager_a75ad845bcfe35443ef29d2a2cfe843cd}
+\hypertarget{class_c_file_read_manager_a1ef0e31d0e5d89fe0722f124a312438c}{}\index{C\+File\+Read\+Manager@{C\+File\+Read\+Manager}!````~C\+File\+Read\+Manager@{$\sim$\+C\+File\+Read\+Manager}}
+\index{````~C\+File\+Read\+Manager@{$\sim$\+C\+File\+Read\+Manager}!C\+File\+Read\+Manager@{C\+File\+Read\+Manager}}
+\subsubsection[{$\sim$\+C\+File\+Read\+Manager()}]{\setlength{\rightskip}{0pt plus 5cm}C\+File\+Read\+Manager\+::$\sim$\+C\+File\+Read\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_file_read_manager_a1ef0e31d0e5d89fe0722f124a312438c}
+
+
+デストラクタ。 
+
+
+
+\subsection{関数詳解}
+\hypertarget{class_c_file_read_manager_a1c0c420814fed21f257b71740c56a365}{}\index{C\+File\+Read\+Manager@{C\+File\+Read\+Manager}!Action@{Action}}
+\index{Action@{Action}!C\+File\+Read\+Manager@{C\+File\+Read\+Manager}}
+\subsubsection[{Action() override}]{\setlength{\rightskip}{0pt plus 5cm}void C\+File\+Read\+Manager\+::\+Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_c_file_read_manager_a1c0c420814fed21f257b71740c56a365}
+
+
+アクション処理。 
+
+
+
+\hyperlink{class_c_action_a3fcc5cc0fde844c5cb6e50f7eec9da3c}{C\+Action}を再実装しています。
+
+\hypertarget{class_c_file_read_manager_a2be2641a242706bb410e976325a74665}{}\index{C\+File\+Read\+Manager@{C\+File\+Read\+Manager}!Create\+Instance@{Create\+Instance}}
+\index{Create\+Instance@{Create\+Instance}!C\+File\+Read\+Manager@{C\+File\+Read\+Manager}}
+\subsubsection[{Create\+Instance(const St\+Init\+Param \&\+\_\+rst\+Param)}]{\setlength{\rightskip}{0pt plus 5cm}static void C\+File\+Read\+Manager\+::\+Create\+Instance (
+\begin{DoxyParamCaption}
+\item[{const {\bf St\+Init\+Param} \&}]{\+\_\+rst\+Param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{class_c_file_read_manager_a2be2641a242706bb410e976325a74665}
+
+
+インスタンス作成。 
+
+\hypertarget{class_c_file_read_manager_a0bd09488d14efeed36b3445188391d34}{}\index{C\+File\+Read\+Manager@{C\+File\+Read\+Manager}!Request@{Request}}
+\index{Request@{Request}!C\+File\+Read\+Manager@{C\+File\+Read\+Manager}}
+\subsubsection[{Request(\+C\+File\+Reader $\ast$\+\_\+pc\+File\+Reader)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+File\+Read\+Manager\+::\+Request (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+File\+Reader} $\ast$}]{\+\_\+pc\+File\+Reader}
+\end{DoxyParamCaption}
+)}\label{class_c_file_read_manager_a0bd09488d14efeed36b3445188391d34}
+
+
+ファイル読み込みリクエスト。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+pc\+File\+Reader} & \+: ファイル読み込みクラスへのポインタ。 \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{メンバ詳解}
+\hypertarget{class_c_file_read_manager_a7a9788832ab00f7595c2782a849942e9}{}\index{C\+File\+Read\+Manager@{C\+File\+Read\+Manager}!C\+Singleton$<$ C\+File\+Read\+Manager $>$@{C\+Singleton$<$ C\+File\+Read\+Manager $>$}}
+\index{C\+Singleton$<$ C\+File\+Read\+Manager $>$@{C\+Singleton$<$ C\+File\+Read\+Manager $>$}!C\+File\+Read\+Manager@{C\+File\+Read\+Manager}}
+\subsubsection[{C\+Singleton$<$ C\+File\+Read\+Manager $>$}]{\setlength{\rightskip}{0pt plus 5cm}friend {\bf C\+File\+Read\+Manager\+::\+C\+Singleton}$<$ {\bf C\+File\+Read\+Manager} $>$\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_read_manager_a7a9788832ab00f7595c2782a849942e9}
+\hypertarget{class_c_file_read_manager_a06d2dd73e1e01a66e4072ecfe4507c54}{}\index{C\+File\+Read\+Manager@{C\+File\+Read\+Manager}!m\+\_\+c\+Job\+List@{m\+\_\+c\+Job\+List}}
+\index{m\+\_\+c\+Job\+List@{m\+\_\+c\+Job\+List}!C\+File\+Read\+Manager@{C\+File\+Read\+Manager}}
+\subsubsection[{m\+\_\+c\+Job\+List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Vector}$<${\bf C\+Job\+File\+Read}$\ast$$>$ C\+File\+Read\+Manager\+::m\+\_\+c\+Job\+List\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_read_manager_a06d2dd73e1e01a66e4072ecfe4507c54}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Project/\+Game/\+Lib/\+File/\hyperlink{_file_read_manager_8h}{File\+Read\+Manager.\+h}\item 
+D\+:/\+Project/\+Game/\+Lib/\+File/\hyperlink{_file_read_manager_8cpp}{File\+Read\+Manager.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,138 @@
+\hypertarget{class_c_worker}{}\section{C\+Worker クラス}
+\label{class_c_worker}\index{C\+Worker@{C\+Worker}}
+
+
+{\ttfamily \#include $<$Worker.\+h$>$}
+
+C\+Worker の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_worker}
+\end{center}
+\end{figure}
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_c_worker_1_1_st_init_param}{St\+Init\+Param}
+\begin{DoxyCompactList}\small\item\em 初期化用パラメータ。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_c_worker_ad7463ab6b440816bc9b8c1b2da167407}{$\sim$\+C\+Worker} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_worker_ad5d23dd82cbc33909e00146dfc5b039b}{Init} (const \hyperlink{struct_c_worker_1_1_st_init_param}{St\+Init\+Param} \&\+\_\+rst\+Init)
+\begin{DoxyCompactList}\small\item\em 初期化。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_c_worker_ad8d0e6b957ab9d84b6fe6290b564f23d}{Request\+Job} (\hyperlink{class_c_job}{C\+Job} $\ast$\+\_\+pc\+Job, bool \+\_\+b\+Sync)
+\begin{DoxyCompactList}\small\item\em リクエスト。 \end{DoxyCompactList}\item 
+static void \hyperlink{class_c_worker_a0cf70f37ffdadae5afb4606bd989ba6b}{Sync} ()
+\begin{DoxyCompactList}\small\item\em 同期。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_worker_ab70f18344c40b5492db3836891d53990}{C\+Worker} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+friend \hyperlink{class_c_worker_aecbc638ed646f882a08fe4b6d6c4653c}{C\+Singleton$<$ C\+Worker $>$}
+\item 
+\hyperlink{class_c_worker_manager}{C\+Worker\+Manager} $\ast$ \hyperlink{class_c_worker_ae982e4473bdc5cee56f351c9888007f5}{m\+\_\+pc\+Worker\+Manager\+Sync}
+\item 
+\hyperlink{class_c_worker_manager}{C\+Worker\+Manager} $\ast$ \hyperlink{class_c_worker_ab96d974805f466c392897f55cd13e000}{m\+\_\+pc\+Worker\+Manager\+Un\+Sync}
+\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{構築子と解体子}
+\hypertarget{class_c_worker_ab70f18344c40b5492db3836891d53990}{}\index{C\+Worker@{C\+Worker}!C\+Worker@{C\+Worker}}
+\index{C\+Worker@{C\+Worker}!C\+Worker@{C\+Worker}}
+\subsubsection[{C\+Worker()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Worker\+::\+C\+Worker (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_worker_ab70f18344c40b5492db3836891d53990}
+
+
+コンストラクタ。 
+
+\hypertarget{class_c_worker_ad7463ab6b440816bc9b8c1b2da167407}{}\index{C\+Worker@{C\+Worker}!````~C\+Worker@{$\sim$\+C\+Worker}}
+\index{````~C\+Worker@{$\sim$\+C\+Worker}!C\+Worker@{C\+Worker}}
+\subsubsection[{$\sim$\+C\+Worker()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Worker\+::$\sim$\+C\+Worker (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_worker_ad7463ab6b440816bc9b8c1b2da167407}
+
+
+デストラクタ。 
+
+
+
+\subsection{関数詳解}
+\hypertarget{class_c_worker_ad5d23dd82cbc33909e00146dfc5b039b}{}\index{C\+Worker@{C\+Worker}!Init@{Init}}
+\index{Init@{Init}!C\+Worker@{C\+Worker}}
+\subsubsection[{Init(const St\+Init\+Param \&\+\_\+rst\+Init)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Worker\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{const {\bf St\+Init\+Param} \&}]{\+\_\+rst\+Init}
+\end{DoxyParamCaption}
+)}\label{class_c_worker_ad5d23dd82cbc33909e00146dfc5b039b}
+
+
+初期化。 
+
+
+\begin{DoxyParams}{引数}
+{\em \+\_\+rst\+Init} & \+: 初期化用パラメータ。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_worker_ad8d0e6b957ab9d84b6fe6290b564f23d}{}\index{C\+Worker@{C\+Worker}!Request\+Job@{Request\+Job}}
+\index{Request\+Job@{Request\+Job}!C\+Worker@{C\+Worker}}
+\subsubsection[{Request\+Job(\+C\+Job $\ast$\+\_\+pc\+Job, bool \+\_\+b\+Sync)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Worker\+::\+Request\+Job (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Job} $\ast$}]{\+\_\+pc\+Job, }
+\item[{bool}]{\+\_\+b\+Sync}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_worker_ad8d0e6b957ab9d84b6fe6290b564f23d}
+
+
+リクエスト。 
+
+
+\begin{DoxyParams}{引数}
+{\em \+\_\+pc\+Job} & \+: ワーカースレッドで行う仕事。 \\
+\hline
+{\em \+\_\+b\+Sync} & \+: 同期して実行するか。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_worker_a0cf70f37ffdadae5afb4606bd989ba6b}{}\index{C\+Worker@{C\+Worker}!Sync@{Sync}}
+\index{Sync@{Sync}!C\+Worker@{C\+Worker}}
+\subsubsection[{Sync()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Worker\+::\+Sync (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_worker_a0cf70f37ffdadae5afb4606bd989ba6b}
+
+
+同期。 
+
+
+
+\subsection{メンバ詳解}
+\hypertarget{class_c_worker_aecbc638ed646f882a08fe4b6d6c4653c}{}\index{C\+Worker@{C\+Worker}!C\+Singleton$<$ C\+Worker $>$@{C\+Singleton$<$ C\+Worker $>$}}
+\index{C\+Singleton$<$ C\+Worker $>$@{C\+Singleton$<$ C\+Worker $>$}!C\+Worker@{C\+Worker}}
+\subsubsection[{C\+Singleton$<$ C\+Worker $>$}]{\setlength{\rightskip}{0pt plus 5cm}friend {\bf C\+Worker\+::\+C\+Singleton}$<$ {\bf C\+Worker} $>$\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_worker_aecbc638ed646f882a08fe4b6d6c4653c}
+\hypertarget{class_c_worker_ae982e4473bdc5cee56f351c9888007f5}{}\index{C\+Worker@{C\+Worker}!m\+\_\+pc\+Worker\+Manager\+Sync@{m\+\_\+pc\+Worker\+Manager\+Sync}}
+\index{m\+\_\+pc\+Worker\+Manager\+Sync@{m\+\_\+pc\+Worker\+Manager\+Sync}!C\+Worker@{C\+Worker}}
+\subsubsection[{m\+\_\+pc\+Worker\+Manager\+Sync}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Worker\+Manager}$\ast$ C\+Worker\+::m\+\_\+pc\+Worker\+Manager\+Sync\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_worker_ae982e4473bdc5cee56f351c9888007f5}
+\hypertarget{class_c_worker_ab96d974805f466c392897f55cd13e000}{}\index{C\+Worker@{C\+Worker}!m\+\_\+pc\+Worker\+Manager\+Un\+Sync@{m\+\_\+pc\+Worker\+Manager\+Un\+Sync}}
+\index{m\+\_\+pc\+Worker\+Manager\+Un\+Sync@{m\+\_\+pc\+Worker\+Manager\+Un\+Sync}!C\+Worker@{C\+Worker}}
+\subsubsection[{m\+\_\+pc\+Worker\+Manager\+Un\+Sync}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Worker\+Manager}$\ast$ C\+Worker\+::m\+\_\+pc\+Worker\+Manager\+Un\+Sync\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_worker_ab96d974805f466c392897f55cd13e000}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Project/\+Game/\+Lib/\+Worker/\hyperlink{_worker_8h}{Worker.\+h}\item 
+D\+:/\+Project/\+Game/\+Lib/\+Worker/\hyperlink{_worker_8cpp}{Worker.\+cpp}\end{DoxyCompactItemize}

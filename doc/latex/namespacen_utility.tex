@@ -1,0 +1,118 @@
+\hypertarget{namespacen_utility}{}\section{n\+Utility 名前空間}
+\label{namespacen_utility}\index{n\+Utility@{n\+Utility}}
+\subsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{namespacen_utility_ab6231a9f141e2da5e9230649d995c60b}{Max} (const T \&\+\_\+rt\+Value1, const T \&\+\_\+rt\+Value2)
+\begin{DoxyCompactList}\small\item\em 値が大きい方を返す。 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{namespacen_utility_a29a16fe5a81fc70efbf7c7301a903613}{Min} (const T \&\+\_\+rt\+Value1, const T \&\+\_\+rt\+Value2)
+\begin{DoxyCompactList}\small\item\em 値が小さい方を返す。 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{namespacen_utility_aa149b099050c2da27c676d9029f9a5b2}{Clamp} (const T \&\+\_\+rt\+Value, const T \&\+\_\+rt\+Min, const T \&\+\_\+rt\+Max)
+\begin{DoxyCompactList}\small\item\em 値を\mbox{[}\+\_\+rt\+Min, \+\_\+rt\+Max\mbox{]}の範囲に制限する。 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{namespacen_utility_a7083a9c96d62f05173d2755957fe7f81}{Wrap} (const T \&\+\_\+rt\+Value, const T \&\+\_\+rt\+Min, const T \&\+\_\+rt\+Max)
+\begin{DoxyCompactList}\small\item\em 値を\mbox{[}\+\_\+rt\+Min, \+\_\+rt\+Max\mbox{]}の範囲で補正する(繰り返し)。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{関数詳解}
+\hypertarget{namespacen_utility_aa149b099050c2da27c676d9029f9a5b2}{}\index{n\+Utility@{n\+Utility}!Clamp@{Clamp}}
+\index{Clamp@{Clamp}!n\+Utility@{n\+Utility}}
+\subsubsection[{Clamp(const T \&\+\_\+rt\+Value, const T \&\+\_\+rt\+Min, const T \&\+\_\+rt\+Max)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T n\+Utility\+::\+Clamp (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{\+\_\+rt\+Value, }
+\item[{const T \&}]{\+\_\+rt\+Min, }
+\item[{const T \&}]{\+\_\+rt\+Max}
+\end{DoxyParamCaption}
+)}\label{namespacen_utility_aa149b099050c2da27c676d9029f9a5b2}
+
+
+値を\mbox{[}\+\_\+rt\+Min, \+\_\+rt\+Max\mbox{]}の範囲に制限する。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+rt\+Value} & \+: 値。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+rt\+Min} & \+: 値。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+rt\+Max} & \+: 値。 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em 補正した結果の値。} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{namespacen_utility_ab6231a9f141e2da5e9230649d995c60b}{}\index{n\+Utility@{n\+Utility}!Max@{Max}}
+\index{Max@{Max}!n\+Utility@{n\+Utility}}
+\subsubsection[{Max(const T \&\+\_\+rt\+Value1, const T \&\+\_\+rt\+Value2)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T n\+Utility\+::\+Max (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{\+\_\+rt\+Value1, }
+\item[{const T \&}]{\+\_\+rt\+Value2}
+\end{DoxyParamCaption}
+)}\label{namespacen_utility_ab6231a9f141e2da5e9230649d995c60b}
+
+
+値が大きい方を返す。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+rt\+Value1} & \+: 比較する値。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+rt\+Value2} & \+: 比較する値。 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em 大きい方の値。} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{namespacen_utility_a29a16fe5a81fc70efbf7c7301a903613}{}\index{n\+Utility@{n\+Utility}!Min@{Min}}
+\index{Min@{Min}!n\+Utility@{n\+Utility}}
+\subsubsection[{Min(const T \&\+\_\+rt\+Value1, const T \&\+\_\+rt\+Value2)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T n\+Utility\+::\+Min (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{\+\_\+rt\+Value1, }
+\item[{const T \&}]{\+\_\+rt\+Value2}
+\end{DoxyParamCaption}
+)}\label{namespacen_utility_a29a16fe5a81fc70efbf7c7301a903613}
+
+
+値が小さい方を返す。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+rt\+Value1} & \+: 比較する値。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+rt\+Value2} & \+: 比較する値。 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em 小さい方の値。} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{namespacen_utility_a7083a9c96d62f05173d2755957fe7f81}{}\index{n\+Utility@{n\+Utility}!Wrap@{Wrap}}
+\index{Wrap@{Wrap}!n\+Utility@{n\+Utility}}
+\subsubsection[{Wrap(const T \&\+\_\+rt\+Value, const T \&\+\_\+rt\+Min, const T \&\+\_\+rt\+Max)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T n\+Utility\+::\+Wrap (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{\+\_\+rt\+Value, }
+\item[{const T \&}]{\+\_\+rt\+Min, }
+\item[{const T \&}]{\+\_\+rt\+Max}
+\end{DoxyParamCaption}
+)}\label{namespacen_utility_a7083a9c96d62f05173d2755957fe7f81}
+
+
+値を\mbox{[}\+\_\+rt\+Min, \+\_\+rt\+Max\mbox{]}の範囲で補正する(繰り返し)。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+rt\+Value} & \+: 値。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+rt\+Min} & \+: 値。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+rt\+Max} & \+: 値。 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em 補正した結果の値。} & \\
+\hline
+\end{DoxyRetVals}

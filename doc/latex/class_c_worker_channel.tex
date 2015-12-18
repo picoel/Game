@@ -1,0 +1,89 @@
+\hypertarget{class_c_worker_channel}{}\section{C\+Worker\+Channel クラス}
+\label{class_c_worker_channel}\index{C\+Worker\+Channel@{C\+Worker\+Channel}}
+
+
+{\ttfamily \#include $<$Worker\+Channel.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_worker_channel_a245c3a5ff9cfacf84023eab2e080845d}{C\+Worker\+Channel} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ。 \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_worker_channel_aa01c757374b475022595875a89fa3437}{$\sim$\+C\+Worker\+Channel} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_worker_channel_aa39138e0a3146d21c1bdc77ee0987ea7}{Put\+Job} (\hyperlink{class_c_job}{C\+Job} $\ast$\+\_\+pc\+Job)
+\begin{DoxyCompactList}\small\item\em 仕事を追加。 \end{DoxyCompactList}\item 
+\hyperlink{class_c_job}{C\+Job} $\ast$ \hyperlink{class_c_worker_channel_a795094cd6781d1c5ea6c8fcfdb1288db}{Take\+Job} ()
+\begin{DoxyCompactList}\small\item\em 仕事を取得。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_list_8h_a8a5560c80485797f14f8845ed54a9f33}{C\+Queue}$<$ \hyperlink{class_c_job}{C\+Job} $\ast$ $>$ \hyperlink{class_c_worker_channel_a7ec04e823ad886cec5cfdf291792b7f0}{m\+\_\+c\+Queue\+Job}
+\item 
+\hyperlink{class_c_critical_section}{C\+Critical\+Section} \hyperlink{class_c_worker_channel_a49f1da4b166a677c54c4a4566b567929}{m\+\_\+c\+Critical\+Section}
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\hypertarget{class_c_worker_channel_a245c3a5ff9cfacf84023eab2e080845d}{}\index{C\+Worker\+Channel@{C\+Worker\+Channel}!C\+Worker\+Channel@{C\+Worker\+Channel}}
+\index{C\+Worker\+Channel@{C\+Worker\+Channel}!C\+Worker\+Channel@{C\+Worker\+Channel}}
+\subsubsection[{C\+Worker\+Channel()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Worker\+Channel\+::\+C\+Worker\+Channel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_worker_channel_a245c3a5ff9cfacf84023eab2e080845d}
+
+
+コンストラクタ。 
+
+\hypertarget{class_c_worker_channel_aa01c757374b475022595875a89fa3437}{}\index{C\+Worker\+Channel@{C\+Worker\+Channel}!````~C\+Worker\+Channel@{$\sim$\+C\+Worker\+Channel}}
+\index{````~C\+Worker\+Channel@{$\sim$\+C\+Worker\+Channel}!C\+Worker\+Channel@{C\+Worker\+Channel}}
+\subsubsection[{$\sim$\+C\+Worker\+Channel()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Worker\+Channel\+::$\sim$\+C\+Worker\+Channel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_worker_channel_aa01c757374b475022595875a89fa3437}
+
+
+デストラクタ。 
+
+
+
+\subsection{関数詳解}
+\hypertarget{class_c_worker_channel_aa39138e0a3146d21c1bdc77ee0987ea7}{}\index{C\+Worker\+Channel@{C\+Worker\+Channel}!Put\+Job@{Put\+Job}}
+\index{Put\+Job@{Put\+Job}!C\+Worker\+Channel@{C\+Worker\+Channel}}
+\subsubsection[{Put\+Job(\+C\+Job $\ast$\+\_\+pc\+Job)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Worker\+Channel\+::\+Put\+Job (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Job} $\ast$}]{\+\_\+pc\+Job}
+\end{DoxyParamCaption}
+)}\label{class_c_worker_channel_aa39138e0a3146d21c1bdc77ee0987ea7}
+
+
+仕事を追加。 
+
+\hypertarget{class_c_worker_channel_a795094cd6781d1c5ea6c8fcfdb1288db}{}\index{C\+Worker\+Channel@{C\+Worker\+Channel}!Take\+Job@{Take\+Job}}
+\index{Take\+Job@{Take\+Job}!C\+Worker\+Channel@{C\+Worker\+Channel}}
+\subsubsection[{Take\+Job()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Job} $\ast$ C\+Worker\+Channel\+::\+Take\+Job (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_worker_channel_a795094cd6781d1c5ea6c8fcfdb1288db}
+
+
+仕事を取得。 
+
+
+
+\subsection{メンバ詳解}
+\hypertarget{class_c_worker_channel_a49f1da4b166a677c54c4a4566b567929}{}\index{C\+Worker\+Channel@{C\+Worker\+Channel}!m\+\_\+c\+Critical\+Section@{m\+\_\+c\+Critical\+Section}}
+\index{m\+\_\+c\+Critical\+Section@{m\+\_\+c\+Critical\+Section}!C\+Worker\+Channel@{C\+Worker\+Channel}}
+\subsubsection[{m\+\_\+c\+Critical\+Section}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Critical\+Section} C\+Worker\+Channel\+::m\+\_\+c\+Critical\+Section\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_worker_channel_a49f1da4b166a677c54c4a4566b567929}
+\hypertarget{class_c_worker_channel_a7ec04e823ad886cec5cfdf291792b7f0}{}\index{C\+Worker\+Channel@{C\+Worker\+Channel}!m\+\_\+c\+Queue\+Job@{m\+\_\+c\+Queue\+Job}}
+\index{m\+\_\+c\+Queue\+Job@{m\+\_\+c\+Queue\+Job}!C\+Worker\+Channel@{C\+Worker\+Channel}}
+\subsubsection[{m\+\_\+c\+Queue\+Job}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Queue}$<$ {\bf C\+Job}$\ast$ $>$ C\+Worker\+Channel\+::m\+\_\+c\+Queue\+Job\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_worker_channel_a7ec04e823ad886cec5cfdf291792b7f0}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Project/\+Game/\+Lib/\+Worker/\hyperlink{_worker_channel_8h}{Worker\+Channel.\+h}\item 
+D\+:/\+Project/\+Game/\+Lib/\+Worker/\hyperlink{_worker_channel_8cpp}{Worker\+Channel.\+cpp}\end{DoxyCompactItemize}

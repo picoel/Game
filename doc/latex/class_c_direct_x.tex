@@ -1,0 +1,112 @@
+\hypertarget{class_c_direct_x}{}\section{C\+Direct\+X クラス}
+\label{class_c_direct_x}\index{C\+Direct\+X@{C\+Direct\+X}}
+
+
+{\ttfamily \#include $<$Direct\+X.\+h$>$}
+
+C\+Direct\+X の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_direct_x}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_c_direct_x_a59b5bb11e5e08ccc56e89197b01fc868}{$\sim$\+C\+Direct\+X} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_direct_x_ae32df5ee0af2d29f4ba27e95935e0f10}{Init} (\hyperlink{class_i_direct_x_device_factory}{I\+Direct\+X\+Device\+Factory} $\ast$\+\_\+pc\+Factory)
+\begin{DoxyCompactList}\small\item\em 初期化。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static I\+D3\+D\+Device $\ast$ \hyperlink{class_c_direct_x_a55ff92addc24828d45a9915b756cd0f1}{Get\+Device} ()
+\begin{DoxyCompactList}\small\item\em デバイスを取得。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_direct_x_a2653832713605e020f84920299c17ff3}{C\+Direct\+X} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+friend \hyperlink{class_c_direct_x_a7c51dd8b68b56ffa5bed852e4dd13a92}{C\+Singleton$<$ C\+Direct\+X $>$}
+\item 
+I\+D3\+D\+Device $\ast$ \hyperlink{class_c_direct_x_a6ecdada46fbabcb5535cede3a96fdbe3}{m\+\_\+pc\+Device}
+\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{構築子と解体子}
+\hypertarget{class_c_direct_x_a2653832713605e020f84920299c17ff3}{}\index{C\+Direct\+X@{C\+Direct\+X}!C\+Direct\+X@{C\+Direct\+X}}
+\index{C\+Direct\+X@{C\+Direct\+X}!C\+Direct\+X@{C\+Direct\+X}}
+\subsubsection[{C\+Direct\+X()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Direct\+X\+::\+C\+Direct\+X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_direct_x_a2653832713605e020f84920299c17ff3}
+
+
+コンストラクタ。 
+
+\hypertarget{class_c_direct_x_a59b5bb11e5e08ccc56e89197b01fc868}{}\index{C\+Direct\+X@{C\+Direct\+X}!````~C\+Direct\+X@{$\sim$\+C\+Direct\+X}}
+\index{````~C\+Direct\+X@{$\sim$\+C\+Direct\+X}!C\+Direct\+X@{C\+Direct\+X}}
+\subsubsection[{$\sim$\+C\+Direct\+X()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Direct\+X\+::$\sim$\+C\+Direct\+X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_direct_x_a59b5bb11e5e08ccc56e89197b01fc868}
+
+
+デストラクタ。 
+
+
+
+\subsection{関数詳解}
+\hypertarget{class_c_direct_x_a55ff92addc24828d45a9915b756cd0f1}{}\index{C\+Direct\+X@{C\+Direct\+X}!Get\+Device@{Get\+Device}}
+\index{Get\+Device@{Get\+Device}!C\+Direct\+X@{C\+Direct\+X}}
+\subsubsection[{Get\+Device()}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D\+Device $\ast$ C\+Direct\+X\+::\+Get\+Device (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_direct_x_a55ff92addc24828d45a9915b756cd0f1}
+
+
+デバイスを取得。 
+
+
+\begin{DoxyRetVals}{戻り値}
+{\em I\+D3\+D\+Device$\ast$} & \+: Direct\+X\+Device。 \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{class_c_direct_x_ae32df5ee0af2d29f4ba27e95935e0f10}{}\index{C\+Direct\+X@{C\+Direct\+X}!Init@{Init}}
+\index{Init@{Init}!C\+Direct\+X@{C\+Direct\+X}}
+\subsubsection[{Init(\+I\+Direct\+X\+Device\+Factory $\ast$\+\_\+pc\+Factory)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Direct\+X\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Direct\+X\+Device\+Factory} $\ast$}]{\+\_\+pc\+Factory}
+\end{DoxyParamCaption}
+)}\label{class_c_direct_x_ae32df5ee0af2d29f4ba27e95935e0f10}
+
+
+初期化。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+pc\+Factory} & \+: デバイス生成クラス。 \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{メンバ詳解}
+\hypertarget{class_c_direct_x_a7c51dd8b68b56ffa5bed852e4dd13a92}{}\index{C\+Direct\+X@{C\+Direct\+X}!C\+Singleton$<$ C\+Direct\+X $>$@{C\+Singleton$<$ C\+Direct\+X $>$}}
+\index{C\+Singleton$<$ C\+Direct\+X $>$@{C\+Singleton$<$ C\+Direct\+X $>$}!C\+Direct\+X@{C\+Direct\+X}}
+\subsubsection[{C\+Singleton$<$ C\+Direct\+X $>$}]{\setlength{\rightskip}{0pt plus 5cm}friend {\bf C\+Direct\+X\+::\+C\+Singleton}$<$ {\bf C\+Direct\+X} $>$\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_direct_x_a7c51dd8b68b56ffa5bed852e4dd13a92}
+\hypertarget{class_c_direct_x_a6ecdada46fbabcb5535cede3a96fdbe3}{}\index{C\+Direct\+X@{C\+Direct\+X}!m\+\_\+pc\+Device@{m\+\_\+pc\+Device}}
+\index{m\+\_\+pc\+Device@{m\+\_\+pc\+Device}!C\+Direct\+X@{C\+Direct\+X}}
+\subsubsection[{m\+\_\+pc\+Device}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D\+Device$\ast$ C\+Direct\+X\+::m\+\_\+pc\+Device\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_direct_x_a6ecdada46fbabcb5535cede3a96fdbe3}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Project/\+Game/\+Lib/\+Direct\+X/\hyperlink{_direct_x_8h}{Direct\+X.\+h}\item 
+D\+:/\+Project/\+Game/\+Lib/\+Direct\+X/\hyperlink{_direct_x_8cpp}{Direct\+X.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>My Project: D:/Project/Game/Lib/Render/ConstantBufferForObject.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="namespaces.html"><span>名前空間</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8f3de2ae926fecfe6abd5379fd2b6eb1.html">Lib</a></li><li class="navelem"><a class="el" href="dir_46076e33a35e33c50c9d1b643b23b244.html">Render</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ConstantBufferForObject.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_constant_buffer_for_object_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef INCLUDE_LIB_RENDER_COSTANT_BUFFER_FOR_OBJECT_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define INCLUDE_LIB_RENDER_COSTANT_BUFFER_FOR_OBJECT_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_constant_buffer_8h.html">Lib/Render/ConstantBuffer.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_matrix_8h.html">Lib/Math/Matrix.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * @class CConstantBufferForObject</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * @brief オブジェクト用のコンスタントバッファー。</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_c_constant_buffer_for_object.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_constant_buffer_for_object.html">CConstantBufferForObject</a> : <span class="keyword">public</span> <a class="code" href="class_i_constant_buffer.html">IConstantBuffer</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="struct_c_constant_buffer_for_object_1_1_st_constant_buffer.html">   21</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_c_constant_buffer_for_object_1_1_st_constant_buffer.html">StConstantBuffer</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    {</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="struct_c_constant_buffer_for_object_1_1_st_constant_buffer.html#ad9f4abda99ca8f74484d3b965dea439b">   23</a></span>&#160;        <a class="code" href="struct_st_matrix.html">StMatrix&lt;F32&gt;</a>   <a class="code" href="struct_c_constant_buffer_for_object_1_1_st_constant_buffer.html#ad9f4abda99ca8f74484d3b965dea439b">m_stMtxWorld</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="struct_c_constant_buffer_for_object_1_1_st_constant_buffer.html#a60dc78875ce1e9c5864de6b95dea49d9">   24</a></span>&#160;        <a class="code" href="struct_st_matrix.html">StMatrix&lt;F32&gt;</a>   <a class="code" href="struct_c_constant_buffer_for_object_1_1_st_constant_buffer.html#a60dc78875ce1e9c5864de6b95dea49d9">m_stMtxView</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="struct_c_constant_buffer_for_object_1_1_st_constant_buffer.html#adbff5690d0878dd28ee24a2806cbd054">   25</a></span>&#160;        <a class="code" href="struct_st_matrix.html">StMatrix&lt;F32&gt;</a>   <a class="code" href="struct_c_constant_buffer_for_object_1_1_st_constant_buffer.html#adbff5690d0878dd28ee24a2806cbd054">m_stMtxProjection</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="struct_c_constant_buffer_for_object_1_1_st_constant_buffer.html#afc161d34c410eff7479fde11c9350374">   27</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="struct_c_constant_buffer_for_object_1_1_st_constant_buffer.html#afc161d34c410eff7479fde11c9350374">Init</a>()</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            m_stMtxWorld.<a class="code" href="struct_st_matrix.html#adac0226609e953d602efc468d47c8d1f">Init</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            m_stMtxView.<a class="code" href="struct_st_matrix.html#adac0226609e953d602efc468d47c8d1f">Init</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            m_stMtxProjection.<a class="code" href="struct_st_matrix.html#adac0226609e953d602efc468d47c8d1f">Init</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    };</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="class_c_constant_buffer_for_object.html#a41e7fd82a1adb51310d29dd16769d0a1">CConstantBufferForObject</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_c_constant_buffer_for_object.html#a5249e7edc97e8f4fc901e880e2bd0059">   39</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_constant_buffer_for_object.html#a5249e7edc97e8f4fc901e880e2bd0059">~CConstantBufferForObject</a>(){}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_c_constant_buffer_for_object.html#aa13289af40c27707fb174a5b3afbdf1b">   42</a></span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">void</span>* <a class="code" href="class_c_constant_buffer_for_object.html#aa13289af40c27707fb174a5b3afbdf1b">GetData</a>()<span class="keyword"> const override</span>{ <span class="keywordflow">return</span> &amp;<a class="code" href="class_c_constant_buffer_for_object.html#af80f6e3c636cac07ef26f291a005f979">m_stBuffer</a>; }</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_c_constant_buffer_for_object.html#a328586af4370d221ada7b270f9f4b8db">   44</a></span>&#160;    <span class="keyword">virtual</span> USize <a class="code" href="class_c_constant_buffer_for_object.html#a328586af4370d221ada7b270f9f4b8db">GetSize</a>()<span class="keyword"> const override</span>{ <span class="keywordflow">return</span> <span class="keyword">sizeof</span>( <a class="code" href="class_c_constant_buffer_for_object.html#af80f6e3c636cac07ef26f291a005f979">m_stBuffer</a> ); }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_c_constant_buffer_for_object.html#af80f6e3c636cac07ef26f291a005f979">   47</a></span>&#160;    <a class="code" href="struct_c_constant_buffer_for_object_1_1_st_constant_buffer.html">StConstantBuffer</a> <a class="code" href="class_c_constant_buffer_for_object.html#af80f6e3c636cac07ef26f291a005f979">m_stBuffer</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif // #ifndef INCLUDE_LIB_RENDER_COSTANT_BUFFER_FOR_OBJECT_H</span></div>
+<div class="ttc" id="struct_c_constant_buffer_for_object_1_1_st_constant_buffer_html"><div class="ttname"><a href="struct_c_constant_buffer_for_object_1_1_st_constant_buffer.html">CConstantBufferForObject::StConstantBuffer</a></div><div class="ttdoc">コンスタントバッファー構造体。 </div><div class="ttdef"><b>Definition:</b> ConstantBufferForObject.h:21</div></div>
+<div class="ttc" id="struct_st_matrix_html"><div class="ttname"><a href="struct_st_matrix.html">StMatrix&lt; F32 &gt;</a></div></div>
+<div class="ttc" id="struct_c_constant_buffer_for_object_1_1_st_constant_buffer_html_afc161d34c410eff7479fde11c9350374"><div class="ttname"><a href="struct_c_constant_buffer_for_object_1_1_st_constant_buffer.html#afc161d34c410eff7479fde11c9350374">CConstantBufferForObject::StConstantBuffer::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdef"><b>Definition:</b> ConstantBufferForObject.h:27</div></div>
+<div class="ttc" id="_matrix_8h_html"><div class="ttname"><a href="_matrix_8h.html">Matrix.h</a></div><div class="ttdoc">行列演算。 </div></div>
+<div class="ttc" id="struct_c_constant_buffer_for_object_1_1_st_constant_buffer_html_adbff5690d0878dd28ee24a2806cbd054"><div class="ttname"><a href="struct_c_constant_buffer_for_object_1_1_st_constant_buffer.html#adbff5690d0878dd28ee24a2806cbd054">CConstantBufferForObject::StConstantBuffer::m_stMtxProjection</a></div><div class="ttdeci">StMatrix&lt; F32 &gt; m_stMtxProjection</div><div class="ttdef"><b>Definition:</b> ConstantBufferForObject.h:25</div></div>
+<div class="ttc" id="struct_st_matrix_html_adac0226609e953d602efc468d47c8d1f"><div class="ttname"><a href="struct_st_matrix.html#adac0226609e953d602efc468d47c8d1f">StMatrix::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdef"><b>Definition:</b> Matrix.h:24</div></div>
+<div class="ttc" id="class_c_constant_buffer_for_object_html_a41e7fd82a1adb51310d29dd16769d0a1"><div class="ttname"><a href="class_c_constant_buffer_for_object.html#a41e7fd82a1adb51310d29dd16769d0a1">CConstantBufferForObject::CConstantBufferForObject</a></div><div class="ttdeci">CConstantBufferForObject()</div><div class="ttdoc">コンストラクタ。 </div><div class="ttdef"><b>Definition:</b> ConstantBufferForObject.cpp:14</div></div>
+<div class="ttc" id="class_c_constant_buffer_for_object_html_af80f6e3c636cac07ef26f291a005f979"><div class="ttname"><a href="class_c_constant_buffer_for_object.html#af80f6e3c636cac07ef26f291a005f979">CConstantBufferForObject::m_stBuffer</a></div><div class="ttdeci">StConstantBuffer m_stBuffer</div><div class="ttdef"><b>Definition:</b> ConstantBufferForObject.h:47</div></div>
+<div class="ttc" id="class_i_constant_buffer_html"><div class="ttname"><a href="class_i_constant_buffer.html">IConstantBuffer</a></div><div class="ttdef"><b>Definition:</b> ConstantBuffer.h:24</div></div>
+<div class="ttc" id="class_c_constant_buffer_for_object_html_aa13289af40c27707fb174a5b3afbdf1b"><div class="ttname"><a href="class_c_constant_buffer_for_object.html#aa13289af40c27707fb174a5b3afbdf1b">CConstantBufferForObject::GetData</a></div><div class="ttdeci">virtual const void * GetData() const  override</div><div class="ttdoc">データを取得。 </div><div class="ttdef"><b>Definition:</b> ConstantBufferForObject.h:42</div></div>
+<div class="ttc" id="struct_c_constant_buffer_for_object_1_1_st_constant_buffer_html_a60dc78875ce1e9c5864de6b95dea49d9"><div class="ttname"><a href="struct_c_constant_buffer_for_object_1_1_st_constant_buffer.html#a60dc78875ce1e9c5864de6b95dea49d9">CConstantBufferForObject::StConstantBuffer::m_stMtxView</a></div><div class="ttdeci">StMatrix&lt; F32 &gt; m_stMtxView</div><div class="ttdef"><b>Definition:</b> ConstantBufferForObject.h:24</div></div>
+<div class="ttc" id="class_c_constant_buffer_for_object_html_a328586af4370d221ada7b270f9f4b8db"><div class="ttname"><a href="class_c_constant_buffer_for_object.html#a328586af4370d221ada7b270f9f4b8db">CConstantBufferForObject::GetSize</a></div><div class="ttdeci">virtual USize GetSize() const  override</div><div class="ttdoc">データサイズを取得。 </div><div class="ttdef"><b>Definition:</b> ConstantBufferForObject.h:44</div></div>
+<div class="ttc" id="struct_c_constant_buffer_for_object_1_1_st_constant_buffer_html_ad9f4abda99ca8f74484d3b965dea439b"><div class="ttname"><a href="struct_c_constant_buffer_for_object_1_1_st_constant_buffer.html#ad9f4abda99ca8f74484d3b965dea439b">CConstantBufferForObject::StConstantBuffer::m_stMtxWorld</a></div><div class="ttdeci">StMatrix&lt; F32 &gt; m_stMtxWorld</div><div class="ttdef"><b>Definition:</b> ConstantBufferForObject.h:23</div></div>
+<div class="ttc" id="_constant_buffer_8h_html"><div class="ttname"><a href="_constant_buffer_8h.html">ConstantBuffer.h</a></div></div>
+<div class="ttc" id="class_c_constant_buffer_for_object_html_a5249e7edc97e8f4fc901e880e2bd0059"><div class="ttname"><a href="class_c_constant_buffer_for_object.html#a5249e7edc97e8f4fc901e880e2bd0059">CConstantBufferForObject::~CConstantBufferForObject</a></div><div class="ttdeci">virtual ~CConstantBufferForObject()</div><div class="ttdoc">デストラクタ。 </div><div class="ttdef"><b>Definition:</b> ConstantBufferForObject.h:39</div></div>
+<div class="ttc" id="class_c_constant_buffer_for_object_html"><div class="ttname"><a href="class_c_constant_buffer_for_object.html">CConstantBufferForObject</a></div><div class="ttdef"><b>Definition:</b> ConstantBufferForObject.h:17</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

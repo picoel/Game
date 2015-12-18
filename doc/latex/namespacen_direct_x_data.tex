@@ -1,0 +1,62 @@
+\hypertarget{namespacen_direct_x_data}{}\section{n\+Direct\+X\+Data 名前空間}
+\label{namespacen_direct_x_data}\index{n\+Direct\+X\+Data@{n\+Direct\+X\+Data}}
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structn_direct_x_data_1_1_st_constant_buffer_info}{St\+Constant\+Buffer\+Info}
+\item 
+struct \hyperlink{structn_direct_x_data_1_1_st_shader_info}{St\+Shader\+Info}
+\end{DoxyCompactItemize}
+\subsection*{変数}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{structn_direct_x_data_1_1_st_constant_buffer_info}{St\+Constant\+Buffer\+Info} \hyperlink{namespacen_direct_x_data_aee31e6ee976d87b70c57004759800439}{sc\+\_\+st\+Constant\+Buffer\+Info\+Array} \mbox{[}\hyperlink{_lib_utility_8h_a564389767079011d2a47cdb641d81353}{s\+\_\+cast}$<$ U32 $>$(\hyperlink{_constant_buffer_8h_aaf416c55b2e43195b9cf771071e1328aa079bb6413c37006b9fdc56add34e517b}{En\+Constant\+Buffer\+::en\+Max})\mbox{]}
+\item 
+const \hyperlink{structn_direct_x_data_1_1_st_shader_info}{St\+Shader\+Info} \hyperlink{namespacen_direct_x_data_a979e2d1f73921e7addcba315847438ce}{sc\+\_\+st\+Vertex\+Shader\+Info\+Array} \mbox{[}\hyperlink{_lib_utility_8h_a564389767079011d2a47cdb641d81353}{s\+\_\+cast}$<$ U32 $>$(\hyperlink{_shader_definition_8h_a232ca48c9a8e2a62b45a96e7929a2bdba079bb6413c37006b9fdc56add34e517b}{En\+Vertex\+Shader\+::en\+Max})\mbox{]}
+\begin{DoxyCompactList}\small\item\em 頂点シェーダー。 \end{DoxyCompactList}\item 
+const \hyperlink{structn_direct_x_data_1_1_st_shader_info}{St\+Shader\+Info} \hyperlink{namespacen_direct_x_data_aa823f5457cf0ccff5042787b83150597}{sc\+\_\+st\+Pixel\+Shader\+Info\+Array} \mbox{[}\hyperlink{_lib_utility_8h_a564389767079011d2a47cdb641d81353}{s\+\_\+cast}$<$ U32 $>$(\hyperlink{_shader_definition_8h_ab8ae26d268e6e5baee47fbba4d03f4cfa079bb6413c37006b9fdc56add34e517b}{En\+Pixel\+Shader\+::en\+Max})\mbox{]}
+\begin{DoxyCompactList}\small\item\em ピクセルシェーダー。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{変数詳解}
+\hypertarget{namespacen_direct_x_data_aee31e6ee976d87b70c57004759800439}{}\index{n\+Direct\+X\+Data@{n\+Direct\+X\+Data}!sc\+\_\+st\+Constant\+Buffer\+Info\+Array@{sc\+\_\+st\+Constant\+Buffer\+Info\+Array}}
+\index{sc\+\_\+st\+Constant\+Buffer\+Info\+Array@{sc\+\_\+st\+Constant\+Buffer\+Info\+Array}!n\+Direct\+X\+Data@{n\+Direct\+X\+Data}}
+\subsubsection[{sc\+\_\+st\+Constant\+Buffer\+Info\+Array}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf St\+Constant\+Buffer\+Info} n\+Direct\+X\+Data\+::sc\+\_\+st\+Constant\+Buffer\+Info\+Array\mbox{[}{\bf s\+\_\+cast}$<$ U32 $>$({\bf En\+Constant\+Buffer\+::en\+Max})\mbox{]}}\label{namespacen_direct_x_data_aee31e6ee976d87b70c57004759800439}
+{\bfseries 初期値\+:}
+\begin{DoxyCode}
+=
+    \{
+        \{ \textcolor{keyword}{sizeof}( \hyperlink{struct_c_constant_buffer_for_frame_1_1_st_constant_buffer}{CConstantBufferForFrame::StConstantBuffer}), \},
+        \{ \textcolor{keyword}{sizeof}( \hyperlink{struct_c_constant_buffer_for_level_1_1_st_constant_buffer}{CConstantBufferForLevel ::StConstantBuffer} ), \}
+      ,
+        \{ \textcolor{keyword}{sizeof}( \hyperlink{struct_c_constant_buffer_for_object_1_1_st_constant_buffer}{CConstantBufferForObject::StConstantBuffer}), \},
+    \}
+\end{DoxyCode}
+\hypertarget{namespacen_direct_x_data_aa823f5457cf0ccff5042787b83150597}{}\index{n\+Direct\+X\+Data@{n\+Direct\+X\+Data}!sc\+\_\+st\+Pixel\+Shader\+Info\+Array@{sc\+\_\+st\+Pixel\+Shader\+Info\+Array}}
+\index{sc\+\_\+st\+Pixel\+Shader\+Info\+Array@{sc\+\_\+st\+Pixel\+Shader\+Info\+Array}!n\+Direct\+X\+Data@{n\+Direct\+X\+Data}}
+\subsubsection[{sc\+\_\+st\+Pixel\+Shader\+Info\+Array}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf St\+Shader\+Info} n\+Direct\+X\+Data\+::sc\+\_\+st\+Pixel\+Shader\+Info\+Array\mbox{[}{\bf s\+\_\+cast}$<$ U32 $>$({\bf En\+Pixel\+Shader\+::en\+Max})\mbox{]}}\label{namespacen_direct_x_data_aa823f5457cf0ccff5042787b83150597}
+{\bfseries 初期値\+:}
+\begin{DoxyCode}
+=
+    \{
+        \{ \textcolor{stringliteral}{"SpritePixelShader.cso"} \},
+    \}
+\end{DoxyCode}
+
+
+ピクセルシェーダー。 
+
+\hypertarget{namespacen_direct_x_data_a979e2d1f73921e7addcba315847438ce}{}\index{n\+Direct\+X\+Data@{n\+Direct\+X\+Data}!sc\+\_\+st\+Vertex\+Shader\+Info\+Array@{sc\+\_\+st\+Vertex\+Shader\+Info\+Array}}
+\index{sc\+\_\+st\+Vertex\+Shader\+Info\+Array@{sc\+\_\+st\+Vertex\+Shader\+Info\+Array}!n\+Direct\+X\+Data@{n\+Direct\+X\+Data}}
+\subsubsection[{sc\+\_\+st\+Vertex\+Shader\+Info\+Array}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf St\+Shader\+Info} n\+Direct\+X\+Data\+::sc\+\_\+st\+Vertex\+Shader\+Info\+Array\mbox{[}{\bf s\+\_\+cast}$<$ U32 $>$({\bf En\+Vertex\+Shader\+::en\+Max})\mbox{]}}\label{namespacen_direct_x_data_a979e2d1f73921e7addcba315847438ce}
+{\bfseries 初期値\+:}
+\begin{DoxyCode}
+=
+    \{
+        \{ \textcolor{stringliteral}{"SpriteVertexShader.cso"} \},
+    \}
+\end{DoxyCode}
+
+
+頂点シェーダー。 
+

@@ -1,0 +1,87 @@
+\hypertarget{namespacen_lib}{}\section{n\+Lib 名前空間}
+\label{namespacen_lib}\index{n\+Lib@{n\+Lib}}
+\subsection*{名前空間}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacen_lib_1_1n_direct_x}{n\+Direct\+X}
+\end{DoxyCompactItemize}
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structn_lib_1_1_st_lib_setting}{St\+Lib\+Setting}
+\begin{DoxyCompactList}\small\item\em ライブラリの設定。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespacen_lib_a392a158d6ad2b21d098ec6eb669ed06c}{Init\+Mem\+Allocator} (U\+Size \+\_\+u\+Mem\+Size)
+\begin{DoxyCompactList}\small\item\em メモリアロケータの初期化。 \end{DoxyCompactList}\item 
+void \hyperlink{namespacen_lib_a6846b79576336adc07122ef5c2770783}{Initialize} (const \hyperlink{structn_lib_1_1_st_lib_setting}{St\+Lib\+Setting} \&\+\_\+rst\+Setting)
+\begin{DoxyCompactList}\small\item\em ライブラリの初期化処理。 \end{DoxyCompactList}\item 
+void \hyperlink{namespacen_lib_a3209c494611928a27a500a408e3defef}{Finalize} ()
+\begin{DoxyCompactList}\small\item\em ライブラリの終了処理。 \end{DoxyCompactList}\item 
+bool \hyperlink{namespacen_lib_ab595f1979af93fc48b349c380d2c55cb}{Is\+End\+Request} ()
+\begin{DoxyCompactList}\small\item\em 終了リクエストがあるか。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{関数詳解}
+\hypertarget{namespacen_lib_a3209c494611928a27a500a408e3defef}{}\index{n\+Lib@{n\+Lib}!Finalize@{Finalize}}
+\index{Finalize@{Finalize}!n\+Lib@{n\+Lib}}
+\subsubsection[{Finalize()}]{\setlength{\rightskip}{0pt plus 5cm}void n\+Lib\+::\+Finalize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{namespacen_lib_a3209c494611928a27a500a408e3defef}
+
+
+ライブラリの終了処理。 
+
+\hypertarget{namespacen_lib_a6846b79576336adc07122ef5c2770783}{}\index{n\+Lib@{n\+Lib}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!n\+Lib@{n\+Lib}}
+\subsubsection[{Initialize(const St\+Lib\+Setting \&\+\_\+rst\+Setting)}]{\setlength{\rightskip}{0pt plus 5cm}void n\+Lib\+::\+Initialize (
+\begin{DoxyParamCaption}
+\item[{const {\bf St\+Lib\+Setting} \&}]{\+\_\+rst\+Setting}
+\end{DoxyParamCaption}
+)}\label{namespacen_lib_a6846b79576336adc07122ef5c2770783}
+
+
+ライブラリの初期化処理。 
+
+ライブラリの初期化。
+
+
+\begin{DoxyParams}{引数}
+{\em \+\_\+rst\+Setting} & \+: ライブラリ設定。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacen_lib_a392a158d6ad2b21d098ec6eb669ed06c}{}\index{n\+Lib@{n\+Lib}!Init\+Mem\+Allocator@{Init\+Mem\+Allocator}}
+\index{Init\+Mem\+Allocator@{Init\+Mem\+Allocator}!n\+Lib@{n\+Lib}}
+\subsubsection[{Init\+Mem\+Allocator(\+U\+Size \+\_\+u\+Mem\+Size)}]{\setlength{\rightskip}{0pt plus 5cm}void n\+Lib\+::\+Init\+Mem\+Allocator (
+\begin{DoxyParamCaption}
+\item[{U\+Size}]{\+\_\+u\+Mem\+Size}
+\end{DoxyParamCaption}
+)}\label{namespacen_lib_a392a158d6ad2b21d098ec6eb669ed06c}
+
+
+メモリアロケータの初期化。 
+
+
+\begin{DoxyParams}{引数}
+{\em \+\_\+u\+Mem\+Size} & \+: メモリサイズ。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacen_lib_ab595f1979af93fc48b349c380d2c55cb}{}\index{n\+Lib@{n\+Lib}!Is\+End\+Request@{Is\+End\+Request}}
+\index{Is\+End\+Request@{Is\+End\+Request}!n\+Lib@{n\+Lib}}
+\subsubsection[{Is\+End\+Request()}]{\setlength{\rightskip}{0pt plus 5cm}bool n\+Lib\+::\+Is\+End\+Request (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{namespacen_lib_ab595f1979af93fc48b349c380d2c55cb}
+
+
+終了リクエストがあるか。 
+
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & \+: trueならばライブラリから終了リクエストがある。 \\
+\hline
+\end{DoxyRetVals}

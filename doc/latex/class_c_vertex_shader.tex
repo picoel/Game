@@ -1,0 +1,159 @@
+\hypertarget{class_c_vertex_shader}{}\section{C\+Vertex\+Shader クラス}
+\label{class_c_vertex_shader}\index{C\+Vertex\+Shader@{C\+Vertex\+Shader}}
+
+
+{\ttfamily \#include $<$Vertex\+Shader.\+h$>$}
+
+C\+Vertex\+Shader の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_vertex_shader}
+\end{center}
+\end{figure}
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_c_vertex_shader_1_1_st_init_param}{St\+Init\+Param}
+\begin{DoxyCompactList}\small\item\em 初期化用パラメータ。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_vertex_shader_abe43f0c4eb007a656660fe85c6c7d759}{C\+Vertex\+Shader} (const \hyperlink{struct_c_vertex_shader_1_1_st_init_param}{St\+Init\+Param} \&\+\_\+rst\+Init\+Param)
+\begin{DoxyCompactList}\small\item\em コンストラクタ。 \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_vertex_shader_aecd16374bc117e251052ee75c67417c8}{$\sim$\+C\+Vertex\+Shader} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_vertex_shader_a6e640bce4b58ca267c39b9287a973c3b}{Read\+End\+Process} (const void $\ast$\+\_\+p\+Data, U\+Size \+\_\+u\+Size) override
+\begin{DoxyCompactList}\small\item\em 読み込み完了時の処理。 \end{DoxyCompactList}\item 
+I\+D3\+D\+Vertex\+Shader $\ast$ \hyperlink{class_c_vertex_shader_a955aa28538cac1841a22245f088c604a}{Get\+Shader} () const 
+\begin{DoxyCompactList}\small\item\em シェーダーを取得。 \end{DoxyCompactList}\item 
+I\+D3\+D\+Input\+Layout $\ast$ \hyperlink{class_c_vertex_shader_a5b387308b2743e82c735507690c96307}{Get\+Input\+Layout} () const 
+\begin{DoxyCompactList}\small\item\em 入力レイアウトを取得。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+A\+T \hyperlink{class_c_vertex_shader_a5edf12786a3cde69a7ec082433a46562}{Get\+Dxgi\+Format} (D3\+D\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+O\+M\+P\+O\+N\+E\+N\+T\+\_\+\+T\+Y\+P\+E \+\_\+u\+Type, U32 \+\_\+u\+Mask)
+\begin{DoxyCompactList}\small\item\em D\+X\+G\+Iフォーマットを取得。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+I\+D3\+D\+Vertex\+Shader $\ast$ \hyperlink{class_c_vertex_shader_af03968e57fbcebe385d94681b746c41c}{m\+\_\+pc\+Vertex\+Shader}
+\item 
+I\+D3\+D\+Input\+Layout $\ast$ \hyperlink{class_c_vertex_shader_a9194362254f16f3e89b0b0042c705a26}{m\+\_\+pc\+Input\+Layout}
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\hypertarget{class_c_vertex_shader_abe43f0c4eb007a656660fe85c6c7d759}{}\index{C\+Vertex\+Shader@{C\+Vertex\+Shader}!C\+Vertex\+Shader@{C\+Vertex\+Shader}}
+\index{C\+Vertex\+Shader@{C\+Vertex\+Shader}!C\+Vertex\+Shader@{C\+Vertex\+Shader}}
+\subsubsection[{C\+Vertex\+Shader(const St\+Init\+Param \&\+\_\+rst\+Init\+Param)}]{\setlength{\rightskip}{0pt plus 5cm}C\+Vertex\+Shader\+::\+C\+Vertex\+Shader (
+\begin{DoxyParamCaption}
+\item[{const {\bf St\+Init\+Param} \&}]{\+\_\+rst\+Init\+Param}
+\end{DoxyParamCaption}
+)}\label{class_c_vertex_shader_abe43f0c4eb007a656660fe85c6c7d759}
+
+
+コンストラクタ。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+rst\+Init\+Param} & \+: 初期化用パラメータ。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_vertex_shader_aecd16374bc117e251052ee75c67417c8}{}\index{C\+Vertex\+Shader@{C\+Vertex\+Shader}!````~C\+Vertex\+Shader@{$\sim$\+C\+Vertex\+Shader}}
+\index{````~C\+Vertex\+Shader@{$\sim$\+C\+Vertex\+Shader}!C\+Vertex\+Shader@{C\+Vertex\+Shader}}
+\subsubsection[{$\sim$\+C\+Vertex\+Shader()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Vertex\+Shader\+::$\sim$\+C\+Vertex\+Shader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_vertex_shader_aecd16374bc117e251052ee75c67417c8}
+
+
+デストラクタ。 
+
+
+
+\subsection{関数詳解}
+\hypertarget{class_c_vertex_shader_a5edf12786a3cde69a7ec082433a46562}{}\index{C\+Vertex\+Shader@{C\+Vertex\+Shader}!Get\+Dxgi\+Format@{Get\+Dxgi\+Format}}
+\index{Get\+Dxgi\+Format@{Get\+Dxgi\+Format}!C\+Vertex\+Shader@{C\+Vertex\+Shader}}
+\subsubsection[{Get\+Dxgi\+Format(\+D3\+D\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+O\+M\+P\+O\+N\+E\+N\+T\+\_\+\+T\+Y\+P\+E \+\_\+u\+Type, U32 \+\_\+u\+Mask)}]{\setlength{\rightskip}{0pt plus 5cm}D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+A\+T C\+Vertex\+Shader\+::\+Get\+Dxgi\+Format (
+\begin{DoxyParamCaption}
+\item[{D3\+D\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+O\+M\+P\+O\+N\+E\+N\+T\+\_\+\+T\+Y\+P\+E}]{\+\_\+u\+Type, }
+\item[{U32}]{\+\_\+u\+Mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_vertex_shader_a5edf12786a3cde69a7ec082433a46562}
+
+
+D\+X\+G\+Iフォーマットを取得。 
+
+D\+X\+G\+Iフォーマットの取得。
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+u\+Type} & \+: フォーマットタイプ。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+u\+Mask} & \+: マスク(xyzwを使用しているか。) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{覚え書き}
+floatにしか対応していません。他の型を使用する場合は処理を追加する必要があります。 
+\end{DoxyNote}
+\hypertarget{class_c_vertex_shader_a5b387308b2743e82c735507690c96307}{}\index{C\+Vertex\+Shader@{C\+Vertex\+Shader}!Get\+Input\+Layout@{Get\+Input\+Layout}}
+\index{Get\+Input\+Layout@{Get\+Input\+Layout}!C\+Vertex\+Shader@{C\+Vertex\+Shader}}
+\subsubsection[{Get\+Input\+Layout() const }]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D\+Input\+Layout$\ast$ C\+Vertex\+Shader\+::\+Get\+Input\+Layout (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_vertex_shader_a5b387308b2743e82c735507690c96307}
+
+
+入力レイアウトを取得。 
+
+\hypertarget{class_c_vertex_shader_a955aa28538cac1841a22245f088c604a}{}\index{C\+Vertex\+Shader@{C\+Vertex\+Shader}!Get\+Shader@{Get\+Shader}}
+\index{Get\+Shader@{Get\+Shader}!C\+Vertex\+Shader@{C\+Vertex\+Shader}}
+\subsubsection[{Get\+Shader() const }]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D\+Vertex\+Shader$\ast$ C\+Vertex\+Shader\+::\+Get\+Shader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_vertex_shader_a955aa28538cac1841a22245f088c604a}
+
+
+シェーダーを取得。 
+
+\hypertarget{class_c_vertex_shader_a6e640bce4b58ca267c39b9287a973c3b}{}\index{C\+Vertex\+Shader@{C\+Vertex\+Shader}!Read\+End\+Process@{Read\+End\+Process}}
+\index{Read\+End\+Process@{Read\+End\+Process}!C\+Vertex\+Shader@{C\+Vertex\+Shader}}
+\subsubsection[{Read\+End\+Process(const void $\ast$\+\_\+p\+Data, U\+Size \+\_\+u\+Size) override}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Vertex\+Shader\+::\+Read\+End\+Process (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{\+\_\+p\+Data, }
+\item[{U\+Size}]{\+\_\+u\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_c_vertex_shader_a6e640bce4b58ca267c39b9287a973c3b}
+
+
+読み込み完了時の処理。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+p\+Data} & \+: 読み込んだデータ。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+u\+Size} & \+: 読み込んだデータサイズ。 \\
+\hline
+\end{DoxyParams}
+
+
+\hyperlink{class_c_file_reader_a5a18550133826ac43096629f6eaa8c42}{C\+File\+Reader}を再実装しています。
+
+
+
+\subsection{メンバ詳解}
+\hypertarget{class_c_vertex_shader_a9194362254f16f3e89b0b0042c705a26}{}\index{C\+Vertex\+Shader@{C\+Vertex\+Shader}!m\+\_\+pc\+Input\+Layout@{m\+\_\+pc\+Input\+Layout}}
+\index{m\+\_\+pc\+Input\+Layout@{m\+\_\+pc\+Input\+Layout}!C\+Vertex\+Shader@{C\+Vertex\+Shader}}
+\subsubsection[{m\+\_\+pc\+Input\+Layout}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D\+Input\+Layout$\ast$ C\+Vertex\+Shader\+::m\+\_\+pc\+Input\+Layout\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_vertex_shader_a9194362254f16f3e89b0b0042c705a26}
+\hypertarget{class_c_vertex_shader_af03968e57fbcebe385d94681b746c41c}{}\index{C\+Vertex\+Shader@{C\+Vertex\+Shader}!m\+\_\+pc\+Vertex\+Shader@{m\+\_\+pc\+Vertex\+Shader}}
+\index{m\+\_\+pc\+Vertex\+Shader@{m\+\_\+pc\+Vertex\+Shader}!C\+Vertex\+Shader@{C\+Vertex\+Shader}}
+\subsubsection[{m\+\_\+pc\+Vertex\+Shader}]{\setlength{\rightskip}{0pt plus 5cm}I\+D3\+D\+Vertex\+Shader$\ast$ C\+Vertex\+Shader\+::m\+\_\+pc\+Vertex\+Shader\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_vertex_shader_af03968e57fbcebe385d94681b746c41c}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Project/\+Game/\+Lib/\+Direct\+X/\hyperlink{_vertex_shader_8h}{Vertex\+Shader.\+h}\item 
+D\+:/\+Project/\+Game/\+Lib/\+Direct\+X/\hyperlink{_vertex_shader_8cpp}{Vertex\+Shader.\+cpp}\end{DoxyCompactItemize}

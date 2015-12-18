@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>My Project: D:/Project/Game/Lib/Utility/Range.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="namespaces.html"><span>名前空間</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8f3de2ae926fecfe6abd5379fd2b6eb1.html">Lib</a></li><li class="navelem"><a class="el" href="dir_1b6d624b4144b48474ff9e9833cdd87f.html">Utility</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Range.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_range_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef INCLUDE_LIB_UTILITY_RANGE_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define INCLUDE_LIB_UTILITY_RANGE_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_lib_utility_8h.html">Lib/Utility/LibUtility.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_assert_8h.html">Lib/Debug/Assert.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * @class CRange</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * @brief 範囲クラス。</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">template</span>&lt; <span class="keyword">class</span> T &gt;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_c_range.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_range.html">CRange</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_c_range.html#a1db083cfad9ecd7bb7f44f81a3d2064c">   21</a></span>&#160;    <a class="code" href="class_c_range.html#a1db083cfad9ecd7bb7f44f81a3d2064c">CRange</a>( <span class="keyword">const</span> T&amp; _rtMin, <span class="keyword">const</span> T&amp; _rtMax )</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        : <a class="code" href="class_c_range.html#a0efe8d572177862cca74bc817ee68b85">m_tValue</a>( _rtMin )</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        , <a class="code" href="class_c_range.html#ade945f039df9fb701105a83811f6da95">m_tMin</a>( _rtMin )</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        , <a class="code" href="class_c_range.html#a913f82d7153c73dba1709d3aaf46e141">m_tMax</a>( _rtMax )</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="_assert_8h.html#adf20d809412f5a852f53e8a1bc1a6795">ASSERT</a>( _rtMin &lt; _rtMax );</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_c_range.html#a844253ef9aa9b5cda7fe685a28832be7">   29</a></span>&#160;    <a class="code" href="class_c_range.html#a844253ef9aa9b5cda7fe685a28832be7">CRange</a>( <span class="keyword">const</span> <a class="code" href="class_c_range.html">CRange&lt;T&gt;</a>&amp; _rtSrc )</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        : <a class="code" href="class_c_range.html#a0efe8d572177862cca74bc817ee68b85">m_tValue</a>( _rtSrc.<a class="code" href="class_c_range.html#a0efe8d572177862cca74bc817ee68b85">m_tValue</a> )</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        , <a class="code" href="class_c_range.html#ade945f039df9fb701105a83811f6da95">m_tMin</a>( _rtSrc.<a class="code" href="class_c_range.html#ade945f039df9fb701105a83811f6da95">m_tMin</a> )</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        , <a class="code" href="class_c_range.html#a913f82d7153c73dba1709d3aaf46e141">m_tMax</a>( _rtSrc.<a class="code" href="class_c_range.html#a913f82d7153c73dba1709d3aaf46e141">m_tMax</a> )</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_c_range.html#ac79b7d48f29fe5a15cbcc9b6ac8f162c">   36</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_range.html#ac79b7d48f29fe5a15cbcc9b6ac8f162c">~CRange</a>(){}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_c_range.html#ae935dd30669959647bf0484a54d26b63">   39</a></span>&#160;    T <a class="code" href="class_c_range.html#ae935dd30669959647bf0484a54d26b63">GetValue</a>()<span class="keyword"> const</span>{ <span class="keywordflow">return</span> <a class="code" href="class_c_range.html#a0efe8d572177862cca74bc817ee68b85">m_tValue</a>; }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_c_range.html#a74ca9bd04053c9933cc17522b7f666a7">   42</a></span>&#160;    <a class="code" href="class_c_range.html">CRange&lt;T&gt;</a>&amp;  <a class="code" href="class_c_range.html#a74ca9bd04053c9933cc17522b7f666a7">operator=</a>( <span class="keyword">const</span> T&amp; _rtSrc )</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="class_c_range.html#a0efe8d572177862cca74bc817ee68b85">m_tValue</a> = <a class="code" href="namespacen_utility.html#aa149b099050c2da27c676d9029f9a5b2">nUtility::Clamp</a>( _rtSrc, <a class="code" href="class_c_range.html#ade945f039df9fb701105a83811f6da95">m_tMin</a>, <a class="code" href="class_c_range.html#a913f82d7153c73dba1709d3aaf46e141">m_tMax</a> );</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_c_range.html#a1037034ac40b3e904ccf722911a3c68d">   47</a></span>&#160;    <a class="code" href="class_c_range.html">CRange&lt;T&gt;</a>&amp; <a class="code" href="class_c_range.html#a1037034ac40b3e904ccf722911a3c68d">operator+=</a>( <span class="keyword">const</span> T&amp; _rtSrc )</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="class_c_range.html#a0efe8d572177862cca74bc817ee68b85">m_tValue</a> = <a class="code" href="namespacen_utility.html#aa149b099050c2da27c676d9029f9a5b2">nUtility::Clamp</a>( <a class="code" href="class_c_range.html#a0efe8d572177862cca74bc817ee68b85">m_tValue</a> + _rtSrc, <a class="code" href="class_c_range.html#ade945f039df9fb701105a83811f6da95">m_tMin</a>, <a class="code" href="class_c_range.html#a913f82d7153c73dba1709d3aaf46e141">m_tMax</a> );</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_c_range.html#a3eca19125aa4fb0782f5e15de5f96cf0">   52</a></span>&#160;    <a class="code" href="class_c_range.html">CRange&lt;T&gt;</a>&amp; <a class="code" href="class_c_range.html#a3eca19125aa4fb0782f5e15de5f96cf0">operator-=</a>( <span class="keyword">const</span> T&amp; _rtSrc )</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="class_c_range.html#a0efe8d572177862cca74bc817ee68b85">m_tValue</a> = <a class="code" href="namespacen_utility.html#aa149b099050c2da27c676d9029f9a5b2">nUtility::Clamp</a>( <a class="code" href="class_c_range.html#a0efe8d572177862cca74bc817ee68b85">m_tValue</a> - _rtSrc, <a class="code" href="class_c_range.html#ade945f039df9fb701105a83811f6da95">m_tMin</a>, <a class="code" href="class_c_range.html#a913f82d7153c73dba1709d3aaf46e141">m_tMax</a> );</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_c_range.html#ab1b520e8ce066a3e054d23394b45068b">   57</a></span>&#160;    <a class="code" href="class_c_range.html">CRange&lt;T&gt;</a>&amp; <a class="code" href="class_c_range.html#ab1b520e8ce066a3e054d23394b45068b">operator*=</a>( <span class="keyword">const</span> T&amp; _rtSrc )</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="class_c_range.html#a0efe8d572177862cca74bc817ee68b85">m_tValue</a> = <a class="code" href="namespacen_utility.html#aa149b099050c2da27c676d9029f9a5b2">nUtility::Clamp</a>( <a class="code" href="class_c_range.html#a0efe8d572177862cca74bc817ee68b85">m_tValue</a> * _rtSrc, <a class="code" href="class_c_range.html#ade945f039df9fb701105a83811f6da95">m_tMin</a>, <a class="code" href="class_c_range.html#a913f82d7153c73dba1709d3aaf46e141">m_tMax</a> );</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_c_range.html#acc3fc1eac760ef02a91f4f304c124815">   62</a></span>&#160;    <a class="code" href="class_c_range.html">CRange&lt;T&gt;</a>&amp; <a class="code" href="class_c_range.html#acc3fc1eac760ef02a91f4f304c124815">operator/=</a>( <span class="keyword">const</span> T&amp; _rtSrc )</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="class_c_range.html#a0efe8d572177862cca74bc817ee68b85">m_tValue</a> = <a class="code" href="namespacen_utility.html#aa149b099050c2da27c676d9029f9a5b2">nUtility::Clamp</a>( <a class="code" href="class_c_range.html#a0efe8d572177862cca74bc817ee68b85">m_tValue</a> / _rtSrc, <a class="code" href="class_c_range.html#ade945f039df9fb701105a83811f6da95">m_tMin</a>, <a class="code" href="class_c_range.html#a913f82d7153c73dba1709d3aaf46e141">m_tMax</a> );</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_c_range.html#ae8acb1f88e2516b5b922bd8754608ba0">   67</a></span>&#160;    <a class="code" href="class_c_range.html">CRange&lt;T&gt;</a>&amp; <a class="code" href="class_c_range.html#ae8acb1f88e2516b5b922bd8754608ba0">operator++</a>()</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="class_c_range.html#a0efe8d572177862cca74bc817ee68b85">m_tValue</a> = <a class="code" href="namespacen_utility.html#aa149b099050c2da27c676d9029f9a5b2">nUtility::Clamp</a>( ++<a class="code" href="class_c_range.html#a0efe8d572177862cca74bc817ee68b85">m_tValue</a>, <a class="code" href="class_c_range.html#ade945f039df9fb701105a83811f6da95">m_tMin</a>, <a class="code" href="class_c_range.html#a913f82d7153c73dba1709d3aaf46e141">m_tMax</a> );</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_c_range.html#a885d67395ea870e3f2e9302b19586021">   72</a></span>&#160;    <a class="code" href="class_c_range.html">CRange&lt;T&gt;</a>&amp; <a class="code" href="class_c_range.html#a885d67395ea870e3f2e9302b19586021">operator--</a>( )</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="class_c_range.html#a0efe8d572177862cca74bc817ee68b85">m_tValue</a> = <a class="code" href="namespacen_utility.html#aa149b099050c2da27c676d9029f9a5b2">nUtility::Clamp</a>( --<a class="code" href="class_c_range.html#a0efe8d572177862cca74bc817ee68b85">m_tValue</a>, <a class="code" href="class_c_range.html#ade945f039df9fb701105a83811f6da95">m_tMin</a>, <a class="code" href="class_c_range.html#a913f82d7153c73dba1709d3aaf46e141">m_tMax</a> );</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="class_c_range.html#a0efe8d572177862cca74bc817ee68b85">   79</a></span>&#160;    T   <a class="code" href="class_c_range.html#a0efe8d572177862cca74bc817ee68b85">m_tValue</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_c_range.html#ade945f039df9fb701105a83811f6da95">   80</a></span>&#160;    T   <a class="code" href="class_c_range.html#ade945f039df9fb701105a83811f6da95">m_tMin</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="class_c_range.html#a913f82d7153c73dba1709d3aaf46e141">   81</a></span>&#160;    T   <a class="code" href="class_c_range.html#a913f82d7153c73dba1709d3aaf46e141">m_tMax</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment"> * @class CRangeWrapWrap</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment"> * @brief 範囲クラス。(ラップアラウンド)</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">template</span>&lt; <span class="keyword">class</span> T &gt;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="class_c_range_wrap.html">   89</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_range_wrap.html">CRangeWrap</a></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="class_c_range_wrap.html#a361e013df71ae542c8125dc448556120">   93</a></span>&#160;    <a class="code" href="class_c_range_wrap.html#a361e013df71ae542c8125dc448556120">CRangeWrap</a>( <span class="keyword">const</span> T&amp; _rtMin, <span class="keyword">const</span> T&amp; _rtMax )</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        : <a class="code" href="class_c_range_wrap.html#ac36a6b05362a1f2483ad7eb579efb0e4">m_tValue</a>( _rtMin )</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        , <a class="code" href="class_c_range_wrap.html#a077162f05d9209550444ddc0542e18b2">m_tMin</a>( _rtMin )</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        , <a class="code" href="class_c_range_wrap.html#a0b9c62d9d951a41451ddb2d21cd0e3ea">m_tMax</a>( _rtMax )</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <a class="code" href="_assert_8h.html#adf20d809412f5a852f53e8a1bc1a6795">ASSERT</a>( _rtMin &lt; _rtMax );</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="class_c_range_wrap.html#a637a244ef7bc5f1eee6c6bb801e7da57">  101</a></span>&#160;    <a class="code" href="class_c_range_wrap.html#a637a244ef7bc5f1eee6c6bb801e7da57">CRangeWrap</a>( <span class="keyword">const</span> <a class="code" href="class_c_range_wrap.html">CRangeWrap&lt;T&gt;</a>&amp; _rtSrc )</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        : <a class="code" href="class_c_range_wrap.html#ac36a6b05362a1f2483ad7eb579efb0e4">m_tValue</a>( _rtSrc.<a class="code" href="class_c_range_wrap.html#ac36a6b05362a1f2483ad7eb579efb0e4">m_tValue</a> )</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        , <a class="code" href="class_c_range_wrap.html#a077162f05d9209550444ddc0542e18b2">m_tMin</a>( _rtSrc.<a class="code" href="class_c_range_wrap.html#a077162f05d9209550444ddc0542e18b2">m_tMin</a> )</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        , <a class="code" href="class_c_range_wrap.html#a0b9c62d9d951a41451ddb2d21cd0e3ea">m_tMax</a>( _rtSrc.<a class="code" href="class_c_range_wrap.html#a0b9c62d9d951a41451ddb2d21cd0e3ea">m_tMax</a> )</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="class_c_range_wrap.html#a087e40fb38d3163d7227f8e411fc1b93">  108</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_range_wrap.html#a087e40fb38d3163d7227f8e411fc1b93">~CRangeWrap</a>(){}</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="class_c_range_wrap.html#a24280495a8dd02bdf7b2a789d2e20133">  111</a></span>&#160;    T <a class="code" href="class_c_range_wrap.html#a24280495a8dd02bdf7b2a789d2e20133">GetValue</a>()<span class="keyword"> const</span>{ <span class="keywordflow">return</span> <a class="code" href="class_c_range_wrap.html#ac36a6b05362a1f2483ad7eb579efb0e4">m_tValue</a>; }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="class_c_range_wrap.html#a802756ac3f31b43eff05ddef00aa0795">  114</a></span>&#160;    <a class="code" href="class_c_range_wrap.html">CRangeWrap&lt;T&gt;</a>&amp;  <a class="code" href="class_c_range_wrap.html#a802756ac3f31b43eff05ddef00aa0795">operator=</a>( <span class="keyword">const</span> T&amp; _rtSrc )</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <a class="code" href="class_c_range_wrap.html#ac36a6b05362a1f2483ad7eb579efb0e4">m_tValue</a> = <a class="code" href="namespacen_utility.html#a7083a9c96d62f05173d2755957fe7f81">nUtility::Wrap</a>( _rtSrc, <a class="code" href="class_c_range_wrap.html#a077162f05d9209550444ddc0542e18b2">m_tMin</a>, <a class="code" href="class_c_range_wrap.html#a0b9c62d9d951a41451ddb2d21cd0e3ea">m_tMax</a> );</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="class_c_range_wrap.html#ad71d3a25b035ba4b34078f0230a665ac">  119</a></span>&#160;    <a class="code" href="class_c_range_wrap.html">CRangeWrap&lt;T&gt;</a>&amp; <a class="code" href="class_c_range_wrap.html#ad71d3a25b035ba4b34078f0230a665ac">operator+=</a>( <span class="keyword">const</span> T&amp; _rtSrc )</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="code" href="class_c_range_wrap.html#ac36a6b05362a1f2483ad7eb579efb0e4">m_tValue</a> = <a class="code" href="namespacen_utility.html#a7083a9c96d62f05173d2755957fe7f81">nUtility::Wrap</a>( <a class="code" href="class_c_range_wrap.html#ac36a6b05362a1f2483ad7eb579efb0e4">m_tValue</a> + _rtSrc, <a class="code" href="class_c_range_wrap.html#a077162f05d9209550444ddc0542e18b2">m_tMin</a>, <a class="code" href="class_c_range_wrap.html#a0b9c62d9d951a41451ddb2d21cd0e3ea">m_tMax</a> );</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="class_c_range_wrap.html#a72441894ecca17b295841278da4f3c8e">  124</a></span>&#160;    <a class="code" href="class_c_range_wrap.html">CRangeWrap&lt;T&gt;</a>&amp; <a class="code" href="class_c_range_wrap.html#a72441894ecca17b295841278da4f3c8e">operator-=</a>( <span class="keyword">const</span> T&amp; _rtSrc )</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <a class="code" href="class_c_range_wrap.html#ac36a6b05362a1f2483ad7eb579efb0e4">m_tValue</a> = <a class="code" href="namespacen_utility.html#a7083a9c96d62f05173d2755957fe7f81">nUtility::Wrap</a>( <a class="code" href="class_c_range_wrap.html#ac36a6b05362a1f2483ad7eb579efb0e4">m_tValue</a> - _rtSrc, <a class="code" href="class_c_range_wrap.html#a077162f05d9209550444ddc0542e18b2">m_tMin</a>, <a class="code" href="class_c_range_wrap.html#a0b9c62d9d951a41451ddb2d21cd0e3ea">m_tMax</a> );</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="class_c_range_wrap.html#acfe87c7eff650dabb61c11bc3daa0ebd">  129</a></span>&#160;    <a class="code" href="class_c_range_wrap.html">CRangeWrap&lt;T&gt;</a>&amp; <a class="code" href="class_c_range_wrap.html#acfe87c7eff650dabb61c11bc3daa0ebd">operator*=</a>( <span class="keyword">const</span> T&amp; _rtSrc )</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <a class="code" href="class_c_range_wrap.html#ac36a6b05362a1f2483ad7eb579efb0e4">m_tValue</a> = <a class="code" href="namespacen_utility.html#a7083a9c96d62f05173d2755957fe7f81">nUtility::Wrap</a>( <a class="code" href="class_c_range_wrap.html#ac36a6b05362a1f2483ad7eb579efb0e4">m_tValue</a> * _rtSrc, <a class="code" href="class_c_range_wrap.html#a077162f05d9209550444ddc0542e18b2">m_tMin</a>, <a class="code" href="class_c_range_wrap.html#a0b9c62d9d951a41451ddb2d21cd0e3ea">m_tMax</a> );</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="class_c_range_wrap.html#a2eec23d95a081e7dda004b9fd2d6fabe">  134</a></span>&#160;    <a class="code" href="class_c_range_wrap.html">CRangeWrap&lt;T&gt;</a>&amp; <a class="code" href="class_c_range_wrap.html#a2eec23d95a081e7dda004b9fd2d6fabe">operator/=</a>( <span class="keyword">const</span> T&amp; _rtSrc )</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <a class="code" href="class_c_range_wrap.html#ac36a6b05362a1f2483ad7eb579efb0e4">m_tValue</a> = <a class="code" href="namespacen_utility.html#a7083a9c96d62f05173d2755957fe7f81">nUtility::Wrap</a>( <a class="code" href="class_c_range_wrap.html#ac36a6b05362a1f2483ad7eb579efb0e4">m_tValue</a> / _rtSrc, <a class="code" href="class_c_range_wrap.html#a077162f05d9209550444ddc0542e18b2">m_tMin</a>, <a class="code" href="class_c_range_wrap.html#a0b9c62d9d951a41451ddb2d21cd0e3ea">m_tMax</a> );</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    }</div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="class_c_range_wrap.html#a1d760c971ee16cb8c0da238f07340b3d">  139</a></span>&#160;    <a class="code" href="class_c_range_wrap.html">CRangeWrap&lt;T&gt;</a>&amp; <a class="code" href="class_c_range_wrap.html#a1d760c971ee16cb8c0da238f07340b3d">operator++</a>()</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    {</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <a class="code" href="class_c_range_wrap.html#ac36a6b05362a1f2483ad7eb579efb0e4">m_tValue</a> = <a class="code" href="namespacen_utility.html#a7083a9c96d62f05173d2755957fe7f81">nUtility::Wrap</a>( ++<a class="code" href="class_c_range_wrap.html#ac36a6b05362a1f2483ad7eb579efb0e4">m_tValue</a>, <a class="code" href="class_c_range_wrap.html#a077162f05d9209550444ddc0542e18b2">m_tMin</a>, <a class="code" href="class_c_range_wrap.html#a0b9c62d9d951a41451ddb2d21cd0e3ea">m_tMax</a> );</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    }</div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="class_c_range_wrap.html#a9380081d97283c392a9dc0f25aa1d631">  144</a></span>&#160;    <a class="code" href="class_c_range_wrap.html">CRangeWrap&lt;T&gt;</a>&amp; <a class="code" href="class_c_range_wrap.html#a9380081d97283c392a9dc0f25aa1d631">operator--</a>( )</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <a class="code" href="class_c_range_wrap.html#ac36a6b05362a1f2483ad7eb579efb0e4">m_tValue</a> = <a class="code" href="namespacen_utility.html#a7083a9c96d62f05173d2755957fe7f81">nUtility::Wrap</a>( --<a class="code" href="class_c_range_wrap.html#ac36a6b05362a1f2483ad7eb579efb0e4">m_tValue</a>, <a class="code" href="class_c_range_wrap.html#a077162f05d9209550444ddc0542e18b2">m_tMin</a>, <a class="code" href="class_c_range_wrap.html#a0b9c62d9d951a41451ddb2d21cd0e3ea">m_tMax</a> );</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    }</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="class_c_range_wrap.html#ac36a6b05362a1f2483ad7eb579efb0e4">  151</a></span>&#160;    T   <a class="code" href="class_c_range_wrap.html#ac36a6b05362a1f2483ad7eb579efb0e4">m_tValue</a>;</div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="class_c_range_wrap.html#a077162f05d9209550444ddc0542e18b2">  152</a></span>&#160;    T   <a class="code" href="class_c_range_wrap.html#a077162f05d9209550444ddc0542e18b2">m_tMin</a>;</div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="class_c_range_wrap.html#a0b9c62d9d951a41451ddb2d21cd0e3ea">  153</a></span>&#160;    T   <a class="code" href="class_c_range_wrap.html#a0b9c62d9d951a41451ddb2d21cd0e3ea">m_tMax</a>;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;};</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">#endif // #ifndef INCLUDE_LIB_UTILITY_RANGE_H</span></div>
+<div class="ttc" id="class_c_range_wrap_html_acfe87c7eff650dabb61c11bc3daa0ebd"><div class="ttname"><a href="class_c_range_wrap.html#acfe87c7eff650dabb61c11bc3daa0ebd">CRangeWrap::operator*=</a></div><div class="ttdeci">CRangeWrap&lt; T &gt; &amp; operator*=(const T &amp;_rtSrc)</div><div class="ttdef"><b>Definition:</b> Range.h:129</div></div>
+<div class="ttc" id="class_c_range_html_a885d67395ea870e3f2e9302b19586021"><div class="ttname"><a href="class_c_range.html#a885d67395ea870e3f2e9302b19586021">CRange::operator--</a></div><div class="ttdeci">CRange&lt; T &gt; &amp; operator--()</div><div class="ttdef"><b>Definition:</b> Range.h:72</div></div>
+<div class="ttc" id="class_c_range_wrap_html_a2eec23d95a081e7dda004b9fd2d6fabe"><div class="ttname"><a href="class_c_range_wrap.html#a2eec23d95a081e7dda004b9fd2d6fabe">CRangeWrap::operator/=</a></div><div class="ttdeci">CRangeWrap&lt; T &gt; &amp; operator/=(const T &amp;_rtSrc)</div><div class="ttdef"><b>Definition:</b> Range.h:134</div></div>
+<div class="ttc" id="class_c_range_html_a1db083cfad9ecd7bb7f44f81a3d2064c"><div class="ttname"><a href="class_c_range.html#a1db083cfad9ecd7bb7f44f81a3d2064c">CRange::CRange</a></div><div class="ttdeci">CRange(const T &amp;_rtMin, const T &amp;_rtMax)</div><div class="ttdoc">コンストラクタ。 </div><div class="ttdef"><b>Definition:</b> Range.h:21</div></div>
+<div class="ttc" id="class_c_range_html_a3eca19125aa4fb0782f5e15de5f96cf0"><div class="ttname"><a href="class_c_range.html#a3eca19125aa4fb0782f5e15de5f96cf0">CRange::operator-=</a></div><div class="ttdeci">CRange&lt; T &gt; &amp; operator-=(const T &amp;_rtSrc)</div><div class="ttdef"><b>Definition:</b> Range.h:52</div></div>
+<div class="ttc" id="class_c_range_html_ac79b7d48f29fe5a15cbcc9b6ac8f162c"><div class="ttname"><a href="class_c_range.html#ac79b7d48f29fe5a15cbcc9b6ac8f162c">CRange::~CRange</a></div><div class="ttdeci">virtual ~CRange()</div><div class="ttdoc">デストラクタ。 </div><div class="ttdef"><b>Definition:</b> Range.h:36</div></div>
+<div class="ttc" id="class_c_range_wrap_html_a0b9c62d9d951a41451ddb2d21cd0e3ea"><div class="ttname"><a href="class_c_range_wrap.html#a0b9c62d9d951a41451ddb2d21cd0e3ea">CRangeWrap::m_tMax</a></div><div class="ttdeci">T m_tMax</div><div class="ttdef"><b>Definition:</b> Range.h:153</div></div>
+<div class="ttc" id="class_c_range_wrap_html_a361e013df71ae542c8125dc448556120"><div class="ttname"><a href="class_c_range_wrap.html#a361e013df71ae542c8125dc448556120">CRangeWrap::CRangeWrap</a></div><div class="ttdeci">CRangeWrap(const T &amp;_rtMin, const T &amp;_rtMax)</div><div class="ttdoc">コンストラクタ。 </div><div class="ttdef"><b>Definition:</b> Range.h:93</div></div>
+<div class="ttc" id="class_c_range_html_ae8acb1f88e2516b5b922bd8754608ba0"><div class="ttname"><a href="class_c_range.html#ae8acb1f88e2516b5b922bd8754608ba0">CRange::operator++</a></div><div class="ttdeci">CRange&lt; T &gt; &amp; operator++()</div><div class="ttdef"><b>Definition:</b> Range.h:67</div></div>
+<div class="ttc" id="class_c_range_wrap_html_a637a244ef7bc5f1eee6c6bb801e7da57"><div class="ttname"><a href="class_c_range_wrap.html#a637a244ef7bc5f1eee6c6bb801e7da57">CRangeWrap::CRangeWrap</a></div><div class="ttdeci">CRangeWrap(const CRangeWrap&lt; T &gt; &amp;_rtSrc)</div><div class="ttdoc">コピーコンストラクタ。 </div><div class="ttdef"><b>Definition:</b> Range.h:101</div></div>
+<div class="ttc" id="class_c_range_html_ae935dd30669959647bf0484a54d26b63"><div class="ttname"><a href="class_c_range.html#ae935dd30669959647bf0484a54d26b63">CRange::GetValue</a></div><div class="ttdeci">T GetValue() const </div><div class="ttdoc">値を返す。 </div><div class="ttdef"><b>Definition:</b> Range.h:39</div></div>
+<div class="ttc" id="_assert_8h_html"><div class="ttname"><a href="_assert_8h.html">Assert.h</a></div><div class="ttdoc">アサート定義。 </div></div>
+<div class="ttc" id="_assert_8h_html_adf20d809412f5a852f53e8a1bc1a6795"><div class="ttname"><a href="_assert_8h.html#adf20d809412f5a852f53e8a1bc1a6795">ASSERT</a></div><div class="ttdeci">#define ASSERT(EXPRESSION)</div><div class="ttdef"><b>Definition:</b> Assert.h:18</div></div>
+<div class="ttc" id="class_c_range_html"><div class="ttname"><a href="class_c_range.html">CRange</a></div><div class="ttdef"><b>Definition:</b> Range.h:17</div></div>
+<div class="ttc" id="class_c_range_html_a1037034ac40b3e904ccf722911a3c68d"><div class="ttname"><a href="class_c_range.html#a1037034ac40b3e904ccf722911a3c68d">CRange::operator+=</a></div><div class="ttdeci">CRange&lt; T &gt; &amp; operator+=(const T &amp;_rtSrc)</div><div class="ttdef"><b>Definition:</b> Range.h:47</div></div>
+<div class="ttc" id="class_c_range_html_acc3fc1eac760ef02a91f4f304c124815"><div class="ttname"><a href="class_c_range.html#acc3fc1eac760ef02a91f4f304c124815">CRange::operator/=</a></div><div class="ttdeci">CRange&lt; T &gt; &amp; operator/=(const T &amp;_rtSrc)</div><div class="ttdef"><b>Definition:</b> Range.h:62</div></div>
+<div class="ttc" id="class_c_range_wrap_html_ad71d3a25b035ba4b34078f0230a665ac"><div class="ttname"><a href="class_c_range_wrap.html#ad71d3a25b035ba4b34078f0230a665ac">CRangeWrap::operator+=</a></div><div class="ttdeci">CRangeWrap&lt; T &gt; &amp; operator+=(const T &amp;_rtSrc)</div><div class="ttdef"><b>Definition:</b> Range.h:119</div></div>
+<div class="ttc" id="class_c_range_wrap_html_a24280495a8dd02bdf7b2a789d2e20133"><div class="ttname"><a href="class_c_range_wrap.html#a24280495a8dd02bdf7b2a789d2e20133">CRangeWrap::GetValue</a></div><div class="ttdeci">T GetValue() const </div><div class="ttdoc">値を返す。 </div><div class="ttdef"><b>Definition:</b> Range.h:111</div></div>
+<div class="ttc" id="namespacen_utility_html_aa149b099050c2da27c676d9029f9a5b2"><div class="ttname"><a href="namespacen_utility.html#aa149b099050c2da27c676d9029f9a5b2">nUtility::Clamp</a></div><div class="ttdeci">T Clamp(const T &amp;_rtValue, const T &amp;_rtMin, const T &amp;_rtMax)</div><div class="ttdoc">値を[_rtMin, _rtMax]の範囲に制限する。 </div><div class="ttdef"><b>Definition:</b> LibUtility.h:54</div></div>
+<div class="ttc" id="class_c_range_wrap_html_ac36a6b05362a1f2483ad7eb579efb0e4"><div class="ttname"><a href="class_c_range_wrap.html#ac36a6b05362a1f2483ad7eb579efb0e4">CRangeWrap::m_tValue</a></div><div class="ttdeci">T m_tValue</div><div class="ttdef"><b>Definition:</b> Range.h:151</div></div>
+<div class="ttc" id="class_c_range_wrap_html_a9380081d97283c392a9dc0f25aa1d631"><div class="ttname"><a href="class_c_range_wrap.html#a9380081d97283c392a9dc0f25aa1d631">CRangeWrap::operator--</a></div><div class="ttdeci">CRangeWrap&lt; T &gt; &amp; operator--()</div><div class="ttdef"><b>Definition:</b> Range.h:144</div></div>
+<div class="ttc" id="class_c_range_html_a913f82d7153c73dba1709d3aaf46e141"><div class="ttname"><a href="class_c_range.html#a913f82d7153c73dba1709d3aaf46e141">CRange::m_tMax</a></div><div class="ttdeci">T m_tMax</div><div class="ttdef"><b>Definition:</b> Range.h:81</div></div>
+<div class="ttc" id="_lib_utility_8h_html"><div class="ttname"><a href="_lib_utility_8h.html">LibUtility.h</a></div><div class="ttdoc">ユーティリティ </div></div>
+<div class="ttc" id="class_c_range_wrap_html_a077162f05d9209550444ddc0542e18b2"><div class="ttname"><a href="class_c_range_wrap.html#a077162f05d9209550444ddc0542e18b2">CRangeWrap::m_tMin</a></div><div class="ttdeci">T m_tMin</div><div class="ttdef"><b>Definition:</b> Range.h:152</div></div>
+<div class="ttc" id="class_c_range_wrap_html_a1d760c971ee16cb8c0da238f07340b3d"><div class="ttname"><a href="class_c_range_wrap.html#a1d760c971ee16cb8c0da238f07340b3d">CRangeWrap::operator++</a></div><div class="ttdeci">CRangeWrap&lt; T &gt; &amp; operator++()</div><div class="ttdef"><b>Definition:</b> Range.h:139</div></div>
+<div class="ttc" id="class_c_range_wrap_html_a802756ac3f31b43eff05ddef00aa0795"><div class="ttname"><a href="class_c_range_wrap.html#a802756ac3f31b43eff05ddef00aa0795">CRangeWrap::operator=</a></div><div class="ttdeci">CRangeWrap&lt; T &gt; &amp; operator=(const T &amp;_rtSrc)</div><div class="ttdoc">算術演算子のオーバーロード。 </div><div class="ttdef"><b>Definition:</b> Range.h:114</div></div>
+<div class="ttc" id="namespacen_utility_html_a7083a9c96d62f05173d2755957fe7f81"><div class="ttname"><a href="namespacen_utility.html#a7083a9c96d62f05173d2755957fe7f81">nUtility::Wrap</a></div><div class="ttdeci">T Wrap(const T &amp;_rtValue, const T &amp;_rtMin, const T &amp;_rtMax)</div><div class="ttdoc">値を[_rtMin, _rtMax]の範囲で補正する(繰り返し)。 </div><div class="ttdef"><b>Definition:</b> LibUtility.h:67</div></div>
+<div class="ttc" id="class_c_range_wrap_html_a72441894ecca17b295841278da4f3c8e"><div class="ttname"><a href="class_c_range_wrap.html#a72441894ecca17b295841278da4f3c8e">CRangeWrap::operator-=</a></div><div class="ttdeci">CRangeWrap&lt; T &gt; &amp; operator-=(const T &amp;_rtSrc)</div><div class="ttdef"><b>Definition:</b> Range.h:124</div></div>
+<div class="ttc" id="class_c_range_html_a0efe8d572177862cca74bc817ee68b85"><div class="ttname"><a href="class_c_range.html#a0efe8d572177862cca74bc817ee68b85">CRange::m_tValue</a></div><div class="ttdeci">T m_tValue</div><div class="ttdef"><b>Definition:</b> Range.h:79</div></div>
+<div class="ttc" id="class_c_range_html_a844253ef9aa9b5cda7fe685a28832be7"><div class="ttname"><a href="class_c_range.html#a844253ef9aa9b5cda7fe685a28832be7">CRange::CRange</a></div><div class="ttdeci">CRange(const CRange&lt; T &gt; &amp;_rtSrc)</div><div class="ttdoc">コピーコンストラクタ。 </div><div class="ttdef"><b>Definition:</b> Range.h:29</div></div>
+<div class="ttc" id="class_c_range_html_a74ca9bd04053c9933cc17522b7f666a7"><div class="ttname"><a href="class_c_range.html#a74ca9bd04053c9933cc17522b7f666a7">CRange::operator=</a></div><div class="ttdeci">CRange&lt; T &gt; &amp; operator=(const T &amp;_rtSrc)</div><div class="ttdoc">算術演算子のオーバーロード。 </div><div class="ttdef"><b>Definition:</b> Range.h:42</div></div>
+<div class="ttc" id="class_c_range_wrap_html"><div class="ttname"><a href="class_c_range_wrap.html">CRangeWrap</a></div><div class="ttdef"><b>Definition:</b> Range.h:89</div></div>
+<div class="ttc" id="class_c_range_html_ade945f039df9fb701105a83811f6da95"><div class="ttname"><a href="class_c_range.html#ade945f039df9fb701105a83811f6da95">CRange::m_tMin</a></div><div class="ttdeci">T m_tMin</div><div class="ttdef"><b>Definition:</b> Range.h:80</div></div>
+<div class="ttc" id="class_c_range_html_ab1b520e8ce066a3e054d23394b45068b"><div class="ttname"><a href="class_c_range.html#ab1b520e8ce066a3e054d23394b45068b">CRange::operator*=</a></div><div class="ttdeci">CRange&lt; T &gt; &amp; operator*=(const T &amp;_rtSrc)</div><div class="ttdef"><b>Definition:</b> Range.h:57</div></div>
+<div class="ttc" id="class_c_range_wrap_html_a087e40fb38d3163d7227f8e411fc1b93"><div class="ttname"><a href="class_c_range_wrap.html#a087e40fb38d3163d7227f8e411fc1b93">CRangeWrap::~CRangeWrap</a></div><div class="ttdeci">virtual ~CRangeWrap()</div><div class="ttdoc">デストラクタ。 </div><div class="ttdef"><b>Definition:</b> Range.h:108</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

@@ -1,0 +1,438 @@
+\hypertarget{class_c_mem_allocator}{}\section{C\+Mem\+Allocator クラス}
+\label{class_c_mem_allocator}\index{C\+Mem\+Allocator@{C\+Mem\+Allocator}}
+
+
+{\ttfamily \#include $<$Mem\+Allocator.\+h$>$}
+
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_c_mem_allocator_1_1_st_init_param}{St\+Init\+Param}
+\begin{DoxyCompactList}\small\item\em 初期化用パラメータ。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{公開型}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_c_mem_allocator_abf840ff9239492607ab3a3b8e0df2066}{En\+Alloc\+Mode} \+: U32 \{ \hyperlink{class_c_mem_allocator_abf840ff9239492607ab3a3b8e0df2066a51de7c871812c0d91929b2fa407db09f}{En\+Alloc\+Mode\+::en\+Forward}, 
+\hyperlink{class_c_mem_allocator_abf840ff9239492607ab3a3b8e0df2066a3b7d737dc6a726f089f8d85df120a77f}{En\+Alloc\+Mode\+::en\+Back}
+ \}\begin{DoxyCompactList}\small\item\em アロケートモード。 \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_mem_allocator_a89a6785ad0679112693421390834c58a}{C\+Mem\+Allocator} (const \hyperlink{struct_c_mem_allocator_1_1_st_init_param}{St\+Init\+Param} \&\+\_\+rst\+Init\+Param)
+\begin{DoxyCompactList}\small\item\em コンストラクタ。 \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_mem_allocator_afcf3bf84876c42ab83cdc2ba10a7dac3}{$\sim$\+C\+Mem\+Allocator} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ。 \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{class_c_mem_allocator_a65875035e030185e91391b1ce29eecdd}{Alloc} (U\+Size \+\_\+u\+Size, const S8 $\ast$\+\_\+ps\+File, U32 \+\_\+u\+Line)
+\begin{DoxyCompactList}\small\item\em メモリを確保。 \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{class_c_mem_allocator_a776e73bfdd517d758ccfe515298d6716}{Alloc\+Back} (U\+Size \+\_\+u\+Size, const S8 $\ast$\+\_\+ps\+File, U32 \+\_\+u\+Line)
+\begin{DoxyCompactList}\small\item\em 最後尾からメモリを確保。 \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{class_c_mem_allocator_a78bd707276d68fc2aa5828dbb86a74df}{Alloc\+From\+Mem\+Block} (\hyperlink{class_c_mem_block}{C\+Mem\+Block} $\ast$\+\_\+pc\+Mem\+Block, U\+Size \+\_\+u\+Size, const S8 $\ast$\+\_\+ps\+File, U32 \+\_\+u\+Line, \hyperlink{class_c_mem_allocator_abf840ff9239492607ab3a3b8e0df2066}{En\+Alloc\+Mode} \+\_\+e\+Mode)
+\begin{DoxyCompactList}\small\item\em 指定したメモリブロックからメモリを確保。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_mem_allocator_ac679b89a322afa320a994d8bedec415d}{Free} (void $\ast$\+\_\+p)
+\begin{DoxyCompactList}\small\item\em メモリを解放。 \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_mem_allocator_ab3c38b86c68cfc86a3e95bb7964efd97}{Is\+Allocated\+Pointer} (void $\ast$\+\_\+p) const 
+\begin{DoxyCompactList}\small\item\em このメモリアロケータで確保したポインタか。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static void $\ast$ \hyperlink{class_c_mem_allocator_a48c0568fb21eb63978af2137aab23ad6}{operator new} (std\+::size\+\_\+t \+\_\+u\+Size)
+\item 
+static void \hyperlink{class_c_mem_allocator_af156badb5f8380a0d9ee76afad22c496}{operator delete} (void $\ast$\+\_\+p)
+\end{DoxyCompactItemize}
+\subsection*{非公開型}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_c_mem_allocator_a780a1a1225569ea2d2a8b7db9f9c7089}{En\+First\+Level} \{ \hyperlink{class_c_mem_allocator_a780a1a1225569ea2d2a8b7db9f9c7089ab914654c48cd4a1779f988840ea2a151}{en\+First\+Level\+\_\+\+Max} = sizeof( U\+Size ) $\ast$ 8
+ \}\begin{DoxyCompactList}\small\item\em First\+Level。 \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{非公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+U\+Size \hyperlink{class_c_mem_allocator_a920fe29d9b0bdaa721eaa20c66abaa2e}{Get\+Block\+Size} (U\+Size \+\_\+u\+Size)
+\begin{DoxyCompactList}\small\item\em 要求されたサイズから、実際に確保するブロックサイズを取得。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_mem_allocator_af607e6b68b3b614e769b6e93078a04ca}{Get\+Level} (U32 $\ast$\+\_\+pu\+Out\+First, U32 $\ast$\+\_\+pu\+Out\+Second, U\+Size \+\_\+u\+Block\+Size)
+\begin{DoxyCompactList}\small\item\em サイズからレベルを取得。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_mem_allocator_a7a916e62db377590430d6969551cc547}{Set\+Free\+List} (\hyperlink{class_c_mem_block}{C\+Mem\+Block} $\ast$\+\_\+pc\+Mem\+Block)
+\begin{DoxyCompactList}\small\item\em Freeリストに領域をセット。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_mem_allocator_a54bea8680421134c27912868508792aa}{Remove\+Free\+List} (\hyperlink{class_c_mem_block}{C\+Mem\+Block} $\ast$\+\_\+pc\+Mem\+Block)
+\begin{DoxyCompactList}\small\item\em Freeリストから領域を解除。 \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_mem_allocator_a5157e10cc3b426b42f661a6f3c0d8f51}{Search\+Free\+List\+Level} (U32 $\ast$\+\_\+p\+Out\+First\+Level, U32 $\ast$\+\_\+p\+Out\+Second\+Level, U\+Size \+\_\+u\+Block\+Size)
+\begin{DoxyCompactList}\small\item\em Freeリストから確保出来る領域のレベルを探す。 \end{DoxyCompactList}\item 
+U32 \hyperlink{class_c_mem_allocator_a9f0303603e63a742cc97c82d64fe90d5}{Get\+Free\+List\+Index} (U32 \+\_\+u\+First\+Level, U32 \+\_\+u\+Second\+Level)
+\begin{DoxyCompactList}\small\item\em レベルから\+Freeリストのインデックスを取得。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_c_mem_allocator_1_1_st_init_param}{St\+Init\+Param} \hyperlink{class_c_mem_allocator_a5ae9573631f11b58cb0741dd5d071d4e}{m\+\_\+st\+Init\+Param}
+\item 
+U8 $\ast$ \hyperlink{class_c_mem_allocator_ad729846ce9ff5ecdac69574604140e39}{m\+\_\+p\+Memory}
+\begin{DoxyCompactList}\small\item\em 確保したメモリ。 \end{DoxyCompactList}\item 
+\hyperlink{class_c_mem_block}{C\+Mem\+Block} $\ast$ \hyperlink{class_c_mem_allocator_aac2d7de345dbb577fa47907647bb831f}{m\+\_\+p\+End\+Block}
+\begin{DoxyCompactList}\small\item\em 終端ブロック。 \end{DoxyCompactList}\item 
+\hyperlink{class_c_mem_block}{C\+Mem\+Block} $\ast$$\ast$ \hyperlink{class_c_mem_allocator_a5593b5d4263ee5e0af22458ad8f89f21}{m\+\_\+p\+Free\+Block\+Array}
+\begin{DoxyCompactList}\small\item\em 解放済みの領域リスト。 \end{DoxyCompactList}\item 
+U64 \hyperlink{class_c_mem_allocator_a9f35f48a378b79fc033b6aa6dcf13b73}{m\+\_\+u\+Is\+Free}
+\begin{DoxyCompactList}\small\item\em 解放済みの領域があるか。(1st\+Level) \end{DoxyCompactList}\item 
+U32 \hyperlink{class_c_mem_allocator_a6fc0c334bf8f88d108b7f7ca1b87c682}{m\+\_\+u\+Is\+Free\+Array} \mbox{[}\hyperlink{class_c_mem_allocator_a780a1a1225569ea2d2a8b7db9f9c7089ab914654c48cd4a1779f988840ea2a151}{en\+First\+Level\+\_\+\+Max}\mbox{]}
+\begin{DoxyCompactList}\small\item\em 解放済みの領域があるか。(2nd\+Level) \end{DoxyCompactList}\item 
+\hyperlink{class_c_critical_section}{C\+Critical\+Section} \hyperlink{class_c_mem_allocator_ac777d3d046eab9d58e8749a68a6bf36c}{m\+\_\+c\+Critical\+Section}
+\begin{DoxyCompactList}\small\item\em クリティカルセクション。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{列挙型メンバ詳解}
+\hypertarget{class_c_mem_allocator_abf840ff9239492607ab3a3b8e0df2066}{}\index{C\+Mem\+Allocator@{C\+Mem\+Allocator}!En\+Alloc\+Mode@{En\+Alloc\+Mode}}
+\index{En\+Alloc\+Mode@{En\+Alloc\+Mode}!C\+Mem\+Allocator@{C\+Mem\+Allocator}}
+\subsubsection[{En\+Alloc\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\+Mem\+Allocator\+::\+En\+Alloc\+Mode} \+: U32\hspace{0.3cm}{\ttfamily [strong]}}\label{class_c_mem_allocator_abf840ff9239492607ab3a3b8e0df2066}
+
+
+アロケートモード。 
+
+\begin{Desc}
+\item[列挙値]\par
+\begin{description}
+\index{en\+Forward@{en\+Forward}!C\+Mem\+Allocator@{C\+Mem\+Allocator}}\index{C\+Mem\+Allocator@{C\+Mem\+Allocator}!en\+Forward@{en\+Forward}}\item[{\em 
+\hypertarget{class_c_mem_allocator_abf840ff9239492607ab3a3b8e0df2066a51de7c871812c0d91929b2fa407db09f}{}en\+Forward\label{class_c_mem_allocator_abf840ff9239492607ab3a3b8e0df2066a51de7c871812c0d91929b2fa407db09f}
+}]\index{en\+Back@{en\+Back}!C\+Mem\+Allocator@{C\+Mem\+Allocator}}\index{C\+Mem\+Allocator@{C\+Mem\+Allocator}!en\+Back@{en\+Back}}\item[{\em 
+\hypertarget{class_c_mem_allocator_abf840ff9239492607ab3a3b8e0df2066a3b7d737dc6a726f089f8d85df120a77f}{}en\+Back\label{class_c_mem_allocator_abf840ff9239492607ab3a3b8e0df2066a3b7d737dc6a726f089f8d85df120a77f}
+}]\end{description}
+\end{Desc}
+\hypertarget{class_c_mem_allocator_a780a1a1225569ea2d2a8b7db9f9c7089}{}\index{C\+Mem\+Allocator@{C\+Mem\+Allocator}!En\+First\+Level@{En\+First\+Level}}
+\index{En\+First\+Level@{En\+First\+Level}!C\+Mem\+Allocator@{C\+Mem\+Allocator}}
+\subsubsection[{En\+First\+Level}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\+Mem\+Allocator\+::\+En\+First\+Level}\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_mem_allocator_a780a1a1225569ea2d2a8b7db9f9c7089}
+
+
+First\+Level。 
+
+\begin{Desc}
+\item[列挙値]\par
+\begin{description}
+\index{en\+First\+Level\+\_\+\+Max@{en\+First\+Level\+\_\+\+Max}!C\+Mem\+Allocator@{C\+Mem\+Allocator}}\index{C\+Mem\+Allocator@{C\+Mem\+Allocator}!en\+First\+Level\+\_\+\+Max@{en\+First\+Level\+\_\+\+Max}}\item[{\em 
+\hypertarget{class_c_mem_allocator_a780a1a1225569ea2d2a8b7db9f9c7089ab914654c48cd4a1779f988840ea2a151}{}en\+First\+Level\+\_\+\+Max\label{class_c_mem_allocator_a780a1a1225569ea2d2a8b7db9f9c7089ab914654c48cd4a1779f988840ea2a151}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{構築子と解体子}
+\hypertarget{class_c_mem_allocator_a89a6785ad0679112693421390834c58a}{}\index{C\+Mem\+Allocator@{C\+Mem\+Allocator}!C\+Mem\+Allocator@{C\+Mem\+Allocator}}
+\index{C\+Mem\+Allocator@{C\+Mem\+Allocator}!C\+Mem\+Allocator@{C\+Mem\+Allocator}}
+\subsubsection[{C\+Mem\+Allocator(const St\+Init\+Param \&\+\_\+rst\+Init\+Param)}]{\setlength{\rightskip}{0pt plus 5cm}C\+Mem\+Allocator\+::\+C\+Mem\+Allocator (
+\begin{DoxyParamCaption}
+\item[{const {\bf St\+Init\+Param} \&}]{\+\_\+rst\+Init\+Param}
+\end{DoxyParamCaption}
+)}\label{class_c_mem_allocator_a89a6785ad0679112693421390834c58a}
+
+
+コンストラクタ。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+rst\+Init\+Param} & \+: 初期化用パラメータ \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_mem_allocator_afcf3bf84876c42ab83cdc2ba10a7dac3}{}\index{C\+Mem\+Allocator@{C\+Mem\+Allocator}!````~C\+Mem\+Allocator@{$\sim$\+C\+Mem\+Allocator}}
+\index{````~C\+Mem\+Allocator@{$\sim$\+C\+Mem\+Allocator}!C\+Mem\+Allocator@{C\+Mem\+Allocator}}
+\subsubsection[{$\sim$\+C\+Mem\+Allocator()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Mem\+Allocator\+::$\sim$\+C\+Mem\+Allocator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_mem_allocator_afcf3bf84876c42ab83cdc2ba10a7dac3}
+
+
+デストラクタ。 
+
+
+
+\subsection{関数詳解}
+\hypertarget{class_c_mem_allocator_a65875035e030185e91391b1ce29eecdd}{}\index{C\+Mem\+Allocator@{C\+Mem\+Allocator}!Alloc@{Alloc}}
+\index{Alloc@{Alloc}!C\+Mem\+Allocator@{C\+Mem\+Allocator}}
+\subsubsection[{Alloc(\+U\+Size \+\_\+u\+Size, const S8 $\ast$\+\_\+ps\+File, U32 \+\_\+u\+Line)}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ C\+Mem\+Allocator\+::\+Alloc (
+\begin{DoxyParamCaption}
+\item[{U\+Size}]{\+\_\+u\+Size, }
+\item[{const S8 $\ast$}]{\+\_\+ps\+File, }
+\item[{U32}]{\+\_\+u\+Line}
+\end{DoxyParamCaption}
+)}\label{class_c_mem_allocator_a65875035e030185e91391b1ce29eecdd}
+
+
+メモリを確保。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+u\+Size} & \+: 確保するサイズ。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+ps\+File} & \+: 呼び出し元のファイル名。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+u\+Line} & \+: 呼び出し元行数。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+\+: 確保したメモリへのポインタ。 
+\end{DoxyReturn}
+\hypertarget{class_c_mem_allocator_a776e73bfdd517d758ccfe515298d6716}{}\index{C\+Mem\+Allocator@{C\+Mem\+Allocator}!Alloc\+Back@{Alloc\+Back}}
+\index{Alloc\+Back@{Alloc\+Back}!C\+Mem\+Allocator@{C\+Mem\+Allocator}}
+\subsubsection[{Alloc\+Back(\+U\+Size \+\_\+u\+Size, const S8 $\ast$\+\_\+ps\+File, U32 \+\_\+u\+Line)}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ C\+Mem\+Allocator\+::\+Alloc\+Back (
+\begin{DoxyParamCaption}
+\item[{U\+Size}]{\+\_\+u\+Size, }
+\item[{const S8 $\ast$}]{\+\_\+ps\+File, }
+\item[{U32}]{\+\_\+u\+Line}
+\end{DoxyParamCaption}
+)}\label{class_c_mem_allocator_a776e73bfdd517d758ccfe515298d6716}
+
+
+最後尾からメモリを確保。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+u\+Size} & \+: 確保するサイズ。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+ps\+File} & \+: 呼び出し元のファイル名。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+u\+Line} & \+: 呼び出し元行数。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+\+: 確保したメモリへのポインタ。 
+\end{DoxyReturn}
+\hypertarget{class_c_mem_allocator_a78bd707276d68fc2aa5828dbb86a74df}{}\index{C\+Mem\+Allocator@{C\+Mem\+Allocator}!Alloc\+From\+Mem\+Block@{Alloc\+From\+Mem\+Block}}
+\index{Alloc\+From\+Mem\+Block@{Alloc\+From\+Mem\+Block}!C\+Mem\+Allocator@{C\+Mem\+Allocator}}
+\subsubsection[{Alloc\+From\+Mem\+Block(\+C\+Mem\+Block $\ast$\+\_\+pc\+Mem\+Block, U\+Size \+\_\+u\+Size, const S8 $\ast$\+\_\+ps\+File, U32 \+\_\+u\+Line, En\+Alloc\+Mode \+\_\+e\+Mode)}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ C\+Mem\+Allocator\+::\+Alloc\+From\+Mem\+Block (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Mem\+Block} $\ast$}]{\+\_\+pc\+Mem\+Block, }
+\item[{U\+Size}]{\+\_\+u\+Size, }
+\item[{const S8 $\ast$}]{\+\_\+ps\+File, }
+\item[{U32}]{\+\_\+u\+Line, }
+\item[{{\bf En\+Alloc\+Mode}}]{\+\_\+e\+Mode}
+\end{DoxyParamCaption}
+)}\label{class_c_mem_allocator_a78bd707276d68fc2aa5828dbb86a74df}
+
+
+指定したメモリブロックからメモリを確保。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+pc\+Mem\+Block} & ; メモリブロック。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+u\+Size} & \+: 確保するサイズ。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+ps\+File} & \+: 呼び出し元のファイル名。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+u\+Line} & \+: 呼び出し元行数。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+e\+Mode} & \+: アロケートモード。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+\+: 確保したメモリへのポインタ。 
+\end{DoxyReturn}
+\hypertarget{class_c_mem_allocator_ac679b89a322afa320a994d8bedec415d}{}\index{C\+Mem\+Allocator@{C\+Mem\+Allocator}!Free@{Free}}
+\index{Free@{Free}!C\+Mem\+Allocator@{C\+Mem\+Allocator}}
+\subsubsection[{Free(void $\ast$\+\_\+p)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Mem\+Allocator\+::\+Free (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{\+\_\+p}
+\end{DoxyParamCaption}
+)}\label{class_c_mem_allocator_ac679b89a322afa320a994d8bedec415d}
+
+
+メモリを解放。 
+
+brief メモリを解放。 \hypertarget{class_c_mem_allocator_a920fe29d9b0bdaa721eaa20c66abaa2e}{}\index{C\+Mem\+Allocator@{C\+Mem\+Allocator}!Get\+Block\+Size@{Get\+Block\+Size}}
+\index{Get\+Block\+Size@{Get\+Block\+Size}!C\+Mem\+Allocator@{C\+Mem\+Allocator}}
+\subsubsection[{Get\+Block\+Size(\+U\+Size \+\_\+u\+Size)}]{\setlength{\rightskip}{0pt plus 5cm}U\+Size C\+Mem\+Allocator\+::\+Get\+Block\+Size (
+\begin{DoxyParamCaption}
+\item[{U\+Size}]{\+\_\+u\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{class_c_mem_allocator_a920fe29d9b0bdaa721eaa20c66abaa2e}
+
+
+要求されたサイズから、実際に確保するブロックサイズを取得。 
+
+\hypertarget{class_c_mem_allocator_a9f0303603e63a742cc97c82d64fe90d5}{}\index{C\+Mem\+Allocator@{C\+Mem\+Allocator}!Get\+Free\+List\+Index@{Get\+Free\+List\+Index}}
+\index{Get\+Free\+List\+Index@{Get\+Free\+List\+Index}!C\+Mem\+Allocator@{C\+Mem\+Allocator}}
+\subsubsection[{Get\+Free\+List\+Index(\+U32 \+\_\+u\+First\+Level, U32 \+\_\+u\+Second\+Level)}]{\setlength{\rightskip}{0pt plus 5cm}U32 C\+Mem\+Allocator\+::\+Get\+Free\+List\+Index (
+\begin{DoxyParamCaption}
+\item[{U32}]{\+\_\+u\+First\+Level, }
+\item[{U32}]{\+\_\+u\+Second\+Level}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_mem_allocator_a9f0303603e63a742cc97c82d64fe90d5}
+
+
+レベルから\+Freeリストのインデックスを取得。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+u\+First\+Level} & \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+u\+Second\+Level} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em インデックス値} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{class_c_mem_allocator_af607e6b68b3b614e769b6e93078a04ca}{}\index{C\+Mem\+Allocator@{C\+Mem\+Allocator}!Get\+Level@{Get\+Level}}
+\index{Get\+Level@{Get\+Level}!C\+Mem\+Allocator@{C\+Mem\+Allocator}}
+\subsubsection[{Get\+Level(\+U32 $\ast$\+\_\+pu\+Out\+First, U32 $\ast$\+\_\+pu\+Out\+Second, U\+Size \+\_\+u\+Block\+Size)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Mem\+Allocator\+::\+Get\+Level (
+\begin{DoxyParamCaption}
+\item[{U32 $\ast$}]{\+\_\+pu\+Out\+First, }
+\item[{U32 $\ast$}]{\+\_\+pu\+Out\+Second, }
+\item[{U\+Size}]{\+\_\+u\+Block\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_mem_allocator_af607e6b68b3b614e769b6e93078a04ca}
+
+
+サイズからレベルを取得。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt out}  & {\em \+\_\+pu\+Out\+First} & \+: F\+L\+I格納先。 \\
+\hline
+\mbox{\tt out}  & {\em \+\_\+pu\+Out\+Second} & \+: S\+L\+I格納先。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+u\+Block\+Size} & \+: ブロックサイズ。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_mem_allocator_ab3c38b86c68cfc86a3e95bb7964efd97}{}\index{C\+Mem\+Allocator@{C\+Mem\+Allocator}!Is\+Allocated\+Pointer@{Is\+Allocated\+Pointer}}
+\index{Is\+Allocated\+Pointer@{Is\+Allocated\+Pointer}!C\+Mem\+Allocator@{C\+Mem\+Allocator}}
+\subsubsection[{Is\+Allocated\+Pointer(void $\ast$\+\_\+p) const }]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Mem\+Allocator\+::\+Is\+Allocated\+Pointer (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{\+\_\+p}
+\end{DoxyParamCaption}
+) const}\label{class_c_mem_allocator_ab3c38b86c68cfc86a3e95bb7964efd97}
+
+
+このメモリアロケータで確保したポインタか。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+p} & \+: チェックするポインタ。 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em } & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{class_c_mem_allocator_af156badb5f8380a0d9ee76afad22c496}{}\index{C\+Mem\+Allocator@{C\+Mem\+Allocator}!operator delete@{operator delete}}
+\index{operator delete@{operator delete}!C\+Mem\+Allocator@{C\+Mem\+Allocator}}
+\subsubsection[{operator delete(void $\ast$\+\_\+p)}]{\setlength{\rightskip}{0pt plus 5cm}static void C\+Mem\+Allocator\+::operator delete (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{\+\_\+p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{class_c_mem_allocator_af156badb5f8380a0d9ee76afad22c496}
+\hypertarget{class_c_mem_allocator_a48c0568fb21eb63978af2137aab23ad6}{}\index{C\+Mem\+Allocator@{C\+Mem\+Allocator}!operator new@{operator new}}
+\index{operator new@{operator new}!C\+Mem\+Allocator@{C\+Mem\+Allocator}}
+\subsubsection[{operator new(std\+::size\+\_\+t \+\_\+u\+Size)}]{\setlength{\rightskip}{0pt plus 5cm}static void$\ast$ C\+Mem\+Allocator\+::operator new (
+\begin{DoxyParamCaption}
+\item[{std\+::size\+\_\+t}]{\+\_\+u\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{class_c_mem_allocator_a48c0568fb21eb63978af2137aab23ad6}
+\hypertarget{class_c_mem_allocator_a54bea8680421134c27912868508792aa}{}\index{C\+Mem\+Allocator@{C\+Mem\+Allocator}!Remove\+Free\+List@{Remove\+Free\+List}}
+\index{Remove\+Free\+List@{Remove\+Free\+List}!C\+Mem\+Allocator@{C\+Mem\+Allocator}}
+\subsubsection[{Remove\+Free\+List(\+C\+Mem\+Block $\ast$\+\_\+pc\+Mem\+Block)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Mem\+Allocator\+::\+Remove\+Free\+List (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Mem\+Block} $\ast$}]{\+\_\+pc\+Mem\+Block}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_mem_allocator_a54bea8680421134c27912868508792aa}
+
+
+Freeリストから領域を解除。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+pc\+Mem\+Block} & \+: 解除するブロック。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_mem_allocator_a5157e10cc3b426b42f661a6f3c0d8f51}{}\index{C\+Mem\+Allocator@{C\+Mem\+Allocator}!Search\+Free\+List\+Level@{Search\+Free\+List\+Level}}
+\index{Search\+Free\+List\+Level@{Search\+Free\+List\+Level}!C\+Mem\+Allocator@{C\+Mem\+Allocator}}
+\subsubsection[{Search\+Free\+List\+Level(\+U32 $\ast$\+\_\+p\+Out\+First\+Level, U32 $\ast$\+\_\+p\+Out\+Second\+Level, U\+Size \+\_\+u\+Block\+Size)}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Mem\+Allocator\+::\+Search\+Free\+List\+Level (
+\begin{DoxyParamCaption}
+\item[{U32 $\ast$}]{\+\_\+p\+Out\+First\+Level, }
+\item[{U32 $\ast$}]{\+\_\+p\+Out\+Second\+Level, }
+\item[{U\+Size}]{\+\_\+u\+Block\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_mem_allocator_a5157e10cc3b426b42f661a6f3c0d8f51}
+
+
+Freeリストから確保出来る領域のレベルを探す。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt out}  & {\em \+\_\+p\+Out\+First\+Level} & \+: 1st\+Levelの格納先。 \\
+\hline
+\mbox{\tt out}  & {\em \+\_\+p\+Out\+Second\+Level} & \+: 2nd\+Levelの格納先。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+u\+Block\+Size} & \+: ブロックサイズ。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_mem_allocator_a7a916e62db377590430d6969551cc547}{}\index{C\+Mem\+Allocator@{C\+Mem\+Allocator}!Set\+Free\+List@{Set\+Free\+List}}
+\index{Set\+Free\+List@{Set\+Free\+List}!C\+Mem\+Allocator@{C\+Mem\+Allocator}}
+\subsubsection[{Set\+Free\+List(\+C\+Mem\+Block $\ast$\+\_\+pc\+Mem\+Block)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Mem\+Allocator\+::\+Set\+Free\+List (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Mem\+Block} $\ast$}]{\+\_\+pc\+Mem\+Block}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_mem_allocator_a7a916e62db377590430d6969551cc547}
+
+
+Freeリストに領域をセット。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+pc\+Mem\+Block} & \+: セットするブロック。 \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{メンバ詳解}
+\hypertarget{class_c_mem_allocator_ac777d3d046eab9d58e8749a68a6bf36c}{}\index{C\+Mem\+Allocator@{C\+Mem\+Allocator}!m\+\_\+c\+Critical\+Section@{m\+\_\+c\+Critical\+Section}}
+\index{m\+\_\+c\+Critical\+Section@{m\+\_\+c\+Critical\+Section}!C\+Mem\+Allocator@{C\+Mem\+Allocator}}
+\subsubsection[{m\+\_\+c\+Critical\+Section}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Critical\+Section} C\+Mem\+Allocator\+::m\+\_\+c\+Critical\+Section\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_mem_allocator_ac777d3d046eab9d58e8749a68a6bf36c}
+
+
+クリティカルセクション。 
+
+\hypertarget{class_c_mem_allocator_aac2d7de345dbb577fa47907647bb831f}{}\index{C\+Mem\+Allocator@{C\+Mem\+Allocator}!m\+\_\+p\+End\+Block@{m\+\_\+p\+End\+Block}}
+\index{m\+\_\+p\+End\+Block@{m\+\_\+p\+End\+Block}!C\+Mem\+Allocator@{C\+Mem\+Allocator}}
+\subsubsection[{m\+\_\+p\+End\+Block}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Mem\+Block}$\ast$ C\+Mem\+Allocator\+::m\+\_\+p\+End\+Block\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_mem_allocator_aac2d7de345dbb577fa47907647bb831f}
+
+
+終端ブロック。 
+
+\hypertarget{class_c_mem_allocator_a5593b5d4263ee5e0af22458ad8f89f21}{}\index{C\+Mem\+Allocator@{C\+Mem\+Allocator}!m\+\_\+p\+Free\+Block\+Array@{m\+\_\+p\+Free\+Block\+Array}}
+\index{m\+\_\+p\+Free\+Block\+Array@{m\+\_\+p\+Free\+Block\+Array}!C\+Mem\+Allocator@{C\+Mem\+Allocator}}
+\subsubsection[{m\+\_\+p\+Free\+Block\+Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Mem\+Block}$\ast$$\ast$ C\+Mem\+Allocator\+::m\+\_\+p\+Free\+Block\+Array\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_mem_allocator_a5593b5d4263ee5e0af22458ad8f89f21}
+
+
+解放済みの領域リスト。 
+
+\hypertarget{class_c_mem_allocator_ad729846ce9ff5ecdac69574604140e39}{}\index{C\+Mem\+Allocator@{C\+Mem\+Allocator}!m\+\_\+p\+Memory@{m\+\_\+p\+Memory}}
+\index{m\+\_\+p\+Memory@{m\+\_\+p\+Memory}!C\+Mem\+Allocator@{C\+Mem\+Allocator}}
+\subsubsection[{m\+\_\+p\+Memory}]{\setlength{\rightskip}{0pt plus 5cm}U8$\ast$ C\+Mem\+Allocator\+::m\+\_\+p\+Memory\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_mem_allocator_ad729846ce9ff5ecdac69574604140e39}
+
+
+確保したメモリ。 
+
+\hypertarget{class_c_mem_allocator_a5ae9573631f11b58cb0741dd5d071d4e}{}\index{C\+Mem\+Allocator@{C\+Mem\+Allocator}!m\+\_\+st\+Init\+Param@{m\+\_\+st\+Init\+Param}}
+\index{m\+\_\+st\+Init\+Param@{m\+\_\+st\+Init\+Param}!C\+Mem\+Allocator@{C\+Mem\+Allocator}}
+\subsubsection[{m\+\_\+st\+Init\+Param}]{\setlength{\rightskip}{0pt plus 5cm}{\bf St\+Init\+Param} C\+Mem\+Allocator\+::m\+\_\+st\+Init\+Param\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_mem_allocator_a5ae9573631f11b58cb0741dd5d071d4e}
+\hypertarget{class_c_mem_allocator_a9f35f48a378b79fc033b6aa6dcf13b73}{}\index{C\+Mem\+Allocator@{C\+Mem\+Allocator}!m\+\_\+u\+Is\+Free@{m\+\_\+u\+Is\+Free}}
+\index{m\+\_\+u\+Is\+Free@{m\+\_\+u\+Is\+Free}!C\+Mem\+Allocator@{C\+Mem\+Allocator}}
+\subsubsection[{m\+\_\+u\+Is\+Free}]{\setlength{\rightskip}{0pt plus 5cm}U64 C\+Mem\+Allocator\+::m\+\_\+u\+Is\+Free\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_mem_allocator_a9f35f48a378b79fc033b6aa6dcf13b73}
+
+
+解放済みの領域があるか。(1st\+Level) 
+
+\hypertarget{class_c_mem_allocator_a6fc0c334bf8f88d108b7f7ca1b87c682}{}\index{C\+Mem\+Allocator@{C\+Mem\+Allocator}!m\+\_\+u\+Is\+Free\+Array@{m\+\_\+u\+Is\+Free\+Array}}
+\index{m\+\_\+u\+Is\+Free\+Array@{m\+\_\+u\+Is\+Free\+Array}!C\+Mem\+Allocator@{C\+Mem\+Allocator}}
+\subsubsection[{m\+\_\+u\+Is\+Free\+Array}]{\setlength{\rightskip}{0pt plus 5cm}U32 C\+Mem\+Allocator\+::m\+\_\+u\+Is\+Free\+Array\mbox{[}{\bf en\+First\+Level\+\_\+\+Max}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_mem_allocator_a6fc0c334bf8f88d108b7f7ca1b87c682}
+
+
+解放済みの領域があるか。(2nd\+Level) 
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Project/\+Game/\+Lib/\+Memory/\hyperlink{_mem_allocator_8h}{Mem\+Allocator.\+h}\item 
+D\+:/\+Project/\+Game/\+Lib/\+Memory/\hyperlink{_mem_allocator_8cpp}{Mem\+Allocator.\+cpp}\end{DoxyCompactItemize}

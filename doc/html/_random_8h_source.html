@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>My Project: D:/Project/Game/Lib/Random/Random.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="namespaces.html"><span>名前空間</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8f3de2ae926fecfe6abd5379fd2b6eb1.html">Lib</a></li><li class="navelem"><a class="el" href="dir_bca7e021f7b5cbfd1504d8337db7350e.html">Random</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Random.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_random_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef INCLUDE_RANDOM_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define INCLUDE_RANDOM_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;random&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * @class   CRandomReal</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * @brief   実数型の乱数生成クラス。</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * @note    コンストラクタでハードウェアエントロピーソースからシード値を設定するため、</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *          生成コストが高い。毎フレーム生成するような使い方は避けること。 </span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_c_random_real.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_random_real.html">CRandomReal</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_c_random_real.html#ae4e392ce256d39dd23efd10bb854497b">CRandomReal</a>( T _fMin, T _fMax );</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_c_random_real.html#a1816488bda25256c76f4c1398813789a">~CRandomReal</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    T <a class="code" href="class_c_random_real.html#a9c2371d1a531aa18ce4f448fe9c762f6">GetRandom</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_c_random_real.html#a037817cfa9e79313ea851b03fa1fd4ad">   28</a></span>&#160;    std::mt19937_64*                    <a class="code" href="class_c_random_real.html#a037817cfa9e79313ea851b03fa1fd4ad">m_pcRandomMT</a>;       </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_c_random_real.html#a2cf71bd4ff15374b9b079b38125867e3">   29</a></span>&#160;    std::uniform_real_distribution&lt;T&gt;*  <a class="code" href="class_c_random_real.html#a2cf71bd4ff15374b9b079b38125867e3">m_pcDistribution</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> * @class   CRandomInt</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> * @brief   整数型の乱数生成クラス。</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> * @note    コンストラクタでハードウェアエントロピーソースからシード値を設定するため、</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> *          生成コストが高い。毎フレーム生成するような使い方は避けること。 </span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_c_random_int.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_random_int.html">CRandomInt</a></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_c_random_int.html#a5f3ff4ea24378926da8aac150a4a33fd">CRandomInt</a>( T _fMin, T _fMax );</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_c_random_int.html#a7cc41c7e1b21a16a8bfe3c79bb665e22">~CRandomInt</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    T <a class="code" href="class_c_random_int.html#a04dfe95f084771d7c0392eef857f27ff">GetRandom</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_c_random_int.html#aae181316633165d9888d530e15f8232b">   49</a></span>&#160;    std::mt19937_64*                    <a class="code" href="class_c_random_int.html#aae181316633165d9888d530e15f8232b">m_pcRandomMT</a>;       </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_c_random_int.html#a5c6565335676d670c0072236d18e34cc">   50</a></span>&#160;    std::uniform_int_distribution&lt;T&gt;*   <a class="code" href="class_c_random_int.html#a5c6565335676d670c0072236d18e34cc">m_pcDistribution</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_random_real_8h.html">Lib/Random/RandomReal.h</a>&quot;</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_random_int_8h.html">Lib/Random/RandomInt.h</a>&quot;</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif // #ifndef INCLUDE_RANDOM_H</span></div>
+<div class="ttc" id="class_c_random_real_html_a1816488bda25256c76f4c1398813789a"><div class="ttname"><a href="class_c_random_real.html#a1816488bda25256c76f4c1398813789a">CRandomReal::~CRandomReal</a></div><div class="ttdeci">~CRandomReal()</div><div class="ttdoc">デストラクタ。 </div><div class="ttdef"><b>Definition:</b> RandomReal.h:31</div></div>
+<div class="ttc" id="class_c_random_real_html_a037817cfa9e79313ea851b03fa1fd4ad"><div class="ttname"><a href="class_c_random_real.html#a037817cfa9e79313ea851b03fa1fd4ad">CRandomReal::m_pcRandomMT</a></div><div class="ttdeci">std::mt19937_64 * m_pcRandomMT</div><div class="ttdoc">メルセンヌ・ツイスター法による乱数生成。 </div><div class="ttdef"><b>Definition:</b> Random.h:28</div></div>
+<div class="ttc" id="class_c_random_int_html_aae181316633165d9888d530e15f8232b"><div class="ttname"><a href="class_c_random_int.html#aae181316633165d9888d530e15f8232b">CRandomInt::m_pcRandomMT</a></div><div class="ttdeci">std::mt19937_64 * m_pcRandomMT</div><div class="ttdoc">メルセンヌ・ツイスター法による乱数生成。 </div><div class="ttdef"><b>Definition:</b> Random.h:49</div></div>
+<div class="ttc" id="class_c_random_int_html_a5c6565335676d670c0072236d18e34cc"><div class="ttname"><a href="class_c_random_int.html#a5c6565335676d670c0072236d18e34cc">CRandomInt::m_pcDistribution</a></div><div class="ttdeci">std::uniform_int_distribution&lt; T &gt; * m_pcDistribution</div><div class="ttdef"><b>Definition:</b> Random.h:50</div></div>
+<div class="ttc" id="class_c_random_real_html"><div class="ttname"><a href="class_c_random_real.html">CRandomReal</a></div><div class="ttdef"><b>Definition:</b> Random.h:19</div></div>
+<div class="ttc" id="class_c_random_int_html"><div class="ttname"><a href="class_c_random_int.html">CRandomInt</a></div><div class="ttdef"><b>Definition:</b> Random.h:40</div></div>
+<div class="ttc" id="class_c_random_real_html_a9c2371d1a531aa18ce4f448fe9c762f6"><div class="ttname"><a href="class_c_random_real.html#a9c2371d1a531aa18ce4f448fe9c762f6">CRandomReal::GetRandom</a></div><div class="ttdeci">T GetRandom()</div><div class="ttdoc">乱数を取得。 </div><div class="ttdef"><b>Definition:</b> RandomReal.h:42</div></div>
+<div class="ttc" id="class_c_random_int_html_a5f3ff4ea24378926da8aac150a4a33fd"><div class="ttname"><a href="class_c_random_int.html#a5f3ff4ea24378926da8aac150a4a33fd">CRandomInt::CRandomInt</a></div><div class="ttdeci">CRandomInt(T _fMin, T _fMax)</div><div class="ttdoc">コンストラクタ。 </div><div class="ttdef"><b>Definition:</b> RandomInt.h:18</div></div>
+<div class="ttc" id="_random_real_8h_html"><div class="ttname"><a href="_random_real_8h.html">RandomReal.h</a></div><div class="ttdoc">実数型の乱数生成クラス。 </div></div>
+<div class="ttc" id="class_c_random_real_html_a2cf71bd4ff15374b9b079b38125867e3"><div class="ttname"><a href="class_c_random_real.html#a2cf71bd4ff15374b9b079b38125867e3">CRandomReal::m_pcDistribution</a></div><div class="ttdeci">std::uniform_real_distribution&lt; T &gt; * m_pcDistribution</div><div class="ttdef"><b>Definition:</b> Random.h:29</div></div>
+<div class="ttc" id="class_c_random_real_html_ae4e392ce256d39dd23efd10bb854497b"><div class="ttname"><a href="class_c_random_real.html#ae4e392ce256d39dd23efd10bb854497b">CRandomReal::CRandomReal</a></div><div class="ttdeci">CRandomReal(T _fMin, T _fMax)</div><div class="ttdoc">コンストラクタ。 </div><div class="ttdef"><b>Definition:</b> RandomReal.h:18</div></div>
+<div class="ttc" id="class_c_random_int_html_a04dfe95f084771d7c0392eef857f27ff"><div class="ttname"><a href="class_c_random_int.html#a04dfe95f084771d7c0392eef857f27ff">CRandomInt::GetRandom</a></div><div class="ttdeci">T GetRandom()</div><div class="ttdoc">乱数を取得。 </div><div class="ttdef"><b>Definition:</b> RandomInt.h:42</div></div>
+<div class="ttc" id="class_c_random_int_html_a7cc41c7e1b21a16a8bfe3c79bb665e22"><div class="ttname"><a href="class_c_random_int.html#a7cc41c7e1b21a16a8bfe3c79bb665e22">CRandomInt::~CRandomInt</a></div><div class="ttdeci">~CRandomInt()</div><div class="ttdoc">デストラクタ。 </div><div class="ttdef"><b>Definition:</b> RandomInt.h:31</div></div>
+<div class="ttc" id="_random_int_8h_html"><div class="ttname"><a href="_random_int_8h.html">RandomInt.h</a></div><div class="ttdoc">実数型の乱数生成クラス。 </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

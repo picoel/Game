@@ -1,0 +1,191 @@
+\hypertarget{class_c_render_thread}{}\section{C\+Render\+Thread クラス}
+\label{class_c_render_thread}\index{C\+Render\+Thread@{C\+Render\+Thread}}
+
+
+{\ttfamily \#include $<$Render\+Thread.\+h$>$}
+
+C\+Render\+Thread の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_render_thread}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_render_thread_a2a679469847619c4525b60e9577aa70e}{C\+Render\+Thread} (\hyperlink{class_i_render_context}{I\+Render\+Context} $\ast$\+\_\+pc\+Render\+Context)
+\begin{DoxyCompactList}\small\item\em コンストラクタ。 \end{DoxyCompactList}\item 
+\hyperlink{class_c_render_thread_a7316ff44713f7951734875ef97fc0e64}{$\sim$\+C\+Render\+Thread} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_render_thread_a401df3e527ca4873e93d918ef10f0728}{Set\+Request\+Render} (bool \+\_\+b\+Request)
+\begin{DoxyCompactList}\small\item\em 描画リクエスト。 \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_render_thread_a31a0dcd1c30f9366a53ea488444084d8}{Is\+Request\+Render} ()
+\begin{DoxyCompactList}\small\item\em 描画リクエストがあるか。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_render_thread_a17632fe814d63824d67c1ac96189dd6a}{Set\+Request\+End} (bool \+\_\+b\+End)
+\begin{DoxyCompactList}\small\item\em 終了リクエスト。 \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_render_thread_abe60a79fc237ed4b620a11d3b35bdd66}{Is\+Request\+End} ()
+\begin{DoxyCompactList}\small\item\em 終了リクエストがあるか。 \end{DoxyCompactList}\item 
+\hyperlink{class_i_render_context}{I\+Render\+Context} $\ast$ \hyperlink{class_c_render_thread_aee6242ad8ffff36301faf978cb4065b7}{Get\+Render\+Context} ()
+\begin{DoxyCompactList}\small\item\em 描画コンテキストを取得。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_render_thread_ac6c5c64b626dd62ad0d04e2a69db73ee}{Thread\+Callback} () final
+\begin{DoxyCompactList}\small\item\em スレッドからコールバックされる関数。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_i_render_context}{I\+Render\+Context} $\ast$ \hyperlink{class_c_render_thread_a781f8748290e6d59f8542b7f6b288815}{m\+\_\+pc\+Render\+Context}
+\item 
+bool \hyperlink{class_c_render_thread_a4684335c2982479e810c5e63ff07d246}{m\+\_\+b\+Request\+Render}
+\item 
+bool \hyperlink{class_c_render_thread_a47dc8a52ee3018731c821aad1505f54a}{m\+\_\+b\+Request\+End}
+\item 
+\hyperlink{class_c_critical_section}{C\+Critical\+Section} \hyperlink{class_c_render_thread_ab774ece4ffa6cd618cd02b888d9da06e}{m\+\_\+c\+Critical\+Section}
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\hypertarget{class_c_render_thread_a2a679469847619c4525b60e9577aa70e}{}\index{C\+Render\+Thread@{C\+Render\+Thread}!C\+Render\+Thread@{C\+Render\+Thread}}
+\index{C\+Render\+Thread@{C\+Render\+Thread}!C\+Render\+Thread@{C\+Render\+Thread}}
+\subsubsection[{C\+Render\+Thread(\+I\+Render\+Context $\ast$\+\_\+pc\+Render\+Context)}]{\setlength{\rightskip}{0pt plus 5cm}C\+Render\+Thread\+::\+C\+Render\+Thread (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Render\+Context} $\ast$}]{\+\_\+pc\+Render\+Context}
+\end{DoxyParamCaption}
+)}\label{class_c_render_thread_a2a679469847619c4525b60e9577aa70e}
+
+
+コンストラクタ。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+pc\+Render\+Context} & \+: 描画コンテキスト。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_render_thread_a7316ff44713f7951734875ef97fc0e64}{}\index{C\+Render\+Thread@{C\+Render\+Thread}!````~C\+Render\+Thread@{$\sim$\+C\+Render\+Thread}}
+\index{````~C\+Render\+Thread@{$\sim$\+C\+Render\+Thread}!C\+Render\+Thread@{C\+Render\+Thread}}
+\subsubsection[{$\sim$\+C\+Render\+Thread()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Render\+Thread\+::$\sim$\+C\+Render\+Thread (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_render_thread_a7316ff44713f7951734875ef97fc0e64}
+
+
+デストラクタ。 
+
+
+
+\subsection{関数詳解}
+\hypertarget{class_c_render_thread_aee6242ad8ffff36301faf978cb4065b7}{}\index{C\+Render\+Thread@{C\+Render\+Thread}!Get\+Render\+Context@{Get\+Render\+Context}}
+\index{Get\+Render\+Context@{Get\+Render\+Context}!C\+Render\+Thread@{C\+Render\+Thread}}
+\subsubsection[{Get\+Render\+Context()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Render\+Context} $\ast$ C\+Render\+Thread\+::\+Get\+Render\+Context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_render_thread_aee6242ad8ffff36301faf978cb4065b7}
+
+
+描画コンテキストを取得。 
+
+
+\begin{DoxyRetVals}{戻り値}
+{\em \hyperlink{class_i_render_context}{I\+Render\+Context}} & \+: 描画コンテキスト。 \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{class_c_render_thread_abe60a79fc237ed4b620a11d3b35bdd66}{}\index{C\+Render\+Thread@{C\+Render\+Thread}!Is\+Request\+End@{Is\+Request\+End}}
+\index{Is\+Request\+End@{Is\+Request\+End}!C\+Render\+Thread@{C\+Render\+Thread}}
+\subsubsection[{Is\+Request\+End()}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Render\+Thread\+::\+Is\+Request\+End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_render_thread_abe60a79fc237ed4b620a11d3b35bdd66}
+
+
+終了リクエストがあるか。 
+
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & \+: 終了リクエストがあればtrue。 \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{class_c_render_thread_a31a0dcd1c30f9366a53ea488444084d8}{}\index{C\+Render\+Thread@{C\+Render\+Thread}!Is\+Request\+Render@{Is\+Request\+Render}}
+\index{Is\+Request\+Render@{Is\+Request\+Render}!C\+Render\+Thread@{C\+Render\+Thread}}
+\subsubsection[{Is\+Request\+Render()}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Render\+Thread\+::\+Is\+Request\+Render (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_render_thread_a31a0dcd1c30f9366a53ea488444084d8}
+
+
+描画リクエストがあるか。 
+
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & \+: 描画リクエストがあればtrue。 \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{class_c_render_thread_a17632fe814d63824d67c1ac96189dd6a}{}\index{C\+Render\+Thread@{C\+Render\+Thread}!Set\+Request\+End@{Set\+Request\+End}}
+\index{Set\+Request\+End@{Set\+Request\+End}!C\+Render\+Thread@{C\+Render\+Thread}}
+\subsubsection[{Set\+Request\+End(bool \+\_\+b\+End)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Render\+Thread\+::\+Set\+Request\+End (
+\begin{DoxyParamCaption}
+\item[{bool}]{\+\_\+b\+Request}
+\end{DoxyParamCaption}
+)}\label{class_c_render_thread_a17632fe814d63824d67c1ac96189dd6a}
+
+
+終了リクエスト。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+b\+Request} & \+: trueなら終了する。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_render_thread_a401df3e527ca4873e93d918ef10f0728}{}\index{C\+Render\+Thread@{C\+Render\+Thread}!Set\+Request\+Render@{Set\+Request\+Render}}
+\index{Set\+Request\+Render@{Set\+Request\+Render}!C\+Render\+Thread@{C\+Render\+Thread}}
+\subsubsection[{Set\+Request\+Render(bool \+\_\+b\+Request)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Render\+Thread\+::\+Set\+Request\+Render (
+\begin{DoxyParamCaption}
+\item[{bool}]{\+\_\+b\+Request}
+\end{DoxyParamCaption}
+)}\label{class_c_render_thread_a401df3e527ca4873e93d918ef10f0728}
+
+
+描画リクエスト。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+b\+Request} & \+: trueならリクエストを行う。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_render_thread_ac6c5c64b626dd62ad0d04e2a69db73ee}{}\index{C\+Render\+Thread@{C\+Render\+Thread}!Thread\+Callback@{Thread\+Callback}}
+\index{Thread\+Callback@{Thread\+Callback}!C\+Render\+Thread@{C\+Render\+Thread}}
+\subsubsection[{Thread\+Callback() final}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Render\+Thread\+::\+Thread\+Callback (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}\label{class_c_render_thread_ac6c5c64b626dd62ad0d04e2a69db73ee}
+
+
+スレッドからコールバックされる関数。 
+
+ループ。 
+
+\hyperlink{class_c_thread_a15c60ba6d652d92c150fda5e10ebb23e}{C\+Thread}を再実装しています。
+
+
+
+\subsection{メンバ詳解}
+\hypertarget{class_c_render_thread_a47dc8a52ee3018731c821aad1505f54a}{}\index{C\+Render\+Thread@{C\+Render\+Thread}!m\+\_\+b\+Request\+End@{m\+\_\+b\+Request\+End}}
+\index{m\+\_\+b\+Request\+End@{m\+\_\+b\+Request\+End}!C\+Render\+Thread@{C\+Render\+Thread}}
+\subsubsection[{m\+\_\+b\+Request\+End}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Render\+Thread\+::m\+\_\+b\+Request\+End\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_render_thread_a47dc8a52ee3018731c821aad1505f54a}
+\hypertarget{class_c_render_thread_a4684335c2982479e810c5e63ff07d246}{}\index{C\+Render\+Thread@{C\+Render\+Thread}!m\+\_\+b\+Request\+Render@{m\+\_\+b\+Request\+Render}}
+\index{m\+\_\+b\+Request\+Render@{m\+\_\+b\+Request\+Render}!C\+Render\+Thread@{C\+Render\+Thread}}
+\subsubsection[{m\+\_\+b\+Request\+Render}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Render\+Thread\+::m\+\_\+b\+Request\+Render\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_render_thread_a4684335c2982479e810c5e63ff07d246}
+\hypertarget{class_c_render_thread_ab774ece4ffa6cd618cd02b888d9da06e}{}\index{C\+Render\+Thread@{C\+Render\+Thread}!m\+\_\+c\+Critical\+Section@{m\+\_\+c\+Critical\+Section}}
+\index{m\+\_\+c\+Critical\+Section@{m\+\_\+c\+Critical\+Section}!C\+Render\+Thread@{C\+Render\+Thread}}
+\subsubsection[{m\+\_\+c\+Critical\+Section}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Critical\+Section} C\+Render\+Thread\+::m\+\_\+c\+Critical\+Section\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_render_thread_ab774ece4ffa6cd618cd02b888d9da06e}
+\hypertarget{class_c_render_thread_a781f8748290e6d59f8542b7f6b288815}{}\index{C\+Render\+Thread@{C\+Render\+Thread}!m\+\_\+pc\+Render\+Context@{m\+\_\+pc\+Render\+Context}}
+\index{m\+\_\+pc\+Render\+Context@{m\+\_\+pc\+Render\+Context}!C\+Render\+Thread@{C\+Render\+Thread}}
+\subsubsection[{m\+\_\+pc\+Render\+Context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Render\+Context}$\ast$ C\+Render\+Thread\+::m\+\_\+pc\+Render\+Context\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_render_thread_a781f8748290e6d59f8542b7f6b288815}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Project/\+Game/\+Lib/\+Render/\hyperlink{_render_thread_8h}{Render\+Thread.\+h}\item 
+D\+:/\+Project/\+Game/\+Lib/\+Render/\hyperlink{_render_thread_8cpp}{Render\+Thread.\+cpp}\end{DoxyCompactItemize}

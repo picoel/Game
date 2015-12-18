@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>My Project: D:/Project/Game/Lib/Object/ActionList.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="namespaces.html"><span>名前空間</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8f3de2ae926fecfe6abd5379fd2b6eb1.html">Lib</a></li><li class="navelem"><a class="el" href="dir_857bddc9f722b9e9a2cd796ab937c6f6.html">Object</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ActionList.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_action_list_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef INCLUDE_CACTIONLIST_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define INCLUDE_CACTIONLIST_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_action.html">CAction</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_critical_section_8h.html">Lib/Thread/CriticalSection.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_singleton_8h.html">Lib/Utility/Singleton.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_object_list_8h.html">Lib/Object/ObjectList.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_c_action_list.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_action_list.html">CActionList</a> : <span class="keyword">public</span> <a class="code" href="class_c_singleton.html">CSingleton</a>&lt;CActionList&gt;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_c_action_list.html#ab1bfb7078790f77dbf03457598b13e90">   22</a></span>&#160;    <span class="keyword">friend</span> <a class="code" href="class_c_singleton.html">CSingleton &lt; CActionList &gt;</a> ;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_c_action_list.html#ae814ffecb31176127c16fbf8b8619853">CActionList</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="struct_c_action_list_1_1_st_init_param.html">   28</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_c_action_list_1_1_st_init_param.html">StInitParam</a></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="struct_c_action_list_1_1_st_init_param.html#a5c56d351fbe8dd96bf418441423ba37f">   30</a></span>&#160;        U32 <a class="code" href="struct_c_action_list_1_1_st_init_param.html#a5c56d351fbe8dd96bf418441423ba37f">m_uLevelMax</a>;            </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="struct_c_action_list_1_1_st_init_param.html#ac7e4a40b8e2352cfc43cb23c657a60d4">   31</a></span>&#160;        U32 <a class="code" href="struct_c_action_list_1_1_st_init_param.html#ac7e4a40b8e2352cfc43cb23c657a60d4">m_uLevelReserveSize</a>;    </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="struct_c_action_list_1_1_st_init_param.html#a9ae0b36a7a6bf7b30d1d07f989ebac5e">   33</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="struct_c_action_list_1_1_st_init_param.html#a9ae0b36a7a6bf7b30d1d07f989ebac5e">Init</a>()</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            m_uLevelMax = 0;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            m_uLevelReserveSize = 0;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    };</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_action_list.html#aaaa39fed12095bb0095c51d27ca19443">~CActionList</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_action_list.html#abdfe27d4d3e92e7de8e2b91c7cf17574">Init</a>( <span class="keyword">const</span> StInitParam&amp; _rstParam );</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_action_list.html#aa1341ee2595b0c1ae226123dccef0477">Register</a>( <a class="code" href="class_c_action.html">CAction</a>* _pObject );</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_action_list.html#a916677de8c5f6c39846f46800ef0f0e7">UnRegister</a>( <a class="code" href="class_c_action.html">CAction</a>* _pObject );</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_action_list.html#aa3d82dc70353a5fc2dd10fc6a2800f85">AllAction</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_c_action_list.html#a32027728142c6e1af28240a59ed009bb">   51</a></span>&#160;    <a class="code" href="struct_c_action_list_1_1_st_init_param.html">StInitParam</a>         <a class="code" href="class_c_action_list.html#a32027728142c6e1af28240a59ed009bb">m_stParam</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_c_action_list.html#ac374ad0c0bc4b0d86a4a33064f16b1dc">   53</a></span>&#160;    <a class="code" href="class_c_object_list.html">CObjectList&lt;CAction&gt;</a>*   <a class="code" href="class_c_action_list.html#ac374ad0c0bc4b0d86a4a33064f16b1dc">m_pcActionList</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif // #ifndef INCLUDE_CACTIONLIST_H</span></div>
+<div class="ttc" id="class_c_action_list_html_a916677de8c5f6c39846f46800ef0f0e7"><div class="ttname"><a href="class_c_action_list.html#a916677de8c5f6c39846f46800ef0f0e7">CActionList::UnRegister</a></div><div class="ttdeci">void UnRegister(CAction *_pObject)</div><div class="ttdoc">解除処理。 </div><div class="ttdef"><b>Definition:</b> ActionList.cpp:93</div></div>
+<div class="ttc" id="class_c_action_list_html_aa1341ee2595b0c1ae226123dccef0477"><div class="ttname"><a href="class_c_action_list.html#aa1341ee2595b0c1ae226123dccef0477">CActionList::Register</a></div><div class="ttdeci">void Register(CAction *_pObject)</div><div class="ttdoc">登録処理。 </div><div class="ttdef"><b>Definition:</b> ActionList.cpp:65</div></div>
+<div class="ttc" id="_critical_section_8h_html"><div class="ttname"><a href="_critical_section_8h.html">CriticalSection.h</a></div><div class="ttdoc">クリティカルセクション制御。 </div></div>
+<div class="ttc" id="class_c_singleton_html"><div class="ttname"><a href="class_c_singleton.html">CSingleton</a></div><div class="ttdef"><b>Definition:</b> Singleton.h:12</div></div>
+<div class="ttc" id="class_c_object_list_html"><div class="ttname"><a href="class_c_object_list.html">CObjectList&lt; CAction &gt;</a></div></div>
+<div class="ttc" id="class_c_action_list_html_ac374ad0c0bc4b0d86a4a33064f16b1dc"><div class="ttname"><a href="class_c_action_list.html#ac374ad0c0bc4b0d86a4a33064f16b1dc">CActionList::m_pcActionList</a></div><div class="ttdeci">CObjectList&lt; CAction &gt; * m_pcActionList</div><div class="ttdef"><b>Definition:</b> ActionList.h:53</div></div>
+<div class="ttc" id="class_c_action_list_html_a32027728142c6e1af28240a59ed009bb"><div class="ttname"><a href="class_c_action_list.html#a32027728142c6e1af28240a59ed009bb">CActionList::m_stParam</a></div><div class="ttdeci">StInitParam m_stParam</div><div class="ttdef"><b>Definition:</b> ActionList.h:51</div></div>
+<div class="ttc" id="class_c_action_list_html_abdfe27d4d3e92e7de8e2b91c7cf17574"><div class="ttname"><a href="class_c_action_list.html#abdfe27d4d3e92e7de8e2b91c7cf17574">CActionList::Init</a></div><div class="ttdeci">void Init(const StInitParam &amp;_rstParam)</div><div class="ttdoc">初期化。 </div><div class="ttdef"><b>Definition:</b> ActionList.cpp:35</div></div>
+<div class="ttc" id="struct_c_action_list_1_1_st_init_param_html"><div class="ttname"><a href="struct_c_action_list_1_1_st_init_param.html">CActionList::StInitParam</a></div><div class="ttdoc">初期化用構造体。 </div><div class="ttdef"><b>Definition:</b> ActionList.h:28</div></div>
+<div class="ttc" id="class_c_action_list_html"><div class="ttname"><a href="class_c_action_list.html">CActionList</a></div><div class="ttdoc">CActionクラスのリスト。 </div><div class="ttdef"><b>Definition:</b> ActionList.h:20</div></div>
+<div class="ttc" id="class_c_action_list_html_aa3d82dc70353a5fc2dd10fc6a2800f85"><div class="ttname"><a href="class_c_action_list.html#aa3d82dc70353a5fc2dd10fc6a2800f85">CActionList::AllAction</a></div><div class="ttdeci">void AllAction()</div><div class="ttdoc">登録された全てのオブジェクトのアクションを実行。 </div><div class="ttdef"><b>Definition:</b> ActionList.cpp:120</div></div>
+<div class="ttc" id="class_c_action_list_html_aaaa39fed12095bb0095c51d27ca19443"><div class="ttname"><a href="class_c_action_list.html#aaaa39fed12095bb0095c51d27ca19443">CActionList::~CActionList</a></div><div class="ttdeci">virtual ~CActionList()</div><div class="ttdoc">デストラクタ。 </div><div class="ttdef"><b>Definition:</b> ActionList.cpp:26</div></div>
+<div class="ttc" id="class_c_action_list_html_ae814ffecb31176127c16fbf8b8619853"><div class="ttname"><a href="class_c_action_list.html#ae814ffecb31176127c16fbf8b8619853">CActionList::CActionList</a></div><div class="ttdeci">CActionList()</div><div class="ttdoc">コンストラクタ。 </div><div class="ttdef"><b>Definition:</b> ActionList.cpp:15</div></div>
+<div class="ttc" id="class_c_action_html"><div class="ttname"><a href="class_c_action.html">CAction</a></div><div class="ttdoc">Actionを行う基底クラス。 </div><div class="ttdef"><b>Definition:</b> Action.h:14</div></div>
+<div class="ttc" id="_object_list_8h_html"><div class="ttname"><a href="_object_list_8h.html">ObjectList.h</a></div><div class="ttdoc">オブジェクトリスト。  2015/11/04 05:16:38 </div></div>
+<div class="ttc" id="struct_c_action_list_1_1_st_init_param_html_a9ae0b36a7a6bf7b30d1d07f989ebac5e"><div class="ttname"><a href="struct_c_action_list_1_1_st_init_param.html#a9ae0b36a7a6bf7b30d1d07f989ebac5e">CActionList::StInitParam::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdef"><b>Definition:</b> ActionList.h:33</div></div>
+<div class="ttc" id="_singleton_8h_html"><div class="ttname"><a href="_singleton_8h.html">Singleton.h</a></div></div>
+<div class="ttc" id="struct_c_action_list_1_1_st_init_param_html_a5c56d351fbe8dd96bf418441423ba37f"><div class="ttname"><a href="struct_c_action_list_1_1_st_init_param.html#a5c56d351fbe8dd96bf418441423ba37f">CActionList::StInitParam::m_uLevelMax</a></div><div class="ttdeci">U32 m_uLevelMax</div><div class="ttdoc">レベルの最大数。 </div><div class="ttdef"><b>Definition:</b> ActionList.h:30</div></div>
+<div class="ttc" id="struct_c_action_list_1_1_st_init_param_html_ac7e4a40b8e2352cfc43cb23c657a60d4"><div class="ttname"><a href="struct_c_action_list_1_1_st_init_param.html#ac7e4a40b8e2352cfc43cb23c657a60d4">CActionList::StInitParam::m_uLevelReserveSize</a></div><div class="ttdeci">U32 m_uLevelReserveSize</div><div class="ttdoc">レベル毎の予約サイズ。 </div><div class="ttdef"><b>Definition:</b> ActionList.h:31</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

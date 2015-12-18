@@ -1,0 +1,65 @@
+\hypertarget{_lib_utility_8h}{}\section{D\+:/\+Project/\+Game/\+Lib/\+Utility/\+Lib\+Utility.h ファイル}
+\label{_lib_utility_8h}\index{D\+:/\+Project/\+Game/\+Lib/\+Utility/\+Lib\+Utility.\+h@{D\+:/\+Project/\+Game/\+Lib/\+Utility/\+Lib\+Utility.\+h}}
+
+
+ユーティリティ  
+
+
+\subsection*{名前空間}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacen_utility}{n\+Utility}
+\end{DoxyCompactItemize}
+\subsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_lib_utility_8h_a4a02a2ee9733f37adf03f3c7edf7f7f7}{lengthof}(Array)~( sizeof( (Array) ) / sizeof( (Array)\mbox{[}0\mbox{]} ) )
+\item 
+\#define \hyperlink{_lib_utility_8h_a564389767079011d2a47cdb641d81353}{s\+\_\+cast}~static\+\_\+cast
+\item 
+\#define \hyperlink{_lib_utility_8h_a1f68aa20bbc7ad6e840a7ec1aca94deb}{r\+\_\+cast}~reinterpret\+\_\+cast
+\item 
+\#define \hyperlink{_lib_utility_8h_a86d500a34c624c2cae56bc25a31b12f3}{U\+N\+U\+S\+E\+D}(x)~(void)(x)
+\end{DoxyCompactItemize}
+\subsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{namespacen_utility_ab6231a9f141e2da5e9230649d995c60b}{n\+Utility\+::\+Max} (const T \&\+\_\+rt\+Value1, const T \&\+\_\+rt\+Value2)
+\begin{DoxyCompactList}\small\item\em 値が大きい方を返す。 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{namespacen_utility_a29a16fe5a81fc70efbf7c7301a903613}{n\+Utility\+::\+Min} (const T \&\+\_\+rt\+Value1, const T \&\+\_\+rt\+Value2)
+\begin{DoxyCompactList}\small\item\em 値が小さい方を返す。 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{namespacen_utility_aa149b099050c2da27c676d9029f9a5b2}{n\+Utility\+::\+Clamp} (const T \&\+\_\+rt\+Value, const T \&\+\_\+rt\+Min, const T \&\+\_\+rt\+Max)
+\begin{DoxyCompactList}\small\item\em 値を\mbox{[}\+\_\+rt\+Min, \+\_\+rt\+Max\mbox{]}の範囲に制限する。 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{namespacen_utility_a7083a9c96d62f05173d2755957fe7f81}{n\+Utility\+::\+Wrap} (const T \&\+\_\+rt\+Value, const T \&\+\_\+rt\+Min, const T \&\+\_\+rt\+Max)
+\begin{DoxyCompactList}\small\item\em 値を\mbox{[}\+\_\+rt\+Min, \+\_\+rt\+Max\mbox{]}の範囲で補正する(繰り返し)。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+ユーティリティ 
+
+\begin{DoxyDate}{日付}
+2015/05/18 03\+:36\+:19 
+\end{DoxyDate}
+
+
+\subsection{マクロ定義詳解}
+\hypertarget{_lib_utility_8h_a4a02a2ee9733f37adf03f3c7edf7f7f7}{}\index{Lib\+Utility.\+h@{Lib\+Utility.\+h}!lengthof@{lengthof}}
+\index{lengthof@{lengthof}!Lib\+Utility.\+h@{Lib\+Utility.\+h}}
+\subsubsection[{lengthof}]{\setlength{\rightskip}{0pt plus 5cm}\#define lengthof(
+\begin{DoxyParamCaption}
+\item[{}]{Array}
+\end{DoxyParamCaption}
+)~( sizeof( (Array) ) / sizeof( (Array)\mbox{[}0\mbox{]} ) )}\label{_lib_utility_8h_a4a02a2ee9733f37adf03f3c7edf7f7f7}
+\hypertarget{_lib_utility_8h_a1f68aa20bbc7ad6e840a7ec1aca94deb}{}\index{Lib\+Utility.\+h@{Lib\+Utility.\+h}!r\+\_\+cast@{r\+\_\+cast}}
+\index{r\+\_\+cast@{r\+\_\+cast}!Lib\+Utility.\+h@{Lib\+Utility.\+h}}
+\subsubsection[{r\+\_\+cast}]{\setlength{\rightskip}{0pt plus 5cm}\#define r\+\_\+cast~reinterpret\+\_\+cast}\label{_lib_utility_8h_a1f68aa20bbc7ad6e840a7ec1aca94deb}
+\hypertarget{_lib_utility_8h_a564389767079011d2a47cdb641d81353}{}\index{Lib\+Utility.\+h@{Lib\+Utility.\+h}!s\+\_\+cast@{s\+\_\+cast}}
+\index{s\+\_\+cast@{s\+\_\+cast}!Lib\+Utility.\+h@{Lib\+Utility.\+h}}
+\subsubsection[{s\+\_\+cast}]{\setlength{\rightskip}{0pt plus 5cm}\#define s\+\_\+cast~static\+\_\+cast}\label{_lib_utility_8h_a564389767079011d2a47cdb641d81353}
+\hypertarget{_lib_utility_8h_a86d500a34c624c2cae56bc25a31b12f3}{}\index{Lib\+Utility.\+h@{Lib\+Utility.\+h}!U\+N\+U\+S\+E\+D@{U\+N\+U\+S\+E\+D}}
+\index{U\+N\+U\+S\+E\+D@{U\+N\+U\+S\+E\+D}!Lib\+Utility.\+h@{Lib\+Utility.\+h}}
+\subsubsection[{U\+N\+U\+S\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+N\+U\+S\+E\+D(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~(void)(x)}\label{_lib_utility_8h_a86d500a34c624c2cae56bc25a31b12f3}

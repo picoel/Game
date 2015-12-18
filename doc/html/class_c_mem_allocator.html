@@ -1,0 +1,948 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>My Project: CMemAllocator クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="namespaces.html"><span>名前空間</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>クラス一覧</span></a></li>
+      <li><a href="classes.html"><span>クラス索引</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>クラスメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pri-types">非公開型</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="class_c_mem_allocator-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">CMemAllocator クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_mem_allocator_8h_source.html">MemAllocator.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_mem_allocator_1_1_st_init_param.html">StInitParam</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化用パラメータ。  <a href="struct_c_mem_allocator_1_1_st_init_param.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:abf840ff9239492607ab3a3b8e0df2066"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mem_allocator.html#abf840ff9239492607ab3a3b8e0df2066">EnAllocMode</a> : U32 { <a class="el" href="class_c_mem_allocator.html#abf840ff9239492607ab3a3b8e0df2066a51de7c871812c0d91929b2fa407db09f">EnAllocMode::enForward</a>, 
+<a class="el" href="class_c_mem_allocator.html#abf840ff9239492607ab3a3b8e0df2066a3b7d737dc6a726f089f8d85df120a77f">EnAllocMode::enBack</a>
+ }<tr class="memdesc:abf840ff9239492607ab3a3b8e0df2066"><td class="mdescLeft">&#160;</td><td class="mdescRight">アロケートモード。  <a href="class_c_mem_allocator.html#abf840ff9239492607ab3a3b8e0df2066">[詳解]</a><br /></td></tr>
+<tr class="separator:abf840ff9239492607ab3a3b8e0df2066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a89a6785ad0679112693421390834c58a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mem_allocator.html#a89a6785ad0679112693421390834c58a">CMemAllocator</a> (const <a class="el" href="struct_c_mem_allocator_1_1_st_init_param.html">StInitParam</a> &amp;_rstInitParam)</td></tr>
+<tr class="memdesc:a89a6785ad0679112693421390834c58a"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ。  <a href="#a89a6785ad0679112693421390834c58a">[詳解]</a><br /></td></tr>
+<tr class="separator:a89a6785ad0679112693421390834c58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcf3bf84876c42ab83cdc2ba10a7dac3"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mem_allocator.html#afcf3bf84876c42ab83cdc2ba10a7dac3">~CMemAllocator</a> ()</td></tr>
+<tr class="memdesc:afcf3bf84876c42ab83cdc2ba10a7dac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ。  <a href="#afcf3bf84876c42ab83cdc2ba10a7dac3">[詳解]</a><br /></td></tr>
+<tr class="separator:afcf3bf84876c42ab83cdc2ba10a7dac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65875035e030185e91391b1ce29eecdd"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mem_allocator.html#a65875035e030185e91391b1ce29eecdd">Alloc</a> (USize _uSize, const S8 *_psFile, U32 _uLine)</td></tr>
+<tr class="memdesc:a65875035e030185e91391b1ce29eecdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">メモリを確保。  <a href="#a65875035e030185e91391b1ce29eecdd">[詳解]</a><br /></td></tr>
+<tr class="separator:a65875035e030185e91391b1ce29eecdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a776e73bfdd517d758ccfe515298d6716"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mem_allocator.html#a776e73bfdd517d758ccfe515298d6716">AllocBack</a> (USize _uSize, const S8 *_psFile, U32 _uLine)</td></tr>
+<tr class="memdesc:a776e73bfdd517d758ccfe515298d6716"><td class="mdescLeft">&#160;</td><td class="mdescRight">最後尾からメモリを確保。  <a href="#a776e73bfdd517d758ccfe515298d6716">[詳解]</a><br /></td></tr>
+<tr class="separator:a776e73bfdd517d758ccfe515298d6716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78bd707276d68fc2aa5828dbb86a74df"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mem_allocator.html#a78bd707276d68fc2aa5828dbb86a74df">AllocFromMemBlock</a> (<a class="el" href="class_c_mem_block.html">CMemBlock</a> *_pcMemBlock, USize _uSize, const S8 *_psFile, U32 _uLine, <a class="el" href="class_c_mem_allocator.html#abf840ff9239492607ab3a3b8e0df2066">EnAllocMode</a> _eMode)</td></tr>
+<tr class="memdesc:a78bd707276d68fc2aa5828dbb86a74df"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定したメモリブロックからメモリを確保。  <a href="#a78bd707276d68fc2aa5828dbb86a74df">[詳解]</a><br /></td></tr>
+<tr class="separator:a78bd707276d68fc2aa5828dbb86a74df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac679b89a322afa320a994d8bedec415d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mem_allocator.html#ac679b89a322afa320a994d8bedec415d">Free</a> (void *_p)</td></tr>
+<tr class="memdesc:ac679b89a322afa320a994d8bedec415d"><td class="mdescLeft">&#160;</td><td class="mdescRight">メモリを解放。  <a href="#ac679b89a322afa320a994d8bedec415d">[詳解]</a><br /></td></tr>
+<tr class="separator:ac679b89a322afa320a994d8bedec415d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3c38b86c68cfc86a3e95bb7964efd97"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mem_allocator.html#ab3c38b86c68cfc86a3e95bb7964efd97">IsAllocatedPointer</a> (void *_p) const </td></tr>
+<tr class="memdesc:ab3c38b86c68cfc86a3e95bb7964efd97"><td class="mdescLeft">&#160;</td><td class="mdescRight">このメモリアロケータで確保したポインタか。  <a href="#ab3c38b86c68cfc86a3e95bb7964efd97">[詳解]</a><br /></td></tr>
+<tr class="separator:ab3c38b86c68cfc86a3e95bb7964efd97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a48c0568fb21eb63978af2137aab23ad6"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mem_allocator.html#a48c0568fb21eb63978af2137aab23ad6">operator new</a> (std::size_t _uSize)</td></tr>
+<tr class="separator:a48c0568fb21eb63978af2137aab23ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af156badb5f8380a0d9ee76afad22c496"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mem_allocator.html#af156badb5f8380a0d9ee76afad22c496">operator delete</a> (void *_p)</td></tr>
+<tr class="separator:af156badb5f8380a0d9ee76afad22c496"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+非公開型</h2></td></tr>
+<tr class="memitem:a780a1a1225569ea2d2a8b7db9f9c7089"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mem_allocator.html#a780a1a1225569ea2d2a8b7db9f9c7089">EnFirstLevel</a> { <a class="el" href="class_c_mem_allocator.html#a780a1a1225569ea2d2a8b7db9f9c7089ab914654c48cd4a1779f988840ea2a151">enFirstLevel_Max</a> = sizeof( USize ) * 8
+ }<tr class="memdesc:a780a1a1225569ea2d2a8b7db9f9c7089"><td class="mdescLeft">&#160;</td><td class="mdescRight">FirstLevel。  <a href="class_c_mem_allocator.html#a780a1a1225569ea2d2a8b7db9f9c7089">[詳解]</a><br /></td></tr>
+<tr class="separator:a780a1a1225569ea2d2a8b7db9f9c7089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a920fe29d9b0bdaa721eaa20c66abaa2e"><td class="memItemLeft" align="right" valign="top">USize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mem_allocator.html#a920fe29d9b0bdaa721eaa20c66abaa2e">GetBlockSize</a> (USize _uSize)</td></tr>
+<tr class="memdesc:a920fe29d9b0bdaa721eaa20c66abaa2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">要求されたサイズから、実際に確保するブロックサイズを取得。  <a href="#a920fe29d9b0bdaa721eaa20c66abaa2e">[詳解]</a><br /></td></tr>
+<tr class="separator:a920fe29d9b0bdaa721eaa20c66abaa2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af607e6b68b3b614e769b6e93078a04ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mem_allocator.html#af607e6b68b3b614e769b6e93078a04ca">GetLevel</a> (U32 *_puOutFirst, U32 *_puOutSecond, USize _uBlockSize)</td></tr>
+<tr class="memdesc:af607e6b68b3b614e769b6e93078a04ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">サイズからレベルを取得。  <a href="#af607e6b68b3b614e769b6e93078a04ca">[詳解]</a><br /></td></tr>
+<tr class="separator:af607e6b68b3b614e769b6e93078a04ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a916e62db377590430d6969551cc547"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mem_allocator.html#a7a916e62db377590430d6969551cc547">SetFreeList</a> (<a class="el" href="class_c_mem_block.html">CMemBlock</a> *_pcMemBlock)</td></tr>
+<tr class="memdesc:a7a916e62db377590430d6969551cc547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Freeリストに領域をセット。  <a href="#a7a916e62db377590430d6969551cc547">[詳解]</a><br /></td></tr>
+<tr class="separator:a7a916e62db377590430d6969551cc547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54bea8680421134c27912868508792aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mem_allocator.html#a54bea8680421134c27912868508792aa">RemoveFreeList</a> (<a class="el" href="class_c_mem_block.html">CMemBlock</a> *_pcMemBlock)</td></tr>
+<tr class="memdesc:a54bea8680421134c27912868508792aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Freeリストから領域を解除。  <a href="#a54bea8680421134c27912868508792aa">[詳解]</a><br /></td></tr>
+<tr class="separator:a54bea8680421134c27912868508792aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5157e10cc3b426b42f661a6f3c0d8f51"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mem_allocator.html#a5157e10cc3b426b42f661a6f3c0d8f51">SearchFreeListLevel</a> (U32 *_pOutFirstLevel, U32 *_pOutSecondLevel, USize _uBlockSize)</td></tr>
+<tr class="memdesc:a5157e10cc3b426b42f661a6f3c0d8f51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Freeリストから確保出来る領域のレベルを探す。  <a href="#a5157e10cc3b426b42f661a6f3c0d8f51">[詳解]</a><br /></td></tr>
+<tr class="separator:a5157e10cc3b426b42f661a6f3c0d8f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f0303603e63a742cc97c82d64fe90d5"><td class="memItemLeft" align="right" valign="top">U32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mem_allocator.html#a9f0303603e63a742cc97c82d64fe90d5">GetFreeListIndex</a> (U32 _uFirstLevel, U32 _uSecondLevel)</td></tr>
+<tr class="memdesc:a9f0303603e63a742cc97c82d64fe90d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">レベルからFreeリストのインデックスを取得。  <a href="#a9f0303603e63a742cc97c82d64fe90d5">[詳解]</a><br /></td></tr>
+<tr class="separator:a9f0303603e63a742cc97c82d64fe90d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a5ae9573631f11b58cb0741dd5d071d4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_c_mem_allocator_1_1_st_init_param.html">StInitParam</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mem_allocator.html#a5ae9573631f11b58cb0741dd5d071d4e">m_stInitParam</a></td></tr>
+<tr class="separator:a5ae9573631f11b58cb0741dd5d071d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad729846ce9ff5ecdac69574604140e39"><td class="memItemLeft" align="right" valign="top">U8 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mem_allocator.html#ad729846ce9ff5ecdac69574604140e39">m_pMemory</a></td></tr>
+<tr class="memdesc:ad729846ce9ff5ecdac69574604140e39"><td class="mdescLeft">&#160;</td><td class="mdescRight">確保したメモリ。  <a href="#ad729846ce9ff5ecdac69574604140e39">[詳解]</a><br /></td></tr>
+<tr class="separator:ad729846ce9ff5ecdac69574604140e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac2d7de345dbb577fa47907647bb831f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_mem_block.html">CMemBlock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mem_allocator.html#aac2d7de345dbb577fa47907647bb831f">m_pEndBlock</a></td></tr>
+<tr class="memdesc:aac2d7de345dbb577fa47907647bb831f"><td class="mdescLeft">&#160;</td><td class="mdescRight">終端ブロック。  <a href="#aac2d7de345dbb577fa47907647bb831f">[詳解]</a><br /></td></tr>
+<tr class="separator:aac2d7de345dbb577fa47907647bb831f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5593b5d4263ee5e0af22458ad8f89f21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_mem_block.html">CMemBlock</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mem_allocator.html#a5593b5d4263ee5e0af22458ad8f89f21">m_pFreeBlockArray</a></td></tr>
+<tr class="memdesc:a5593b5d4263ee5e0af22458ad8f89f21"><td class="mdescLeft">&#160;</td><td class="mdescRight">解放済みの領域リスト。  <a href="#a5593b5d4263ee5e0af22458ad8f89f21">[詳解]</a><br /></td></tr>
+<tr class="separator:a5593b5d4263ee5e0af22458ad8f89f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f35f48a378b79fc033b6aa6dcf13b73"><td class="memItemLeft" align="right" valign="top">U64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mem_allocator.html#a9f35f48a378b79fc033b6aa6dcf13b73">m_uIsFree</a></td></tr>
+<tr class="memdesc:a9f35f48a378b79fc033b6aa6dcf13b73"><td class="mdescLeft">&#160;</td><td class="mdescRight">解放済みの領域があるか。(1stLevel)  <a href="#a9f35f48a378b79fc033b6aa6dcf13b73">[詳解]</a><br /></td></tr>
+<tr class="separator:a9f35f48a378b79fc033b6aa6dcf13b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fc0c334bf8f88d108b7f7ca1b87c682"><td class="memItemLeft" align="right" valign="top">U32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mem_allocator.html#a6fc0c334bf8f88d108b7f7ca1b87c682">m_uIsFreeArray</a> [<a class="el" href="class_c_mem_allocator.html#a780a1a1225569ea2d2a8b7db9f9c7089ab914654c48cd4a1779f988840ea2a151">enFirstLevel_Max</a>]</td></tr>
+<tr class="memdesc:a6fc0c334bf8f88d108b7f7ca1b87c682"><td class="mdescLeft">&#160;</td><td class="mdescRight">解放済みの領域があるか。(2ndLevel)  <a href="#a6fc0c334bf8f88d108b7f7ca1b87c682">[詳解]</a><br /></td></tr>
+<tr class="separator:a6fc0c334bf8f88d108b7f7ca1b87c682"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac777d3d046eab9d58e8749a68a6bf36c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_critical_section.html">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_mem_allocator.html#ac777d3d046eab9d58e8749a68a6bf36c">m_cCriticalSection</a></td></tr>
+<tr class="memdesc:ac777d3d046eab9d58e8749a68a6bf36c"><td class="mdescLeft">&#160;</td><td class="mdescRight">クリティカルセクション。  <a href="#ac777d3d046eab9d58e8749a68a6bf36c">[詳解]</a><br /></td></tr>
+<tr class="separator:ac777d3d046eab9d58e8749a68a6bf36c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">列挙型メンバ詳解</h2>
+<a class="anchor" id="abf840ff9239492607ab3a3b8e0df2066"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_c_mem_allocator.html#abf840ff9239492607ab3a3b8e0df2066">CMemAllocator::EnAllocMode</a> : U32</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>アロケートモード。 </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a class="anchor" id="abf840ff9239492607ab3a3b8e0df2066a51de7c871812c0d91929b2fa407db09f"></a>enForward&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="abf840ff9239492607ab3a3b8e0df2066a3b7d737dc6a726f089f8d85df120a77f"></a>enBack&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a780a1a1225569ea2d2a8b7db9f9c7089"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_c_mem_allocator.html#a780a1a1225569ea2d2a8b7db9f9c7089">CMemAllocator::EnFirstLevel</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>FirstLevel。 </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a class="anchor" id="a780a1a1225569ea2d2a8b7db9f9c7089ab914654c48cd4a1779f988840ea2a151"></a>enFirstLevel_Max&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
+<a class="anchor" id="a89a6785ad0679112693421390834c58a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CMemAllocator::CMemAllocator </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_c_mem_allocator_1_1_st_init_param.html">StInitParam</a> &amp;&#160;</td>
+          <td class="paramname"><em>_rstInitParam</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>コンストラクタ。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_rstInitParam</td><td>: 初期化用パラメータ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afcf3bf84876c42ab83cdc2ba10a7dac3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CMemAllocator::~CMemAllocator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>デストラクタ。 </p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a class="anchor" id="a65875035e030185e91391b1ce29eecdd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * CMemAllocator::Alloc </td>
+          <td>(</td>
+          <td class="paramtype">USize&#160;</td>
+          <td class="paramname"><em>_uSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const S8 *&#160;</td>
+          <td class="paramname"><em>_psFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">U32&#160;</td>
+          <td class="paramname"><em>_uLine</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>メモリを確保。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_uSize</td><td>: 確保するサイズ。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_psFile</td><td>: 呼び出し元のファイル名。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_uLine</td><td>: 呼び出し元行数。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>: 確保したメモリへのポインタ。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a776e73bfdd517d758ccfe515298d6716"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * CMemAllocator::AllocBack </td>
+          <td>(</td>
+          <td class="paramtype">USize&#160;</td>
+          <td class="paramname"><em>_uSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const S8 *&#160;</td>
+          <td class="paramname"><em>_psFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">U32&#160;</td>
+          <td class="paramname"><em>_uLine</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>最後尾からメモリを確保。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_uSize</td><td>: 確保するサイズ。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_psFile</td><td>: 呼び出し元のファイル名。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_uLine</td><td>: 呼び出し元行数。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>: 確保したメモリへのポインタ。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a78bd707276d68fc2aa5828dbb86a74df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * CMemAllocator::AllocFromMemBlock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_mem_block.html">CMemBlock</a> *&#160;</td>
+          <td class="paramname"><em>_pcMemBlock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">USize&#160;</td>
+          <td class="paramname"><em>_uSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const S8 *&#160;</td>
+          <td class="paramname"><em>_psFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">U32&#160;</td>
+          <td class="paramname"><em>_uLine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_mem_allocator.html#abf840ff9239492607ab3a3b8e0df2066">EnAllocMode</a>&#160;</td>
+          <td class="paramname"><em>_eMode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>指定したメモリブロックからメモリを確保。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_pcMemBlock</td><td>; メモリブロック。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_uSize</td><td>: 確保するサイズ。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_psFile</td><td>: 呼び出し元のファイル名。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_uLine</td><td>: 呼び出し元行数。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_eMode</td><td>: アロケートモード。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>: 確保したメモリへのポインタ。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac679b89a322afa320a994d8bedec415d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMemAllocator::Free </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>_p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>メモリを解放。 </p>
+<p>brief メモリを解放。 </p>
+
+</div>
+</div>
+<a class="anchor" id="a920fe29d9b0bdaa721eaa20c66abaa2e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">USize CMemAllocator::GetBlockSize </td>
+          <td>(</td>
+          <td class="paramtype">USize&#160;</td>
+          <td class="paramname"><em>_uSize</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>要求されたサイズから、実際に確保するブロックサイズを取得。 </p>
+
+</div>
+</div>
+<a class="anchor" id="a9f0303603e63a742cc97c82d64fe90d5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">U32 CMemAllocator::GetFreeListIndex </td>
+          <td>(</td>
+          <td class="paramtype">U32&#160;</td>
+          <td class="paramname"><em>_uFirstLevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">U32&#160;</td>
+          <td class="paramname"><em>_uSecondLevel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>レベルからFreeリストのインデックスを取得。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_uFirstLevel</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_uSecondLevel</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">インデックス値</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af607e6b68b3b614e769b6e93078a04ca"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMemAllocator::GetLevel </td>
+          <td>(</td>
+          <td class="paramtype">U32 *&#160;</td>
+          <td class="paramname"><em>_puOutFirst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">U32 *&#160;</td>
+          <td class="paramname"><em>_puOutSecond</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">USize&#160;</td>
+          <td class="paramname"><em>_uBlockSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>サイズからレベルを取得。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">_puOutFirst</td><td>: FLI格納先。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">_puOutSecond</td><td>: SLI格納先。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_uBlockSize</td><td>: ブロックサイズ。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab3c38b86c68cfc86a3e95bb7964efd97"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CMemAllocator::IsAllocatedPointer </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>_p</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>このメモリアロケータで確保したポインタか。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_p</td><td>: チェックするポインタ。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af156badb5f8380a0d9ee76afad22c496"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void CMemAllocator::operator delete </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>_p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a48c0568fb21eb63978af2137aab23ad6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void* CMemAllocator::operator new </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>_uSize</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a54bea8680421134c27912868508792aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMemAllocator::RemoveFreeList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_mem_block.html">CMemBlock</a> *&#160;</td>
+          <td class="paramname"><em>_pcMemBlock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Freeリストから領域を解除。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_pcMemBlock</td><td>: 解除するブロック。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a5157e10cc3b426b42f661a6f3c0d8f51"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CMemAllocator::SearchFreeListLevel </td>
+          <td>(</td>
+          <td class="paramtype">U32 *&#160;</td>
+          <td class="paramname"><em>_pOutFirstLevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">U32 *&#160;</td>
+          <td class="paramname"><em>_pOutSecondLevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">USize&#160;</td>
+          <td class="paramname"><em>_uBlockSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Freeリストから確保出来る領域のレベルを探す。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">_pOutFirstLevel</td><td>: 1stLevelの格納先。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">_pOutSecondLevel</td><td>: 2ndLevelの格納先。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_uBlockSize</td><td>: ブロックサイズ。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a7a916e62db377590430d6969551cc547"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMemAllocator::SetFreeList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_mem_block.html">CMemBlock</a> *&#160;</td>
+          <td class="paramname"><em>_pcMemBlock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Freeリストに領域をセット。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_pcMemBlock</td><td>: セットするブロック。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a class="anchor" id="ac777d3d046eab9d58e8749a68a6bf36c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_critical_section.html">CCriticalSection</a> CMemAllocator::m_cCriticalSection</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>クリティカルセクション。 </p>
+
+</div>
+</div>
+<a class="anchor" id="aac2d7de345dbb577fa47907647bb831f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_mem_block.html">CMemBlock</a>* CMemAllocator::m_pEndBlock</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>終端ブロック。 </p>
+
+</div>
+</div>
+<a class="anchor" id="a5593b5d4263ee5e0af22458ad8f89f21"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_mem_block.html">CMemBlock</a>** CMemAllocator::m_pFreeBlockArray</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>解放済みの領域リスト。 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad729846ce9ff5ecdac69574604140e39"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">U8* CMemAllocator::m_pMemory</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>確保したメモリ。 </p>
+
+</div>
+</div>
+<a class="anchor" id="a5ae9573631f11b58cb0741dd5d071d4e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_c_mem_allocator_1_1_st_init_param.html">StInitParam</a> CMemAllocator::m_stInitParam</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9f35f48a378b79fc033b6aa6dcf13b73"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">U64 CMemAllocator::m_uIsFree</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>解放済みの領域があるか。(1stLevel) </p>
+
+</div>
+</div>
+<a class="anchor" id="a6fc0c334bf8f88d108b7f7ca1b87c682"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">U32 CMemAllocator::m_uIsFreeArray[<a class="el" href="class_c_mem_allocator.html#a780a1a1225569ea2d2a8b7db9f9c7089ab914654c48cd4a1779f988840ea2a151">enFirstLevel_Max</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>解放済みの領域があるか。(2ndLevel) </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>D:/Project/Game/Lib/Memory/<a class="el" href="_mem_allocator_8h_source.html">MemAllocator.h</a></li>
+<li>D:/Project/Game/Lib/Memory/<a class="el" href="_mem_allocator_8cpp.html">MemAllocator.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

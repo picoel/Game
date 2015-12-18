@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>My Project: D:/Project/Game/Lib/Mesh/Mesh.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="namespaces.html"><span>名前空間</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8f3de2ae926fecfe6abd5379fd2b6eb1.html">Lib</a></li><li class="navelem"><a class="el" href="dir_3746ea10c174e6358da539fe5a790930.html">Mesh</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Mesh.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_mesh_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef INCLUDE_LIB_MESH_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define INCLUDE_LIB_MESH_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_vector_8h.html">Lib/Math/Vector.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_direct_x_texture.html">CDirectXTexture</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * @class IMesh</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * @brief ポリゴンメッシュインターフェイス。</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_i_mesh.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_i_mesh.html">IMesh</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="struct_i_mesh_1_1_st_vertex.html">   22</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_i_mesh_1_1_st_vertex.html">StVertex</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="struct_i_mesh_1_1_st_vertex.html#aea72250ca5da6cbdd28c6d94226c62f0">   24</a></span>&#160;        <a class="code" href="struct_st_vector3_d.html">StVector3D&lt;F32&gt;</a> <a class="code" href="struct_i_mesh_1_1_st_vertex.html#aea72250ca5da6cbdd28c6d94226c62f0">m_stPos</a>;        </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="struct_i_mesh_1_1_st_vertex.html#a762b51cf598064822d1205944b7f5bce">   25</a></span>&#160;        <a class="code" href="struct_st_vector3_d.html">StVector3D&lt;F32&gt;</a> <a class="code" href="struct_i_mesh_1_1_st_vertex.html#a762b51cf598064822d1205944b7f5bce">m_stNormal</a>;     </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="struct_i_mesh_1_1_st_vertex.html#a81cb0271d574730647fdc82a2b5309ad">   26</a></span>&#160;        <a class="code" href="struct_st_vector2_d.html">StVector2D&lt;F32&gt;</a> <a class="code" href="struct_i_mesh_1_1_st_vertex.html#a81cb0271d574730647fdc82a2b5309ad">m_stUV</a>;         </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="struct_i_mesh_1_1_st_vertex.html#a55905681162c2e39f66de94ca2cca858">   28</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="struct_i_mesh_1_1_st_vertex.html#a55905681162c2e39f66de94ca2cca858">Init</a>()</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            m_stPos.<a class="code" href="struct_st_vector3_d.html#a0dfe95d664c3a41ecbe08ffbeff55a46">Init</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            m_stNormal.<a class="code" href="struct_st_vector3_d.html#a0dfe95d664c3a41ecbe08ffbeff55a46">Init</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            m_stUV.<a class="code" href="struct_st_vector2_d.html#ac9d44f7bf5931210e7cfb1231eb62bd8">Init</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    };</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="struct_i_mesh_1_1_st_material.html">   37</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_i_mesh_1_1_st_material.html">StMaterial</a></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="struct_i_mesh_1_1_st_material.html#a598e3d92e14d215a824170967fea80fa">   39</a></span>&#160;        U32                 <a class="code" href="struct_i_mesh_1_1_st_material.html#a598e3d92e14d215a824170967fea80fa">m_uVertexNum</a>;                       </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="struct_i_mesh_1_1_st_material.html#a40c21c7fdb6c4f38bd0a5e8d353d3699">   40</a></span>&#160;        TChar               <a class="code" href="struct_i_mesh_1_1_st_material.html#a40c21c7fdb6c4f38bd0a5e8d353d3699">m_sTexturePath</a>[ MAX_PATH + 1 ];     </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="struct_i_mesh_1_1_st_material.html#a029b547c2f7dc5a0de49be288b612dff">   41</a></span>&#160;        <a class="code" href="struct_st_vector4_d.html">StVector4D&lt;F32&gt;</a>     <a class="code" href="struct_i_mesh_1_1_st_material.html#a029b547c2f7dc5a0de49be288b612dff">m_stDiffuse</a>;                        </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="struct_i_mesh_1_1_st_material.html#a64f8478229618e185affc8c2e799a33d">   42</a></span>&#160;        <a class="code" href="struct_st_vector4_d.html">StVector4D&lt;F32&gt;</a>     <a class="code" href="struct_i_mesh_1_1_st_material.html#a64f8478229618e185affc8c2e799a33d">m_stAmbient</a>;                        </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="struct_i_mesh_1_1_st_material.html#a54867cbd373e8c442ec828ec2da8f941">   43</a></span>&#160;        <a class="code" href="struct_st_vector4_d.html">StVector4D&lt;F32&gt;</a>     <a class="code" href="struct_i_mesh_1_1_st_material.html#a54867cbd373e8c442ec828ec2da8f941">m_stSpecular</a>;                       </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="struct_i_mesh_1_1_st_material.html#a0fa4b4f394fc86bfc77e8a542db857ac">   45</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="struct_i_mesh_1_1_st_material.html#a0fa4b4f394fc86bfc77e8a542db857ac">Init</a>()</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            m_uVertexNum = 0;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            MemClear( m_sTexturePath, <span class="keyword">sizeof</span>( m_sTexturePath ) );</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            m_stDiffuse.<a class="code" href="struct_st_vector4_d.html#a9ecb571ef82ec87201c7ef91b914600f">Init</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            m_stAmbient.<a class="code" href="struct_st_vector4_d.html#a9ecb571ef82ec87201c7ef91b914600f">Init</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            m_stSpecular.<a class="code" href="struct_st_vector4_d.html#a9ecb571ef82ec87201c7ef91b914600f">Init</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    };</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_i_mesh.html#a39bf278a127fe4a317c53e8e0dd66d32">   57</a></span>&#160;    <a class="code" href="class_i_mesh.html#a39bf278a127fe4a317c53e8e0dd66d32">IMesh</a>(){}</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_i_mesh.html#a1227ad691cc829ef540b3ff956019423">   59</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_i_mesh.html#a1227ad691cc829ef540b3ff956019423">~IMesh</a>(){}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">virtual</span> U32                 <a class="code" href="class_i_mesh.html#a98ac2c9b1da3c22191e4198833a4f6ef">GetVertexNum</a>() <span class="keyword">const</span> = 0;       </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> StVertex*     <a class="code" href="class_i_mesh.html#a91d4b99a5a91cb54d364cc6a8342b187">GetVertexArray</a>() <span class="keyword">const</span> = 0;     </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">virtual</span> U32                 <a class="code" href="class_i_mesh.html#a580358c71d8766c1e0aa8037b51a9296">GetIndexNum</a>() <span class="keyword">const</span> = 0;        </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> U32*          <a class="code" href="class_i_mesh.html#a3a9e9207cfae24ae1dd62eb2d2356301">GetIndexArray</a>() <span class="keyword">const</span> = 0;      </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">virtual</span> U32                 <a class="code" href="class_i_mesh.html#a1b8922bc90cd0951062053e24287ad6c">GetMaterialNum</a>() <span class="keyword">const</span> = 0;     </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> StMaterial*   <a class="code" href="class_i_mesh.html#a48afb85120e333b50ac9de73b8b60d16">GetMaterialArray</a>() <span class="keyword">const</span> = 0;   </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif // #ifndef INCLUDE_LIB_MESH_H</span></div>
+<div class="ttc" id="struct_i_mesh_1_1_st_material_html_a54867cbd373e8c442ec828ec2da8f941"><div class="ttname"><a href="struct_i_mesh_1_1_st_material.html#a54867cbd373e8c442ec828ec2da8f941">IMesh::StMaterial::m_stSpecular</a></div><div class="ttdeci">StVector4D&lt; F32 &gt; m_stSpecular</div><div class="ttdoc">鏡面反射光への反射強度。 </div><div class="ttdef"><b>Definition:</b> Mesh.h:43</div></div>
+<div class="ttc" id="_vector_8h_html"><div class="ttname"><a href="_vector_8h.html">Vector.h</a></div><div class="ttdoc">ベクトル演算。 </div></div>
+<div class="ttc" id="struct_st_vector2_d_html_ac9d44f7bf5931210e7cfb1231eb62bd8"><div class="ttname"><a href="struct_st_vector2_d.html#ac9d44f7bf5931210e7cfb1231eb62bd8">StVector2D::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdef"><b>Definition:</b> Vector.h:28</div></div>
+<div class="ttc" id="class_i_mesh_html_a39bf278a127fe4a317c53e8e0dd66d32"><div class="ttname"><a href="class_i_mesh.html#a39bf278a127fe4a317c53e8e0dd66d32">IMesh::IMesh</a></div><div class="ttdeci">IMesh()</div><div class="ttdoc">コンストラクタ。 </div><div class="ttdef"><b>Definition:</b> Mesh.h:57</div></div>
+<div class="ttc" id="struct_i_mesh_1_1_st_vertex_html_a81cb0271d574730647fdc82a2b5309ad"><div class="ttname"><a href="struct_i_mesh_1_1_st_vertex.html#a81cb0271d574730647fdc82a2b5309ad">IMesh::StVertex::m_stUV</a></div><div class="ttdeci">StVector2D&lt; F32 &gt; m_stUV</div><div class="ttdoc">UV座標。 </div><div class="ttdef"><b>Definition:</b> Mesh.h:26</div></div>
+<div class="ttc" id="struct_i_mesh_1_1_st_material_html_a029b547c2f7dc5a0de49be288b612dff"><div class="ttname"><a href="struct_i_mesh_1_1_st_material.html#a029b547c2f7dc5a0de49be288b612dff">IMesh::StMaterial::m_stDiffuse</a></div><div class="ttdeci">StVector4D&lt; F32 &gt; m_stDiffuse</div><div class="ttdoc">環境光への反射強度。 </div><div class="ttdef"><b>Definition:</b> Mesh.h:41</div></div>
+<div class="ttc" id="struct_st_vector3_d_html_a0dfe95d664c3a41ecbe08ffbeff55a46"><div class="ttname"><a href="struct_st_vector3_d.html#a0dfe95d664c3a41ecbe08ffbeff55a46">StVector3D::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdef"><b>Definition:</b> Vector.h:60</div></div>
+<div class="ttc" id="struct_i_mesh_1_1_st_material_html_a0fa4b4f394fc86bfc77e8a542db857ac"><div class="ttname"><a href="struct_i_mesh_1_1_st_material.html#a0fa4b4f394fc86bfc77e8a542db857ac">IMesh::StMaterial::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdef"><b>Definition:</b> Mesh.h:45</div></div>
+<div class="ttc" id="class_i_mesh_html_a1b8922bc90cd0951062053e24287ad6c"><div class="ttname"><a href="class_i_mesh.html#a1b8922bc90cd0951062053e24287ad6c">IMesh::GetMaterialNum</a></div><div class="ttdeci">virtual U32 GetMaterialNum() const  =0</div><div class="ttdoc">マテリアル数を取得。 </div></div>
+<div class="ttc" id="struct_st_vector2_d_html"><div class="ttname"><a href="struct_st_vector2_d.html">StVector2D&lt; F32 &gt;</a></div></div>
+<div class="ttc" id="struct_st_vector3_d_html"><div class="ttname"><a href="struct_st_vector3_d.html">StVector3D&lt; F32 &gt;</a></div></div>
+<div class="ttc" id="struct_st_vector4_d_html"><div class="ttname"><a href="struct_st_vector4_d.html">StVector4D&lt; F32 &gt;</a></div></div>
+<div class="ttc" id="struct_i_mesh_1_1_st_material_html_a64f8478229618e185affc8c2e799a33d"><div class="ttname"><a href="struct_i_mesh_1_1_st_material.html#a64f8478229618e185affc8c2e799a33d">IMesh::StMaterial::m_stAmbient</a></div><div class="ttdeci">StVector4D&lt; F32 &gt; m_stAmbient</div><div class="ttdoc">拡散反射光への反射強度。 </div><div class="ttdef"><b>Definition:</b> Mesh.h:42</div></div>
+<div class="ttc" id="struct_i_mesh_1_1_st_vertex_html_a762b51cf598064822d1205944b7f5bce"><div class="ttname"><a href="struct_i_mesh_1_1_st_vertex.html#a762b51cf598064822d1205944b7f5bce">IMesh::StVertex::m_stNormal</a></div><div class="ttdeci">StVector3D&lt; F32 &gt; m_stNormal</div><div class="ttdoc">法線ベクトル。 </div><div class="ttdef"><b>Definition:</b> Mesh.h:25</div></div>
+<div class="ttc" id="class_i_mesh_html_a580358c71d8766c1e0aa8037b51a9296"><div class="ttname"><a href="class_i_mesh.html#a580358c71d8766c1e0aa8037b51a9296">IMesh::GetIndexNum</a></div><div class="ttdeci">virtual U32 GetIndexNum() const  =0</div><div class="ttdoc">インデックス数を取得。 </div></div>
+<div class="ttc" id="struct_i_mesh_1_1_st_vertex_html_a55905681162c2e39f66de94ca2cca858"><div class="ttname"><a href="struct_i_mesh_1_1_st_vertex.html#a55905681162c2e39f66de94ca2cca858">IMesh::StVertex::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdef"><b>Definition:</b> Mesh.h:28</div></div>
+<div class="ttc" id="struct_i_mesh_1_1_st_material_html_a40c21c7fdb6c4f38bd0a5e8d353d3699"><div class="ttname"><a href="struct_i_mesh_1_1_st_material.html#a40c21c7fdb6c4f38bd0a5e8d353d3699">IMesh::StMaterial::m_sTexturePath</a></div><div class="ttdeci">TChar m_sTexturePath[MAX_PATH+1]</div><div class="ttdoc">テクスチャファイルへのパス。 </div><div class="ttdef"><b>Definition:</b> Mesh.h:40</div></div>
+<div class="ttc" id="class_c_direct_x_texture_html"><div class="ttname"><a href="class_c_direct_x_texture.html">CDirectXTexture</a></div><div class="ttdef"><b>Definition:</b> DirectXTexture.h:16</div></div>
+<div class="ttc" id="class_i_mesh_html_a98ac2c9b1da3c22191e4198833a4f6ef"><div class="ttname"><a href="class_i_mesh.html#a98ac2c9b1da3c22191e4198833a4f6ef">IMesh::GetVertexNum</a></div><div class="ttdeci">virtual U32 GetVertexNum() const  =0</div><div class="ttdoc">頂点情報数を取得。 </div></div>
+<div class="ttc" id="struct_st_vector4_d_html_a9ecb571ef82ec87201c7ef91b914600f"><div class="ttname"><a href="struct_st_vector4_d.html#a9ecb571ef82ec87201c7ef91b914600f">StVector4D::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdef"><b>Definition:</b> Vector.h:96</div></div>
+<div class="ttc" id="struct_i_mesh_1_1_st_material_html_a598e3d92e14d215a824170967fea80fa"><div class="ttname"><a href="struct_i_mesh_1_1_st_material.html#a598e3d92e14d215a824170967fea80fa">IMesh::StMaterial::m_uVertexNum</a></div><div class="ttdeci">U32 m_uVertexNum</div><div class="ttdoc">頂点数。 </div><div class="ttdef"><b>Definition:</b> Mesh.h:39</div></div>
+<div class="ttc" id="class_i_mesh_html"><div class="ttname"><a href="class_i_mesh.html">IMesh</a></div><div class="ttdef"><b>Definition:</b> Mesh.h:18</div></div>
+<div class="ttc" id="class_i_mesh_html_a1227ad691cc829ef540b3ff956019423"><div class="ttname"><a href="class_i_mesh.html#a1227ad691cc829ef540b3ff956019423">IMesh::~IMesh</a></div><div class="ttdeci">virtual ~IMesh()</div><div class="ttdoc">デストラクタ。 </div><div class="ttdef"><b>Definition:</b> Mesh.h:59</div></div>
+<div class="ttc" id="struct_i_mesh_1_1_st_vertex_html_aea72250ca5da6cbdd28c6d94226c62f0"><div class="ttname"><a href="struct_i_mesh_1_1_st_vertex.html#aea72250ca5da6cbdd28c6d94226c62f0">IMesh::StVertex::m_stPos</a></div><div class="ttdeci">StVector3D&lt; F32 &gt; m_stPos</div><div class="ttdoc">頂点座標。 </div><div class="ttdef"><b>Definition:</b> Mesh.h:24</div></div>
+<div class="ttc" id="class_i_mesh_html_a91d4b99a5a91cb54d364cc6a8342b187"><div class="ttname"><a href="class_i_mesh.html#a91d4b99a5a91cb54d364cc6a8342b187">IMesh::GetVertexArray</a></div><div class="ttdeci">virtual const StVertex * GetVertexArray() const  =0</div><div class="ttdoc">頂点情報配列を取得。 </div></div>
+<div class="ttc" id="class_i_mesh_html_a3a9e9207cfae24ae1dd62eb2d2356301"><div class="ttname"><a href="class_i_mesh.html#a3a9e9207cfae24ae1dd62eb2d2356301">IMesh::GetIndexArray</a></div><div class="ttdeci">virtual const U32 * GetIndexArray() const  =0</div><div class="ttdoc">インデックス配列を取得。 </div></div>
+<div class="ttc" id="class_i_mesh_html_a48afb85120e333b50ac9de73b8b60d16"><div class="ttname"><a href="class_i_mesh.html#a48afb85120e333b50ac9de73b8b60d16">IMesh::GetMaterialArray</a></div><div class="ttdeci">virtual const StMaterial * GetMaterialArray() const  =0</div><div class="ttdoc">マテリアル配列を取得。 </div></div>
+<div class="ttc" id="struct_i_mesh_1_1_st_vertex_html"><div class="ttname"><a href="struct_i_mesh_1_1_st_vertex.html">IMesh::StVertex</a></div><div class="ttdoc">頂点情報。 </div><div class="ttdef"><b>Definition:</b> Mesh.h:22</div></div>
+<div class="ttc" id="struct_i_mesh_1_1_st_material_html"><div class="ttname"><a href="struct_i_mesh_1_1_st_material.html">IMesh::StMaterial</a></div><div class="ttdoc">マテリアル情報。 </div><div class="ttdef"><b>Definition:</b> Mesh.h:37</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

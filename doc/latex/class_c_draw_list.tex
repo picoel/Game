@@ -1,0 +1,158 @@
+\hypertarget{class_c_draw_list}{}\section{C\+Draw\+List クラス}
+\label{class_c_draw_list}\index{C\+Draw\+List@{C\+Draw\+List}}
+
+
+{\ttfamily \#include $<$Draw\+List.\+h$>$}
+
+C\+Draw\+List の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_draw_list}
+\end{center}
+\end{figure}
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_c_draw_list_1_1_st_init_param}{St\+Init\+Param}
+\begin{DoxyCompactList}\small\item\em 初期化用構造体。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_c_draw_list_a6331b9e423dac5cc0d2405d5088535c0}{$\sim$\+C\+Draw\+List} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_draw_list_a56e19a77d7ed33e6009df5aea2f1848c}{Init} (const \hyperlink{struct_c_draw_list_1_1_st_init_param}{St\+Init\+Param} \&\+\_\+rst\+Param)
+\begin{DoxyCompactList}\small\item\em 初期化。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_draw_list_a6ecfdbccf9d8e817fc8f304e76f3b4a4}{Register} (\hyperlink{class_c_draw}{C\+Draw} $\ast$\+\_\+p\+Object)
+\begin{DoxyCompactList}\small\item\em 登録処理。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_draw_list_a6cbdc83efffd556cac5b7d7f03910936}{Un\+Register} (\hyperlink{class_c_draw}{C\+Draw} $\ast$\+\_\+p\+Object)
+\begin{DoxyCompactList}\small\item\em 解除処理。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_draw_list_a9cb8d446fb669b158e662fd6f460af9a}{All\+Draw} (\hyperlink{class_i_render_context}{I\+Render\+Context} $\ast$\+\_\+pc\+Render\+Context)
+\begin{DoxyCompactList}\small\item\em 全てのオブジェクトの描画処理を実行。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{限定公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_c_draw_list_1_1_st_init_param}{St\+Init\+Param} \hyperlink{class_c_draw_list_aa1852cdf435d6e0d1b0057bfa29115ef}{m\+\_\+st\+Param}
+\item 
+\hyperlink{class_c_object_list}{C\+Object\+List}$<$ \hyperlink{class_c_draw}{C\+Draw} $>$ $\ast$ \hyperlink{class_c_draw_list_a9657465a848a483be27ca0fbb41af73a}{m\+\_\+pc\+Draw\+List}
+\end{DoxyCompactItemize}
+\subsection*{非公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_draw_list_a6aa66199590e8434c4f405c2d2105f54}{C\+Draw\+List} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+friend \hyperlink{class_c_draw_list_ace89c5af0071b6f1a4798baf330cd9a0}{C\+Singleton$<$ C\+Draw\+List $>$}
+\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{構築子と解体子}
+\hypertarget{class_c_draw_list_a6aa66199590e8434c4f405c2d2105f54}{}\index{C\+Draw\+List@{C\+Draw\+List}!C\+Draw\+List@{C\+Draw\+List}}
+\index{C\+Draw\+List@{C\+Draw\+List}!C\+Draw\+List@{C\+Draw\+List}}
+\subsubsection[{C\+Draw\+List()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Draw\+List\+::\+C\+Draw\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_draw_list_a6aa66199590e8434c4f405c2d2105f54}
+
+
+コンストラクタ。 
+
+\hypertarget{class_c_draw_list_a6331b9e423dac5cc0d2405d5088535c0}{}\index{C\+Draw\+List@{C\+Draw\+List}!````~C\+Draw\+List@{$\sim$\+C\+Draw\+List}}
+\index{````~C\+Draw\+List@{$\sim$\+C\+Draw\+List}!C\+Draw\+List@{C\+Draw\+List}}
+\subsubsection[{$\sim$\+C\+Draw\+List()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Draw\+List\+::$\sim$\+C\+Draw\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_draw_list_a6331b9e423dac5cc0d2405d5088535c0}
+
+
+デストラクタ。 
+
+
+
+\subsection{関数詳解}
+\hypertarget{class_c_draw_list_a9cb8d446fb669b158e662fd6f460af9a}{}\index{C\+Draw\+List@{C\+Draw\+List}!All\+Draw@{All\+Draw}}
+\index{All\+Draw@{All\+Draw}!C\+Draw\+List@{C\+Draw\+List}}
+\subsubsection[{All\+Draw(\+I\+Render\+Context $\ast$\+\_\+pc\+Render\+Context)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Draw\+List\+::\+All\+Draw (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Render\+Context} $\ast$}]{\+\_\+pc\+Render\+Context}
+\end{DoxyParamCaption}
+)}\label{class_c_draw_list_a9cb8d446fb669b158e662fd6f460af9a}
+
+
+全てのオブジェクトの描画処理を実行。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+pc\+Render\+Context} & \+: 描画コンテキスト。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_draw_list_a56e19a77d7ed33e6009df5aea2f1848c}{}\index{C\+Draw\+List@{C\+Draw\+List}!Init@{Init}}
+\index{Init@{Init}!C\+Draw\+List@{C\+Draw\+List}}
+\subsubsection[{Init(const St\+Init\+Param \&\+\_\+rst\+Param)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Draw\+List\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{const {\bf St\+Init\+Param} \&}]{\+\_\+rst\+Param}
+\end{DoxyParamCaption}
+)}\label{class_c_draw_list_a56e19a77d7ed33e6009df5aea2f1848c}
+
+
+初期化。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+rst\+Param} & \+: 初期化用パラメータ。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_draw_list_a6ecfdbccf9d8e817fc8f304e76f3b4a4}{}\index{C\+Draw\+List@{C\+Draw\+List}!Register@{Register}}
+\index{Register@{Register}!C\+Draw\+List@{C\+Draw\+List}}
+\subsubsection[{Register(\+C\+Draw $\ast$\+\_\+p\+Object)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Draw\+List\+::\+Register (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Draw} $\ast$}]{\+\_\+p\+Object}
+\end{DoxyParamCaption}
+)}\label{class_c_draw_list_a6ecfdbccf9d8e817fc8f304e76f3b4a4}
+
+
+登録処理。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+p\+Object} & \+: 登録するオブジェクト。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_draw_list_a6cbdc83efffd556cac5b7d7f03910936}{}\index{C\+Draw\+List@{C\+Draw\+List}!Un\+Register@{Un\+Register}}
+\index{Un\+Register@{Un\+Register}!C\+Draw\+List@{C\+Draw\+List}}
+\subsubsection[{Un\+Register(\+C\+Draw $\ast$\+\_\+p\+Object)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Draw\+List\+::\+Un\+Register (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Draw} $\ast$}]{\+\_\+p\+Object}
+\end{DoxyParamCaption}
+)}\label{class_c_draw_list_a6cbdc83efffd556cac5b7d7f03910936}
+
+
+解除処理。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+p\+Object} & \+: 解除するオブジェクト。 \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{メンバ詳解}
+\hypertarget{class_c_draw_list_ace89c5af0071b6f1a4798baf330cd9a0}{}\index{C\+Draw\+List@{C\+Draw\+List}!C\+Singleton$<$ C\+Draw\+List $>$@{C\+Singleton$<$ C\+Draw\+List $>$}}
+\index{C\+Singleton$<$ C\+Draw\+List $>$@{C\+Singleton$<$ C\+Draw\+List $>$}!C\+Draw\+List@{C\+Draw\+List}}
+\subsubsection[{C\+Singleton$<$ C\+Draw\+List $>$}]{\setlength{\rightskip}{0pt plus 5cm}friend {\bf C\+Draw\+List\+::\+C\+Singleton}$<$ {\bf C\+Draw\+List} $>$\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_draw_list_ace89c5af0071b6f1a4798baf330cd9a0}
+\hypertarget{class_c_draw_list_a9657465a848a483be27ca0fbb41af73a}{}\index{C\+Draw\+List@{C\+Draw\+List}!m\+\_\+pc\+Draw\+List@{m\+\_\+pc\+Draw\+List}}
+\index{m\+\_\+pc\+Draw\+List@{m\+\_\+pc\+Draw\+List}!C\+Draw\+List@{C\+Draw\+List}}
+\subsubsection[{m\+\_\+pc\+Draw\+List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Object\+List}$<$ {\bf C\+Draw} $>$$\ast$ C\+Draw\+List\+::m\+\_\+pc\+Draw\+List\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_draw_list_a9657465a848a483be27ca0fbb41af73a}
+\hypertarget{class_c_draw_list_aa1852cdf435d6e0d1b0057bfa29115ef}{}\index{C\+Draw\+List@{C\+Draw\+List}!m\+\_\+st\+Param@{m\+\_\+st\+Param}}
+\index{m\+\_\+st\+Param@{m\+\_\+st\+Param}!C\+Draw\+List@{C\+Draw\+List}}
+\subsubsection[{m\+\_\+st\+Param}]{\setlength{\rightskip}{0pt plus 5cm}{\bf St\+Init\+Param} C\+Draw\+List\+::m\+\_\+st\+Param\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_draw_list_aa1852cdf435d6e0d1b0057bfa29115ef}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Project/\+Game/\+Lib/\+Object/\hyperlink{_draw_list_8h}{Draw\+List.\+h}\item 
+D\+:/\+Project/\+Game/\+Lib/\+Object/\hyperlink{_draw_list_8cpp}{Draw\+List.\+cpp}\end{DoxyCompactItemize}

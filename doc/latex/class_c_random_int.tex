@@ -1,0 +1,93 @@
+\hypertarget{class_c_random_int}{}\section{C\+Random\+Int$<$ T $>$ クラステンプレート}
+\label{class_c_random_int}\index{C\+Random\+Int$<$ T $>$@{C\+Random\+Int$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Random.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_random_int_a5f3ff4ea24378926da8aac150a4a33fd}{C\+Random\+Int} (T \+\_\+f\+Min, T \+\_\+f\+Max)
+\begin{DoxyCompactList}\small\item\em コンストラクタ。 \end{DoxyCompactList}\item 
+\hyperlink{class_c_random_int_a7cc41c7e1b21a16a8bfe3c79bb665e22}{$\sim$\+C\+Random\+Int} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ。 \end{DoxyCompactList}\item 
+T \hyperlink{class_c_random_int_a04dfe95f084771d7c0392eef857f27ff}{Get\+Random} ()
+\begin{DoxyCompactList}\small\item\em 乱数を取得。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+std\+::mt19937\+\_\+64 $\ast$ \hyperlink{class_c_random_int_aae181316633165d9888d530e15f8232b}{m\+\_\+pc\+Random\+M\+T}
+\begin{DoxyCompactList}\small\item\em メルセンヌ・ツイスター法による乱数生成。 \end{DoxyCompactList}\item 
+std\+::uniform\+\_\+int\+\_\+distribution$<$ T $>$ $\ast$ \hyperlink{class_c_random_int_a5c6565335676d670c0072236d18e34cc}{m\+\_\+pc\+Distribution}
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\hypertarget{class_c_random_int_a5f3ff4ea24378926da8aac150a4a33fd}{}\index{C\+Random\+Int@{C\+Random\+Int}!C\+Random\+Int@{C\+Random\+Int}}
+\index{C\+Random\+Int@{C\+Random\+Int}!C\+Random\+Int@{C\+Random\+Int}}
+\subsubsection[{C\+Random\+Int(\+T \+\_\+f\+Min, T \+\_\+f\+Max)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf C\+Random\+Int}$<$ T $>$\+::{\bf C\+Random\+Int} (
+\begin{DoxyParamCaption}
+\item[{T}]{\+\_\+f\+Min, }
+\item[{T}]{\+\_\+f\+Max}
+\end{DoxyParamCaption}
+)}\label{class_c_random_int_a5f3ff4ea24378926da8aac150a4a33fd}
+
+
+コンストラクタ。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+f\+Min} & \+: 乱数の最小値。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+f\+Max} & \+: 乱数の最大値。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_random_int_a7cc41c7e1b21a16a8bfe3c79bb665e22}{}\index{C\+Random\+Int@{C\+Random\+Int}!````~C\+Random\+Int@{$\sim$\+C\+Random\+Int}}
+\index{````~C\+Random\+Int@{$\sim$\+C\+Random\+Int}!C\+Random\+Int@{C\+Random\+Int}}
+\subsubsection[{$\sim$\+C\+Random\+Int()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf C\+Random\+Int}$<$ T $>$\+::$\sim${\bf C\+Random\+Int} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_random_int_a7cc41c7e1b21a16a8bfe3c79bb665e22}
+
+
+デストラクタ。 
+
+
+
+\subsection{関数詳解}
+\hypertarget{class_c_random_int_a04dfe95f084771d7c0392eef857f27ff}{}\index{C\+Random\+Int@{C\+Random\+Int}!Get\+Random@{Get\+Random}}
+\index{Get\+Random@{Get\+Random}!C\+Random\+Int@{C\+Random\+Int}}
+\subsubsection[{Get\+Random()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T {\bf C\+Random\+Int}$<$ T $>$\+::Get\+Random (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_random_int_a04dfe95f084771d7c0392eef857f27ff}
+
+
+乱数を取得。 
+
+
+\begin{DoxyRetVals}{戻り値}
+{\em コンストラクタで指定した範囲内の乱数。} & \\
+\hline
+\end{DoxyRetVals}
+
+
+\subsection{メンバ詳解}
+\hypertarget{class_c_random_int_a5c6565335676d670c0072236d18e34cc}{}\index{C\+Random\+Int@{C\+Random\+Int}!m\+\_\+pc\+Distribution@{m\+\_\+pc\+Distribution}}
+\index{m\+\_\+pc\+Distribution@{m\+\_\+pc\+Distribution}!C\+Random\+Int@{C\+Random\+Int}}
+\subsubsection[{m\+\_\+pc\+Distribution}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\+::uniform\+\_\+int\+\_\+distribution$<$T$>$$\ast$ {\bf C\+Random\+Int}$<$ T $>$\+::m\+\_\+pc\+Distribution\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_random_int_a5c6565335676d670c0072236d18e34cc}
+\hypertarget{class_c_random_int_aae181316633165d9888d530e15f8232b}{}\index{C\+Random\+Int@{C\+Random\+Int}!m\+\_\+pc\+Random\+M\+T@{m\+\_\+pc\+Random\+M\+T}}
+\index{m\+\_\+pc\+Random\+M\+T@{m\+\_\+pc\+Random\+M\+T}!C\+Random\+Int@{C\+Random\+Int}}
+\subsubsection[{m\+\_\+pc\+Random\+M\+T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\+::mt19937\+\_\+64$\ast$ {\bf C\+Random\+Int}$<$ T $>$\+::m\+\_\+pc\+Random\+M\+T\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_random_int_aae181316633165d9888d530e15f8232b}
+
+
+メルセンヌ・ツイスター法による乱数生成。 
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Project/\+Game/\+Lib/\+Random/\hyperlink{_random_8h}{Random.\+h}\item 
+D\+:/\+Project/\+Game/\+Lib/\+Random/\hyperlink{_random_int_8h}{Random\+Int.\+h}\end{DoxyCompactItemize}

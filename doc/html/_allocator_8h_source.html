@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>My Project: D:/Project/Game/Lib/Memory/Allocator/Allocator.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="namespaces.html"><span>名前空間</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8f3de2ae926fecfe6abd5379fd2b6eb1.html">Lib</a></li><li class="navelem"><a class="el" href="dir_af23e7e4d50f6b39ce689339f85a571e.html">Memory</a></li><li class="navelem"><a class="el" href="dir_737951a41bbfc69629847025ab5292fb.html">Allocator</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Allocator.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_allocator_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef INCLUDE_ALLOCATOR_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define INCLUDE_ALLOCATOR_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_mem_definition_8h.html">Lib/Memory/MemDefinition.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * @class   CAllocator</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * @brief   MemManagerを用いたアロケータ。</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_c_allocator.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_allocator.html">CAllocator</a> : <span class="keyword">public</span> std::allocator&lt;T&gt;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">template</span> &lt; <span class="keyword">class</span> U &gt;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="struct_c_allocator_1_1rebind.html">   22</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_c_allocator_1_1rebind.html">rebind</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="struct_c_allocator_1_1rebind.html#a5109d5245fdca0ac2c912fde83828d1d">   24</a></span>&#160;        <span class="keyword">typedef</span> <a class="code" href="class_c_allocator.html">CAllocator&lt;U&gt;</a> <a class="code" href="struct_c_allocator_1_1rebind.html#a5109d5245fdca0ac2c912fde83828d1d">other</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    };</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_c_allocator.html#ac47a279ea8fcbd55f7c8df3044bf93ff">   29</a></span>&#160;    <a class="code" href="class_c_allocator.html#ac47a279ea8fcbd55f7c8df3044bf93ff">CAllocator</a>(){}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> U&gt;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_c_allocator.html#a7ee93416bbf19a9a20ad9f971208a2d3">   31</a></span>&#160;    <a class="code" href="class_c_allocator.html#a7ee93416bbf19a9a20ad9f971208a2d3">CAllocator</a>( <span class="keyword">const</span> <a class="code" href="class_c_allocator.html">CAllocator&lt;U&gt;</a>&amp; _rAllocator )</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="_lib_utility_8h.html#a86d500a34c624c2cae56bc25a31b12f3">UNUSED</a>( _rAllocator );</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_c_allocator.html#ab62db0893a3119e3f99d29f3adfe9565">   37</a></span>&#160;    <a class="code" href="class_c_allocator.html#ab62db0893a3119e3f99d29f3adfe9565">~CAllocator</a>(){}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_c_allocator.html#a2d88f40d4a8e61088ad90aa779c2b9dc">   40</a></span>&#160;    pointer <a class="code" href="class_c_allocator.html#a2d88f40d4a8e61088ad90aa779c2b9dc">allocate</a>( size_type _uNum, const_pointer _hint = 0 )</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#if defined( USE_MEMALLOC )</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_lib_utility_8h.html#a564389767079011d2a47cdb641d81353">s_cast</a>&lt;pointer&gt;( <a class="code" href="namespacen_mem.html#acb65bac5ab61012cdbde0ecce3e51d18">nMem::Alloc</a>( s_cast&lt;USize&gt;( <span class="keyword">sizeof</span>( T ) * _uNum ), <a class="code" href="namespacen_mem.html#a44d64d91225ba6c957054d2db885dfbeabe9fa21614b3e6b1262058b536d50965">nMem::EnMemPage::enCommon</a>, <a class="code" href="namespacen_mem.html#aae5f274bd5d48f77be9c3142a1e83e8ba51de7c871812c0d91929b2fa407db09f">nMem::EnAllocMode::enForward</a>, __FILE__, __LINE__ ) );</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#else // #if defined( USE_MEMALLOC )</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_lib_utility_8h.html#a564389767079011d2a47cdb641d81353">s_cast</a>&lt;pointer&gt;( malloc( <span class="keyword">sizeof</span>( T ) * _uNum ) );</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif // #else // #if defined( USE_MEMALLOC )</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_c_allocator.html#ac85aa74964df1ac149878fb68ed5017a">   49</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_allocator.html#ac85aa74964df1ac149878fb68ed5017a">deallocate</a>( pointer _p, size_type _uNum )</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#if defined( USE_MEMALLOC )</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="namespacen_mem.html#a9aaa87b3f418d881912df1c3acab0764">nMem::Free</a>( _p );</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#else // #if defined( USE_MEMALLOC )</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        free( _p );</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif // #else // #if defined( USE_MEMALLOC )</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif // #ifndef INCLUDE_ALLOCATOR_H</span></div>
+<div class="ttc" id="namespacen_mem_html_a9aaa87b3f418d881912df1c3acab0764"><div class="ttname"><a href="namespacen_mem.html#a9aaa87b3f418d881912df1c3acab0764">nMem::Free</a></div><div class="ttdeci">void Free(void *_p)</div><div class="ttdoc">メモリ解放。 </div><div class="ttdef"><b>Definition:</b> MemDefinition.cpp:38</div></div>
+<div class="ttc" id="struct_c_allocator_1_1rebind_html"><div class="ttname"><a href="struct_c_allocator_1_1rebind.html">CAllocator::rebind</a></div><div class="ttdef"><b>Definition:</b> Allocator.h:22</div></div>
+<div class="ttc" id="_lib_utility_8h_html_a86d500a34c624c2cae56bc25a31b12f3"><div class="ttname"><a href="_lib_utility_8h.html#a86d500a34c624c2cae56bc25a31b12f3">UNUSED</a></div><div class="ttdeci">#define UNUSED(x)</div><div class="ttdef"><b>Definition:</b> LibUtility.h:18</div></div>
+<div class="ttc" id="struct_c_allocator_1_1rebind_html_a5109d5245fdca0ac2c912fde83828d1d"><div class="ttname"><a href="struct_c_allocator_1_1rebind.html#a5109d5245fdca0ac2c912fde83828d1d">CAllocator::rebind::other</a></div><div class="ttdeci">CAllocator&lt; U &gt; other</div><div class="ttdef"><b>Definition:</b> Allocator.h:24</div></div>
+<div class="ttc" id="class_c_allocator_html_a7ee93416bbf19a9a20ad9f971208a2d3"><div class="ttname"><a href="class_c_allocator.html#a7ee93416bbf19a9a20ad9f971208a2d3">CAllocator::CAllocator</a></div><div class="ttdeci">CAllocator(const CAllocator&lt; U &gt; &amp;_rAllocator)</div><div class="ttdef"><b>Definition:</b> Allocator.h:31</div></div>
+<div class="ttc" id="class_c_allocator_html_ac85aa74964df1ac149878fb68ed5017a"><div class="ttname"><a href="class_c_allocator.html#ac85aa74964df1ac149878fb68ed5017a">CAllocator::deallocate</a></div><div class="ttdeci">void deallocate(pointer _p, size_type _uNum)</div><div class="ttdoc">メモリの解放。 </div><div class="ttdef"><b>Definition:</b> Allocator.h:49</div></div>
+<div class="ttc" id="class_c_allocator_html_a2d88f40d4a8e61088ad90aa779c2b9dc"><div class="ttname"><a href="class_c_allocator.html#a2d88f40d4a8e61088ad90aa779c2b9dc">CAllocator::allocate</a></div><div class="ttdeci">pointer allocate(size_type _uNum, const_pointer _hint=0)</div><div class="ttdoc">メモリの確保。 </div><div class="ttdef"><b>Definition:</b> Allocator.h:40</div></div>
+<div class="ttc" id="_mem_definition_8h_html"><div class="ttname"><a href="_mem_definition_8h.html">MemDefinition.h</a></div><div class="ttdoc">メモリ関連の定義。 </div></div>
+<div class="ttc" id="class_c_allocator_html"><div class="ttname"><a href="class_c_allocator.html">CAllocator</a></div><div class="ttdef"><b>Definition:</b> Allocator.h:18</div></div>
+<div class="ttc" id="namespacen_mem_html_aae5f274bd5d48f77be9c3142a1e83e8ba51de7c871812c0d91929b2fa407db09f"><div class="ttname"><a href="namespacen_mem.html#aae5f274bd5d48f77be9c3142a1e83e8ba51de7c871812c0d91929b2fa407db09f">nMem::EnAllocMode::enForward</a></div></div>
+<div class="ttc" id="class_c_allocator_html_ab62db0893a3119e3f99d29f3adfe9565"><div class="ttname"><a href="class_c_allocator.html#ab62db0893a3119e3f99d29f3adfe9565">CAllocator::~CAllocator</a></div><div class="ttdeci">~CAllocator()</div><div class="ttdoc">デストラクタ。 </div><div class="ttdef"><b>Definition:</b> Allocator.h:37</div></div>
+<div class="ttc" id="namespacen_mem_html_a44d64d91225ba6c957054d2db885dfbeabe9fa21614b3e6b1262058b536d50965"><div class="ttname"><a href="namespacen_mem.html#a44d64d91225ba6c957054d2db885dfbeabe9fa21614b3e6b1262058b536d50965">nMem::EnMemPage::enCommon</a></div><div class="ttdoc">コモンページ。 </div></div>
+<div class="ttc" id="_lib_utility_8h_html_a564389767079011d2a47cdb641d81353"><div class="ttname"><a href="_lib_utility_8h.html#a564389767079011d2a47cdb641d81353">s_cast</a></div><div class="ttdeci">#define s_cast</div><div class="ttdef"><b>Definition:</b> LibUtility.h:14</div></div>
+<div class="ttc" id="namespacen_mem_html_acb65bac5ab61012cdbde0ecce3e51d18"><div class="ttname"><a href="namespacen_mem.html#acb65bac5ab61012cdbde0ecce3e51d18">nMem::Alloc</a></div><div class="ttdeci">void * Alloc(USize _uSize, EnMemPage _ePage, EnAllocMode _eMode, const S8 *_psFile, U32 _uLine)</div><div class="ttdoc">メモリ確保。 </div><div class="ttdef"><b>Definition:</b> MemDefinition.cpp:21</div></div>
+<div class="ttc" id="class_c_allocator_html_ac47a279ea8fcbd55f7c8df3044bf93ff"><div class="ttname"><a href="class_c_allocator.html#ac47a279ea8fcbd55f7c8df3044bf93ff">CAllocator::CAllocator</a></div><div class="ttdeci">CAllocator()</div><div class="ttdoc">コンストラクタ。 </div><div class="ttdef"><b>Definition:</b> Allocator.h:29</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>My Project: D:/Project/Game/Lib/Worker/WorkerManager.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="namespaces.html"><span>名前空間</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8f3de2ae926fecfe6abd5379fd2b6eb1.html">Lib</a></li><li class="navelem"><a class="el" href="dir_f3c8c440de75c97ba52470780f611b08.html">Worker</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">WorkerManager.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_worker_manager_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef INCLUDE_WORKER_MANAGER_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define INCLUDE_WORKER_MANAGER_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_worker_channel_8h.html">Lib/Worker/WorkerChannel.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_job.html">CJob</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_worker_thread.html">CWorkerThread</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * @class CWorkerManager</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * @brief ワーカースレッドの管理。</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_c_worker_manager.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_worker_manager.html">CWorkerManager</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_c_worker_manager.html#ae5bb46bc37d767255d303e028a3bda37">CWorkerManager</a>( U32 _uWorkerNum );</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_worker_manager.html#aaa563837b4a26d962333d78fabed71b4">~CWorkerManager</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_worker_manager.html#ac293a2194345639c8ef9ac82f1c4f6f6">RequestJob</a>( <a class="code" href="class_c_job.html">CJob</a>* _pcJob );</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_worker_manager.html#a715722ceb767dd9595f0e361fa387177">IsWaitAll</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_c_worker_manager.html#a4884b59ebb53097e998625e108af68c0">   34</a></span>&#160;    <a class="code" href="class_c_worker_channel.html">CWorkerChannel</a>  <a class="code" href="class_c_worker_manager.html#a4884b59ebb53097e998625e108af68c0">m_cChannel</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_c_worker_manager.html#ab27095cc8bedef73c7d4d6e6f928da98">   35</a></span>&#160;    <a class="code" href="class_c_worker_thread.html">CWorkerThread</a>** <a class="code" href="class_c_worker_manager.html#ab27095cc8bedef73c7d4d6e6f928da98">m_pcWorkerArray</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_c_worker_manager.html#a06bca404c8d4d519fd676e9dd7470fe7">   36</a></span>&#160;    U32             <a class="code" href="class_c_worker_manager.html#a06bca404c8d4d519fd676e9dd7470fe7">m_uWorkerNum</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif // #ifndef INCLUDE_WORKER_MANAGER_H</span></div>
+<div class="ttc" id="class_c_job_html"><div class="ttname"><a href="class_c_job.html">CJob</a></div><div class="ttdef"><b>Definition:</b> Job.h:14</div></div>
+<div class="ttc" id="class_c_worker_manager_html_a06bca404c8d4d519fd676e9dd7470fe7"><div class="ttname"><a href="class_c_worker_manager.html#a06bca404c8d4d519fd676e9dd7470fe7">CWorkerManager::m_uWorkerNum</a></div><div class="ttdeci">U32 m_uWorkerNum</div><div class="ttdef"><b>Definition:</b> WorkerManager.h:36</div></div>
+<div class="ttc" id="class_c_worker_manager_html_ab27095cc8bedef73c7d4d6e6f928da98"><div class="ttname"><a href="class_c_worker_manager.html#ab27095cc8bedef73c7d4d6e6f928da98">CWorkerManager::m_pcWorkerArray</a></div><div class="ttdeci">CWorkerThread ** m_pcWorkerArray</div><div class="ttdef"><b>Definition:</b> WorkerManager.h:35</div></div>
+<div class="ttc" id="class_c_worker_manager_html_a4884b59ebb53097e998625e108af68c0"><div class="ttname"><a href="class_c_worker_manager.html#a4884b59ebb53097e998625e108af68c0">CWorkerManager::m_cChannel</a></div><div class="ttdeci">CWorkerChannel m_cChannel</div><div class="ttdef"><b>Definition:</b> WorkerManager.h:34</div></div>
+<div class="ttc" id="class_c_worker_channel_html"><div class="ttname"><a href="class_c_worker_channel.html">CWorkerChannel</a></div><div class="ttdef"><b>Definition:</b> WorkerChannel.h:19</div></div>
+<div class="ttc" id="class_c_worker_manager_html_a715722ceb767dd9595f0e361fa387177"><div class="ttname"><a href="class_c_worker_manager.html#a715722ceb767dd9595f0e361fa387177">CWorkerManager::IsWaitAll</a></div><div class="ttdeci">bool IsWaitAll() const </div><div class="ttdoc">WorkerThreadが全て待機中か。 </div><div class="ttdef"><b>Definition:</b> WorkerManager.cpp:78</div></div>
+<div class="ttc" id="class_c_worker_manager_html_aaa563837b4a26d962333d78fabed71b4"><div class="ttname"><a href="class_c_worker_manager.html#aaa563837b4a26d962333d78fabed71b4">CWorkerManager::~CWorkerManager</a></div><div class="ttdeci">virtual ~CWorkerManager()</div><div class="ttdoc">デストラクタ。 </div><div class="ttdef"><b>Definition:</b> WorkerManager.cpp:41</div></div>
+<div class="ttc" id="class_c_worker_manager_html_ac293a2194345639c8ef9ac82f1c4f6f6"><div class="ttname"><a href="class_c_worker_manager.html#ac293a2194345639c8ef9ac82f1c4f6f6">CWorkerManager::RequestJob</a></div><div class="ttdeci">void RequestJob(CJob *_pcJob)</div><div class="ttdoc">仕事をリクエスト。 </div><div class="ttdef"><b>Definition:</b> WorkerManager.cpp:63</div></div>
+<div class="ttc" id="_worker_channel_8h_html"><div class="ttname"><a href="_worker_channel_8h.html">WorkerChannel.h</a></div><div class="ttdoc">WorkerThreadにおけるChannel。 </div></div>
+<div class="ttc" id="class_c_worker_manager_html"><div class="ttname"><a href="class_c_worker_manager.html">CWorkerManager</a></div><div class="ttdef"><b>Definition:</b> WorkerManager.h:19</div></div>
+<div class="ttc" id="class_c_worker_manager_html_ae5bb46bc37d767255d303e028a3bda37"><div class="ttname"><a href="class_c_worker_manager.html#ae5bb46bc37d767255d303e028a3bda37">CWorkerManager::CWorkerManager</a></div><div class="ttdeci">CWorkerManager(U32 _uWorkerNum)</div><div class="ttdoc">コンストラクタ。 </div><div class="ttdef"><b>Definition:</b> WorkerManager.cpp:16</div></div>
+<div class="ttc" id="class_c_worker_thread_html"><div class="ttname"><a href="class_c_worker_thread.html">CWorkerThread</a></div><div class="ttdef"><b>Definition:</b> WorkerThread.h:18</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

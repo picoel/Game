@@ -1,0 +1,215 @@
+\hypertarget{class_c_mem_manager}{}\section{C\+Mem\+Manager クラス}
+\label{class_c_mem_manager}\index{C\+Mem\+Manager@{C\+Mem\+Manager}}
+
+
+{\ttfamily \#include $<$Mem\+Manager.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_mem_manager_ae7e4b8312606aec77140bcdd0aae8429}{$\sim$\+C\+Mem\+Manager} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_mem_manager_a9fa68af354fb43cb27edda068139ecc5}{Initialize} (U\+Size \+\_\+u\+Size)
+\begin{DoxyCompactList}\small\item\em 初期化。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_mem_manager_aaf96237e163bbd903179b25057141710}{Finalize} ()
+\begin{DoxyCompactList}\small\item\em 終了処理。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_mem_manager_ae3ec85a949d2864a3d7b842674a4dd14}{Print\+Debug\+Memory\+Info} () const 
+\begin{DoxyCompactList}\small\item\em メモリデバッグ情報の表示。 \end{DoxyCompactList}\item 
+void \hyperlink{class_c_mem_manager_a44179f9ef3a73cc4ac56417309e4c087}{Print\+Debug\+Memory\+Block} (bool \+\_\+b\+Print\+Used, bool \+\_\+b\+Print\+Free)
+\begin{DoxyCompactList}\small\item\em メモリブロック情報を表示。 \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{class_c_mem_manager_a46ab3482dbf9e5139b20de3765741b61}{Alloc} (U\+Size \+\_\+u\+Size, \hyperlink{namespacen_mem_a44d64d91225ba6c957054d2db885dfbe}{n\+Mem\+::\+En\+Mem\+Page} \+\_\+e\+Page)
+\begin{DoxyCompactList}\small\item\em メモリ確保。 \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{class_c_mem_manager_ad2ace63797f9b7b2e3076d089e81ad37}{Alloc} (U\+Size \+\_\+u\+Size, \hyperlink{namespacen_mem_a44d64d91225ba6c957054d2db885dfbe}{n\+Mem\+::\+En\+Mem\+Page} \+\_\+e\+Page, \hyperlink{namespacen_mem_aae5f274bd5d48f77be9c3142a1e83e8b}{n\+Mem\+::\+En\+Alloc\+Mode} \+\_\+e\+Mode, const S8 $\ast$\+\_\+ps\+File, U32 \+\_\+u\+Line)
+\item 
+void \hyperlink{class_c_mem_manager_a8e01b60428de8ef2366a4646b5eb0feb}{Free} (void $\ast$\+\_\+p)
+\begin{DoxyCompactList}\small\item\em メモリ解放。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_c_mem_manager}{C\+Mem\+Manager} $\ast$ \hyperlink{class_c_mem_manager_aa00fe5753db30d47af12a76bfef9a0f5}{Get\+Instance} ()
+\item 
+static void \hyperlink{class_c_mem_manager_a56375ca3d766d27f389e85758fb0b07a}{Create\+Instance} ()
+\item 
+static void \hyperlink{class_c_mem_manager_a4ef244e50de56e5c7ff95c86a98e2a32}{Destroy\+Instance} ()
+\item 
+static void $\ast$ \hyperlink{class_c_mem_manager_a800271fde5145d8623e5f06694cc8cab}{operator new} (std\+::size\+\_\+t \+\_\+u\+Size)
+\item 
+static void \hyperlink{class_c_mem_manager_a51f73ea6de04c472301d7fa58ba605f3}{operator delete} (void $\ast$\+\_\+p)
+\end{DoxyCompactItemize}
+\subsection*{非公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_mem_manager_ad3b0307efbaccf48dc22821df642c7ad}{C\+Mem\+Manager} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_mem_allocator}{C\+Mem\+Allocator} $\ast$ \hyperlink{class_c_mem_manager_acd96a41742f12df42ff02e903787e2e3}{m\+\_\+p\+Mem\+Allocator}
+\end{DoxyCompactItemize}
+\subsection*{静的非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_c_mem_manager}{C\+Mem\+Manager} $\ast$ \hyperlink{class_c_mem_manager_a26bbc1442dd2a4f87159c40c55a704d0}{s\+\_\+p\+Instance} = nullptr
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\hypertarget{class_c_mem_manager_ad3b0307efbaccf48dc22821df642c7ad}{}\index{C\+Mem\+Manager@{C\+Mem\+Manager}!C\+Mem\+Manager@{C\+Mem\+Manager}}
+\index{C\+Mem\+Manager@{C\+Mem\+Manager}!C\+Mem\+Manager@{C\+Mem\+Manager}}
+\subsubsection[{C\+Mem\+Manager()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Mem\+Manager\+::\+C\+Mem\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_mem_manager_ad3b0307efbaccf48dc22821df642c7ad}
+
+
+コンストラクタ。 
+
+\hypertarget{class_c_mem_manager_ae7e4b8312606aec77140bcdd0aae8429}{}\index{C\+Mem\+Manager@{C\+Mem\+Manager}!````~C\+Mem\+Manager@{$\sim$\+C\+Mem\+Manager}}
+\index{````~C\+Mem\+Manager@{$\sim$\+C\+Mem\+Manager}!C\+Mem\+Manager@{C\+Mem\+Manager}}
+\subsubsection[{$\sim$\+C\+Mem\+Manager()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Mem\+Manager\+::$\sim$\+C\+Mem\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_mem_manager_ae7e4b8312606aec77140bcdd0aae8429}
+
+
+デストラクタ。 
+
+
+
+\subsection{関数詳解}
+\hypertarget{class_c_mem_manager_a46ab3482dbf9e5139b20de3765741b61}{}\index{C\+Mem\+Manager@{C\+Mem\+Manager}!Alloc@{Alloc}}
+\index{Alloc@{Alloc}!C\+Mem\+Manager@{C\+Mem\+Manager}}
+\subsubsection[{Alloc(\+U\+Size \+\_\+u\+Size, n\+Mem\+::\+En\+Mem\+Page \+\_\+e\+Page)}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ C\+Mem\+Manager\+::\+Alloc (
+\begin{DoxyParamCaption}
+\item[{U\+Size}]{\+\_\+u\+Size, }
+\item[{{\bf n\+Mem\+::\+En\+Mem\+Page}}]{\+\_\+e\+Page}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_mem_manager_a46ab3482dbf9e5139b20de3765741b61}
+
+
+メモリ確保。 
+
+\hypertarget{class_c_mem_manager_ad2ace63797f9b7b2e3076d089e81ad37}{}\index{C\+Mem\+Manager@{C\+Mem\+Manager}!Alloc@{Alloc}}
+\index{Alloc@{Alloc}!C\+Mem\+Manager@{C\+Mem\+Manager}}
+\subsubsection[{Alloc(\+U\+Size \+\_\+u\+Size, n\+Mem\+::\+En\+Mem\+Page \+\_\+e\+Page, n\+Mem\+::\+En\+Alloc\+Mode \+\_\+e\+Mode, const S8 $\ast$\+\_\+ps\+File, U32 \+\_\+u\+Line)}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ C\+Mem\+Manager\+::\+Alloc (
+\begin{DoxyParamCaption}
+\item[{U\+Size}]{\+\_\+u\+Size, }
+\item[{{\bf n\+Mem\+::\+En\+Mem\+Page}}]{\+\_\+e\+Page, }
+\item[{{\bf n\+Mem\+::\+En\+Alloc\+Mode}}]{\+\_\+e\+Mode, }
+\item[{const S8 $\ast$}]{\+\_\+ps\+File, }
+\item[{U32}]{\+\_\+u\+Line}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_mem_manager_ad2ace63797f9b7b2e3076d089e81ad37}
+\hypertarget{class_c_mem_manager_a56375ca3d766d27f389e85758fb0b07a}{}\index{C\+Mem\+Manager@{C\+Mem\+Manager}!Create\+Instance@{Create\+Instance}}
+\index{Create\+Instance@{Create\+Instance}!C\+Mem\+Manager@{C\+Mem\+Manager}}
+\subsubsection[{Create\+Instance()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Mem\+Manager\+::\+Create\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_mem_manager_a56375ca3d766d27f389e85758fb0b07a}
+\hypertarget{class_c_mem_manager_a4ef244e50de56e5c7ff95c86a98e2a32}{}\index{C\+Mem\+Manager@{C\+Mem\+Manager}!Destroy\+Instance@{Destroy\+Instance}}
+\index{Destroy\+Instance@{Destroy\+Instance}!C\+Mem\+Manager@{C\+Mem\+Manager}}
+\subsubsection[{Destroy\+Instance()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Mem\+Manager\+::\+Destroy\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_mem_manager_a4ef244e50de56e5c7ff95c86a98e2a32}
+\hypertarget{class_c_mem_manager_aaf96237e163bbd903179b25057141710}{}\index{C\+Mem\+Manager@{C\+Mem\+Manager}!Finalize@{Finalize}}
+\index{Finalize@{Finalize}!C\+Mem\+Manager@{C\+Mem\+Manager}}
+\subsubsection[{Finalize()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Mem\+Manager\+::\+Finalize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_mem_manager_aaf96237e163bbd903179b25057141710}
+
+
+終了処理。 
+
+\hypertarget{class_c_mem_manager_a8e01b60428de8ef2366a4646b5eb0feb}{}\index{C\+Mem\+Manager@{C\+Mem\+Manager}!Free@{Free}}
+\index{Free@{Free}!C\+Mem\+Manager@{C\+Mem\+Manager}}
+\subsubsection[{Free(void $\ast$\+\_\+p)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Mem\+Manager\+::\+Free (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{\+\_\+p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_mem_manager_a8e01b60428de8ef2366a4646b5eb0feb}
+
+
+メモリ解放。 
+
+\hypertarget{class_c_mem_manager_aa00fe5753db30d47af12a76bfef9a0f5}{}\index{C\+Mem\+Manager@{C\+Mem\+Manager}!Get\+Instance@{Get\+Instance}}
+\index{Get\+Instance@{Get\+Instance}!C\+Mem\+Manager@{C\+Mem\+Manager}}
+\subsubsection[{Get\+Instance()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Mem\+Manager} $\ast$ C\+Mem\+Manager\+::\+Get\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_mem_manager_aa00fe5753db30d47af12a76bfef9a0f5}
+\hypertarget{class_c_mem_manager_a9fa68af354fb43cb27edda068139ecc5}{}\index{C\+Mem\+Manager@{C\+Mem\+Manager}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!C\+Mem\+Manager@{C\+Mem\+Manager}}
+\subsubsection[{Initialize(\+U\+Size \+\_\+u\+Size)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Mem\+Manager\+::\+Initialize (
+\begin{DoxyParamCaption}
+\item[{U\+Size}]{\+\_\+u\+Size}
+\end{DoxyParamCaption}
+)}\label{class_c_mem_manager_a9fa68af354fb43cb27edda068139ecc5}
+
+
+初期化。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+u\+Size} & \+: メモリサイズ。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_mem_manager_a51f73ea6de04c472301d7fa58ba605f3}{}\index{C\+Mem\+Manager@{C\+Mem\+Manager}!operator delete@{operator delete}}
+\index{operator delete@{operator delete}!C\+Mem\+Manager@{C\+Mem\+Manager}}
+\subsubsection[{operator delete(void $\ast$\+\_\+p)}]{\setlength{\rightskip}{0pt plus 5cm}static void C\+Mem\+Manager\+::operator delete (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{\+\_\+p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{class_c_mem_manager_a51f73ea6de04c472301d7fa58ba605f3}
+\hypertarget{class_c_mem_manager_a800271fde5145d8623e5f06694cc8cab}{}\index{C\+Mem\+Manager@{C\+Mem\+Manager}!operator new@{operator new}}
+\index{operator new@{operator new}!C\+Mem\+Manager@{C\+Mem\+Manager}}
+\subsubsection[{operator new(std\+::size\+\_\+t \+\_\+u\+Size)}]{\setlength{\rightskip}{0pt plus 5cm}static void$\ast$ C\+Mem\+Manager\+::operator new (
+\begin{DoxyParamCaption}
+\item[{std\+::size\+\_\+t}]{\+\_\+u\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{class_c_mem_manager_a800271fde5145d8623e5f06694cc8cab}
+\hypertarget{class_c_mem_manager_a44179f9ef3a73cc4ac56417309e4c087}{}\index{C\+Mem\+Manager@{C\+Mem\+Manager}!Print\+Debug\+Memory\+Block@{Print\+Debug\+Memory\+Block}}
+\index{Print\+Debug\+Memory\+Block@{Print\+Debug\+Memory\+Block}!C\+Mem\+Manager@{C\+Mem\+Manager}}
+\subsubsection[{Print\+Debug\+Memory\+Block(bool \+\_\+b\+Print\+Used, bool \+\_\+b\+Print\+Free)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Mem\+Manager\+::\+Print\+Debug\+Memory\+Block (
+\begin{DoxyParamCaption}
+\item[{bool}]{\+\_\+b\+Print\+Used, }
+\item[{bool}]{\+\_\+b\+Print\+Free}
+\end{DoxyParamCaption}
+)}\label{class_c_mem_manager_a44179f9ef3a73cc4ac56417309e4c087}
+
+
+メモリブロック情報を表示。 
+
+\hypertarget{class_c_mem_manager_ae3ec85a949d2864a3d7b842674a4dd14}{}\index{C\+Mem\+Manager@{C\+Mem\+Manager}!Print\+Debug\+Memory\+Info@{Print\+Debug\+Memory\+Info}}
+\index{Print\+Debug\+Memory\+Info@{Print\+Debug\+Memory\+Info}!C\+Mem\+Manager@{C\+Mem\+Manager}}
+\subsubsection[{Print\+Debug\+Memory\+Info() const }]{\setlength{\rightskip}{0pt plus 5cm}void C\+Mem\+Manager\+::\+Print\+Debug\+Memory\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_mem_manager_ae3ec85a949d2864a3d7b842674a4dd14}
+
+
+メモリデバッグ情報の表示。 
+
+
+
+\subsection{メンバ詳解}
+\hypertarget{class_c_mem_manager_acd96a41742f12df42ff02e903787e2e3}{}\index{C\+Mem\+Manager@{C\+Mem\+Manager}!m\+\_\+p\+Mem\+Allocator@{m\+\_\+p\+Mem\+Allocator}}
+\index{m\+\_\+p\+Mem\+Allocator@{m\+\_\+p\+Mem\+Allocator}!C\+Mem\+Manager@{C\+Mem\+Manager}}
+\subsubsection[{m\+\_\+p\+Mem\+Allocator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Mem\+Allocator}$\ast$ C\+Mem\+Manager\+::m\+\_\+p\+Mem\+Allocator\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_mem_manager_acd96a41742f12df42ff02e903787e2e3}
+\hypertarget{class_c_mem_manager_a26bbc1442dd2a4f87159c40c55a704d0}{}\index{C\+Mem\+Manager@{C\+Mem\+Manager}!s\+\_\+p\+Instance@{s\+\_\+p\+Instance}}
+\index{s\+\_\+p\+Instance@{s\+\_\+p\+Instance}!C\+Mem\+Manager@{C\+Mem\+Manager}}
+\subsubsection[{s\+\_\+p\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Mem\+Manager} $\ast$ C\+Mem\+Manager\+::s\+\_\+p\+Instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_c_mem_manager_a26bbc1442dd2a4f87159c40c55a704d0}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Project/\+Game/\+Lib/\+Memory/\hyperlink{_mem_manager_8h}{Mem\+Manager.\+h}\item 
+D\+:/\+Project/\+Game/\+Lib/\+Memory/\hyperlink{_mem_manager_8cpp}{Mem\+Manager.\+cpp}\end{DoxyCompactItemize}

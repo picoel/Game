@@ -1,0 +1,107 @@
+\hypertarget{class_c_p_m_d_reader}{}\section{C\+P\+M\+D\+Reader クラス}
+\label{class_c_p_m_d_reader}\index{C\+P\+M\+D\+Reader@{C\+P\+M\+D\+Reader}}
+
+
+{\ttfamily \#include $<$P\+M\+D\+Reader.\+h$>$}
+
+C\+P\+M\+D\+Reader の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_p_m_d_reader}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_p_m_d_reader_a8d2c4bdfa2c288fe4d3507a26c7f13a7}{C\+P\+M\+D\+Reader} (const T\+Char $\ast$\+\_\+ps\+File\+Name)
+\begin{DoxyCompactList}\small\item\em コンストラクタ。 \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_p_m_d_reader_a3e1afba2bd86e420c731ba5c114d2ec5}{$\sim$\+C\+P\+M\+D\+Reader} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_p_m_d_reader_a326af26b1815aaa4b088b037fb76e05f}{Read\+End\+Process} (const void $\ast$\+\_\+p\+Data, U\+Size \+\_\+u\+Size) override
+\begin{DoxyCompactList}\small\item\em 読み込み完了時の処理。 \end{DoxyCompactList}\item 
+const meshio\+::pmd\+::\+I\+O \& \hyperlink{class_c_p_m_d_reader_a082ea64273d18d684b3fc2deced6090f}{Get\+P\+M\+D\+Data} () const 
+\begin{DoxyCompactList}\small\item\em P\+M\+Dデータの取得。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+meshio\+::pmd\+::\+I\+O \hyperlink{class_c_p_m_d_reader_aaecdb1ffd39ffe2cb5c87597c581173f}{m\+\_\+st\+Data}
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\hypertarget{class_c_p_m_d_reader_a8d2c4bdfa2c288fe4d3507a26c7f13a7}{}\index{C\+P\+M\+D\+Reader@{C\+P\+M\+D\+Reader}!C\+P\+M\+D\+Reader@{C\+P\+M\+D\+Reader}}
+\index{C\+P\+M\+D\+Reader@{C\+P\+M\+D\+Reader}!C\+P\+M\+D\+Reader@{C\+P\+M\+D\+Reader}}
+\subsubsection[{C\+P\+M\+D\+Reader(const T\+Char $\ast$\+\_\+ps\+File\+Name)}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+M\+D\+Reader\+::\+C\+P\+M\+D\+Reader (
+\begin{DoxyParamCaption}
+\item[{const T\+Char $\ast$}]{\+\_\+ps\+File\+Name}
+\end{DoxyParamCaption}
+)}\label{class_c_p_m_d_reader_a8d2c4bdfa2c288fe4d3507a26c7f13a7}
+
+
+コンストラクタ。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+ps\+File\+Name} & \+: 読み込むファイル名。 \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_p_m_d_reader_a3e1afba2bd86e420c731ba5c114d2ec5}{}\index{C\+P\+M\+D\+Reader@{C\+P\+M\+D\+Reader}!````~C\+P\+M\+D\+Reader@{$\sim$\+C\+P\+M\+D\+Reader}}
+\index{````~C\+P\+M\+D\+Reader@{$\sim$\+C\+P\+M\+D\+Reader}!C\+P\+M\+D\+Reader@{C\+P\+M\+D\+Reader}}
+\subsubsection[{$\sim$\+C\+P\+M\+D\+Reader()}]{\setlength{\rightskip}{0pt plus 5cm}C\+P\+M\+D\+Reader\+::$\sim$\+C\+P\+M\+D\+Reader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_p_m_d_reader_a3e1afba2bd86e420c731ba5c114d2ec5}
+
+
+デストラクタ。 
+
+
+
+\subsection{関数詳解}
+\hypertarget{class_c_p_m_d_reader_a082ea64273d18d684b3fc2deced6090f}{}\index{C\+P\+M\+D\+Reader@{C\+P\+M\+D\+Reader}!Get\+P\+M\+D\+Data@{Get\+P\+M\+D\+Data}}
+\index{Get\+P\+M\+D\+Data@{Get\+P\+M\+D\+Data}!C\+P\+M\+D\+Reader@{C\+P\+M\+D\+Reader}}
+\subsubsection[{Get\+P\+M\+D\+Data() const }]{\setlength{\rightskip}{0pt plus 5cm}const meshio\+::pmd\+::\+I\+O\& C\+P\+M\+D\+Reader\+::\+Get\+P\+M\+D\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_p_m_d_reader_a082ea64273d18d684b3fc2deced6090f}
+
+
+P\+M\+Dデータの取得。 
+
+\hypertarget{class_c_p_m_d_reader_a326af26b1815aaa4b088b037fb76e05f}{}\index{C\+P\+M\+D\+Reader@{C\+P\+M\+D\+Reader}!Read\+End\+Process@{Read\+End\+Process}}
+\index{Read\+End\+Process@{Read\+End\+Process}!C\+P\+M\+D\+Reader@{C\+P\+M\+D\+Reader}}
+\subsubsection[{Read\+End\+Process(const void $\ast$\+\_\+p\+Data, U\+Size \+\_\+u\+Size) override}]{\setlength{\rightskip}{0pt plus 5cm}void C\+P\+M\+D\+Reader\+::\+Read\+End\+Process (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{\+\_\+p\+Data, }
+\item[{U\+Size}]{\+\_\+u\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_c_p_m_d_reader_a326af26b1815aaa4b088b037fb76e05f}
+
+
+読み込み完了時の処理。 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em \+\_\+p\+Data} & \+: 読み込んだデータ。 \\
+\hline
+\mbox{\tt in}  & {\em \+\_\+u\+Size} & \+: データサイズ。 \\
+\hline
+\end{DoxyParams}
+
+
+\hyperlink{class_c_file_reader_a5a18550133826ac43096629f6eaa8c42}{C\+File\+Reader}を再実装しています。
+
+
+
+\subsection{メンバ詳解}
+\hypertarget{class_c_p_m_d_reader_aaecdb1ffd39ffe2cb5c87597c581173f}{}\index{C\+P\+M\+D\+Reader@{C\+P\+M\+D\+Reader}!m\+\_\+st\+Data@{m\+\_\+st\+Data}}
+\index{m\+\_\+st\+Data@{m\+\_\+st\+Data}!C\+P\+M\+D\+Reader@{C\+P\+M\+D\+Reader}}
+\subsubsection[{m\+\_\+st\+Data}]{\setlength{\rightskip}{0pt plus 5cm}meshio\+::pmd\+::\+I\+O C\+P\+M\+D\+Reader\+::m\+\_\+st\+Data\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_p_m_d_reader_aaecdb1ffd39ffe2cb5c87597c581173f}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Project/\+Game/\+Lib/\+P\+M\+D/\hyperlink{_p_m_d_reader_8h}{P\+M\+D\+Reader.\+h}\item 
+D\+:/\+Project/\+Game/\+Lib/\+P\+M\+D/\hyperlink{_p_m_d_reader_8cpp}{P\+M\+D\+Reader.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,161 @@
+\hypertarget{class_c_range}{}\section{C\+Range$<$ T $>$ クラステンプレート}
+\label{class_c_range}\index{C\+Range$<$ T $>$@{C\+Range$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Range.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_range_a1db083cfad9ecd7bb7f44f81a3d2064c}{C\+Range} (const T \&\+\_\+rt\+Min, const T \&\+\_\+rt\+Max)
+\begin{DoxyCompactList}\small\item\em コンストラクタ。 \end{DoxyCompactList}\item 
+\hyperlink{class_c_range_a844253ef9aa9b5cda7fe685a28832be7}{C\+Range} (const \hyperlink{class_c_range}{C\+Range}$<$ T $>$ \&\+\_\+rt\+Src)
+\begin{DoxyCompactList}\small\item\em コピーコンストラクタ。 \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_range_ac79b7d48f29fe5a15cbcc9b6ac8f162c}{$\sim$\+C\+Range} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ。 \end{DoxyCompactList}\item 
+T \hyperlink{class_c_range_ae935dd30669959647bf0484a54d26b63}{Get\+Value} () const 
+\begin{DoxyCompactList}\small\item\em 値を返す。 \end{DoxyCompactList}\item 
+\hyperlink{class_c_range}{C\+Range}$<$ T $>$ \& \hyperlink{class_c_range_a74ca9bd04053c9933cc17522b7f666a7}{operator=} (const T \&\+\_\+rt\+Src)
+\begin{DoxyCompactList}\small\item\em 算術演算子のオーバーロード。 \end{DoxyCompactList}\item 
+\hyperlink{class_c_range}{C\+Range}$<$ T $>$ \& \hyperlink{class_c_range_a1037034ac40b3e904ccf722911a3c68d}{operator+=} (const T \&\+\_\+rt\+Src)
+\item 
+\hyperlink{class_c_range}{C\+Range}$<$ T $>$ \& \hyperlink{class_c_range_a3eca19125aa4fb0782f5e15de5f96cf0}{operator-\/=} (const T \&\+\_\+rt\+Src)
+\item 
+\hyperlink{class_c_range}{C\+Range}$<$ T $>$ \& \hyperlink{class_c_range_ab1b520e8ce066a3e054d23394b45068b}{operator$\ast$=} (const T \&\+\_\+rt\+Src)
+\item 
+\hyperlink{class_c_range}{C\+Range}$<$ T $>$ \& \hyperlink{class_c_range_acc3fc1eac760ef02a91f4f304c124815}{operator/=} (const T \&\+\_\+rt\+Src)
+\item 
+\hyperlink{class_c_range}{C\+Range}$<$ T $>$ \& \hyperlink{class_c_range_ae8acb1f88e2516b5b922bd8754608ba0}{operator++} ()
+\item 
+\hyperlink{class_c_range}{C\+Range}$<$ T $>$ \& \hyperlink{class_c_range_a885d67395ea870e3f2e9302b19586021}{operator-\/-\/} ()
+\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+T \hyperlink{class_c_range_a0efe8d572177862cca74bc817ee68b85}{m\+\_\+t\+Value}
+\item 
+T \hyperlink{class_c_range_ade945f039df9fb701105a83811f6da95}{m\+\_\+t\+Min}
+\item 
+T \hyperlink{class_c_range_a913f82d7153c73dba1709d3aaf46e141}{m\+\_\+t\+Max}
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\hypertarget{class_c_range_a1db083cfad9ecd7bb7f44f81a3d2064c}{}\index{C\+Range@{C\+Range}!C\+Range@{C\+Range}}
+\index{C\+Range@{C\+Range}!C\+Range@{C\+Range}}
+\subsubsection[{C\+Range(const T \&\+\_\+rt\+Min, const T \&\+\_\+rt\+Max)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf C\+Range}$<$ T $>$\+::{\bf C\+Range} (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{\+\_\+rt\+Min, }
+\item[{const T \&}]{\+\_\+rt\+Max}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_range_a1db083cfad9ecd7bb7f44f81a3d2064c}
+
+
+コンストラクタ。 
+
+\hypertarget{class_c_range_a844253ef9aa9b5cda7fe685a28832be7}{}\index{C\+Range@{C\+Range}!C\+Range@{C\+Range}}
+\index{C\+Range@{C\+Range}!C\+Range@{C\+Range}}
+\subsubsection[{C\+Range(const C\+Range$<$ T $>$ \&\+\_\+rt\+Src)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf C\+Range}$<$ T $>$\+::{\bf C\+Range} (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+Range}$<$ T $>$ \&}]{\+\_\+rt\+Src}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_range_a844253ef9aa9b5cda7fe685a28832be7}
+
+
+コピーコンストラクタ。 
+
+\hypertarget{class_c_range_ac79b7d48f29fe5a15cbcc9b6ac8f162c}{}\index{C\+Range@{C\+Range}!````~C\+Range@{$\sim$\+C\+Range}}
+\index{````~C\+Range@{$\sim$\+C\+Range}!C\+Range@{C\+Range}}
+\subsubsection[{$\sim$\+C\+Range()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ virtual {\bf C\+Range}$<$ T $>$\+::$\sim${\bf C\+Range} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_range_ac79b7d48f29fe5a15cbcc9b6ac8f162c}
+
+
+デストラクタ。 
+
+
+
+\subsection{関数詳解}
+\hypertarget{class_c_range_ae935dd30669959647bf0484a54d26b63}{}\index{C\+Range@{C\+Range}!Get\+Value@{Get\+Value}}
+\index{Get\+Value@{Get\+Value}!C\+Range@{C\+Range}}
+\subsubsection[{Get\+Value() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T {\bf C\+Range}$<$ T $>$\+::Get\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_range_ae935dd30669959647bf0484a54d26b63}
+
+
+値を返す。 
+
+\hypertarget{class_c_range_ab1b520e8ce066a3e054d23394b45068b}{}\index{C\+Range@{C\+Range}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!C\+Range@{C\+Range}}
+\subsubsection[{operator$\ast$=(const T \&\+\_\+rt\+Src)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf C\+Range}$<$T$>$\& {\bf C\+Range}$<$ T $>$\+::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{\+\_\+rt\+Src}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_range_ab1b520e8ce066a3e054d23394b45068b}
+\hypertarget{class_c_range_ae8acb1f88e2516b5b922bd8754608ba0}{}\index{C\+Range@{C\+Range}!operator++@{operator++}}
+\index{operator++@{operator++}!C\+Range@{C\+Range}}
+\subsubsection[{operator++()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf C\+Range}$<$T$>$\& {\bf C\+Range}$<$ T $>$\+::operator++ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_range_ae8acb1f88e2516b5b922bd8754608ba0}
+\hypertarget{class_c_range_a1037034ac40b3e904ccf722911a3c68d}{}\index{C\+Range@{C\+Range}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!C\+Range@{C\+Range}}
+\subsubsection[{operator+=(const T \&\+\_\+rt\+Src)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf C\+Range}$<$T$>$\& {\bf C\+Range}$<$ T $>$\+::operator+= (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{\+\_\+rt\+Src}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_range_a1037034ac40b3e904ccf722911a3c68d}
+\hypertarget{class_c_range_a885d67395ea870e3f2e9302b19586021}{}\index{C\+Range@{C\+Range}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!C\+Range@{C\+Range}}
+\subsubsection[{operator-\/-\/()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf C\+Range}$<$T$>$\& {\bf C\+Range}$<$ T $>$\+::operator-\/-\/ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_range_a885d67395ea870e3f2e9302b19586021}
+\hypertarget{class_c_range_a3eca19125aa4fb0782f5e15de5f96cf0}{}\index{C\+Range@{C\+Range}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!C\+Range@{C\+Range}}
+\subsubsection[{operator-\/=(const T \&\+\_\+rt\+Src)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf C\+Range}$<$T$>$\& {\bf C\+Range}$<$ T $>$\+::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{\+\_\+rt\+Src}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_range_a3eca19125aa4fb0782f5e15de5f96cf0}
+\hypertarget{class_c_range_acc3fc1eac760ef02a91f4f304c124815}{}\index{C\+Range@{C\+Range}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!C\+Range@{C\+Range}}
+\subsubsection[{operator/=(const T \&\+\_\+rt\+Src)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf C\+Range}$<$T$>$\& {\bf C\+Range}$<$ T $>$\+::operator/= (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{\+\_\+rt\+Src}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_range_acc3fc1eac760ef02a91f4f304c124815}
+\hypertarget{class_c_range_a74ca9bd04053c9933cc17522b7f666a7}{}\index{C\+Range@{C\+Range}!operator=@{operator=}}
+\index{operator=@{operator=}!C\+Range@{C\+Range}}
+\subsubsection[{operator=(const T \&\+\_\+rt\+Src)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf C\+Range}$<$T$>$\& {\bf C\+Range}$<$ T $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{\+\_\+rt\+Src}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_range_a74ca9bd04053c9933cc17522b7f666a7}
+
+
+算術演算子のオーバーロード。 
+
+
+
+\subsection{メンバ詳解}
+\hypertarget{class_c_range_a913f82d7153c73dba1709d3aaf46e141}{}\index{C\+Range@{C\+Range}!m\+\_\+t\+Max@{m\+\_\+t\+Max}}
+\index{m\+\_\+t\+Max@{m\+\_\+t\+Max}!C\+Range@{C\+Range}}
+\subsubsection[{m\+\_\+t\+Max}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T {\bf C\+Range}$<$ T $>$\+::m\+\_\+t\+Max\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_range_a913f82d7153c73dba1709d3aaf46e141}
+\hypertarget{class_c_range_ade945f039df9fb701105a83811f6da95}{}\index{C\+Range@{C\+Range}!m\+\_\+t\+Min@{m\+\_\+t\+Min}}
+\index{m\+\_\+t\+Min@{m\+\_\+t\+Min}!C\+Range@{C\+Range}}
+\subsubsection[{m\+\_\+t\+Min}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T {\bf C\+Range}$<$ T $>$\+::m\+\_\+t\+Min\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_range_ade945f039df9fb701105a83811f6da95}
+\hypertarget{class_c_range_a0efe8d572177862cca74bc817ee68b85}{}\index{C\+Range@{C\+Range}!m\+\_\+t\+Value@{m\+\_\+t\+Value}}
+\index{m\+\_\+t\+Value@{m\+\_\+t\+Value}!C\+Range@{C\+Range}}
+\subsubsection[{m\+\_\+t\+Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T {\bf C\+Range}$<$ T $>$\+::m\+\_\+t\+Value\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_range_a0efe8d572177862cca74bc817ee68b85}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Project/\+Game/\+Lib/\+Utility/\hyperlink{_range_8h}{Range.\+h}\end{DoxyCompactItemize}

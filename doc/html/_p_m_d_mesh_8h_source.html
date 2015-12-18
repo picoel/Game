@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>My Project: D:/Project/Game/Lib/PMD/PMDMesh.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="namespaces.html"><span>名前空間</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8f3de2ae926fecfe6abd5379fd2b6eb1.html">Lib</a></li><li class="navelem"><a class="el" href="dir_a89d950c5089f2585ec53929b66d8b2b.html">PMD</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">PMDMesh.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_p_m_d_mesh_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef INCLUDE_LIB_PMD_PMDMESH_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define INCLUDE_LIB_PMD_PMDMESH_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_mesh_8h.html">Lib/Mesh/Mesh.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_p_m_d_reader.html">CPMDReader</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * @class CPMDMesh</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * @brief PMD形式のポリゴンメッシュ。</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_c_p_m_d_mesh.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_p_m_d_mesh.html">CPMDMesh</a> : <span class="keyword">public</span> <a class="code" href="class_i_mesh.html">IMesh</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_c_p_m_d_mesh.html#aa6c81a795b0497efecf17128385f853a">CPMDMesh</a>( <span class="keyword">const</span> <a class="code" href="class_c_p_m_d_reader.html">CPMDReader</a>&amp; _rcReader );</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_p_m_d_mesh.html#a5cd7433c40e72a8ac468e8fc248d49ce">~CPMDMesh</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_c_p_m_d_mesh.html#a99a0e4d3664fae495cfe216170294aab">   27</a></span>&#160;    <span class="keyword">virtual</span> U32 <a class="code" href="class_c_p_m_d_mesh.html#a99a0e4d3664fae495cfe216170294aab">GetVertexNum</a>()<span class="keyword"> const override</span>{ <span class="keywordflow">return</span> <a class="code" href="class_c_p_m_d_mesh.html#a4f1ecf35269d6f92bdbb6a65fbcde9c7">m_uVertexNum</a>; }</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_c_p_m_d_mesh.html#aa2b096b1102286fec5d8ea7cc381bb55">   29</a></span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="struct_i_mesh_1_1_st_vertex.html">StVertex</a>* <a class="code" href="class_c_p_m_d_mesh.html#aa2b096b1102286fec5d8ea7cc381bb55">GetVertexArray</a>()<span class="keyword"> const override</span>{ <span class="keywordflow">return</span> <a class="code" href="class_c_p_m_d_mesh.html#a3792b619ca88ed6376e3f13bad68309b">m_pstVertexArray</a>; }</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_c_p_m_d_mesh.html#a0127281ef228e27dd6232069c5ffd164">   31</a></span>&#160;    <span class="keyword">virtual</span> U32 <a class="code" href="class_c_p_m_d_mesh.html#a0127281ef228e27dd6232069c5ffd164">GetIndexNum</a>()<span class="keyword"> const override</span>{ <span class="keywordflow">return</span> <a class="code" href="class_c_p_m_d_mesh.html#a1bb03d6a05fcc301d52a683d435c0aca">m_uIndexNum</a>; }</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_c_p_m_d_mesh.html#ab2b12b75b3ed1ed3017cff8d52f1677b">   33</a></span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> U32* <a class="code" href="class_c_p_m_d_mesh.html#ab2b12b75b3ed1ed3017cff8d52f1677b">GetIndexArray</a>()<span class="keyword"> const override</span>{ <span class="keywordflow">return</span> <a class="code" href="class_c_p_m_d_mesh.html#a2e6da3c8ef74817ba29900609ccd50a2">m_puIndexArray</a>; }</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_c_p_m_d_mesh.html#a3dc32e47f692de7cc2c998b65a416c6d">   35</a></span>&#160;    <span class="keyword">virtual</span> U32 <a class="code" href="class_c_p_m_d_mesh.html#a3dc32e47f692de7cc2c998b65a416c6d">GetMaterialNum</a>()<span class="keyword"> const override</span>{ <span class="keywordflow">return</span> <a class="code" href="class_c_p_m_d_mesh.html#a90141785835f71c11ffe9146eecd1ff6">m_uMaterialNum</a>; }</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_c_p_m_d_mesh.html#a8b6ba1255586f2387442ec24f92ade55">   37</a></span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> StMaterial* <a class="code" href="class_c_p_m_d_mesh.html#a8b6ba1255586f2387442ec24f92ade55">GetMaterialArray</a>()<span class="keyword"> const override</span>{ <span class="keywordflow">return</span> <a class="code" href="class_c_p_m_d_mesh.html#af1764e500e746f1271858e18b0e2a7bd">m_pstMaterialArray</a>; }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_p_m_d_mesh.html#a3de096042308999ed7a2d37e66be76fc">ExtractVertex</a>( <span class="keyword">const</span> <a class="code" href="class_c_p_m_d_reader.html">CPMDReader</a>&amp; _rcReader );</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_p_m_d_mesh.html#a24efaf85ad9f3866a054d6a89b829612">ExtractIndex</a>( <span class="keyword">const</span> <a class="code" href="class_c_p_m_d_reader.html">CPMDReader</a>&amp; _rcReader );</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_p_m_d_mesh.html#aeace2ace7326d12ee04f7549240c771e">ExtractMaterial</a>( <span class="keyword">const</span> <a class="code" href="class_c_p_m_d_reader.html">CPMDReader</a>&amp; _rcReader );</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_c_p_m_d_mesh.html#a4f1ecf35269d6f92bdbb6a65fbcde9c7">   48</a></span>&#160;    U32         <a class="code" href="class_c_p_m_d_mesh.html#a4f1ecf35269d6f92bdbb6a65fbcde9c7">m_uVertexNum</a>;           </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_c_p_m_d_mesh.html#a3792b619ca88ed6376e3f13bad68309b">   49</a></span>&#160;    <a class="code" href="struct_i_mesh_1_1_st_vertex.html">StVertex</a>*   <a class="code" href="class_c_p_m_d_mesh.html#a3792b619ca88ed6376e3f13bad68309b">m_pstVertexArray</a>;       </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_c_p_m_d_mesh.html#a1bb03d6a05fcc301d52a683d435c0aca">   51</a></span>&#160;    U32         <a class="code" href="class_c_p_m_d_mesh.html#a1bb03d6a05fcc301d52a683d435c0aca">m_uIndexNum</a>;            </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_c_p_m_d_mesh.html#a2e6da3c8ef74817ba29900609ccd50a2">   52</a></span>&#160;    U32*        <a class="code" href="class_c_p_m_d_mesh.html#a2e6da3c8ef74817ba29900609ccd50a2">m_puIndexArray</a>;         </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_c_p_m_d_mesh.html#a90141785835f71c11ffe9146eecd1ff6">   54</a></span>&#160;    U32         <a class="code" href="class_c_p_m_d_mesh.html#a90141785835f71c11ffe9146eecd1ff6">m_uMaterialNum</a>;         </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_c_p_m_d_mesh.html#af1764e500e746f1271858e18b0e2a7bd">   55</a></span>&#160;    StMaterial* <a class="code" href="class_c_p_m_d_mesh.html#af1764e500e746f1271858e18b0e2a7bd">m_pstMaterialArray</a>;     </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif // #ifndef INCLUDE_LIB_PMD_PMDMESH_H</span></div>
+<div class="ttc" id="class_c_p_m_d_mesh_html_a99a0e4d3664fae495cfe216170294aab"><div class="ttname"><a href="class_c_p_m_d_mesh.html#a99a0e4d3664fae495cfe216170294aab">CPMDMesh::GetVertexNum</a></div><div class="ttdeci">virtual U32 GetVertexNum() const  override</div><div class="ttdoc">頂点座標数を取得。 </div><div class="ttdef"><b>Definition:</b> PMDMesh.h:27</div></div>
+<div class="ttc" id="class_c_p_m_d_mesh_html_a4f1ecf35269d6f92bdbb6a65fbcde9c7"><div class="ttname"><a href="class_c_p_m_d_mesh.html#a4f1ecf35269d6f92bdbb6a65fbcde9c7">CPMDMesh::m_uVertexNum</a></div><div class="ttdeci">U32 m_uVertexNum</div><div class="ttdoc">頂点情報数。 </div><div class="ttdef"><b>Definition:</b> PMDMesh.h:48</div></div>
+<div class="ttc" id="class_c_p_m_d_mesh_html_a0127281ef228e27dd6232069c5ffd164"><div class="ttname"><a href="class_c_p_m_d_mesh.html#a0127281ef228e27dd6232069c5ffd164">CPMDMesh::GetIndexNum</a></div><div class="ttdeci">virtual U32 GetIndexNum() const  override</div><div class="ttdoc">インデックス数を取得。 </div><div class="ttdef"><b>Definition:</b> PMDMesh.h:31</div></div>
+<div class="ttc" id="class_c_p_m_d_mesh_html_af1764e500e746f1271858e18b0e2a7bd"><div class="ttname"><a href="class_c_p_m_d_mesh.html#af1764e500e746f1271858e18b0e2a7bd">CPMDMesh::m_pstMaterialArray</a></div><div class="ttdeci">StMaterial * m_pstMaterialArray</div><div class="ttdoc">マテリアル情報配列。 </div><div class="ttdef"><b>Definition:</b> PMDMesh.h:55</div></div>
+<div class="ttc" id="class_c_p_m_d_mesh_html_a1bb03d6a05fcc301d52a683d435c0aca"><div class="ttname"><a href="class_c_p_m_d_mesh.html#a1bb03d6a05fcc301d52a683d435c0aca">CPMDMesh::m_uIndexNum</a></div><div class="ttdeci">U32 m_uIndexNum</div><div class="ttdoc">インデックス数。 </div><div class="ttdef"><b>Definition:</b> PMDMesh.h:51</div></div>
+<div class="ttc" id="class_c_p_m_d_mesh_html_a5cd7433c40e72a8ac468e8fc248d49ce"><div class="ttname"><a href="class_c_p_m_d_mesh.html#a5cd7433c40e72a8ac468e8fc248d49ce">CPMDMesh::~CPMDMesh</a></div><div class="ttdeci">virtual ~CPMDMesh()</div><div class="ttdoc">デストラクタ。 </div><div class="ttdef"><b>Definition:</b> PMDMesh.cpp:36</div></div>
+<div class="ttc" id="class_c_p_m_d_reader_html"><div class="ttname"><a href="class_c_p_m_d_reader.html">CPMDReader</a></div><div class="ttdef"><b>Definition:</b> PMDReader.h:16</div></div>
+<div class="ttc" id="class_c_p_m_d_mesh_html"><div class="ttname"><a href="class_c_p_m_d_mesh.html">CPMDMesh</a></div><div class="ttdef"><b>Definition:</b> PMDMesh.h:18</div></div>
+<div class="ttc" id="class_c_p_m_d_mesh_html_a3dc32e47f692de7cc2c998b65a416c6d"><div class="ttname"><a href="class_c_p_m_d_mesh.html#a3dc32e47f692de7cc2c998b65a416c6d">CPMDMesh::GetMaterialNum</a></div><div class="ttdeci">virtual U32 GetMaterialNum() const  override</div><div class="ttdoc">マテリアル数を取得。 </div><div class="ttdef"><b>Definition:</b> PMDMesh.h:35</div></div>
+<div class="ttc" id="class_c_p_m_d_mesh_html_a90141785835f71c11ffe9146eecd1ff6"><div class="ttname"><a href="class_c_p_m_d_mesh.html#a90141785835f71c11ffe9146eecd1ff6">CPMDMesh::m_uMaterialNum</a></div><div class="ttdeci">U32 m_uMaterialNum</div><div class="ttdoc">マテリアル数。 </div><div class="ttdef"><b>Definition:</b> PMDMesh.h:54</div></div>
+<div class="ttc" id="class_c_p_m_d_mesh_html_a3de096042308999ed7a2d37e66be76fc"><div class="ttname"><a href="class_c_p_m_d_mesh.html#a3de096042308999ed7a2d37e66be76fc">CPMDMesh::ExtractVertex</a></div><div class="ttdeci">void ExtractVertex(const CPMDReader &amp;_rcReader)</div><div class="ttdoc">頂点情報を抽出。 </div><div class="ttdef"><b>Definition:</b> PMDMesh.cpp:47</div></div>
+<div class="ttc" id="class_c_p_m_d_mesh_html_ab2b12b75b3ed1ed3017cff8d52f1677b"><div class="ttname"><a href="class_c_p_m_d_mesh.html#ab2b12b75b3ed1ed3017cff8d52f1677b">CPMDMesh::GetIndexArray</a></div><div class="ttdeci">virtual const U32 * GetIndexArray() const  override</div><div class="ttdoc">インデックス配列を取得。 </div><div class="ttdef"><b>Definition:</b> PMDMesh.h:33</div></div>
+<div class="ttc" id="class_c_p_m_d_mesh_html_a8b6ba1255586f2387442ec24f92ade55"><div class="ttname"><a href="class_c_p_m_d_mesh.html#a8b6ba1255586f2387442ec24f92ade55">CPMDMesh::GetMaterialArray</a></div><div class="ttdeci">virtual const StMaterial * GetMaterialArray() const  override</div><div class="ttdoc">マテリアル配列を取得。 </div><div class="ttdef"><b>Definition:</b> PMDMesh.h:37</div></div>
+<div class="ttc" id="class_c_p_m_d_mesh_html_a2e6da3c8ef74817ba29900609ccd50a2"><div class="ttname"><a href="class_c_p_m_d_mesh.html#a2e6da3c8ef74817ba29900609ccd50a2">CPMDMesh::m_puIndexArray</a></div><div class="ttdeci">U32 * m_puIndexArray</div><div class="ttdoc">インデック配列。 </div><div class="ttdef"><b>Definition:</b> PMDMesh.h:52</div></div>
+<div class="ttc" id="class_c_p_m_d_mesh_html_a3792b619ca88ed6376e3f13bad68309b"><div class="ttname"><a href="class_c_p_m_d_mesh.html#a3792b619ca88ed6376e3f13bad68309b">CPMDMesh::m_pstVertexArray</a></div><div class="ttdeci">StVertex * m_pstVertexArray</div><div class="ttdoc">頂点情報配列。 </div><div class="ttdef"><b>Definition:</b> PMDMesh.h:49</div></div>
+<div class="ttc" id="_mesh_8h_html"><div class="ttname"><a href="_mesh_8h.html">Mesh.h</a></div><div class="ttdoc">ポリゴンメッシュインターフェイス。  2015/12/03 01:24:39 </div></div>
+<div class="ttc" id="class_i_mesh_html"><div class="ttname"><a href="class_i_mesh.html">IMesh</a></div><div class="ttdef"><b>Definition:</b> Mesh.h:18</div></div>
+<div class="ttc" id="class_c_p_m_d_mesh_html_aa6c81a795b0497efecf17128385f853a"><div class="ttname"><a href="class_c_p_m_d_mesh.html#aa6c81a795b0497efecf17128385f853a">CPMDMesh::CPMDMesh</a></div><div class="ttdeci">CPMDMesh(const CPMDReader &amp;_rcReader)</div><div class="ttdoc">コンストラクタ。 </div><div class="ttdef"><b>Definition:</b> PMDMesh.cpp:16</div></div>
+<div class="ttc" id="class_c_p_m_d_mesh_html_aa2b096b1102286fec5d8ea7cc381bb55"><div class="ttname"><a href="class_c_p_m_d_mesh.html#aa2b096b1102286fec5d8ea7cc381bb55">CPMDMesh::GetVertexArray</a></div><div class="ttdeci">virtual const StVertex * GetVertexArray() const  override</div><div class="ttdoc">頂点座標配列を取得。 </div><div class="ttdef"><b>Definition:</b> PMDMesh.h:29</div></div>
+<div class="ttc" id="class_c_p_m_d_mesh_html_a24efaf85ad9f3866a054d6a89b829612"><div class="ttname"><a href="class_c_p_m_d_mesh.html#a24efaf85ad9f3866a054d6a89b829612">CPMDMesh::ExtractIndex</a></div><div class="ttdeci">void ExtractIndex(const CPMDReader &amp;_rcReader)</div><div class="ttdoc">インデック情報を抽出。 </div><div class="ttdef"><b>Definition:</b> PMDMesh.cpp:81</div></div>
+<div class="ttc" id="class_c_p_m_d_mesh_html_aeace2ace7326d12ee04f7549240c771e"><div class="ttname"><a href="class_c_p_m_d_mesh.html#aeace2ace7326d12ee04f7549240c771e">CPMDMesh::ExtractMaterial</a></div><div class="ttdeci">void ExtractMaterial(const CPMDReader &amp;_rcReader)</div><div class="ttdoc">マテリアル情報を抽出。 </div><div class="ttdef"><b>Definition:</b> PMDMesh.cpp:104</div></div>
+<div class="ttc" id="struct_i_mesh_1_1_st_vertex_html"><div class="ttname"><a href="struct_i_mesh_1_1_st_vertex.html">IMesh::StVertex</a></div><div class="ttdoc">頂点情報。 </div><div class="ttdef"><b>Definition:</b> Mesh.h:22</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>
